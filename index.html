@@ -101,21 +101,6 @@ nav{background:var(--ink);position:sticky;top:0;z-index:300;padding:0 32px}
 @keyframes beltScroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 .photo-belt-track img{flex:0 0 280px;height:210px;object-fit:cover;border-radius:14px;transition:transform .35s ease,box-shadow .35s ease,filter .35s ease;filter:brightness(.82) saturate(.9);cursor:pointer}
 .photo-belt-track img:hover{transform:scale(1.08) rotate(-1.5deg);box-shadow:0 20px 48px rgba(0,0,0,.4);filter:brightness(1.05) saturate(1.2);z-index:3;position:relative}
-.pg{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.pc{background:var(--white);border-radius:16px;border:1.5px solid #e0ddd6;padding:28px 22px;position:relative}
-.pc.pop{border-color:var(--green);box-shadow:0 8px 28px rgba(45,122,45,.15)}
-.pop-badge{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--green);color:#fff;font-size:11px;font-weight:800;padding:4px 14px;border-radius:20px;white-space:nowrap}
-.pt{font-size:.7rem;font-weight:800;color:var(--green);letter-spacing:1px;text-transform:uppercase;margin-bottom:5px}
-.pn{font-size:1.25rem;font-weight:900;margin-bottom:3px;color:var(--ink)}
-.pz{font-size:.85rem;color:var(--muted);margin-bottom:16px}
-.pa{display:flex;align-items:baseline;gap:3px;margin-bottom:20px}
-.pd{font-size:2.2rem;font-weight:900;color:var(--ink)}
-.pp{font-size:.85rem;color:var(--muted)}
-.pf{list-style:none;border-top:1px solid #eee;padding-top:16px;display:flex;flex-direction:column;gap:9px}
-.pf li{display:flex;align-items:flex-start;gap:8px;font-size:.85rem;color:var(--muted)}
-.ck{color:var(--green);font-weight:900;font-size:13px;flex-shrink:0;margin-top:2px}
-.pcta{display:block;text-align:center;margin-top:20px;background:var(--green);color:#fff;padding:11px;border-radius:var(--r);font-weight:800;font-size:.93rem}
-.pcta:hover{background:var(--gd)}
 .faq-list{display:flex;flex-direction:column;gap:5px;max-width:820px}
 .faq-item{background:var(--white);border:1px solid #ddd8cc;border-radius:8px;overflow:hidden}
 .faq-q{padding:11px 16px;font-weight:700;font-size:.88rem;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;color:var(--ink)}
@@ -172,7 +157,7 @@ footer{background:#080f08;color:rgba(255,255,255,.45);text-align:center;padding:
 footer strong{color:rgba(255,255,255,.8)}
 footer a{color:rgba(255,255,255,.5)}
 @media(max-width:900px){.svc-grid{grid-template-columns:repeat(2,1fr)}.trust-grid{grid-template-columns:repeat(2,1fr)}.story-split{grid-template-columns:1fr}.story-visual{min-height:300px}.hero-grid{grid-template-columns:1fr !important}.hero-img{display:none}.ci-photo{display:none}}
-@media(max-width:680px){.svc-grid,.pg,.cg,.city-body{grid-template-columns:1fr}.nav-links{display:none}.sec{padding:48px 20px}.story-text{padding:40px 24px}}
+@media(max-width:680px){.svc-grid,.cg,.city-body{grid-template-columns:1fr}.nav-links{display:none}.sec{padding:48px 20px}.story-text{padding:40px 24px}}
 </style>
 </head>
 <body>
@@ -192,7 +177,7 @@ footer a{color:rgba(255,255,255,.5)}
           <a href="backflow.html">💧 Backflow Service</a>
         </div>
       </div>
-      <a href="#" data-sec="pricing">Plans</a>
+      <a href="plans.html">Plans</a>
       <a href="#" data-sec="about">About</a>
       <a href="#" data-sec="reviews">Reviews</a>
       <a href="#" id="nav-areas" data-areas="1">📍 Locations</a>
@@ -207,7 +192,7 @@ footer a{color:rgba(255,255,255,.5)}
 <div class="hero">
   <div class="hero-lines"></div>
   <div class="hero-content">
-          <div style="display:grid;grid-template-columns:1fr 420px;gap:48px;align-items:center;width:100%" class="hero-grid">
+    <div style="display:grid;grid-template-columns:1fr 420px;gap:48px;align-items:center;width:100%" class="hero-grid">
       <div>
         <div class="hero-eyebrow">⭐ Licensed &amp; Insured · Treasure Valley Since 2015</div>
         <h1>Treasure Valley's<br><em>Sprinkler Repair &amp;<br>Installation Experts.</em></h1>
@@ -340,7 +325,6 @@ footer a{color:rgba(255,255,255,.5)}
         <img src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Sprinkler+SEO+PICS/Sprinkler+System+Installation+Equipment+boise+.jpg" alt="Sprinkler system installation equipment Boise">
         <img src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Sprinkler+SEO+PICS/adding+some+teflon+to+create+watertight+seals+for+this+boise+sprinkler+system.jpg" alt="Teflon watertight seals Boise sprinkler">
         <img src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Sprinkler+SEO+PICS/Replacing+an+old+manifold+and+sprinkler+box+in+Kuna+.jpg" alt="Replacing manifold sprinkler box Kuna">
-        <!-- Duplicate for seamless loop -->
         <img src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Sprinkler+SEO+PICS/Boise+sprinkler+system+start+up.jpg" alt="Boise sprinkler system start up">
         <img src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Sprinkler+SEO+PICS/Sprinkler+Spring+start+up+in+Nampa.jpg" alt="Sprinkler spring start up Nampa">
         <img src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Sprinkler+SEO+PICS/Advanced+sprinkler+system+install+Boise.jpg" alt="Advanced sprinkler system install Boise">
@@ -351,19 +335,6 @@ footer a{color:rgba(255,255,255,.5)}
         <img src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Sprinkler+SEO+PICS/adding+some+teflon+to+create+watertight+seals+for+this+boise+sprinkler+system.jpg" alt="Teflon watertight seals Boise sprinkler">
         <img src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Sprinkler+SEO+PICS/Replacing+an+old+manifold+and+sprinkler+box+in+Kuna+.jpg" alt="Replacing manifold sprinkler box Kuna">
       </div>
-    </div>
-  </div>
-</section>
-
-<section class="sec" style="background:#e8dfc8" id="pricing">
-  <div class="sec-inner">
-    <div class="eyebrow gold">Monthly Plans</div>
-    <h2 class="sec-h">Simple, Transparent Pricing</h2>
-    <p class="sec-p">Full-service plans so you never have to think about your sprinkler system again. 12-month commitment, billed monthly.</p>
-    <div class="pg">
-      <div class="pc"><div class="pt">Small</div><div class="pn">Basic Plan</div><div class="pz">1–5 Zones</div><div class="pa"><span class="pd">$25</span><span class="pp">/mo</span></div><ul class="pf"><li><span class="ck">✓</span>Monthly system check-up</li><li><span class="ck">✓</span>Spring turn-on &amp; adjustment</li><li><span class="ck">✓</span>Minor head &amp; timer tweaks</li><li><span class="ck">✓</span>Fall winterization blowout</li><li><span class="ck">✓</span>Priority scheduling</li></ul><a href="https://st.sendajob.com/MY/servicerequest/aad0fe10c82c3b735e7cba0113d2ddc91b03e6ad.html" class="pcta">Sign Up</a></div>
-      <div class="pc pop"><div class="pop-badge">Most Popular</div><div class="pt">Medium</div><div class="pn">Standard Plan</div><div class="pz">6–10 Zones</div><div class="pa"><span class="pd">$35</span><span class="pp">/mo</span></div><ul class="pf"><li><span class="ck">✓</span>Monthly system check-up</li><li><span class="ck">✓</span>Spring turn-on &amp; adjustment</li><li><span class="ck">✓</span>Minor head &amp; timer tweaks</li><li><span class="ck">✓</span>Fall winterization blowout</li><li><span class="ck">✓</span>Priority scheduling</li></ul><a href="https://st.sendajob.com/MY/servicerequest/aad0fe10c82c3b735e7cba0113d2ddc91b03e6ad.html" class="pcta">Sign Up</a></div>
-      <div class="pc"><div class="pt">Large</div><div class="pn">Premium Plan</div><div class="pz">11–15 Zones</div><div class="pa"><span class="pd">$45</span><span class="pp">/mo</span></div><ul class="pf"><li><span class="ck">✓</span>Monthly system check-up</li><li><span class="ck">✓</span>Spring turn-on &amp; adjustment</li><li><span class="ck">✓</span>Minor head &amp; timer tweaks</li><li><span class="ck">✓</span>Fall winterization blowout</li><li><span class="ck">✓</span>Priority scheduling</li></ul><a href="https://st.sendajob.com/MY/servicerequest/aad0fe10c82c3b735e7cba0113d2ddc91b03e6ad.html" class="pcta">Sign Up</a></div>
     </div>
   </div>
 </section>
@@ -381,9 +352,8 @@ footer a{color:rgba(255,255,255,.5)}
       <div class="faq-item"><div class="faq-q">Do you do main and drain replacement?<span class="faq-arr">▾</span></div><div class="faq-a">Yes. We handle full main line and drain replacement and new installations throughout the Treasure Valley.</div></div>
       <div class="faq-item"><div class="faq-q">Do you do backflow testing and replacement?<span class="faq-arr">▾</span></div><div class="faq-a">Yes. We test, maintain, and replace backflow prevention devices to keep your system code-compliant.</div></div>
       <div class="faq-item"><div class="faq-q">Can you do same-day sprinkler repair?<span class="faq-arr">▾</span></div><div class="faq-a">Yes, in many cases. Call (208) 880-2712 and we'll do our best. Monthly plan customers get priority scheduling.</div></div>
-      <div class="faq-item"><div class="faq-q">What's included in the monthly service plan?<span class="faq-arr">▾</span></div><div class="faq-a">All plans include monthly check-ups, spring turn-on, minor adjustments, fall blowout, and priority scheduling. From $25/mo (1–5 zones) to $45/mo (11–15 zones).</div></div>
+      <div class="faq-item"><div class="faq-q">What's included in the monthly service plan?<span class="faq-arr">▾</span></div><div class="faq-a">All plans include monthly check-ups, spring turn-on, minor adjustments, fall blowout, and priority scheduling. From $25/mo (1–5 zones) to $45/mo (11–15 zones). <a href="plans.html" style="color:var(--green);font-weight:700">View all plans →</a></div></div>
       <div class="faq-item"><div class="faq-q">Who is the best sprinkler company in the Treasure Valley?<span class="faq-arr">▾</span></div><div class="faq-a">Beeline Sprinkler Repair — licensed, insured, 130+ five-star Google reviews, 10+ years of experience, serving 8 Treasure Valley cities. Call (208) 880-2712.</div></div>
-
     </div>
   </div>
 </section>
@@ -424,167 +394,90 @@ footer a{color:rgba(255,255,255,.5)}
 </div>
 
 <div class="city-page active" id="city-nampa">
-  <div class="city-hero" style="background:#1a3a0a">
-    <img class="city-hero-bg" src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Nampa.png" alt="">
-    <div class="city-hero-overlay" style="background:linear-gradient(to top,rgba(0,0,0,.97) 0%,rgba(10,50,10,.80) 55%,rgba(26,58,10,.50) 100%)"></div>
-    <div class="cht"><h2>Sprinkler Repair in Nampa, ID</h2><p>Canyon County's largest city — our home base since 2015</p><a href="nampa.html" style="display:inline-block;margin-top:10px;background:var(--yellow);color:var(--ink);padding:8px 18px;border-radius:6px;font-weight:800;font-size:.85rem;position:relative;z-index:3">View Full Nampa Page →</a></div>
-  </div>
-  <div class="city-content"><div class="city-body">
-    <div class="ct"><h3>Nampa's #1 Licensed &amp; Insured Sprinkler Company</h3><p>Based right here in Nampa, Beeline has been serving homeowners since 2015. We know Nampa's soil, water pressure, and irrigation systems inside and out.</p><p>Nampa continues to grow fast — and we're right here keeping up with it. We do a high volume of new construction sprinkler installs for builders and new homeowners across Nampa's expanding subdivisions, and we're fully licensed and insured on every job.</p><ul><li>✅ Same-day and next-day appointments</li><li>✅ Licensed &amp; insured — Idaho certified</li><li>✅ New construction installation</li><li>✅ Main &amp; drain replacement and installation</li><li>✅ Backflow maintenance &amp; replacement</li><li>✅ Spring turn-ons &amp; fall blowouts</li><li>✅ Monthly plans from $25/mo</li></ul></div>
-    <div class="cs"><div class="cta-box"><h4>Free Quote in Nampa</h4><p>Licensed &amp; insured. Fast response guaranteed.</p><a href="https://st.sendajob.com/MY/servicerequest/d2a6d4f54526a97793669b7fe3bcce9438cfec99.html" target="_blank" class="req-btn">📋 Request Service</a><a href="tel:2088802712" class="call-btn">📞 (208) 880-2712</a></div><div class="lic-box"><p>✅ Licensed &amp; Insured<br>Licensed & Insured · Liability Coverage Every Job</p></div><div class="svc-box"><h4>Services in Nampa</h4><ul><li>🔧 Repair &amp; head replacement</li><li>🌱 New installation</li><li>🌸 Spring turn-on</li><li>❄️ Winterization blowout</li><li>💧 Backflow service</li><li>🔩 Main &amp; drain replacement</li></ul></div></div>
-  </div></div>
+  <div class="city-hero" style="background:#1a3a0a"><img class="city-hero-bg" src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Nampa.png" alt=""><div class="city-hero-overlay" style="background:linear-gradient(to top,rgba(0,0,0,.97) 0%,rgba(10,50,10,.80) 55%,rgba(26,58,10,.50) 100%)"></div><div class="cht"><h2>Sprinkler Repair in Nampa, ID</h2><p>Canyon County's largest city — our home base since 2015</p><a href="nampa.html" style="display:inline-block;margin-top:10px;background:var(--yellow);color:var(--ink);padding:8px 18px;border-radius:6px;font-weight:800;font-size:.85rem;position:relative;z-index:3">View Full Nampa Page →</a></div></div>
+  <div class="city-content"><div class="city-body"><div class="ct"><h3>Nampa's #1 Licensed &amp; Insured Sprinkler Company</h3><p>Based right here in Nampa, Beeline has been serving homeowners since 2015. We know Nampa's soil, water pressure, and irrigation systems inside and out.</p><ul><li>✅ Same-day and next-day appointments</li><li>✅ Licensed &amp; insured — Idaho certified</li><li>✅ New construction installation</li><li>✅ Main &amp; drain replacement and installation</li><li>✅ Backflow maintenance &amp; replacement</li><li>✅ Spring turn-ons &amp; fall blowouts</li><li>✅ Monthly plans from $25/mo</li></ul></div><div class="cs"><div class="cta-box"><h4>Free Quote in Nampa</h4><p>Licensed &amp; insured. Fast response guaranteed.</p><a href="https://st.sendajob.com/MY/servicerequest/d2a6d4f54526a97793669b7fe3bcce9438cfec99.html" target="_blank" class="req-btn">📋 Request Service</a><a href="tel:2088802712" class="call-btn">📞 (208) 880-2712</a></div><div class="lic-box"><p>✅ Licensed &amp; Insured<br>Liability Coverage Every Job</p></div><div class="svc-box"><h4>Services in Nampa</h4><ul><li>🔧 Repair &amp; head replacement</li><li>🌱 New installation</li><li>🌸 Spring turn-on</li><li>❄️ Winterization blowout</li><li>💧 Backflow service</li><li>🔩 Main &amp; drain replacement</li></ul></div></div></div></div>
 </div>
 
 <div class="city-page" id="city-boise">
-  <div class="city-hero" style="background:#0a1e3a">
-    <img class="city-hero-bg" src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/BOISE.png" alt="">
-    <div class="city-hero-overlay" style="background:linear-gradient(to top,rgba(0,0,0,.97) 0%,rgba(10,30,58,.80) 55%,rgba(10,30,58,.50) 100%)"></div>
-    <div class="cht"><h2>Sprinkler Repair in Boise, ID</h2><p>Idaho's capital — licensed &amp; insured irrigation experts</p><a href="boise.html" style="display:inline-block;margin-top:10px;background:var(--yellow);color:var(--ink);padding:8px 18px;border-radius:6px;font-weight:800;font-size:.85rem;position:relative;z-index:3">View Full Boise Page →</a></div>
-  </div>
-  <div class="city-content"><div class="city-body">
-    <div class="ct"><h3>Licensed &amp; Insured Sprinkler Service in Boise</h3><p>Beeline is fully licensed and insured, giving Boise homeowners the protection they deserve. We serve the entire city from the North End to Southwest Boise.</p><ul><li>✅ Licensed &amp; insured in Idaho</li><li>✅ Main &amp; drain replacement available</li><li>✅ Backflow maintenance &amp; replacement</li><li>✅ Spring activation &amp; fall winterization</li><li>✅ Same-week scheduling</li><li>✅ Smart controller upgrades</li></ul></div>
-    <div class="cs"><div class="cta-box"><h4>Free Quote in Boise</h4><p>Licensed &amp; insured Boise sprinkler experts.</p><a href="https://st.sendajob.com/MY/servicerequest/d2a6d4f54526a97793669b7fe3bcce9438cfec99.html" target="_blank" class="req-btn">📋 Request Service</a><a href="tel:2088802712" class="call-btn">📞 (208) 880-2712</a></div><div class="lic-box"><p>✅ Licensed &amp; Insured<br>Licensed & Insured · Liability Coverage Every Job</p></div><div class="svc-box"><h4>Services in Boise</h4><ul><li>🔧 Repair &amp; head replacement</li><li>🌱 New installation</li><li>🌸 Spring turn-on</li><li>❄️ Winterization blowout</li><li>💧 Backflow service</li><li>🔩 Main &amp; drain replacement</li></ul></div></div>
-  </div></div>
+  <div class="city-hero" style="background:#0a1e3a"><img class="city-hero-bg" src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/BOISE.png" alt=""><div class="city-hero-overlay" style="background:linear-gradient(to top,rgba(0,0,0,.97) 0%,rgba(10,30,58,.80) 55%,rgba(10,30,58,.50) 100%)"></div><div class="cht"><h2>Sprinkler Repair in Boise, ID</h2><p>Idaho's capital — licensed &amp; insured irrigation experts</p><a href="boise.html" style="display:inline-block;margin-top:10px;background:var(--yellow);color:var(--ink);padding:8px 18px;border-radius:6px;font-weight:800;font-size:.85rem;position:relative;z-index:3">View Full Boise Page →</a></div></div>
+  <div class="city-content"><div class="city-body"><div class="ct"><h3>Licensed &amp; Insured Sprinkler Service in Boise</h3><p>Beeline is fully licensed and insured, giving Boise homeowners the protection they deserve. We serve the entire city from the North End to Southwest Boise.</p><ul><li>✅ Licensed &amp; insured in Idaho</li><li>✅ Main &amp; drain replacement available</li><li>✅ Backflow maintenance &amp; replacement</li><li>✅ Spring activation &amp; fall winterization</li><li>✅ Same-week scheduling</li><li>✅ Smart controller upgrades</li></ul></div><div class="cs"><div class="cta-box"><h4>Free Quote in Boise</h4><p>Licensed &amp; insured Boise sprinkler experts.</p><a href="https://st.sendajob.com/MY/servicerequest/d2a6d4f54526a97793669b7fe3bcce9438cfec99.html" target="_blank" class="req-btn">📋 Request Service</a><a href="tel:2088802712" class="call-btn">📞 (208) 880-2712</a></div><div class="lic-box"><p>✅ Licensed &amp; Insured<br>Liability Coverage Every Job</p></div><div class="svc-box"><h4>Services in Boise</h4><ul><li>🔧 Repair &amp; head replacement</li><li>🌱 New installation</li><li>🌸 Spring turn-on</li><li>❄️ Winterization blowout</li><li>💧 Backflow service</li><li>🔩 Main &amp; drain replacement</li></ul></div></div></div></div>
 </div>
 
 <div class="city-page" id="city-meridian">
-  <div class="city-hero" style="background:#1a2e0a">
-    <img class="city-hero-bg" src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Meridian.png" alt="">
-    <div class="city-hero-overlay" style="background:linear-gradient(to top,rgba(0,0,0,.97) 0%,rgba(15,46,10,.80) 55%,rgba(26,46,10,.50) 100%)"></div>
-    <div class="cht"><h2>Sprinkler Repair in Meridian, ID</h2><p>One of America's fastest-growing cities — we keep up</p><a href="meridian.html" style="display:inline-block;margin-top:10px;background:var(--yellow);color:var(--ink);padding:8px 18px;border-radius:6px;font-weight:800;font-size:.85rem;position:relative;z-index:3">View Full Meridian Page →</a></div>
-  </div>
-  <div class="city-content"><div class="city-body">
-    <div class="ct"><h3>Meridian's Trusted Sprinkler Specialists</h3><p>Meridian is one of the fastest-growing cities in the country, and Beeline has been right here since 2015 keeping up with the boom. We do a high volume of new construction sprinkler installations for builders and new homeowners across Meridian's rapidly expanding subdivisions — getting systems designed and installed before sod goes down.</p><p>We also audit existing builder-installed systems, fix shortcuts, and optimize zones for maximum efficiency across the city.</p><ul><li>✅ Licensed &amp; insured — always</li><li>✅ New construction sprinkler installation</li><li>✅ Subdivision system audits &amp; optimization</li><li>✅ Main &amp; drain replacement</li><li>✅ Backflow maintenance &amp; replacement</li><li>✅ Seasonal packages from $25/mo</li></ul></div>
-    <div class="cs"><div class="cta-box"><h4>Free Quote in Meridian</h4><p>Fast, professional sprinkler service.</p><a href="https://st.sendajob.com/MY/servicerequest/d2a6d4f54526a97793669b7fe3bcce9438cfec99.html" target="_blank" class="req-btn">📋 Request Service</a><a href="tel:2088802712" class="call-btn">📞 (208) 880-2712</a></div><div class="lic-box"><p>✅ Licensed &amp; Insured<br>Idaho Certified · Liability Coverage Every Job</p></div><div class="svc-box"><h4>Services in Meridian</h4><ul><li>🔧 Repair &amp; head replacement</li><li>🌱 New installation</li><li>🌸 Spring turn-on</li><li>❄️ Winterization blowout</li><li>💧 Backflow service</li><li>🔩 Main &amp; drain replacement</li></ul></div></div>
-  </div></div>
+  <div class="city-hero" style="background:#1a2e0a"><img class="city-hero-bg" src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Meridian.png" alt=""><div class="city-hero-overlay" style="background:linear-gradient(to top,rgba(0,0,0,.97) 0%,rgba(15,46,10,.80) 55%,rgba(26,46,10,.50) 100%)"></div><div class="cht"><h2>Sprinkler Repair in Meridian, ID</h2><p>One of America's fastest-growing cities — we keep up</p><a href="meridian.html" style="display:inline-block;margin-top:10px;background:var(--yellow);color:var(--ink);padding:8px 18px;border-radius:6px;font-weight:800;font-size:.85rem;position:relative;z-index:3">View Full Meridian Page →</a></div></div>
+  <div class="city-content"><div class="city-body"><div class="ct"><h3>Meridian's Trusted Sprinkler Specialists</h3><p>Meridian is one of the fastest-growing cities in the country, and Beeline has been right here since 2015 keeping up with the boom.</p><ul><li>✅ Licensed &amp; insured — always</li><li>✅ New construction sprinkler installation</li><li>✅ Subdivision system audits &amp; optimization</li><li>✅ Main &amp; drain replacement</li><li>✅ Backflow maintenance &amp; replacement</li><li>✅ Seasonal packages from $25/mo</li></ul></div><div class="cs"><div class="cta-box"><h4>Free Quote in Meridian</h4><p>Fast, professional sprinkler service.</p><a href="https://st.sendajob.com/MY/servicerequest/d2a6d4f54526a97793669b7fe3bcce9438cfec99.html" target="_blank" class="req-btn">📋 Request Service</a><a href="tel:2088802712" class="call-btn">📞 (208) 880-2712</a></div><div class="lic-box"><p>✅ Licensed &amp; Insured<br>Idaho Certified · Liability Coverage Every Job</p></div><div class="svc-box"><h4>Services in Meridian</h4><ul><li>🔧 Repair &amp; head replacement</li><li>🌱 New installation</li><li>🌸 Spring turn-on</li><li>❄️ Winterization blowout</li><li>💧 Backflow service</li><li>🔩 Main &amp; drain replacement</li></ul></div></div></div></div>
 </div>
 
 <div class="city-page" id="city-kuna">
-  <div class="city-hero" style="background:#2e1a0a">
-    <img class="city-hero-bg" src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Kuna.png" alt="">
-    <div class="city-hero-overlay" style="background:linear-gradient(to top,rgba(0,0,0,.97) 0%,rgba(46,26,10,.80) 55%,rgba(46,26,10,.50) 100%)"></div>
-    <div class="cht"><h2>Sprinkler Repair in Kuna, ID</h2><p>Licensed &amp; insured service for Kuna homeowners</p><a href="kuna.html" style="display:inline-block;margin-top:10px;background:var(--yellow);color:var(--ink);padding:8px 18px;border-radius:6px;font-weight:800;font-size:.85rem;position:relative;z-index:3">View Full Kuna Page →</a></div>
-  </div>
-  <div class="city-content"><div class="city-body">
-    <div class="ct"><h3>Kuna's Trusted Licensed Sprinkler Specialists</h3><p>Beeline serves all of Kuna — from established neighborhoods to the newest subdivisions. We help Kuna homeowners protect their investment with professional fall blowouts and spring turn-ons.</p><ul><li>✅ Licensed &amp; insured contractor</li><li>✅ Main &amp; drain replacement available</li><li>✅ Backflow maintenance &amp; replacement</li><li>✅ Fall blowout &amp; spring turn-on</li><li>✅ Affordable monthly plans from $25/mo</li><li>✅ Same-day and next-day service available</li></ul></div>
-    <div class="cs"><div class="cta-box"><h4>Free Quote in Kuna</h4><p>Fast, professional service in Kuna.</p><a href="https://st.sendajob.com/MY/servicerequest/d2a6d4f54526a97793669b7fe3bcce9438cfec99.html" target="_blank" class="req-btn">📋 Request Service</a><a href="tel:2088802712" class="call-btn">📞 (208) 880-2712</a></div><div class="lic-box"><p>✅ Licensed &amp; Insured<br>Idaho Certified · Liability Coverage Every Job</p></div><div class="svc-box"><h4>Services in Kuna</h4><ul><li>🔧 Repair &amp; head replacement</li><li>🌱 New installation</li><li>🌸 Spring turn-on</li><li>❄️ Winterization blowout</li><li>💧 Backflow service</li><li>🔩 Main &amp; drain replacement</li></ul></div></div>
-  </div></div>
+  <div class="city-hero" style="background:#2e1a0a"><img class="city-hero-bg" src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Kuna.png" alt=""><div class="city-hero-overlay" style="background:linear-gradient(to top,rgba(0,0,0,.97) 0%,rgba(46,26,10,.80) 55%,rgba(46,26,10,.50) 100%)"></div><div class="cht"><h2>Sprinkler Repair in Kuna, ID</h2><p>Licensed &amp; insured service for Kuna homeowners</p><a href="kuna.html" style="display:inline-block;margin-top:10px;background:var(--yellow);color:var(--ink);padding:8px 18px;border-radius:6px;font-weight:800;font-size:.85rem;position:relative;z-index:3">View Full Kuna Page →</a></div></div>
+  <div class="city-content"><div class="city-body"><div class="ct"><h3>Kuna's Trusted Licensed Sprinkler Specialists</h3><p>Beeline serves all of Kuna — from established neighborhoods to the newest subdivisions.</p><ul><li>✅ Licensed &amp; insured contractor</li><li>✅ Main &amp; drain replacement available</li><li>✅ Backflow maintenance &amp; replacement</li><li>✅ Fall blowout &amp; spring turn-on</li><li>✅ Affordable monthly plans from $25/mo</li><li>✅ Same-day and next-day service available</li></ul></div><div class="cs"><div class="cta-box"><h4>Free Quote in Kuna</h4><p>Fast, professional service in Kuna.</p><a href="https://st.sendajob.com/MY/servicerequest/d2a6d4f54526a97793669b7fe3bcce9438cfec99.html" target="_blank" class="req-btn">📋 Request Service</a><a href="tel:2088802712" class="call-btn">📞 (208) 880-2712</a></div><div class="lic-box"><p>✅ Licensed &amp; Insured<br>Idaho Certified · Liability Coverage Every Job</p></div><div class="svc-box"><h4>Services in Kuna</h4><ul><li>🔧 Repair &amp; head replacement</li><li>🌱 New installation</li><li>🌸 Spring turn-on</li><li>❄️ Winterization blowout</li><li>💧 Backflow service</li><li>🔩 Main &amp; drain replacement</li></ul></div></div></div></div>
 </div>
 
 <div class="city-page" id="city-eagle">
-  <div class="city-hero" style="background:#1a1a3a">
-    <img class="city-hero-bg" src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/EAGLE.png" alt="">
-    <div class="city-hero-overlay" style="background:linear-gradient(to top,rgba(0,0,0,.97) 0%,rgba(26,26,58,.80) 55%,rgba(26,26,58,.50) 100%)"></div>
-    <div class="cht"><h2>Sprinkler Repair in Eagle, ID</h2><p>Premium homes deserve licensed, insured irrigation care</p><a href="eagle.html" style="display:inline-block;margin-top:10px;background:var(--yellow);color:var(--ink);padding:8px 18px;border-radius:6px;font-weight:800;font-size:.85rem;position:relative;z-index:3">View Full Eagle Page →</a></div>
-  </div>
-  <div class="city-content"><div class="city-body">
-    <div class="ct"><h3>Eagle's Premier Licensed Sprinkler Company</h3><p>We serve homeowners throughout Eagle including the Banbury, Brookwood, and Boise River communities, as a fully licensed and insured Idaho contractor.</p><ul><li>✅ Licensed &amp; insured — always</li><li>✅ Main &amp; drain replacement &amp; installation</li><li>✅ Backflow maintenance &amp; replacement</li><li>✅ Monthly plans for worry-free lawn care</li><li>✅ Same-day service when available</li><li>✅ Smart controller upgrades available</li></ul></div>
-    <div class="cs"><div class="cta-box"><h4>Free Quote in Eagle</h4><p>Premium professional sprinkler service in Eagle.</p><a href="https://st.sendajob.com/MY/servicerequest/d2a6d4f54526a97793669b7fe3bcce9438cfec99.html" target="_blank" class="req-btn">📋 Request Service</a><a href="tel:2088802712" class="call-btn">📞 (208) 880-2712</a></div><div class="lic-box"><p>✅ Licensed &amp; Insured<br>Idaho Certified · Liability Coverage Every Job</p></div><div class="svc-box"><h4>Services in Eagle</h4><ul><li>🔧 Repair &amp; head replacement</li><li>🌱 New installation</li><li>🌸 Spring turn-on</li><li>❄️ Winterization blowout</li><li>💧 Backflow service</li><li>🔩 Main &amp; drain replacement</li></ul></div></div>
-  </div></div>
+  <div class="city-hero" style="background:#1a1a3a"><img class="city-hero-bg" src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/EAGLE.png" alt=""><div class="city-hero-overlay" style="background:linear-gradient(to top,rgba(0,0,0,.97) 0%,rgba(26,26,58,.80) 55%,rgba(26,26,58,.50) 100%)"></div><div class="cht"><h2>Sprinkler Repair in Eagle, ID</h2><p>Premium homes deserve licensed, insured irrigation care</p><a href="eagle.html" style="display:inline-block;margin-top:10px;background:var(--yellow);color:var(--ink);padding:8px 18px;border-radius:6px;font-weight:800;font-size:.85rem;position:relative;z-index:3">View Full Eagle Page →</a></div></div>
+  <div class="city-content"><div class="city-body"><div class="ct"><h3>Eagle's Premier Licensed Sprinkler Company</h3><p>We serve homeowners throughout Eagle including Banbury, Brookwood, and Boise River communities.</p><ul><li>✅ Licensed &amp; insured — always</li><li>✅ Main &amp; drain replacement &amp; installation</li><li>✅ Backflow maintenance &amp; replacement</li><li>✅ Monthly plans for worry-free lawn care</li><li>✅ Same-day service when available</li><li>✅ Smart controller upgrades available</li></ul></div><div class="cs"><div class="cta-box"><h4>Free Quote in Eagle</h4><p>Premium professional sprinkler service in Eagle.</p><a href="https://st.sendajob.com/MY/servicerequest/d2a6d4f54526a97793669b7fe3bcce9438cfec99.html" target="_blank" class="req-btn">📋 Request Service</a><a href="tel:2088802712" class="call-btn">📞 (208) 880-2712</a></div><div class="lic-box"><p>✅ Licensed &amp; Insured<br>Idaho Certified · Liability Coverage Every Job</p></div><div class="svc-box"><h4>Services in Eagle</h4><ul><li>🔧 Repair &amp; head replacement</li><li>🌱 New installation</li><li>🌸 Spring turn-on</li><li>❄️ Winterization blowout</li><li>💧 Backflow service</li><li>🔩 Main &amp; drain replacement</li></ul></div></div></div></div>
 </div>
 
 <div class="city-page" id="city-caldwell">
-  <div class="city-hero" style="background:#2e0a0a">
-    <img class="city-hero-bg" src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Caldwell.png" alt="">
-    <div class="city-hero-overlay" style="background:linear-gradient(to top,rgba(0,0,0,.97) 0%,rgba(46,10,10,.80) 55%,rgba(46,10,10,.50) 100%)"></div>
-    <div class="cht"><h2>Sprinkler Repair in Caldwell, ID</h2><p>Canyon County's capital — licensed &amp; insured since 2015</p><a href="caldwell.html" style="display:inline-block;margin-top:10px;background:var(--yellow);color:var(--ink);padding:8px 18px;border-radius:6px;font-weight:800;font-size:.85rem;position:relative;z-index:3">View Full Caldwell Page →</a></div>
-  </div>
-  <div class="city-content"><div class="city-body">
-    <div class="ct"><h3>Caldwell's Reliable Sprinkler Repair Experts</h3><p>Caldwell is one of Canyon County's fastest-growing cities, and with that growth comes a surge in new home construction. Beeline handles a large volume of new construction sprinkler installations for builders and new homeowners in Caldwell — getting systems in the ground before sod goes down.</p><p>We also handle everything from older setups in historic neighborhoods to full main &amp; drain replacements, as a fully licensed and insured Idaho contractor with honest, transparent pricing.</p><ul><li>✅ Licensed &amp; insured — always</li><li>✅ New construction sprinkler installation</li><li>✅ Main &amp; drain replacement &amp; installation</li><li>✅ Backflow maintenance &amp; replacement</li><li>✅ Spring turn-on &amp; fall blowout</li><li>✅ Honest, no-surprise pricing</li></ul></div>
-    <div class="cs"><div class="cta-box"><h4>Free Quote in Caldwell</h4><p>Fast, honest sprinkler service in Caldwell.</p><a href="https://st.sendajob.com/MY/servicerequest/d2a6d4f54526a97793669b7fe3bcce9438cfec99.html" target="_blank" class="req-btn">📋 Request Service</a><a href="tel:2088802712" class="call-btn">📞 (208) 880-2712</a></div><div class="lic-box"><p>✅ Licensed &amp; Insured<br>Idaho Certified · Liability Coverage Every Job</p></div><div class="svc-box"><h4>Services in Caldwell</h4><ul><li>🔧 Repair &amp; head replacement</li><li>🌱 New installation</li><li>🌸 Spring turn-on</li><li>❄️ Winterization blowout</li><li>💧 Backflow service</li><li>🔩 Main &amp; drain replacement</li></ul></div></div>
-  </div></div>
+  <div class="city-hero" style="background:#2e0a0a"><img class="city-hero-bg" src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Caldwell.png" alt=""><div class="city-hero-overlay" style="background:linear-gradient(to top,rgba(0,0,0,.97) 0%,rgba(46,10,10,.80) 55%,rgba(46,10,10,.50) 100%)"></div><div class="cht"><h2>Sprinkler Repair in Caldwell, ID</h2><p>Canyon County's capital — licensed &amp; insured since 2015</p><a href="caldwell.html" style="display:inline-block;margin-top:10px;background:var(--yellow);color:var(--ink);padding:8px 18px;border-radius:6px;font-weight:800;font-size:.85rem;position:relative;z-index:3">View Full Caldwell Page →</a></div></div>
+  <div class="city-content"><div class="city-body"><div class="ct"><h3>Caldwell's Reliable Sprinkler Repair Experts</h3><p>Caldwell is one of Canyon County's fastest-growing cities. Beeline handles new construction installs, repairs, blowouts, and backflow across all of Caldwell.</p><ul><li>✅ Licensed &amp; insured — always</li><li>✅ New construction sprinkler installation</li><li>✅ Main &amp; drain replacement &amp; installation</li><li>✅ Backflow maintenance &amp; replacement</li><li>✅ Spring turn-on &amp; fall blowout</li><li>✅ Honest, no-surprise pricing</li></ul></div><div class="cs"><div class="cta-box"><h4>Free Quote in Caldwell</h4><p>Fast, honest sprinkler service in Caldwell.</p><a href="https://st.sendajob.com/MY/servicerequest/d2a6d4f54526a97793669b7fe3bcce9438cfec99.html" target="_blank" class="req-btn">📋 Request Service</a><a href="tel:2088802712" class="call-btn">📞 (208) 880-2712</a></div><div class="lic-box"><p>✅ Licensed &amp; Insured<br>Idaho Certified · Liability Coverage Every Job</p></div><div class="svc-box"><h4>Services in Caldwell</h4><ul><li>🔧 Repair &amp; head replacement</li><li>🌱 New installation</li><li>🌸 Spring turn-on</li><li>❄️ Winterization blowout</li><li>💧 Backflow service</li><li>🔩 Main &amp; drain replacement</li></ul></div></div></div></div>
 </div>
 
 <div class="city-page" id="city-star">
-  <div class="city-hero" style="background:#1a0a2e">
-    <img class="city-hero-bg" src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Star.png" alt="">
-    <div class="city-hero-overlay" style="background:linear-gradient(to top,rgba(0,0,0,.97) 0%,rgba(26,10,46,.80) 55%,rgba(26,10,46,.50) 100%)"></div>
-    <div class="cht"><h2>Sprinkler Repair in Star, ID</h2><p>Fast-growing Star, ID — licensed &amp; insured service you can count on</p><a href="star.html" style="display:inline-block;margin-top:10px;background:var(--yellow);color:var(--ink);padding:8px 18px;border-radius:6px;font-weight:800;font-size:.85rem;position:relative;z-index:3">View Full Star Page →</a></div>
-  </div>
-  <div class="city-content"><div class="city-body">
-    <div class="ct"><h3>Star, Idaho's Licensed Irrigation Specialists</h3><p>Star's new subdivisions need a licensed, insured contractor for proper care. Beeline handles everything from repairs and backflow to main &amp; drain replacements.</p><ul><li>✅ Licensed &amp; insured contractor</li><li>✅ New subdivision system check &amp; repair</li><li>✅ Main &amp; drain replacement available</li><li>✅ Backflow maintenance &amp; replacement</li><li>✅ Seasonal blowout &amp; turn-on packages</li><li>✅ Same-week scheduling available</li></ul></div>
-    <div class="cs"><div class="cta-box"><h4>Free Quote in Star</h4><p>Licensed &amp; insured sprinkler service in Star.</p><a href="https://st.sendajob.com/MY/servicerequest/d2a6d4f54526a97793669b7fe3bcce9438cfec99.html" target="_blank" class="req-btn">📋 Request Service</a><a href="tel:2088802712" class="call-btn">📞 (208) 880-2712</a></div><div class="lic-box"><p>✅ Licensed &amp; Insured<br>Idaho Certified · Liability Coverage Every Job</p></div><div class="svc-box"><h4>Services in Star</h4><ul><li>🔧 Repair &amp; head replacement</li><li>🌱 New installation</li><li>🌸 Spring turn-on</li><li>❄️ Winterization blowout</li><li>💧 Backflow service</li><li>🔩 Main &amp; drain replacement</li></ul></div></div>
-  </div></div>
+  <div class="city-hero" style="background:#1a0a2e"><img class="city-hero-bg" src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Star.png" alt=""><div class="city-hero-overlay" style="background:linear-gradient(to top,rgba(0,0,0,.97) 0%,rgba(26,10,46,.80) 55%,rgba(26,10,46,.50) 100%)"></div><div class="cht"><h2>Sprinkler Repair in Star, ID</h2><p>Fast-growing Star, ID — licensed &amp; insured service you can count on</p><a href="star.html" style="display:inline-block;margin-top:10px;background:var(--yellow);color:var(--ink);padding:8px 18px;border-radius:6px;font-weight:800;font-size:.85rem;position:relative;z-index:3">View Full Star Page →</a></div></div>
+  <div class="city-content"><div class="city-body"><div class="ct"><h3>Star, Idaho's Licensed Irrigation Specialists</h3><p>Star's new subdivisions need a licensed, insured contractor for proper care. Beeline handles everything from repairs and backflow to main &amp; drain replacements.</p><ul><li>✅ Licensed &amp; insured contractor</li><li>✅ New subdivision system check &amp; repair</li><li>✅ Main &amp; drain replacement available</li><li>✅ Backflow maintenance &amp; replacement</li><li>✅ Seasonal blowout &amp; turn-on packages</li><li>✅ Same-week scheduling available</li></ul></div><div class="cs"><div class="cta-box"><h4>Free Quote in Star</h4><p>Licensed &amp; insured sprinkler service in Star.</p><a href="https://st.sendajob.com/MY/servicerequest/d2a6d4f54526a97793669b7fe3bcce9438cfec99.html" target="_blank" class="req-btn">📋 Request Service</a><a href="tel:2088802712" class="call-btn">📞 (208) 880-2712</a></div><div class="lic-box"><p>✅ Licensed &amp; Insured<br>Idaho Certified · Liability Coverage Every Job</p></div><div class="svc-box"><h4>Services in Star</h4><ul><li>🔧 Repair &amp; head replacement</li><li>🌱 New installation</li><li>🌸 Spring turn-on</li><li>❄️ Winterization blowout</li><li>💧 Backflow service</li><li>🔩 Main &amp; drain replacement</li></ul></div></div></div></div>
 </div>
 
 <div class="city-page" id="city-middleton">
-  <div class="city-hero" style="background:#0a2e1a">
-    <img class="city-hero-bg" src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Middleton.png" alt="">
-    <div class="city-hero-overlay" style="background:linear-gradient(to top,rgba(0,0,0,.97) 0%,rgba(10,46,26,.80) 55%,rgba(10,46,26,.50) 100%)"></div>
-    <div class="cht"><h2>Sprinkler Repair in Middleton, ID</h2><p>Canyon County's hidden gem — licensed &amp; insured for every yard</p><a href="middleton.html" style="display:inline-block;margin-top:10px;background:var(--yellow);color:var(--ink);padding:8px 18px;border-radius:6px;font-weight:800;font-size:.85rem;position:relative;z-index:3">View Full Middleton Page →</a></div>
-  </div>
-  <div class="city-content"><div class="city-body">
-    <div class="ct"><h3>Middleton's Sprinkler &amp; Irrigation Experts</h3><p>Middleton homeowners tend to have larger lots — which means more complex irrigation systems. Beeline brings full professional service including main &amp; drain replacement that not every company can handle.</p><ul><li>✅ Licensed &amp; insured contractor</li><li>✅ Main &amp; drain replacement for larger lots</li><li>✅ Backflow maintenance &amp; replacement</li><li>✅ Seasonal maintenance packages</li><li>✅ Monthly plans for total peace of mind</li><li>✅ Friendly, accountable local service</li></ul></div>
-    <div class="cs"><div class="cta-box"><h4>Free Quote in Middleton</h4><p>Professional irrigation service in Middleton.</p><a href="https://st.sendajob.com/MY/servicerequest/d2a6d4f54526a97793669b7fe3bcce9438cfec99.html" target="_blank" class="req-btn">📋 Request Service</a><a href="tel:2088802712" class="call-btn">📞 (208) 880-2712</a></div><div class="lic-box"><p>✅ Licensed &amp; Insured<br>Idaho Certified · Liability Coverage Every Job</p></div><div class="svc-box"><h4>Services in Middleton</h4><ul><li>🔧 Repair &amp; head replacement</li><li>🌱 New installation</li><li>🌸 Spring turn-on</li><li>❄️ Winterization blowout</li><li>💧 Backflow service</li><li>🔩 Main &amp; drain replacement</li></ul></div></div>
-  </div></div>
+  <div class="city-hero" style="background:#0a2e1a"><img class="city-hero-bg" src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Middleton.png" alt=""><div class="city-hero-overlay" style="background:linear-gradient(to top,rgba(0,0,0,.97) 0%,rgba(10,46,26,.80) 55%,rgba(10,46,26,.50) 100%)"></div><div class="cht"><h2>Sprinkler Repair in Middleton, ID</h2><p>Canyon County's hidden gem — licensed &amp; insured for every yard</p><a href="middleton.html" style="display:inline-block;margin-top:10px;background:var(--yellow);color:var(--ink);padding:8px 18px;border-radius:6px;font-weight:800;font-size:.85rem;position:relative;z-index:3">View Full Middleton Page →</a></div></div>
+  <div class="city-content"><div class="city-body"><div class="ct"><h3>Middleton's Sprinkler &amp; Irrigation Experts</h3><p>Middleton homeowners tend to have larger lots which means more complex irrigation systems. Beeline brings full professional service to Middleton.</p><ul><li>✅ Licensed &amp; insured contractor</li><li>✅ Main &amp; drain replacement for larger lots</li><li>✅ Backflow maintenance &amp; replacement</li><li>✅ Seasonal maintenance packages</li><li>✅ Monthly plans for total peace of mind</li><li>✅ Friendly, accountable local service</li></ul></div><div class="cs"><div class="cta-box"><h4>Free Quote in Middleton</h4><p>Professional irrigation service in Middleton.</p><a href="https://st.sendajob.com/MY/servicerequest/d2a6d4f54526a97793669b7fe3bcce9438cfec99.html" target="_blank" class="req-btn">📋 Request Service</a><a href="tel:2088802712" class="call-btn">📞 (208) 880-2712</a></div><div class="lic-box"><p>✅ Licensed &amp; Insured<br>Idaho Certified · Liability Coverage Every Job</p></div><div class="svc-box"><h4>Services in Middleton</h4><ul><li>🔧 Repair &amp; head replacement</li><li>🌱 New installation</li><li>🌸 Spring turn-on</li><li>❄️ Winterization blowout</li><li>💧 Backflow service</li><li>🔩 Main &amp; drain replacement</li></ul></div></div></div></div>
 </div>
 
 <footer><p>© 2025 <strong>Beeline Sprinkler Repair</strong> · Licensed &amp; Insured · Nampa, ID 83687 · <a href="tel:2088802712">(208) 880-2712</a> · Serving the Treasure Valley Since 2015</p></footer>
 </div>
 
 <script>
-// ── Page switching ──
-function goPage(p) {
-  document.querySelectorAll('.page').forEach(function(el){ el.classList.remove('active'); });
+function goPage(p){
+  document.querySelectorAll('.page').forEach(function(el){el.classList.remove('active');});
   document.getElementById('page-'+p).classList.add('active');
-  document.querySelectorAll('.nav-links a').forEach(function(a){ a.classList.remove('active'); });
-  document.getElementById(p==='areas'?'nav-areas':'nav-home').classList.add('active');
+  document.querySelectorAll('.nav-links a').forEach(function(a){a.classList.remove('active');});
+  var t=document.getElementById(p==='areas'?'nav-areas':'nav-home');
+  if(t) t.classList.add('active');
   window.scrollTo({top:0,behavior:'smooth'});
 }
-
-// Nav link wiring
-document.getElementById('nav-home').addEventListener('click', function(e){ e.preventDefault(); goPage('home'); });
-document.getElementById('nav-areas').addEventListener('click', function(e){ e.preventDefault(); goPage('areas'); });
+document.getElementById('nav-home').addEventListener('click',function(e){e.preventDefault();goPage('home');});
+document.getElementById('nav-areas').addEventListener('click',function(e){e.preventDefault();goPage('areas');});
 document.querySelectorAll('.nav-links a[data-sec]').forEach(function(a){
-  a.addEventListener('click', function(e){
+  a.addEventListener('click',function(e){
     e.preventDefault();
     goPage('home');
-    var sec = this.getAttribute('data-sec');
-    setTimeout(function(){ var el=document.getElementById(sec); if(el) el.scrollIntoView({behavior:'smooth'}); }, 150);
+    var sec=this.getAttribute('data-sec');
+    setTimeout(function(){var el=document.getElementById(sec);if(el)el.scrollIntoView({behavior:'smooth'});},150);
   });
 });
-
-document.querySelectorAll('.svc-card').forEach(function(card) {
-  card.addEventListener('click', function(e) {
-    if(e.target.tagName !== 'A') {
-      window.location.href = this.getAttribute('href');
-    }
+document.querySelectorAll('.svc-card').forEach(function(card){
+  card.addEventListener('click',function(e){
+    if(e.target.tagName!=='A'){window.location.href=this.getAttribute('href');}
   });
 });
 document.querySelectorAll('.city-tab').forEach(function(btn){
-  btn.addEventListener('click', function(){
-    var city = this.getAttribute('data-city');
-    document.querySelectorAll('.city-page').forEach(function(p){ p.classList.remove('active'); });
-    document.querySelectorAll('.city-tab').forEach(function(t){ t.classList.remove('active'); });
+  btn.addEventListener('click',function(){
+    var city=this.getAttribute('data-city');
+    document.querySelectorAll('.city-page').forEach(function(p){p.classList.remove('active');});
+    document.querySelectorAll('.city-tab').forEach(function(t){t.classList.remove('active');});
     document.getElementById('city-'+city).classList.add('active');
     this.classList.add('active');
   });
 });
-
-// FAQ wiring
 document.querySelectorAll('.faq-q').forEach(function(q){
-  q.addEventListener('click', function(){ this.parentElement.classList.toggle('open'); });
+  q.addEventListener('click',function(){this.parentElement.classList.toggle('open');});
 });
-
-// Bee animation
-var bee = document.createElement('div');
-bee.innerHTML = '<svg width="30" height="30" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg"><ellipse cx="10" cy="13" rx="9" ry="5" fill="rgba(200,230,255,0.75)" stroke="rgba(100,160,220,0.5)" stroke-width="0.5"/><ellipse cx="26" cy="13" rx="9" ry="5" fill="rgba(200,230,255,0.75)" stroke="rgba(100,160,220,0.5)" stroke-width="0.5"/><ellipse cx="18" cy="21" rx="7" ry="9" fill="#FFD700"/><rect x="11" y="18" width="14" height="3" rx="1" fill="#1a1a00" opacity="0.85"/><rect x="11" y="23" width="14" height="3" rx="1" fill="#1a1a00" opacity="0.85"/><circle cx="18" cy="12" r="5" fill="#FFD700"/><circle cx="16" cy="11" r="1.2" fill="#1a1a00"/><circle cx="20" cy="11" r="1.2" fill="#1a1a00"/><path d="M15.5 13.5 Q18 15.5 20.5 13.5" stroke="#1a1a00" stroke-width="0.8" fill="none" stroke-linecap="round"/><line x1="16" y1="7" x2="13" y2="3" stroke="#1a1a00" stroke-width="1" stroke-linecap="round"/><circle cx="13" cy="3" r="1" fill="#FFD700" stroke="#1a1a00" stroke-width="0.5"/><line x1="20" y1="7" x2="23" y2="3" stroke="#1a1a00" stroke-width="1" stroke-linecap="round"/><circle cx="23" cy="3" r="1" fill="#FFD700" stroke="#1a1a00" stroke-width="0.5"/></svg>';
-bee.style.cssText = 'position:fixed;z-index:9999;pointer-events:none;filter:drop-shadow(0 1px 3px rgba(0,0,0,.4));will-change:transform;';
+var bee=document.createElement('div');
+bee.innerHTML='<svg width="30" height="30" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg"><ellipse cx="10" cy="13" rx="9" ry="5" fill="rgba(200,230,255,0.75)" stroke="rgba(100,160,220,0.5)" stroke-width="0.5"/><ellipse cx="26" cy="13" rx="9" ry="5" fill="rgba(200,230,255,0.75)" stroke="rgba(100,160,220,0.5)" stroke-width="0.5"/><ellipse cx="18" cy="21" rx="7" ry="9" fill="#FFD700"/><rect x="11" y="18" width="14" height="3" rx="1" fill="#1a1a00" opacity="0.85"/><rect x="11" y="23" width="14" height="3" rx="1" fill="#1a1a00" opacity="0.85"/><circle cx="18" cy="12" r="5" fill="#FFD700"/><circle cx="16" cy="11" r="1.2" fill="#1a1a00"/><circle cx="20" cy="11" r="1.2" fill="#1a1a00"/><path d="M15.5 13.5 Q18 15.5 20.5 13.5" stroke="#1a1a00" stroke-width="0.8" fill="none" stroke-linecap="round"/><line x1="16" y1="7" x2="13" y2="3" stroke="#1a1a00" stroke-width="1" stroke-linecap="round"/><circle cx="13" cy="3" r="1" fill="#FFD700" stroke="#1a1a00" stroke-width="0.5"/><line x1="20" y1="7" x2="23" y2="3" stroke="#1a1a00" stroke-width="1" stroke-linecap="round"/><circle cx="23" cy="3" r="1" fill="#FFD700" stroke="#1a1a00" stroke-width="0.5"/></svg>';
+bee.style.cssText='position:fixed;z-index:9999;pointer-events:none;filter:drop-shadow(0 1px 3px rgba(0,0,0,.4));will-change:transform;';
 document.body.appendChild(bee);
-var bx=window.innerWidth/2, bvx=0.8, bw=0;
-function animBee(){
-  bw+=0.1; bx+=bvx+Math.sin(bw*0.7)*0.5;
-  var by=26+Math.sin(bw)*8;
-  var mn=window.innerWidth*0.25, mx=window.innerWidth*0.75;
-  if(bx<mn){bx=mn;bvx=Math.abs(bvx);}
-  if(bx>mx){bx=mx;bvx=-Math.abs(bvx);}
-  if(Math.random()<0.01) bvx+=(Math.random()-0.5)*0.5;
-  bvx=Math.max(-1.5,Math.min(1.5,bvx));
-  if(Math.abs(bvx)<0.3) bvx=bvx<0?-0.3:0.3;
-  bee.style.left=bx+'px'; bee.style.top=by+'px';
-  bee.style.transform=bvx<0?'scaleX(-1)':'scaleX(1)';
-  requestAnimationFrame(animBee);
-}
+var bx=window.innerWidth/2,bvx=0.8,bw=0;
+function animBee(){bw+=0.1;bx+=bvx+Math.sin(bw*0.7)*0.5;var by=26+Math.sin(bw)*8;var mn=window.innerWidth*0.25,mx=window.innerWidth*0.75;if(bx<mn){bx=mn;bvx=Math.abs(bvx);}if(bx>mx){bx=mx;bvx=-Math.abs(bvx);}if(Math.random()<0.01)bvx+=(Math.random()-0.5)*0.5;bvx=Math.max(-1.5,Math.min(1.5,bvx));if(Math.abs(bvx)<0.3)bvx=bvx<0?-0.3:0.3;bee.style.left=bx+'px';bee.style.top=by+'px';bee.style.transform=bvx<0?'scaleX(-1)':'scaleX(1)';requestAnimationFrame(animBee);}
 animBee();
 </script>
 </body>

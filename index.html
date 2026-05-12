@@ -92,15 +92,14 @@ nav{background:var(--ink);position:sticky;top:0;z-index:300;padding:0 32px}
 .ci-badge p{color:#fff;font-weight:800;font-size:.88rem;margin:0}
 .cf{background:#fff;border-radius:16px;padding:28px;box-shadow:0 20px 60px rgba(0,0,0,.2)}
 .cf h3{font-size:1rem;font-weight:800;margin-bottom:12px;color:var(--ink)}
-.photo-belt{position:relative;overflow:hidden;padding:12px 0}
-.photo-belt::before,.photo-belt::after{content:'';position:absolute;top:0;bottom:0;width:100px;z-index:2;pointer-events:none}
-.photo-belt::before{left:0;background:linear-gradient(to right,var(--white),transparent)}
-.photo-belt::after{right:0;background:linear-gradient(to left,var(--white),transparent)}
-.photo-belt-track{display:flex;gap:14px;width:max-content;animation:beltScroll 35s linear infinite}
-.photo-belt-track:hover{animation-play-state:paused}
-@keyframes beltScroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
-.photo-belt-track img{flex:0 0 280px;height:210px;object-fit:cover;border-radius:14px;transition:transform .35s ease,box-shadow .35s ease,filter .35s ease;filter:brightness(.82) saturate(.9);cursor:pointer}
-.photo-belt-track img:hover{transform:scale(1.08) rotate(-1.5deg);box-shadow:0 20px 48px rgba(0,0,0,.4);filter:brightness(1.05) saturate(1.2);z-index:3;position:relative}
+.photo-belt{overflow-x:auto;overflow-y:hidden;padding:12px 0;cursor:grab;user-select:none;scrollbar-width:thin;scrollbar-color:var(--green) #eee}
+.photo-belt:active{cursor:grabbing}
+.photo-belt::-webkit-scrollbar{height:6px}
+.photo-belt::-webkit-scrollbar-track{background:#eee;border-radius:3px}
+.photo-belt::-webkit-scrollbar-thumb{background:var(--green);border-radius:3px}
+.photo-belt-track{display:flex;gap:14px;width:max-content;padding:0 8px}
+.photo-belt-track img{flex:0 0 280px;height:210px;object-fit:cover;border-radius:14px;transition:transform .35s ease,box-shadow .35s ease,filter .35s ease;filter:brightness(.82) saturate(.9);cursor:pointer;pointer-events:none}
+.photo-belt-track img:hover{transform:scale(1.04);box-shadow:0 12px 32px rgba(0,0,0,.3);filter:brightness(1.05) saturate(1.2)}
 .faq-list{display:flex;flex-direction:column;gap:5px;max-width:820px}
 .faq-item{background:var(--white);border:1px solid #ddd8cc;border-radius:8px;overflow:hidden}
 .faq-q{padding:11px 16px;font-weight:700;font-size:.88rem;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;color:var(--ink)}
@@ -195,7 +194,7 @@ footer a{color:rgba(255,255,255,.5)}
     <div style="display:grid;grid-template-columns:1fr 420px;gap:48px;align-items:center;width:100%" class="hero-grid">
       <div>
         <div class="hero-eyebrow">⭐ Licensed &amp; Insured · Treasure Valley Since 2015</div>
-        <h1>Treasure Valley's<br><em>Sprinkler Repair &amp;<br>Installation Experts.</em></h1>
+        <h1>Sprinkler Repair in Nampa, Boise, Meridian,<br><em>and the Treasure Valley.</em></h1>
         <p class="hero-sub">Repair, new construction installation, main &amp; drain, backflow, and winterization across Nampa, Meridian, Boise, Caldwell, Eagle, Kuna, Star &amp; Middleton.</p>
         <div class="hero-ctas">
           <a href="#contact" class="btn-hero">Get a Free Quote →</a>
@@ -218,7 +217,7 @@ footer a{color:rgba(255,255,255,.5)}
 <section class="sec" style="background:#e8dfc8;padding:40px 32px" id="services">
   <div class="sec-inner">
     <div class="eyebrow green">What We Do</div>
-    <h2 class="sec-h">Complete Sprinkler Services</h2>
+    <h2 class="sec-h" style="font-size:clamp(1.5rem,3vw,2.2rem)">Complete Sprinkler Services</h2>
     <p class="sec-p" style="margin-bottom:24px">From a broken head to a full main &amp; drain replacement — fully licensed and insured on every job.</p>
     <div class="svc-grid">
       <a href="sprinkler-repair.html" class="svc-card"><img src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Sprinkler+SEO+PICS/Fixing+sprinkler++diaphrams+in+meridian.jpg" style="width:100%;height:160px;object-fit:cover;display:block"><div style="padding:14px"><h3>Sprinkler Repair</h3><p>Broken heads, leaks, valve problems, wiring faults, controller issues — diagnosed and fixed, often in a single visit.</p></div></a>
@@ -469,9 +468,18 @@ document.querySelectorAll('.city-tab').forEach(function(btn){
     this.classList.add('active');
   });
 });
-document.querySelectorAll('.faq-q').forEach(function(q){
-  q.addEventListener('click',function(){this.parentElement.classList.toggle('open');});
-});
+// Drag to scroll photo belt
+var belt=document.getElementById('photoBelt').parentElement;
+var isDown=false,startX,scrollLeft;
+belt.addEventListener('mousedown',function(e){isDown=true;belt.style.cursor='grabbing';startX=e.pageX-belt.offsetLeft;scrollLeft=belt.scrollLeft;});
+belt.addEventListener('mouseleave',function(){isDown=false;belt.style.cursor='grab';});
+belt.addEventListener('mouseup',function(){isDown=false;belt.style.cursor='grab';});
+belt.addEventListener('mousemove',function(e){if(!isDown)return;e.preventDefault();var x=e.pageX-belt.offsetLeft;var walk=(x-startX)*1.5;belt.scrollLeft=scrollLeft-walk;});
+// Touch support
+belt.addEventListener('touchstart',function(e){startX=e.touches[0].pageX-belt.offsetLeft;scrollLeft=belt.scrollLeft;},{passive:true});
+belt.addEventListener('touchmove',function(e){var x=e.touches[0].pageX-belt.offsetLeft;var walk=(x-startX)*1.5;belt.scrollLeft=scrollLeft-walk;},{passive:true});
+// enable pointer events on images after belt setup
+document.querySelectorAll('#photoBelt img').forEach(function(img){img.style.pointerEvents='auto';});
 var bee=document.createElement('div');
 bee.innerHTML='<svg width="30" height="30" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg"><ellipse cx="10" cy="13" rx="9" ry="5" fill="rgba(200,230,255,0.75)" stroke="rgba(100,160,220,0.5)" stroke-width="0.5"/><ellipse cx="26" cy="13" rx="9" ry="5" fill="rgba(200,230,255,0.75)" stroke="rgba(100,160,220,0.5)" stroke-width="0.5"/><ellipse cx="18" cy="21" rx="7" ry="9" fill="#FFD700"/><rect x="11" y="18" width="14" height="3" rx="1" fill="#1a1a00" opacity="0.85"/><rect x="11" y="23" width="14" height="3" rx="1" fill="#1a1a00" opacity="0.85"/><circle cx="18" cy="12" r="5" fill="#FFD700"/><circle cx="16" cy="11" r="1.2" fill="#1a1a00"/><circle cx="20" cy="11" r="1.2" fill="#1a1a00"/><path d="M15.5 13.5 Q18 15.5 20.5 13.5" stroke="#1a1a00" stroke-width="0.8" fill="none" stroke-linecap="round"/><line x1="16" y1="7" x2="13" y2="3" stroke="#1a1a00" stroke-width="1" stroke-linecap="round"/><circle cx="13" cy="3" r="1" fill="#FFD700" stroke="#1a1a00" stroke-width="0.5"/><line x1="20" y1="7" x2="23" y2="3" stroke="#1a1a00" stroke-width="1" stroke-linecap="round"/><circle cx="23" cy="3" r="1" fill="#FFD700" stroke="#1a1a00" stroke-width="0.5"/></svg>';
 bee.style.cssText='position:fixed;z-index:9999;pointer-events:none;filter:drop-shadow(0 1px 3px rgba(0,0,0,.4));will-change:transform;';

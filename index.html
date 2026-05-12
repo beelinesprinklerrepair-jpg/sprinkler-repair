@@ -17,9 +17,16 @@ nav{background:var(--ink);position:sticky;top:0;z-index:300;padding:0 32px}
 .nav-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:82px;gap:16px}
 .nav-logo img{height:130px;width:auto;object-fit:contain;animation:logoPulse 3s ease-in-out infinite;margin-top:36px}
 @keyframes logoPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
-.nav-links{display:flex;gap:4px}
+.nav-links{display:flex;gap:4px;position:relative}
 .nav-links a{font-size:15px;font-weight:600;color:rgba(255,255,255,.65);padding:8px 13px;border-radius:5px;white-space:nowrap;cursor:pointer}
 .nav-links a:hover,.nav-links a.active{color:#fff;background:rgba(255,255,255,.1)}
+.nav-dropdown{position:relative}
+.nav-dropdown-toggle{font-size:15px;font-weight:600;color:rgba(255,255,255,.65);padding:8px 13px;border-radius:5px;white-space:nowrap;cursor:pointer;display:flex;align-items:center;gap:5px;background:none;border:none}
+.nav-dropdown-toggle:hover,.nav-dropdown-toggle.active{color:#fff;background:rgba(255,255,255,.1)}
+.nav-dropdown-menu{display:none;position:absolute;top:100%;left:0;background:var(--ink2);border:1px solid rgba(255,255,255,.1);border-radius:8px;min-width:240px;padding:8px 0;z-index:400;box-shadow:0 8px 32px rgba(0,0,0,.4)}
+.nav-dropdown-menu a{display:block;padding:9px 16px;font-size:14px;font-weight:600;color:rgba(255,255,255,.7);white-space:nowrap}
+.nav-dropdown-menu a:hover{color:#fff;background:rgba(255,255,255,.08)}
+.nav-dropdown:hover .nav-dropdown-menu{display:block}
 .nav-cta{background:var(--yellow);color:var(--ink);padding:10px 22px;border-radius:var(--r);font-weight:800;font-size:15px;white-space:nowrap}
 .nav-cta:hover{background:#e6b800}
 .hero{position:relative;min-height:62vh;display:flex;align-items:center;overflow:hidden;background:linear-gradient(135deg,#082e08 0%,#1a5c1a 55%,#0d400d 100%)}
@@ -46,8 +53,8 @@ nav{background:var(--ink);position:sticky;top:0;z-index:300;padding:0 32px}
 .sec-h{font-size:clamp(2rem,4.5vw,3.4rem);font-weight:900;line-height:1.15;margin-bottom:12px;letter-spacing:-.3px}
 .sec-p{font-size:.97rem;color:var(--muted);max-width:580px;margin-bottom:40px;line-height:1.7}
 .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-.svc-card{background:#eef7ee;border:1px solid #c8e6c8;border-radius:14px;overflow:hidden;transition:background .18s,box-shadow .18s}
-.svc-card:hover{background:#e0f0e0;box-shadow:0 6px 20px rgba(45,122,45,.1)}
+.svc-card{background:#eef7ee;border:1px solid #c8e6c8;border-radius:14px;overflow:hidden;transition:background .18s,box-shadow .18s;display:block;cursor:pointer}
+.svc-card:hover{background:#e0f0e0;box-shadow:0 6px 20px rgba(45,122,45,.1);text-decoration:none}
 .svc-card h3{font-size:.98rem;font-weight:800;margin-bottom:7px;color:var(--ink)}
 .svc-card p{font-size:.84rem;color:var(--muted);line-height:1.6}
 .story-split{display:grid;grid-template-columns:1fr 1fr;min-height:500px}
@@ -174,13 +181,23 @@ footer a{color:rgba(255,255,255,.5)}
   <div class="nav-inner">
     <div class="nav-logo"><img src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Real+Logo.png" alt="Beeline Logo"></div>
     <div class="nav-links">
-      <a id="nav-home" class="active">Services</a>
-      <a data-sec="pricing">Plans</a>
-      <a data-sec="about">About</a>
-      <a data-sec="reviews">Reviews</a>
-      <a id="nav-areas" data-areas="1">📍 Locations</a>
-      <a data-sec="faq">FAQ</a>
-      <a data-sec="contact">Contact</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle" id="nav-home">Services ▾</button>
+        <div class="nav-dropdown-menu">
+          <a href="sprinkler-repair.html">🔧 Sprinkler Repair</a>
+          <a href="sprinkler-installation.html">🌱 New Installation</a>
+          <a href="spring-turn-on.html">🌸 Spring Turn-On</a>
+          <a href="winterization.html">❄️ Winterization & Blowout</a>
+          <a href="main-and-drain.html">🔩 Main & Drain Replacement</a>
+          <a href="backflow.html">💧 Backflow Service</a>
+        </div>
+      </div>
+      <a href="#" data-sec="pricing">Plans</a>
+      <a href="#" data-sec="about">About</a>
+      <a href="#" data-sec="reviews">Reviews</a>
+      <a href="#" id="nav-areas" data-areas="1">📍 Locations</a>
+      <a href="#" data-sec="faq">FAQ</a>
+      <a href="#" data-sec="contact">Contact</a>
     </div>
     <a href="tel:2088802712" class="nav-cta">📞 (208) 880-2712</a>
   </div>
@@ -219,12 +236,12 @@ footer a{color:rgba(255,255,255,.5)}
     <h2 class="sec-h">Complete Sprinkler Services</h2>
     <p class="sec-p" style="margin-bottom:24px">From a broken head to a full main &amp; drain replacement — fully licensed and insured on every job.</p>
     <div class="svc-grid">
-      <a href="https://st.sendajob.com/MY/servicerequest/d2a6d4f54526a97793669b7fe3bcce9438cfec99.html" target="_blank" class="svc-card"><img src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Sprinkler+SEO+PICS/Fixing+sprinkler++diaphrams+in+meridian.jpg" style="width:100%;height:160px;object-fit:cover;display:block"><div style="padding:14px"><h3>Sprinkler Repair</h3><p>Broken heads, leaks, valve problems, wiring faults, controller issues — diagnosed and fixed, often in a single visit.</p></div></a>
-      <a href="https://st.sendajob.com/MY/servicerequest/d2a6d4f54526a97793669b7fe3bcce9438cfec99.html" target="_blank" class="svc-card"><img src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Sprinkler+SEO+PICS/New+construction+sprinkler+installation+Meridian.png" style="width:100%;height:160px;object-fit:cover;display:block"><div style="padding:14px"><h3>New Installation</h3><p>Custom systems designed for your yard's exact layout, from planning through final walk-through.</p></div></a>
-      <a href="https://st.sendajob.com/MY/servicerequest/d2a6d4f54526a97793669b7fe3bcce9438cfec99.html" target="_blank" class="svc-card"><img src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Sprinkler+SEO+PICS/Sprinkler+Head+Replacment+Nampa.jpg" style="width:100%;height:160px;object-fit:cover;display:block"><div style="padding:14px"><h3>Spring Turn-On</h3><p>We activate your system, check every zone, adjust heads for full coverage, and calibrate your timer each spring.</p></div></a>
-      <a href="https://st.sendajob.com/MY/servicerequest/d2a6d4f54526a97793669b7fe3bcce9438cfec99.html" target="_blank" class="svc-card"><img src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Sprinkler+SEO+PICS/Blowout+in+Caldwell.png" style="width:100%;height:160px;object-fit:cover;display:block"><div style="padding:14px"><h3>Winterization / Blowout</h3><p>Compressed air blowout removes all water from your lines before the freeze, preventing costly pipe damage.</p></div></a>
-      <a href="https://st.sendajob.com/MY/servicerequest/d2a6d4f54526a97793669b7fe3bcce9438cfec99.html" target="_blank" class="svc-card"><img src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Sprinkler+SEO+PICS/New+main+and+drain+installation+in+Meridian.jpeg" style="width:100%;height:160px;object-fit:cover;display:block"><div style="padding:14px"><h3>Main &amp; Drain Replacement</h3><p>Full replacement or new installation of your irrigation main line and drain, restoring full system pressure.</p></div></a>
-      <a href="https://st.sendajob.com/MY/servicerequest/d2a6d4f54526a97793669b7fe3bcce9438cfec99.html" target="_blank" class="svc-card"><img src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Sprinkler+SEO+PICS/New+Sprinkler+Backflow+installed+in+Boise.jpeg" style="width:100%;height:160px;object-fit:cover;display:block"><div style="padding:14px"><h3>Backflow Maintenance &amp; Replacement</h3><p>We test, maintain, and replace backflow prevention devices to keep your system compliant and your water safe.</p></div></a>
+      <a href="sprinkler-repair.html" class="svc-card"><img src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Sprinkler+SEO+PICS/Fixing+sprinkler++diaphrams+in+meridian.jpg" style="width:100%;height:160px;object-fit:cover;display:block"><div style="padding:14px"><h3>Sprinkler Repair</h3><p>Broken heads, leaks, valve problems, wiring faults, controller issues — diagnosed and fixed, often in a single visit.</p></div></a>
+      <a href="sprinkler-installation.html" class="svc-card"><img src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Sprinkler+SEO+PICS/New+construction+sprinkler+installation+Meridian.png" style="width:100%;height:160px;object-fit:cover;display:block"><div style="padding:14px"><h3>New Installation</h3><p>Custom systems designed for your yard's exact layout, from planning through final walk-through.</p></div></a>
+      <a href="spring-turn-on.html" class="svc-card"><img src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Sprinkler+SEO+PICS/Sprinkler+Head+Replacment+Nampa.jpg" style="width:100%;height:160px;object-fit:cover;display:block"><div style="padding:14px"><h3>Spring Turn-On</h3><p>We activate your system, check every zone, adjust heads for full coverage, and calibrate your timer each spring.</p></div></a>
+      <a href="winterization.html" class="svc-card"><img src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Sprinkler+SEO+PICS/Blowout+in+Caldwell.png" style="width:100%;height:160px;object-fit:cover;display:block"><div style="padding:14px"><h3>Winterization / Blowout</h3><p>Compressed air blowout removes all water from your lines before the freeze, preventing costly pipe damage.</p></div></a>
+      <a href="main-and-drain.html" class="svc-card"><img src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Sprinkler+SEO+PICS/New+main+and+drain+installation+in+Meridian.jpeg" style="width:100%;height:160px;object-fit:cover;display:block"><div style="padding:14px"><h3>Main &amp; Drain Replacement</h3><p>Full replacement or new installation of your irrigation main line and drain, restoring full system pressure.</p></div></a>
+      <a href="backflow.html" class="svc-card"><img src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Sprinkler+SEO+PICS/New+Sprinkler+Backflow+installed+in+Boise.jpeg" style="width:100%;height:160px;object-fit:cover;display:block"><div style="padding:14px"><h3>Backflow Maintenance &amp; Replacement</h3><p>We test, maintain, and replace backflow prevention devices to keep your system compliant and your water safe.</p></div></a>
     </div>
   </div>
 </section>
@@ -527,7 +544,13 @@ document.querySelectorAll('.nav-links a[data-sec]').forEach(function(a){
   });
 });
 
-// City tab wiring
+document.querySelectorAll('.svc-card').forEach(function(card) {
+  card.addEventListener('click', function(e) {
+    if(e.target.tagName !== 'A') {
+      window.location.href = this.getAttribute('href');
+    }
+  });
+});
 document.querySelectorAll('.city-tab').forEach(function(btn){
   btn.addEventListener('click', function(){
     var city = this.getAttribute('data-city');

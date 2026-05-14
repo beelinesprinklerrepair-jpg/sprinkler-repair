@@ -243,7 +243,21 @@ footer{background:#080f08;color:rgba(255,255,255,.45);text-align:center;padding:
 footer strong{color:rgba(255,255,255,.8)}
 footer a{color:rgba(255,255,255,.5)}
 @media(max-width:900px){.svc-grid{grid-template-columns:repeat(2,1fr)}.trust-grid{grid-template-columns:repeat(2,1fr)}.story-split{grid-template-columns:1fr}.story-visual{min-height:300px}.hero-grid{grid-template-columns:1fr !important}.hero-img{display:none}.ci-photo{display:none}}
-@media(max-width:680px){.svc-grid,.cg,.city-body{grid-template-columns:1fr}.nav-links{display:none}.sec{padding:48px 20px}.story-text{padding:40px 24px}.hamburger{display:flex}.nav-cta{display:none}}
+@media(max-width:680px){.svc-grid,.cg,.city-body{grid-template-columns:1fr}.nav-links{display:none}.sec{padding:48px 20px}.story-text{padding:40px 24px}.hamburger{display:flex}.nav-cta{display:none}
+.hero{min-height:auto}
+.hero-content{padding:28px 20px}
+.hero h1{font-size:clamp(1.5rem,6.5vw,2.2rem)}
+.hero-eyebrow{font-size:9px;padding:4px 10px;margin-bottom:14px}
+.hero-sub{font-size:.88rem;margin-bottom:20px}
+.hero-ctas{margin-bottom:24px;gap:10px}
+.btn-hero{padding:13px 24px;font-size:15px}
+.btn-ghost{padding:11px 18px;font-size:14px}
+.hero-trust-row{gap:16px;padding-top:20px}
+.hero-stat-n{font-size:1.2rem}
+.hero-stat-l{font-size:.62rem}
+.mobile-reviews-after-contact{display:block}
+.desktop-reviews{display:none}}
+@media(min-width:681px){.mobile-reviews-after-contact{display:none}}
 </style>
 </head>
 <body>
@@ -335,7 +349,7 @@ footer a{color:rgba(255,255,255,.5)}
     <div style="display:grid;grid-template-columns:1fr 420px;gap:48px;align-items:center;width:100%" class="hero-grid">
       <div>
         <div class="hero-eyebrow">⭐ Licensed &amp; Insured · Treasure Valley Since 2015</div>
-        <h1>The Treasure Valley's #1<br><em>Sprinkler Service Company.</em></h1>
+        <h1>The Treasure Valley's #1<br><em>Sprinkler Repair & Service Company.</em></h1>
         <p class="hero-sub">Sprinkler repair, new installations, main &amp; drain, backflow, and winterization across Nampa, Meridian, Boise, Caldwell, Eagle, Kuna, Star &amp; Middleton.</p>
         <div class="hero-ctas">
           <a href="#contact" class="btn-hero">Get a Free Quote →</a>
@@ -392,7 +406,7 @@ footer a{color:rgba(255,255,255,.5)}
   </div>
 </div>
 
-<section class="sec" style="background:var(--sand)" id="reviews">
+<section class="sec desktop-reviews" style="background:var(--sand)" id="reviews">
   <div class="sec-inner">
     <div class="eyebrow gold">What Customers Say</div>
     <h2 class="sec-h">5-Star Reviews Across the Treasure Valley</h2>

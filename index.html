@@ -235,7 +235,19 @@ footer a{color:rgba(255,255,255,.5)}
       <a href="#" data-sec="reviews">Reviews</a>
       <a href="#" data-sec="faq">FAQ</a>
       <a href="#" data-sec="contact">Contact</a>
-      <a href="#" id="nav-areas" data-areas="1">📍 Locations</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle" id="nav-areas">Locations ▾</button>
+        <div class="nav-dropdown-menu">
+          <a href="#" data-city-link="nampa">Nampa</a>
+          <a href="#" data-city-link="boise">Boise</a>
+          <a href="#" data-city-link="meridian">Meridian</a>
+          <a href="#" data-city-link="kuna">Kuna</a>
+          <a href="#" data-city-link="eagle">Eagle</a>
+          <a href="#" data-city-link="caldwell">Caldwell</a>
+          <a href="#" data-city-link="star">Star</a>
+          <a href="#" data-city-link="middleton">Middleton</a>
+        </div>
+      </div>
       <div class="nav-dropdown">
         <button class="nav-dropdown-toggle" id="nav-home">Services ▾</button>
         <div class="nav-dropdown-menu">
@@ -422,6 +434,7 @@ footer a{color:rgba(255,255,255,.5)}
     <p class="sec-p">Licensed, insured, and proud of every job we do across the Treasure Valley.</p>
     <div class="photo-belt">
       <div class="photo-belt-track" id="photoBelt">
+        <img src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Fixing+A+Sprinkler+Filter.jpg" alt="Fixing a sprinkler filter Treasure Valley">
         <img src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Sprinkler+SEO+PICS/Replacing+an+old+manifold+and+sprinkler+box+in+Kuna+.jpg" alt="Replacing manifold sprinkler box Kuna">
         <img src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Sprinkler+SEO+PICS/Advanced+Irrigation+System+boise.jpg" alt="Advanced irrigation system Boise">
         <img src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Sprinkler+SEO+PICS/New+backflow+in+Star+Idaho.png" alt="New backflow Star Idaho">
@@ -539,6 +552,21 @@ function goPage(p){
 }
 document.getElementById('nav-home').addEventListener('click',function(e){e.preventDefault();goPage('home');});
 document.getElementById('nav-areas').addEventListener('click',function(e){e.preventDefault();goPage('areas');});
+document.querySelectorAll('a[data-city-link]').forEach(function(a){
+  a.addEventListener('click',function(e){
+    e.preventDefault();
+    var city=this.getAttribute('data-city-link');
+    goPage('areas');
+    setTimeout(function(){
+      document.querySelectorAll('.city-page').forEach(function(p){p.classList.remove('active');});
+      document.querySelectorAll('.city-tab').forEach(function(t){t.classList.remove('active');});
+      var pg=document.getElementById('city-'+city);
+      var tab=document.querySelector('.city-tab[data-city="'+city+'"]');
+      if(pg)pg.classList.add('active');
+      if(tab)tab.classList.add('active');
+    },150);
+  });
+});
 document.querySelectorAll('.nav-links a[data-sec]').forEach(function(a){
   a.addEventListener('click',function(e){
     e.preventDefault();

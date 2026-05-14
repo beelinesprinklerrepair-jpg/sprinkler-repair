@@ -21,7 +21,7 @@
       "logo": "https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Real+Logo.png",
       "image": "https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Cover+Photo+-First+Picture.jpg",
       "description": "Licensed and insured sprinkler repair, installation, winterization, backflow testing, and main line replacement across the Treasure Valley since 2015.",
-      "priceRange": "$100-$300",
+      "priceRange": "$35-$300",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "5606 W Amity Rd",
@@ -30,31 +30,53 @@
         "postalCode": "83687",
         "addressCountry": "US"
       },
-      "geo": {"@type": "GeoCoordinates", "latitude": 43.5407, "longitude": -116.5635},
-      "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "18:00"}],
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 43.5407,
+        "longitude": -116.5635
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+          "opens": "08:00",
+          "closes": "18:30"
+        }
+      ],
       "areaServed": [
-        {"@type": "City", "name": "Nampa"},{"@type": "City", "name": "Boise"},{"@type": "City", "name": "Meridian"},
-        {"@type": "City", "name": "Caldwell"},{"@type": "City", "name": "Eagle"},{"@type": "City", "name": "Kuna"},
-        {"@type": "City", "name": "Star"},{"@type": "City", "name": "Middleton"}
+        {"@type": "City", "name": "Nampa", "sameAs": "https://en.wikipedia.org/wiki/Nampa,_Idaho"},
+        {"@type": "City", "name": "Boise", "sameAs": "https://en.wikipedia.org/wiki/Boise,_Idaho"},
+        {"@type": "City", "name": "Meridian", "sameAs": "https://en.wikipedia.org/wiki/Meridian,_Idaho"},
+        {"@type": "City", "name": "Caldwell", "sameAs": "https://en.wikipedia.org/wiki/Caldwell,_Idaho"},
+        {"@type": "City", "name": "Eagle", "sameAs": "https://en.wikipedia.org/wiki/Eagle,_Idaho"},
+        {"@type": "City", "name": "Kuna", "sameAs": "https://en.wikipedia.org/wiki/Kuna,_Idaho"},
+        {"@type": "City", "name": "Star", "sameAs": "https://en.wikipedia.org/wiki/Star,_Idaho"},
+        {"@type": "City", "name": "Middleton", "sameAs": "https://en.wikipedia.org/wiki/Middleton,_Idaho"}
       ],
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
         "name": "Sprinkler Services",
         "itemListElement": [
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Sprinkler Repair"}},
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Sprinkler System Installation"}},
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Spring Turn-On"}},
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Sprinkler Winterization and Blowout"}},
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Main and Drain Replacement"}},
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Backflow Testing and Replacement"}}
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Sprinkler Repair", "url": "https://www.beelinesprinklerrepair.com/sprinkler-repair.html"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Sprinkler System Installation", "url": "https://www.beelinesprinklerrepair.com/sprinkler-installation.html"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Spring Turn-On", "url": "https://www.beelinesprinklerrepair.com/spring-turn-on.html"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Sprinkler Winterization and Blowout", "url": "https://www.beelinesprinklerrepair.com/winterization.html"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Main and Drain Replacement", "url": "https://www.beelinesprinklerrepair.com/main-and-drain.html"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Backflow Testing and Replacement", "url": "https://www.beelinesprinklerrepair.com/backflow.html"}}
         ]
       },
-      "aggregateRating": {"@type": "AggregateRating", "ratingValue": "5", "reviewCount": "130", "bestRating": "5"},
       "sameAs": [
         "https://www.facebook.com/BeelineSprinkler/",
         "https://www.yelp.com/biz/beeline-sprinkler-repair-nampa-2",
         "https://share.google/wmRIhGxHghIGRtf7r"
       ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.beelinesprinklerrepair.com/#website",
+      "url": "https://www.beelinesprinklerrepair.com",
+      "name": "Beeline Sprinkler Repair",
+      "publisher": {"@id": "https://www.beelinesprinklerrepair.com/#business"}
     }
   ]
 }
@@ -526,7 +548,7 @@ footer a{color:rgba(255,255,255,.5)}
       <p>Hiring an unlicensed contractor puts your home at risk. With Beeline, you're always covered.</p>
     </div>
     <div class="trust-grid">
-      <div class="tc"><div class="tc-icon">🪪</div><div class="tc-badge">LICENSED</div><h3>Idaho Licensed</h3><p>We hold proper Idaho state licensing to legally perform irrigation work on your property.</p></div>
+      <div class="tc"><div class="tc-icon">🪪</div><div class="tc-badge">LICENSED</div><h3>Idaho Licensed</h3><p>We hold the proper Idaho state contractor's license to legally conduct irrigation work here in the Treasure Valley.</p></div>
       <div class="tc"><div class="tc-icon">🛡️</div><div class="tc-badge">INSURED</div><h3>Full Liability Coverage</h3><p>Comprehensive liability insurance on every job — protecting you if anything unexpected happens.</p></div>
       <div class="tc"><div class="tc-icon">🏆</div><div class="tc-badge">EXPERIENCED</div><h3>10+ Years of Expertise</h3><p>A decade working with every residential irrigation system type across the Treasure Valley.</p></div>
       <div class="tc"><div class="tc-icon">📞</div><div class="tc-badge">LOCAL</div><h3>Real People, Not Call Centers</h3><p>A real local person answers when you call. We're accountable to our community on every job.</p></div>

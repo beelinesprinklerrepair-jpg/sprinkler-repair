@@ -98,9 +98,28 @@ img{display:block;max-width:100%}
 @keyframes stickyPulse{0%,100%{box-shadow:inset 0 -3px 0 rgba(0,0,0,.15),0 0 0 0 rgba(245,196,0,.5)}50%{box-shadow:inset 0 -3px 0 rgba(0,0,0,.15),0 0 0 6px rgba(245,196,0,0)}}
 .sticky-quote{animation:stickyPulse 2s ease-in-out infinite}
 
-nav{background:var(--ink);position:sticky;top:0;z-index:300;padding:0 32px}
-.nav-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:82px;gap:16px}
-.nav-logo img{height:130px;width:auto;object-fit:contain;animation:logoPulse 3s ease-in-out infinite;margin-top:36px}
+nav{background:var(--ink);position:sticky;top:0;z-index:300;padding:0 32px;transition:padding .25s ease}
+.nav-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:82px;gap:16px;transition:height .25s ease}
+.nav-logo img{height:130px;width:auto;object-fit:contain;animation:logoPulse 3s ease-in-out infinite;margin-top:36px;transition:all .25s ease}
+
+/* Mobile scrolled nav — two button state */
+.nav-scrolled-ctas{display:none;width:100%;gap:0}
+.nav-scrolled-ctas a{flex:1;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:800;text-decoration:none;height:52px}
+.nav-scrolled-quote{background:var(--yellow);color:var(--ink)}
+.nav-scrolled-quote::after{content:' →';font-size:13px}
+.nav-scrolled-call{background:#1e2e1e;color:#fff}
+
+@keyframes navSlideIn{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:translateY(0)}}
+
+@media(max-width:680px){
+  /* Scrolled state — nav collapses to two buttons */
+  nav.scrolled{padding:0}
+  nav.scrolled .nav-inner{height:52px}
+  nav.scrolled .nav-logo{display:none}
+  nav.scrolled .hamburger{display:none}
+  nav.scrolled .nav-cta{display:none}
+  nav.scrolled .nav-scrolled-ctas{display:flex;animation:navSlideIn .2s ease}
+}
 @keyframes logoPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
 .nav-links{display:flex;gap:4px;position:relative}
 .nav-links a{font-size:15px;font-weight:600;color:rgba(255,255,255,.65);padding:8px 13px;border-radius:5px;white-space:nowrap;cursor:pointer}
@@ -359,6 +378,11 @@ footer a{color:rgba(255,255,255,.5)}
     <button class="hamburger" id="hamburger" aria-label="Menu">
       <span></span><span></span><span></span>
     </button>
+    <!-- Scrolled state two-button CTA (mobile only) -->
+    <div class="nav-scrolled-ctas">
+      <a href="#contact" class="nav-scrolled-quote" id="navScrolledQuote">Get a Free Quote</a>
+      <a href="tel:2088802712" class="nav-scrolled-call">📞 Call Now</a>
+    </div>
   </div>
 </nav>
 
@@ -683,6 +707,18 @@ footer a{color:rgba(255,255,255,.5)}
 </div>
 
 <script>
+// Nav scroll transition on mobile
+var navEl=document.querySelector('nav');
+window.addEventListener('scroll',function(){
+  if(window.innerWidth<=680){
+    if(window.scrollY>80){navEl.classList.add('scrolled');}
+    else{navEl.classList.remove('scrolled');}
+  }
+},{passive:true});
+document.getElementById('navScrolledQuote').addEventListener('click',function(e){
+  e.preventDefault();scrollToForm();
+});
+
 function goPage(p){
   document.querySelectorAll('.page').forEach(function(el){el.classList.remove('active');});
   document.getElementById('page-'+p).classList.add('active');

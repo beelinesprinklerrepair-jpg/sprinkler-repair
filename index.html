@@ -108,8 +108,10 @@ body{padding-top:82px}
 /* Mobile scrolled nav — two button state */
 .nav-scrolled-ctas{display:none;width:100%;gap:0}
 .nav-scrolled-ctas a{flex:1;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:800;text-decoration:none;height:52px}
-.nav-scrolled-quote{background:var(--yellow);color:var(--ink)}
+.nav-scrolled-quote{background:var(--yellow);color:var(--ink);position:relative;overflow:hidden;box-shadow:inset 0 -3px 0 rgba(0,0,0,.15);letter-spacing:.3px}
 .nav-scrolled-quote::after{content:' →';font-size:13px}
+@keyframes topBarPulse{0%,100%{box-shadow:inset 0 -3px 0 rgba(0,0,0,.15),0 0 0 0 rgba(245,196,0,.5)}50%{box-shadow:inset 0 -3px 0 rgba(0,0,0,.15),0 0 0 6px rgba(245,196,0,0)}}
+.nav-scrolled-quote{animation:topBarPulse 2s ease-in-out infinite}
 .nav-scrolled-call{background:#1e2e1e;color:#fff}
 
 @keyframes navSlideIn{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:translateY(0)}}
@@ -129,8 +131,9 @@ body{padding-top:82px}
 .nav-links a{font-size:15px;font-weight:600;color:rgba(255,255,255,.65);padding:8px 13px;border-radius:5px;white-space:nowrap;cursor:pointer}
 .nav-links a:hover,.nav-links a.active{color:#fff;background:rgba(255,255,255,.1)}
 .nav-dropdown{position:relative}
-.nav-dropdown-toggle{font-size:15px;font-weight:600;color:rgba(255,255,255,.65);padding:8px 13px;border-radius:5px;white-space:nowrap;cursor:pointer;display:flex;align-items:center;gap:5px;background:none;border:none}
+.nav-dropdown-toggle{font-size:15px;font-weight:600;color:rgba(255,255,255,.65);padding:8px 13px;border-radius:5px;white-space:nowrap;cursor:pointer;display:flex;align-items:center;gap:5px;background:none;border:none;line-height:1}
 .nav-dropdown-toggle:hover{color:#fff;background:rgba(255,255,255,.1)}
+.nav-links{display:flex;gap:4px;align-items:center}
 .nav-dropdown-menu{display:none;position:absolute;top:100%;left:0;background:var(--ink2);border:1px solid rgba(255,255,255,.1);border-radius:8px;min-width:240px;padding:8px 0;z-index:400;box-shadow:0 8px 32px rgba(0,0,0,.4)}
 .nav-dropdown-menu a{display:block;padding:9px 16px;font-size:14px;font-weight:600;color:rgba(255,255,255,.7);white-space:nowrap}
 .nav-dropdown-menu a:hover{color:#fff;background:rgba(255,255,255,.08)}
@@ -146,8 +149,8 @@ body{padding-top:82px}
 .mobile-menu.open{display:block}
 .mobile-menu a,.mobile-menu button{display:block;width:100%;text-align:left;padding:14px 28px;font-size:16px;font-weight:600;color:rgba(255,255,255,.75);background:none;border:none;border-bottom:1px solid rgba(255,255,255,.06);cursor:pointer}
 .mobile-menu a:hover{color:#fff;background:rgba(255,255,255,.06)}
-.mobile-section-label{padding:12px 28px 6px;font-size:11px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,.3);cursor:pointer;display:flex;justify-content:space-between;align-items:center}
-.mobile-sub a{padding-left:44px;font-size:14px;color:rgba(255,255,255,.6)}
+.mobile-section-label{padding:14px 28px;font-size:16px;font-weight:600;color:rgba(255,255,255,.75);cursor:pointer;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(255,255,255,.06)}
+.mobile-sub a{padding-left:44px;font-size:16px;font-weight:600;color:rgba(255,255,255,.75)}
 .mobile-cta-row{padding:20px 28px 0}
 .mobile-cta-row a{display:block;background:var(--yellow);color:var(--ink);text-align:center;padding:14px;border-radius:var(--r);font-weight:800;font-size:16px;border:none}
 .hero{position:relative;min-height:62vh;display:flex;align-items:center;overflow:hidden;background:linear-gradient(135deg,#082e08 0%,#1a5c1a 55%,#0d400d 100%)}
@@ -359,22 +362,12 @@ footer a{color:rgba(255,255,255,.5)}
       <div class="nav-dropdown">
         <button class="nav-dropdown-toggle" id="nav-home">Services ▾</button>
         <div class="nav-dropdown-menu">
-          <a href="sprinkler-repair.html">🔧 Sprinkler Repair</a>
-          <a href="sprinkler-installation.html">🌱 New Installation</a>
-          <a href="spring-turn-on.html">🌸 Spring Turn-On</a>
-          <a href="winterization.html">❄️ Winterization & Blowout</a>
-          <a href="main-and-drain.html">🔩 Main & Drain Replacement</a>
-          <a href="backflow.html">💧 Backflow Service</a>
-        </div>
-      </div>
-      <div class="nav-dropdown">
-        <button class="nav-dropdown-toggle">Troubleshooting ▾</button>
-        <div class="nav-dropdown-menu">
-          <a href="troubleshooting.html#dead-spot">🟫 Dead Spot in the Lawn</a>
-          <a href="troubleshooting.html#valve-box">💧 Valve Box Full of Water</a>
-          <a href="troubleshooting.html#wet-spot">🌊 Big Wet Spot in the Yard</a>
-          <a href="troubleshooting.html#low-pressure">📉 Low Pressure on One Zone</a>
-          <a href="troubleshooting.html#coverage">🎯 Bad Spray Coverage</a>
+          <a href="sprinkler-repair.html">Sprinkler Repair</a>
+          <a href="sprinkler-installation.html">New Installation</a>
+          <a href="spring-turn-on.html">Spring Turn-On</a>
+          <a href="winterization.html">Winterization & Blowout</a>
+          <a href="main-and-drain.html">Main & Drain Replacement</a>
+          <a href="backflow.html">Backflow Service</a>
         </div>
       </div>
     </div>
@@ -392,30 +385,30 @@ footer a{color:rgba(255,255,255,.5)}
 
 <div class="mobile-menu" id="mobileMenu">
   <a href="plans.html">Plans</a>
-  <a href="#" data-areas="1" class="mobile-nav-areas">📍 Locations</a>
+  <a href="#" data-areas="1" class="mobile-nav-areas">Locations</a>
   <a href="#" data-sec="about" class="mobile-nav-sec">About</a>
   <a href="#" data-sec="reviews" class="mobile-nav-sec">Reviews</a>
   <a href="#" data-sec="contact" class="mobile-nav-sec">Contact</a>
   <a href="#" data-sec="faq" class="mobile-nav-sec">FAQ</a>
   <div class="mobile-section-label" onclick="toggleMobSection(this)">Services <span>▾</span></div>
   <div class="mobile-sub" style="display:none">
-    <a href="sprinkler-repair.html">🔧 Sprinkler Repair</a>
-    <a href="sprinkler-installation.html">🌱 New Installation</a>
-    <a href="spring-turn-on.html">🌸 Spring Turn-On</a>
-    <a href="winterization.html">❄️ Winterization & Blowout</a>
-    <a href="main-and-drain.html">🔩 Main & Drain Replacement</a>
-    <a href="backflow.html">💧 Backflow Service</a>
+    <a href="sprinkler-repair.html">Sprinkler Repair</a>
+    <a href="sprinkler-installation.html">New Installation</a>
+    <a href="spring-turn-on.html">Spring Turn-On</a>
+    <a href="winterization.html">Winterization & Blowout</a>
+    <a href="main-and-drain.html">Main & Drain Replacement</a>
+    <a href="backflow.html">Backflow Service</a>
   </div>
   <div class="mobile-section-label" onclick="toggleMobSection(this)">Troubleshooting <span>▾</span></div>
   <div class="mobile-sub" style="display:none">
-    <a href="troubleshooting.html#dead-spot">🟫 Dead Spot in the Lawn</a>
-    <a href="troubleshooting.html#valve-box">💧 Valve Box Full of Water</a>
-    <a href="troubleshooting.html#wet-spot">🌊 Big Wet Spot in the Yard</a>
-    <a href="troubleshooting.html#low-pressure">📉 Low Pressure on One Zone</a>
-    <a href="troubleshooting.html#coverage">🎯 Bad Spray Coverage</a>
+    <a href="troubleshooting.html#dead-spot">Dead Spot in the Lawn</a>
+    <a href="troubleshooting.html#valve-box">Valve Box Full of Water</a>
+    <a href="troubleshooting.html#wet-spot">Big Wet Spot in the Yard</a>
+    <a href="troubleshooting.html#low-pressure">Low Pressure on One Zone</a>
+    <a href="troubleshooting.html#coverage">Bad Spray Coverage</a>
   </div>
   <div class="mobile-section-label">Navigate</div>
-  <div class="mobile-cta-row"><a href="tel:2088802712">📞 Call (208) 880-2712</a></div>
+  <div class="mobile-cta-row"><a href="tel:2088802712">Call (208) 880-2712</a></div>
 </div>
 
 <div class="page active" id="page-home">

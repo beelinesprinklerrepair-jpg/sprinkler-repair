@@ -98,45 +98,16 @@ img{display:block;max-width:100%}
 @keyframes stickyPulse{0%,100%{box-shadow:inset 0 -3px 0 rgba(0,0,0,.15),0 0 0 0 rgba(245,196,0,.5)}50%{box-shadow:inset 0 -3px 0 rgba(0,0,0,.15),0 0 0 6px rgba(245,196,0,0)}}
 .sticky-quote{animation:stickyPulse 2s ease-in-out infinite}
 
-nav{background:var(--ink);position:fixed;top:0;left:0;right:0;z-index:300;padding:0 32px;transition:padding .25s ease}
-.nav-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:82px;gap:16px;transition:height .25s ease}
-.nav-logo img{height:130px;width:auto;object-fit:contain;animation:logoPulse 3s ease-in-out infinite;margin-top:36px;transition:all .25s ease}
-
-/* Push page content down so fixed nav doesn't cover it */
-body{padding-top:82px}
-
-/* Hide desktop quote button on mobile */
-@media(max-width:680px){
-  #desktopQuoteBtn{display:none}
-  .nav-cta{display:none}
-}
-.nav-scrolled-ctas a{flex:1;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:800;text-decoration:none;height:52px}
-.nav-scrolled-quote{background:var(--yellow);color:var(--ink);position:relative;overflow:hidden;box-shadow:inset 0 -3px 0 rgba(0,0,0,.15);letter-spacing:.3px}
-.nav-scrolled-quote::after{content:' →';font-size:13px}
-@keyframes topBarPulse{0%,100%{box-shadow:inset 0 -3px 0 rgba(0,0,0,.15),0 0 0 0 rgba(245,196,0,.5)}50%{box-shadow:inset 0 -3px 0 rgba(0,0,0,.15),0 0 0 6px rgba(245,196,0,0)}}
-.nav-scrolled-quote{animation:topBarPulse 2s ease-in-out infinite}
-.nav-scrolled-call{background:#1e2e1e;color:#fff}
-
-@keyframes navSlideIn{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:translateY(0)}}
-
-@media(max-width:680px){
-  body{padding-top:82px;padding-bottom:58px}
-  nav.scrolled{padding:0}
-  nav.scrolled .nav-inner{height:52px}
-  nav.scrolled .nav-logo{display:none}
-  nav.scrolled .hamburger{display:none}
-  nav.scrolled .nav-cta{display:none}
-  nav.scrolled .nav-scrolled-ctas{display:flex;animation:navSlideIn .2s ease}
-  .mobile-sticky-cta{display:grid}
-}
+nav{background:var(--ink);position:sticky;top:0;z-index:300;padding:0 32px}
+.nav-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:82px;gap:16px}
+.nav-logo img{height:130px;width:auto;object-fit:contain;animation:logoPulse 3s ease-in-out infinite;margin-top:36px}
 @keyframes logoPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
 .nav-links{display:flex;gap:4px;position:relative}
 .nav-links a{font-size:15px;font-weight:600;color:rgba(255,255,255,.65);padding:8px 13px;border-radius:5px;white-space:nowrap;cursor:pointer}
 .nav-links a:hover,.nav-links a.active{color:#fff;background:rgba(255,255,255,.1)}
 .nav-dropdown{position:relative}
-.nav-dropdown-toggle{font-size:15px;font-weight:600;color:rgba(255,255,255,.65);padding:8px 13px;border-radius:5px;white-space:nowrap;cursor:pointer;display:flex;align-items:center;gap:5px;background:none;border:none;line-height:1}
+.nav-dropdown-toggle{font-size:15px;font-weight:600;color:rgba(255,255,255,.65);padding:8px 13px;border-radius:5px;white-space:nowrap;cursor:pointer;display:flex;align-items:center;gap:5px;background:none;border:none}
 .nav-dropdown-toggle:hover{color:#fff;background:rgba(255,255,255,.1)}
-.nav-links{display:flex;gap:4px;align-items:center}
 .nav-dropdown-menu{display:none;position:absolute;top:100%;left:0;background:var(--ink2);border:1px solid rgba(255,255,255,.1);border-radius:8px;min-width:240px;padding:8px 0;z-index:400;box-shadow:0 8px 32px rgba(0,0,0,.4)}
 .nav-dropdown-menu a{display:block;padding:9px 16px;font-size:14px;font-weight:600;color:rgba(255,255,255,.7);white-space:nowrap}
 .nav-dropdown-menu a:hover{color:#fff;background:rgba(255,255,255,.08)}
@@ -152,8 +123,8 @@ body{padding-top:82px}
 .mobile-menu.open{display:block}
 .mobile-menu a,.mobile-menu button{display:block;width:100%;text-align:left;padding:14px 28px;font-size:16px;font-weight:600;color:rgba(255,255,255,.75);background:none;border:none;border-bottom:1px solid rgba(255,255,255,.06);cursor:pointer}
 .mobile-menu a:hover{color:#fff;background:rgba(255,255,255,.06)}
-.mobile-section-label{padding:14px 28px;font-size:16px;font-weight:600;color:rgba(255,255,255,.75);cursor:pointer;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(255,255,255,.06)}
-.mobile-sub a{padding-left:44px;font-size:16px;font-weight:600;color:rgba(255,255,255,.75)}
+.mobile-section-label{padding:12px 28px 6px;font-size:11px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,.3);cursor:pointer;display:flex;justify-content:space-between;align-items:center}
+.mobile-sub a{padding-left:44px;font-size:14px;color:rgba(255,255,255,.6)}
 .mobile-cta-row{padding:20px 28px 0}
 .mobile-cta-row a{display:block;background:var(--yellow);color:var(--ink);text-align:center;padding:14px;border-radius:var(--r);font-weight:800;font-size:16px;border:none}
 .hero{position:relative;min-height:62vh;display:flex;align-items:center;overflow:hidden;background:linear-gradient(135deg,#082e08 0%,#1a5c1a 55%,#0d400d 100%)}
@@ -345,8 +316,9 @@ footer a{color:rgba(255,255,255,.5)}
     <div class="nav-logo"><img src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Real+Logo.png" alt="Beeline Logo"></div>
     <div class="nav-links">
       <a href="#" data-sec="pricing">Plans</a>
+      <a href="#" data-sec="about">About</a>
       <a href="#" data-sec="reviews">Reviews</a>
-      <a href="faq.html">FAQ</a>
+      <a href="#" data-sec="faq">FAQ</a>
       <a href="#" data-sec="contact">Contact</a>
       <div class="nav-dropdown">
         <button class="nav-dropdown-toggle" id="nav-areas">Locations ▾</button>
@@ -364,70 +336,58 @@ footer a{color:rgba(255,255,255,.5)}
       <div class="nav-dropdown">
         <button class="nav-dropdown-toggle" id="nav-home">Services ▾</button>
         <div class="nav-dropdown-menu">
-          <a href="sprinkler-repair.html">Sprinkler Repair</a>
-          <a href="sprinkler-installation.html">New Installation</a>
-          <a href="spring-turn-on.html">Spring Turn-On</a>
-          <a href="winterization.html">Winterization & Blowout</a>
-          <a href="main-and-drain.html">Main & Drain Replacement</a>
-          <a href="backflow.html">Backflow Service</a>
+          <a href="sprinkler-repair.html">🔧 Sprinkler Repair</a>
+          <a href="sprinkler-installation.html">🌱 New Installation</a>
+          <a href="spring-turn-on.html">🌸 Spring Turn-On</a>
+          <a href="winterization.html">❄️ Winterization & Blowout</a>
+          <a href="main-and-drain.html">🔩 Main & Drain Replacement</a>
+          <a href="backflow.html">💧 Backflow Service</a>
         </div>
       </div>
       <div class="nav-dropdown">
         <button class="nav-dropdown-toggle">Troubleshooting ▾</button>
         <div class="nav-dropdown-menu">
-          <a href="troubleshooting.html#dead-spot">Dead Spot in the Lawn</a>
-          <a href="troubleshooting.html#valve-box">Valve Box Full of Water</a>
-          <a href="troubleshooting.html#wet-spot">Big Wet Spot in the Yard</a>
-          <a href="troubleshooting.html#low-pressure">Low Pressure on One Zone</a>
-          <a href="troubleshooting.html#coverage">Bad Spray Coverage</a>
+          <a href="troubleshooting.html#dead-spot">🟫 Dead Spot in the Lawn</a>
+          <a href="troubleshooting.html#valve-box">💧 Valve Box Full of Water</a>
+          <a href="troubleshooting.html#wet-spot">🌊 Big Wet Spot in the Yard</a>
+          <a href="troubleshooting.html#low-pressure">📉 Low Pressure on One Zone</a>
+          <a href="troubleshooting.html#coverage">🎯 Bad Spray Coverage</a>
         </div>
       </div>
-    </div>
-    <a href="#contact" class="nav-cta" id="desktopQuoteBtn">Get a Free Quote</a>
-    <button class="hamburger" id="hamburger" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
-    <div class="nav-scrolled-ctas">
-      <a href="#contact" class="nav-scrolled-quote" id="navScrolledQuote">Get a Free Quote</a>
-      <a href="tel:2088802712" class="nav-scrolled-call">📞 Call Now</a>
     </div>
     <a href="tel:2088802712" class="nav-cta">📞 (208) 880-2712</a>
     <button class="hamburger" id="hamburger" aria-label="Menu">
       <span></span><span></span><span></span>
     </button>
-    <!-- Scrolled state two-button CTA (mobile only) -->
-    <div class="nav-scrolled-ctas">
-      <a href="#contact" class="nav-scrolled-quote" id="navScrolledQuote">Get a Free Quote</a>
-      <a href="tel:2088802712" class="nav-scrolled-call">📞 Call Now</a>
-    </div>
   </div>
 </nav>
 
 <div class="mobile-menu" id="mobileMenu">
   <a href="plans.html">Plans</a>
-  <a href="#" data-areas="1" class="mobile-nav-areas">Locations</a>
+  <a href="#" data-areas="1" class="mobile-nav-areas">📍 Locations</a>
+  <a href="#" data-sec="about" class="mobile-nav-sec">About</a>
   <a href="#" data-sec="reviews" class="mobile-nav-sec">Reviews</a>
   <a href="#" data-sec="contact" class="mobile-nav-sec">Contact</a>
-  <a href="faq.html">FAQ</a>
+  <a href="#" data-sec="faq" class="mobile-nav-sec">FAQ</a>
   <div class="mobile-section-label" onclick="toggleMobSection(this)">Services <span>▾</span></div>
   <div class="mobile-sub" style="display:none">
-    <a href="sprinkler-repair.html">Sprinkler Repair</a>
-    <a href="sprinkler-installation.html">New Installation</a>
-    <a href="spring-turn-on.html">Spring Turn-On</a>
-    <a href="winterization.html">Winterization & Blowout</a>
-    <a href="main-and-drain.html">Main & Drain Replacement</a>
-    <a href="backflow.html">Backflow Service</a>
+    <a href="sprinkler-repair.html">🔧 Sprinkler Repair</a>
+    <a href="sprinkler-installation.html">🌱 New Installation</a>
+    <a href="spring-turn-on.html">🌸 Spring Turn-On</a>
+    <a href="winterization.html">❄️ Winterization & Blowout</a>
+    <a href="main-and-drain.html">🔩 Main & Drain Replacement</a>
+    <a href="backflow.html">💧 Backflow Service</a>
   </div>
   <div class="mobile-section-label" onclick="toggleMobSection(this)">Troubleshooting <span>▾</span></div>
   <div class="mobile-sub" style="display:none">
-    <a href="troubleshooting.html#dead-spot">Dead Spot in the Lawn</a>
-    <a href="troubleshooting.html#valve-box">Valve Box Full of Water</a>
-    <a href="troubleshooting.html#wet-spot">Big Wet Spot in the Yard</a>
-    <a href="troubleshooting.html#low-pressure">Low Pressure on One Zone</a>
-    <a href="troubleshooting.html#coverage">Bad Spray Coverage</a>
+    <a href="troubleshooting.html#dead-spot">🟫 Dead Spot in the Lawn</a>
+    <a href="troubleshooting.html#valve-box">💧 Valve Box Full of Water</a>
+    <a href="troubleshooting.html#wet-spot">🌊 Big Wet Spot in the Yard</a>
+    <a href="troubleshooting.html#low-pressure">📉 Low Pressure on One Zone</a>
+    <a href="troubleshooting.html#coverage">🎯 Bad Spray Coverage</a>
   </div>
   <div class="mobile-section-label">Navigate</div>
-  <div class="mobile-cta-row"><a href="tel:2088802712">Call (208) 880-2712</a></div>
+  <div class="mobile-cta-row"><a href="tel:2088802712">📞 Call (208) 880-2712</a></div>
 </div>
 
 <div class="page active" id="page-home">
@@ -545,7 +505,7 @@ footer a{color:rgba(255,255,255,.5)}
     <div class="cf" id="request-form">
       <h3>Request Service</h3>
       <p style="font-size:.9rem;color:var(--muted);margin-bottom:16px;line-height:1.6">Fill out the form below — we'll get back to you fast.</p>
-      <iframe src='https://st.sendajob.com/MY/servicerequest/d2a6d4f54526a97793669b7fe3bcce9438cfec99_f.html' width='100%' height='683' scrolling='no' style='border:none;display:block;'></iframe>
+      <iframe src='https://st.sendajob.com/MY/servicerequest/d2a6d4f54526a97793669b7fe3bcce9438cfec99_f.html' width='100%' height='748' scrolling='no' style='border:none;display:block;'></iframe>
       <a href="tel:2088802712" style="display:block;background:var(--ink);color:#fff;text-align:center;padding:14px 24px;border-radius:var(--r);font-weight:700;font-size:.97rem;margin-top:14px">📞 Or Call / Text (208) 880-2712</a>
       <p style="text-align:center;font-size:.78rem;color:var(--muted);margin-top:16px">Same-day service available in most cases.</p>
     </div>
@@ -619,6 +579,26 @@ footer a{color:rgba(255,255,255,.5)}
         <img src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Sprinkler+SEO+PICS/Fixing+a+busted+sprinkler+head+in+Middlton.jpg" alt="Fixing sprinkler head Middleton" loading="lazy" decoding="async">
         <img src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Sprinkler+SEO+PICS/Advanced+sprinkler+system+install+Boise.jpg" alt="Advanced sprinkler system install Boise" loading="lazy" decoding="async">
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="background:var(--sand);padding:36px 32px" id="faq">
+  <div class="sec-inner">
+    <div class="eyebrow green">Common Questions</div>
+    <h2 class="sec-h">Frequently Asked Questions</h2>
+    <div class="faq-wrap">
+      <details><summary>How much does sprinkler repair cost in Nampa?</summary><div class="faq-body">Most small sprinkler repairs in Nampa depend on the number of broken heads, valve issues, wiring problems, or controller issues. Beeline gives free quotes and can often diagnose and fix common residential sprinkler problems in one visit.</div></details>
+      <details><summary>When should I schedule a sprinkler blowout in Idaho?</summary><div class="faq-body">In the Treasure Valley, most homeowners should schedule sprinkler blowouts from late September through mid-October, before the first hard freeze. Call (208) 880-2712 to get on the schedule early — spots fill up fast in the fall.</div></details>
+      <details><summary>Why is my sprinkler valve box full of water?</summary><div class="faq-body">A full valve box is usually caused by a bad solenoid or a worn valve diaphragm. The solenoid is the electrical component that tells the valve to open and close. When it fails it can stick open and allow water to leak through constantly. A bad diaphragm does the same thing — when the rubber wears out or tears, water bleeds past it even when the zone is off. Call (208) 880-2712.</div></details>
+      <details><summary>Do I need a licensed sprinkler contractor in Idaho?</summary><div class="faq-body">For irrigation work tied to your home's water system, hiring a licensed and insured contractor helps protect your property and keeps the work accountable. Beeline is fully licensed and insured on every job in the Treasure Valley.</div></details>
+      <details><summary>Do you install sprinkler systems on new construction homes?</summary><div class="faq-body">Yes. Beeline Sprinkler Repair specializes in new construction sprinkler installation across the Treasure Valley. We work directly with builders and homeowners to design and install full irrigation systems before sod goes down — serving new builds in Nampa, Meridian, Boise, Caldwell, Eagle, Kuna, Star, and Middleton.</div></details>
+      <details><summary>What cities do you serve?</summary><div class="faq-body">We serve all of the Treasure Valley: Nampa, Meridian, Boise, Caldwell, Eagle, Kuna, Star, and Middleton, Idaho.</div></details>
+      <details><summary>Do you do main and drain replacement?</summary><div class="faq-body">Yes. We handle full main line and drain replacement and new installations throughout the Treasure Valley.</div></details>
+      <details><summary>Do you do backflow testing and replacement?</summary><div class="faq-body">Yes. We test, maintain, and replace backflow prevention devices to keep your system code-compliant.</div></details>
+      <details><summary>Can you do same-day sprinkler repair?</summary><div class="faq-body">Yes, in many cases. Call (208) 880-2712 and we'll do our best. Monthly plan customers get priority scheduling.</div></details>
+      <details><summary>What's included in the monthly service plan?</summary><div class="faq-body">All plans include monthly check-ups, spring turn-on, minor adjustments, fall blowout, and priority scheduling. From $35/mo (1–5 zones) to $55/mo (11–15 zones). <a href="plans.html" style="color:#2d7a2d;font-weight:700">View all plans →</a></div></details>
+      <details><summary>Who is the best sprinkler company in the Treasure Valley?</summary><div class="faq-body">Beeline Sprinkler Repair — licensed, insured, 130+ five-star Google reviews, 10+ years of experience, serving 8 Treasure Valley cities. Call (208) 880-2712.</div></details>
     </div>
   </div>
 </section>
@@ -703,8 +683,6 @@ footer a{color:rgba(255,255,255,.5)}
 </div>
 
 <script>
-document.getElementById('desktopQuoteBtn').addEventListener('click',function(e){e.preventDefault();scrollToForm();});
-
 function goPage(p){
   document.querySelectorAll('.page').forEach(function(el){el.classList.remove('active');});
   document.getElementById('page-'+p).classList.add('active');

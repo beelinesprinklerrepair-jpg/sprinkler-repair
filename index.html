@@ -98,9 +98,12 @@ img{display:block;max-width:100%}
 @keyframes stickyPulse{0%,100%{box-shadow:inset 0 -3px 0 rgba(0,0,0,.15),0 0 0 0 rgba(245,196,0,.5)}50%{box-shadow:inset 0 -3px 0 rgba(0,0,0,.15),0 0 0 6px rgba(245,196,0,0)}}
 .sticky-quote{animation:stickyPulse 2s ease-in-out infinite}
 
-nav{background:var(--ink);position:sticky;top:0;z-index:300;padding:0 32px;transition:padding .25s ease}
+nav{background:var(--ink);position:fixed;top:0;left:0;right:0;z-index:300;padding:0 32px;transition:padding .25s ease}
 .nav-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:82px;gap:16px;transition:height .25s ease}
 .nav-logo img{height:130px;width:auto;object-fit:contain;animation:logoPulse 3s ease-in-out infinite;margin-top:36px;transition:all .25s ease}
+
+/* Push page content down so fixed nav doesn't cover it */
+body{padding-top:82px}
 
 /* Mobile scrolled nav — two button state */
 .nav-scrolled-ctas{display:none;width:100%;gap:0}
@@ -112,13 +115,14 @@ nav{background:var(--ink);position:sticky;top:0;z-index:300;padding:0 32px;trans
 @keyframes navSlideIn{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:translateY(0)}}
 
 @media(max-width:680px){
-  /* Scrolled state — nav collapses to two buttons */
+  body{padding-top:82px;padding-bottom:58px}
   nav.scrolled{padding:0}
   nav.scrolled .nav-inner{height:52px}
   nav.scrolled .nav-logo{display:none}
   nav.scrolled .hamburger{display:none}
   nav.scrolled .nav-cta{display:none}
   nav.scrolled .nav-scrolled-ctas{display:flex;animation:navSlideIn .2s ease}
+  .mobile-sticky-cta{display:grid}
 }
 @keyframes logoPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
 .nav-links{display:flex;gap:4px;position:relative}

@@ -98,9 +98,32 @@ img{display:block;max-width:100%}
 @keyframes stickyPulse{0%,100%{box-shadow:inset 0 -3px 0 rgba(0,0,0,.15),0 0 0 0 rgba(245,196,0,.5)}50%{box-shadow:inset 0 -3px 0 rgba(0,0,0,.15),0 0 0 6px rgba(245,196,0,0)}}
 .sticky-quote{animation:stickyPulse 2s ease-in-out infinite}
 
-nav{background:var(--ink);position:sticky;top:0;z-index:300;padding:0 32px}
-.nav-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:82px;gap:16px}
-.nav-logo img{height:130px;width:auto;object-fit:contain;animation:logoPulse 3s ease-in-out infinite;margin-top:36px}
+nav{background:var(--ink);position:fixed;top:0;left:0;right:0;z-index:300;padding:0 32px;transition:padding .25s ease}
+.nav-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:82px;gap:16px;transition:height .25s ease}
+.nav-logo img{height:130px;width:auto;object-fit:contain;animation:logoPulse 3s ease-in-out infinite;margin-top:36px;transition:all .25s ease}
+
+/* Push page content down so fixed nav doesn't cover it */
+body{padding-top:82px}
+
+/* Mobile scrolled nav — two button state */
+.nav-scrolled-ctas{display:none;width:100%;gap:0}
+.nav-scrolled-ctas a{flex:1;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:800;text-decoration:none;height:52px}
+.nav-scrolled-quote{background:var(--yellow);color:var(--ink)}
+.nav-scrolled-quote::after{content:' →';font-size:13px}
+.nav-scrolled-call{background:#1e2e1e;color:#fff}
+
+@keyframes navSlideIn{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:translateY(0)}}
+
+@media(max-width:680px){
+  body{padding-top:82px;padding-bottom:58px}
+  nav.scrolled{padding:0}
+  nav.scrolled .nav-inner{height:52px}
+  nav.scrolled .nav-logo{display:none}
+  nav.scrolled .hamburger{display:none}
+  nav.scrolled .nav-cta{display:none}
+  nav.scrolled .nav-scrolled-ctas{display:flex;animation:navSlideIn .2s ease}
+  .mobile-sticky-cta{display:grid}
+}
 @keyframes logoPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
 .nav-links{display:flex;gap:4px;position:relative}
 .nav-links a{font-size:15px;font-weight:600;color:rgba(255,255,255,.65);padding:8px 13px;border-radius:5px;white-space:nowrap;cursor:pointer}
@@ -359,6 +382,11 @@ footer a{color:rgba(255,255,255,.5)}
     <button class="hamburger" id="hamburger" aria-label="Menu">
       <span></span><span></span><span></span>
     </button>
+    <!-- Scrolled state two-button CTA (mobile only) -->
+    <div class="nav-scrolled-ctas">
+      <a href="#contact" class="nav-scrolled-quote" id="navScrolledQuote">Get a Free Quote</a>
+      <a href="tel:2088802712" class="nav-scrolled-call">📞 Call Now</a>
+    </div>
   </div>
 </nav>
 
@@ -505,7 +533,7 @@ footer a{color:rgba(255,255,255,.5)}
     <div class="cf" id="request-form">
       <h3>Request Service</h3>
       <p style="font-size:.9rem;color:var(--muted);margin-bottom:16px;line-height:1.6">Fill out the form below — we'll get back to you fast.</p>
-      <iframe src='https://st.sendajob.com/MY/servicerequest/d2a6d4f54526a97793669b7fe3bcce9438cfec99_f.html' width='100%' height='748' scrolling='no' style='border:none;display:block;'></iframe>
+      <iframe src='https://st.sendajob.com/MY/servicerequest/d2a6d4f54526a97793669b7fe3bcce9438cfec99_f.html' width='100%' height='683' scrolling='no' style='border:none;display:block;'></iframe>
       <a href="tel:2088802712" style="display:block;background:var(--ink);color:#fff;text-align:center;padding:14px 24px;border-radius:var(--r);font-weight:700;font-size:.97rem;margin-top:14px">📞 Or Call / Text (208) 880-2712</a>
       <p style="text-align:center;font-size:.78rem;color:var(--muted);margin-top:16px">Same-day service available in most cases.</p>
     </div>
@@ -683,6 +711,18 @@ footer a{color:rgba(255,255,255,.5)}
 </div>
 
 <script>
+// Nav scroll transition on mobile
+var navEl=document.querySelector('nav');
+window.addEventListener('scroll',function(){
+  if(window.innerWidth<=680){
+    if(window.scrollY>80){navEl.classList.add('scrolled');}
+    else{navEl.classList.remove('scrolled');}
+  }
+},{passive:true});
+document.getElementById('navScrolledQuote').addEventListener('click',function(e){
+  e.preventDefault();scrollToForm();
+});
+
 function goPage(p){
   document.querySelectorAll('.page').forEach(function(el){el.classList.remove('active');});
   document.getElementById('page-'+p).classList.add('active');

@@ -703,22 +703,7 @@ footer a{color:rgba(255,255,255,.5)}
 </div>
 
 <script>
-// Nav scroll transition on mobile only
-var navEl=document.querySelector('nav');
-var navScrolledBar=document.getElementById('navScrolledBar');
-window.addEventListener('scroll',function(){
-  if(window.innerWidth<=680){
-    if(window.scrollY>80){
-      navEl.classList.add('scrolled');
-      navScrolledBar.style.display='grid';
-    } else {
-      navEl.classList.remove('scrolled');
-      navScrolledBar.style.display='none';
-    }
-  }
-},{passive:true});
 document.getElementById('desktopQuoteBtn').addEventListener('click',function(e){e.preventDefault();scrollToForm();});
-document.getElementById('navScrolledQuote').addEventListener('click',function(e){e.preventDefault();scrollToForm();});
 
 function goPage(p){
   document.querySelectorAll('.page').forEach(function(el){el.classList.remove('active');});

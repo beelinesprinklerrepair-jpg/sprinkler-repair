@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+  <!-- Homepage -->
   <url>
     <loc>https://www.beelinesprinklerrepair.com/</loc>
-    <lastmod>2025-05-26</lastmod>
+    <lastmod>2025-05-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -11,7 +12,7 @@
   <!-- Plans -->
   <url>
     <loc>https://www.beelinesprinklerrepair.com/plans.html</loc>
-    <lastmod>2025-05-26</lastmod>
+    <lastmod>2025-05-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -19,37 +20,49 @@
   <!-- Service Pages -->
   <url>
     <loc>https://www.beelinesprinklerrepair.com/sprinkler-repair.html</loc>
-    <lastmod>2025-05-26</lastmod>
+    <lastmod>2025-05-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
     <loc>https://www.beelinesprinklerrepair.com/sprinkler-installation.html</loc>
-    <lastmod>2025-05-26</lastmod>
+    <lastmod>2025-05-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
     <loc>https://www.beelinesprinklerrepair.com/spring-turn-on.html</loc>
-    <lastmod>2025-05-26</lastmod>
+    <lastmod>2025-05-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.beelinesprinklerrepair.com/winterization.html</loc>
-    <lastmod>2025-05-26</lastmod>
+    <lastmod>2025-05-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.beelinesprinklerrepair.com/main-and-drain.html</loc>
-    <lastmod>2025-05-26</lastmod>
+    <lastmod>2025-05-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.beelinesprinklerrepair.com/backflow.html</loc>
-    <lastmod>2025-05-26</lastmod>
+    <lastmod>2025-05-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.beelinesprinklerrepair.com/irrigation.html</loc>
+    <lastmod>2025-05-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.beelinesprinklerrepair.com/emergency.html</loc>
+    <lastmod>2025-05-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -57,72 +70,65 @@
   <!-- FAQ -->
   <url>
     <loc>https://www.beelinesprinklerrepair.com/faq.html</loc>
-    <lastmod>2025-05-26</lastmod>
+    <lastmod>2025-05-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 
-  <!-- Troubleshooting Pages -->
+  <!-- Troubleshooting -->
   <url>
     <loc>https://www.beelinesprinklerrepair.com/troubleshooting.html</loc>
-    <lastmod>2025-05-26</lastmod>
+    <lastmod>2025-05-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
-  <!-- Individual troubleshooting pages — add these once the files are live:
-  troubleshooting-dead-spot.html
-  troubleshooting-valve-box-water.html
-  troubleshooting-wet-spot.html
-  troubleshooting-low-pressure.html
-  troubleshooting-bad-coverage.html
-  -->
 
   <!-- Location Pages -->
   <url>
     <loc>https://www.beelinesprinklerrepair.com/nampa.html</loc>
-    <lastmod>2025-05-25</lastmod>
+    <lastmod>2025-05-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.beelinesprinklerrepair.com/boise.html</loc>
-    <lastmod>2025-05-25</lastmod>
+    <lastmod>2025-05-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.beelinesprinklerrepair.com/meridian.html</loc>
-    <lastmod>2025-05-25</lastmod>
+    <lastmod>2025-05-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.beelinesprinklerrepair.com/caldwell.html</loc>
-    <lastmod>2025-05-25</lastmod>
+    <lastmod>2025-05-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.beelinesprinklerrepair.com/kuna.html</loc>
-    <lastmod>2025-05-25</lastmod>
+    <lastmod>2025-05-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.beelinesprinklerrepair.com/eagle.html</loc>
-    <lastmod>2025-05-25</lastmod>
+    <lastmod>2025-05-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.beelinesprinklerrepair.com/star.html</loc>
-    <lastmod>2025-05-25</lastmod>
+    <lastmod>2025-05-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.beelinesprinklerrepair.com/middleton.html</loc>
-    <lastmod>2025-05-25</lastmod>
+    <lastmod>2025-05-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

@@ -75,12 +75,42 @@
     <priority>0.85</priority>
   </url>
 
-  <!-- Troubleshooting -->
+  <!-- Troubleshooting Pages -->
   <url>
     <loc>https://www.beelinesprinklerrepair.com/troubleshooting.html</loc>
     <lastmod>2025-05-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.beelinesprinklerrepair.com/troubleshooting-dead-spot.html</loc>
+    <lastmod>2025-05-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.beelinesprinklerrepair.com/troubleshooting-valve-box-water.html</loc>
+    <lastmod>2025-05-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.beelinesprinklerrepair.com/troubleshooting-wet-spot.html</loc>
+    <lastmod>2025-05-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.beelinesprinklerrepair.com/troubleshooting-low-pressure.html</loc>
+    <lastmod>2025-05-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.beelinesprinklerrepair.com/troubleshooting-bad-coverage.html</loc>
+    <lastmod>2025-05-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
   <!-- Location Pages -->

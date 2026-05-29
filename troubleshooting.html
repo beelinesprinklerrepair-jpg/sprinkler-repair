@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
+<meta charset="UTF-8">
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-720G5TQPP7"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-720G5TQPP7');
 </script>
-<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sprinkler Troubleshooting Guide | Beeline Sprinkler Repair Treasure Valley</title>
 <meta name="description" content="Common sprinkler problems and how to diagnose them. Dead spots, wet areas, low pressure, bad coverage — Beeline Sprinkler Repair serves Nampa, Boise, Meridian, Caldwell and all of the Treasure Valley.">
@@ -23,7 +22,7 @@ nav{background:var(--ink);position:sticky;top:0;z-index:300;padding:0 32px}
 .nav-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:82px;gap:16px}
 .nav-logo img{height:100px;width:auto;object-fit:contain;animation:logoPulse 3s ease-in-out infinite;margin-top:28px}
 @keyframes logoPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
-.nav-links{display:flex;gap:4px}
+.nav-links{display:flex;gap:4px;align-items:center}
 .nav-links a{font-size:15px;font-weight:600;color:rgba(255,255,255,.65);padding:8px 13px;border-radius:5px;white-space:nowrap}
 .nav-links a:hover,.nav-links a.active{color:#fff;background:rgba(255,255,255,.1)}
 .nav-dropdown{position:relative}
@@ -62,6 +61,8 @@ nav{background:var(--ink);position:sticky;top:0;z-index:300;padding:0 32px}
 .guide-item p:last-child{margin-bottom:0}
 .guide-cta{display:inline-flex;align-items:center;gap:8px;margin-top:20px;background:var(--gl);border:1.5px solid var(--green);color:var(--gd);padding:10px 18px;border-radius:var(--r);font-weight:800;font-size:.88rem}
 .guide-cta:hover{background:var(--green);color:#fff}
+.guide-cta-full{display:inline-flex;align-items:center;gap:8px;margin-top:12px;margin-left:8px;background:transparent;border:1.5px solid var(--green);color:var(--green);padding:10px 18px;border-radius:var(--r);font-weight:800;font-size:.88rem}
+.guide-cta-full:hover{background:var(--green);color:#fff}
 .sidebar{display:flex;flex-direction:column;gap:16px;position:sticky;top:160px}
 .cta-box{background:var(--green);color:#fff;border-radius:14px;padding:24px;text-align:center}
 .cta-box h3{font-size:1.1rem;font-weight:800;margin-bottom:8px}
@@ -94,35 +95,49 @@ footer a{color:rgba(255,255,255,.5)}
   <div class="nav-inner">
     <div class="nav-logo"><a href="index.html"><img src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Real+Logo.png" alt="Beeline Sprinkler Repair"></a></div>
     <div class="nav-links">
-      <div class="nav-dropdown">
-        <button class="nav-dropdown-toggle">Services ▾</button>
-        <div class="nav-dropdown-menu">
-          <a href="sprinkler-repair.html">🔧 Sprinkler Repair</a>
-          <a href="sprinkler-installation.html">🌱 New Installation</a>
-          <a href="spring-turn-on.html">🌸 Spring Turn-On</a>
-          <a href="winterization.html">❄️ Winterization & Blowout</a>
-          <a href="main-and-drain.html">🔩 Main & Drain Replacement</a>
-          <a href="backflow.html">💧 Backflow Service</a>
-        </div>
-      </div>
-      <div class="nav-dropdown">
-        <button class="nav-dropdown-toggle active">Troubleshooting ▾</button>
-        <div class="nav-dropdown-menu">
-          <a href="troubleshooting.html#dead-spot">🟫 Dead Spot in the Lawn</a>
-          <a href="troubleshooting.html#valve-box">💧 Valve Box Full of Water</a>
-          <a href="troubleshooting.html#wet-spot">🌊 Big Wet Spot in the Yard</a>
-          <a href="troubleshooting.html#low-pressure">📉 Low Pressure on One Zone</a>
-          <a href="troubleshooting.html#coverage">🎯 Bad Spray Coverage</a>
-        </div>
-      </div>
-      <a href="plans.html">Plans</a>
-      <a href="index.html#about">About</a>
+      <a href="index.html#pricing">Service Plans</a>
+      <a href="emergency.html">Emergency Service</a>
       <a href="index.html#reviews">Reviews</a>
-      <a href="index.html" id="nav-areas">📍 Locations</a>
-      <a href="index.html#faq">FAQ</a>
+      <a href="faq.html">FAQ</a>
       <a href="index.html#contact">Contact</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle">Locations</button>
+        <div class="nav-dropdown-menu">
+          <a href="nampa.html">Nampa</a>
+          <a href="boise.html">Boise</a>
+          <a href="meridian.html">Meridian</a>
+          <a href="kuna.html">Kuna</a>
+          <a href="eagle.html">Eagle</a>
+          <a href="caldwell.html">Caldwell</a>
+          <a href="star.html">Star</a>
+          <a href="middleton.html">Middleton</a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle">Services</button>
+        <div class="nav-dropdown-menu">
+          <a href="sprinkler-repair.html">Sprinkler Repair</a>
+          <a href="sprinkler-installation.html">New Installation</a>
+          <a href="spring-turn-on.html">Spring Turn-On</a>
+          <a href="winterization.html">Winterization & Blowout</a>
+          <a href="main-and-drain.html">Main & Drain Replacement</a>
+          <a href="backflow.html">Backflow Service</a>
+          <a href="irrigation.html">Irrigation Repair/Services</a>
+          <a href="emergency.html">Emergency Service</a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle active">Troubleshooting</button>
+        <div class="nav-dropdown-menu">
+          <a href="troubleshooting-dead-spot.html">Dead Spot in the Lawn</a>
+          <a href="troubleshooting-valve-box-water.html">Valve Box Full of Water</a>
+          <a href="troubleshooting-wet-spot.html">Big Wet Spot in the Yard</a>
+          <a href="troubleshooting-low-pressure.html">Low Pressure on One Zone</a>
+          <a href="troubleshooting-bad-coverage.html">Bad Spray Coverage</a>
+        </div>
+      </div>
     </div>
-    <a href="tel:2088802712" class="nav-cta">📞 (208) 880-2712</a>
+    <a href="tel:2088802712" class="nav-cta">(208) 880-2712</a>
   </div>
 </nav>
 
@@ -134,16 +149,16 @@ footer a{color:rgba(255,255,255,.5)}
   </div>
 </div>
 
-<div class="trust-bar"><div class="trust-bar-inner"><div class="tb">✅ <strong>Licensed & Insured</strong></div><div class="tb">⭐ <strong>130+ Five-Star Reviews</strong></div><div class="tb">🔧 <strong>Serving the Treasure Valley Since 2015</strong></div><div class="tb">📞 <strong>(208) 880-2712</strong></div></div></div>
+<div class="trust-bar"><div class="trust-bar-inner"><div class="tb"><strong>Licensed & Insured</strong></div><div class="tb"><strong>136+ Five-Star Reviews</strong></div><div class="tb"><strong>Family Owned — Serving the Treasure Valley Since 2015</strong></div><div class="tb"><strong>(208) 880-2712</strong></div></div></div>
 
 <div class="toc-bar">
   <div class="toc-inner">
     <span class="toc-label">Jump to</span>
-    <a href="#dead-spot">🟫 Dead Spot</a>
-    <a href="#valve-box">💧 Valve Box Water</a>
-    <a href="#wet-spot">🌊 Wet Spot</a>
-    <a href="#low-pressure">📉 Low Pressure</a>
-    <a href="#coverage">🎯 Bad Coverage</a>
+    <a href="troubleshooting-dead-spot.html">Dead Spot</a>
+    <a href="troubleshooting-valve-box-water.html">Valve Box Water</a>
+    <a href="troubleshooting-wet-spot.html">Wet Spot</a>
+    <a href="troubleshooting-low-pressure.html">Low Pressure</a>
+    <a href="troubleshooting-bad-coverage.html">Bad Coverage</a>
   </div>
 </div>
 
@@ -155,7 +170,8 @@ footer a{color:rgba(255,255,255,.5)}
       <h2>Dead Spot in the Lawn? <em>Check the Sprinkler Head First</em></h2>
       <p>If you have one dry or brown spot in the yard, start by checking the closest sprinkler head. A lot of times the head is clogged, tilted, buried too low, or not rotating correctly. In Idaho the clay-heavy soil common across Nampa, Caldwell and Kuna can shift and settle over time, which gradually buries heads below grade. Grass can also grow over the top of the head and block the spray pattern completely.</p>
       <p>A quick thing to look for is whether the head is spraying evenly and reaching the area it is supposed to cover. If the head barely pops up, sprays sideways, or looks weak compared to the others, it may need to be cleaned, adjusted, raised, or replaced. This is one of the most common calls we get across the Treasure Valley, especially on systems that have been in the ground for 10 or more years.</p>
-      <a href="sprinkler-repair.html" class="guide-cta">🔧 Book a Sprinkler Repair →</a>
+      <a href="sprinkler-repair.html" class="guide-cta">Book a Sprinkler Repair</a>
+      <a href="troubleshooting-dead-spot.html" class="guide-cta-full">Full Guide</a>
     </div>
 
     <div class="guide-item" id="valve-box">
@@ -163,7 +179,8 @@ footer a{color:rgba(255,255,255,.5)}
       <h2>Valve Box Full of Water? <em>It Could Be a Bad Diaphragm</em></h2>
       <p>If your sprinkler valve box is full of water, one common cause is a leaking valve diaphragm. The diaphragm is the rubber part inside the valve that opens and closes when the system turns on and off. In the Treasure Valley where systems run hard all summer and then sit through an Idaho winter, diaphragms wear out faster than most homeowners expect.</p>
       <p>When that diaphragm wears out, tears, or gets debris stuck in it, the valve may leak constantly. You might notice water sitting in the valve box, a zone that will not fully shut off, or a slow trickle from sprinkler heads even when the system is off. Left alone this wastes water, drives up your utility bill, and can eventually cause the valve to fail completely. We replace diaphragms and valves all across Nampa, Meridian, Boise and Caldwell every season.</p>
-      <a href="sprinkler-repair.html" class="guide-cta">🔧 Book a Sprinkler Repair →</a>
+      <a href="sprinkler-repair.html" class="guide-cta">Book a Sprinkler Repair</a>
+      <a href="troubleshooting-valve-box-water.html" class="guide-cta-full">Full Guide</a>
     </div>
 
     <div class="guide-item" id="wet-spot">
@@ -171,23 +188,26 @@ footer a{color:rgba(255,255,255,.5)}
       <h2>Big Wet Spot in the Yard? <em>Look for a Broken Line</em></h2>
       <p>A large wet or muddy spot in the lawn can be a sign of a broken sprinkler line underground. This is especially common if the wet area shows up when the sprinklers run, or if one zone suddenly has very low pressure. In Idaho the freeze-thaw cycles every winter put stress on irrigation lines, particularly on systems installed in the late 1990s and early 2000s that are now reaching the end of their service life.</p>
       <p>Trees are a big thing to watch for. Roots can grow around sprinkler lines and eventually crack, crush, or pull them apart. In areas like Boise's North End, Eagle and the older neighborhoods in Nampa near Lake Lowell where mature trees are common, root intrusion is one of the more frequent causes of broken lines we see. If the wet spot is near a tree, large shrub, driveway, or fence line, there is a good chance something underground has been damaged.</p>
-      <a href="sprinkler-repair.html" class="guide-cta">🔧 Book a Sprinkler Repair →</a>
+      <a href="sprinkler-repair.html" class="guide-cta">Book a Sprinkler Repair</a>
+      <a href="troubleshooting-wet-spot.html" class="guide-cta-full">Full Guide</a>
     </div>
 
     <div class="guide-item" id="low-pressure">
       <div class="guide-num">Problem 4</div>
       <h2>Low Pressure on One Zone? <em>Check for Leaks or Too Many Heads</em></h2>
-      <p>If one sprinkler zone has weak pressure but the rest of the system works fine, the issue is usually inside that specific zone. It could be a broken line, a cracked fitting, a bad valve, clogged heads, or too many sprinkler heads running on one zone. This last one is common on new construction homes across Meridian, Caldwell and Star where builder-installed systems sometimes have zones that are overloaded from the start.</p>
+      <p>If one sprinkler zone has weak pressure but the rest of the system works fine, the issue is usually inside that specific zone. It could be a broken line, a cracked fitting, a bad valve, clogged heads, or too many sprinkler heads running on one zone. This last one is common on new construction homes across Meridian, Caldwell and Star where systems sometimes have zones that are overloaded from the start.</p>
       <p>A good way to spot this is to turn the zone on and walk the yard. Look for bubbling water, sunken wet areas, misting heads, or heads that barely pop up. One small underground leak can make the whole zone look weak. If the pressure issue started suddenly rather than gradually, a broken line is usually the cause. If it has always been a little weak, the zone may just have too many heads on it.</p>
-      <a href="sprinkler-repair.html" class="guide-cta">🔧 Book a Sprinkler Repair →</a>
+      <a href="sprinkler-repair.html" class="guide-cta">Book a Sprinkler Repair</a>
+      <a href="troubleshooting-low-pressure.html" class="guide-cta-full">Full Guide</a>
     </div>
 
     <div class="guide-item" id="coverage">
       <div class="guide-num">Problem 5</div>
       <h2>Sprinklers Running but Not Covering Right? <em>Adjust the Spray Pattern</em></h2>
       <p>Sometimes the system is working, but the heads are not aimed correctly. A sprinkler head may be spraying the sidewalk, driveway, fence, house, or the same area as another head while missing dry parts of the lawn. This is especially common after a hard Treasure Valley winter where ground movement, frost heave, or mower hits have knocked heads out of position without anything obviously breaking.</p>
-      <p>This can waste a lot of water and still leave brown spots. Most spray heads and rotor heads can be adjusted so they hit the right area. If your lawn has dry patches and wet patches at the same time, the issue may not be water pressure, it may just be bad coverage. Idaho's low average rainfall — around 12 inches a year — means every zone needs to be dialed in correctly or parts of your lawn simply will not get enough water to survive the summer. A spring turn-on inspection catches most of these issues before they turn into dead spots in July.</p>
-      <a href="spring-turn-on.html" class="guide-cta">🌸 Book a Spring Turn-On →</a>
+      <p>This can waste a lot of water and still leave brown spots. Most spray heads and rotor heads can be adjusted so they hit the right area. If your lawn has dry patches and wet patches at the same time, the issue may not be water pressure, it may just be bad coverage. Idaho's low average rainfall means every zone needs to be dialed in correctly or parts of your lawn simply will not get enough water to survive the summer. A spring turn-on inspection catches most of these issues before they turn into dead spots in July.</p>
+      <a href="spring-turn-on.html" class="guide-cta">Book a Spring Turn-On</a>
+      <a href="troubleshooting-bad-coverage.html" class="guide-cta-full">Full Guide</a>
     </div>
 
   </div>
@@ -196,35 +216,47 @@ footer a{color:rgba(255,255,255,.5)}
     <div class="cta-box">
       <h3>Still Not Sure?</h3>
       <p>If you have walked through these and still cannot figure out what is wrong, call us. We diagnose and fix sprinkler problems across the Treasure Valley every day.</p>
-      <a href="index.html#contact" class="btn-white">📋 Get a Free Quote</a>
-      <a href="tel:2088802712" class="btn-dark">📞 (208) 880-2712</a>
+      <a href="index.html#contact" class="btn-white">Get a Free Quote</a>
+      <a href="tel:2088802712" class="btn-dark">(208) 880-2712</a>
     </div>
-    <div class="lic-box"><p>✅ Licensed & Insured<br>Liability Coverage on Every Job</p></div>
+    <div class="lic-box"><p>Licensed and Insured<br>Idaho Registered Contractor<br>Liability Coverage on Every Job</p></div>
     <div class="info-box">
       <h4>Related Services</h4>
       <ul>
-        <li>🔧 <a href="sprinkler-repair.html">Sprinkler Repair</a></li>
-        <li>🌸 <a href="spring-turn-on.html">Spring Turn-On</a></li>
-        <li>🔩 <a href="main-and-drain.html">Main & Drain Replacement</a></li>
-        <li>💧 <a href="backflow.html">Backflow Service</a></li>
-        <li>❄️ <a href="winterization.html">Winterization & Blowout</a></li>
-        <li>🌱 <a href="sprinkler-installation.html">New Installation</a></li>
+        <li><a href="sprinkler-repair.html">Sprinkler Repair</a></li>
+        <li><a href="spring-turn-on.html">Spring Turn-On</a></li>
+        <li><a href="main-and-drain.html">Main & Drain Replacement</a></li>
+        <li><a href="backflow.html">Backflow Service</a></li>
+        <li><a href="winterization.html">Winterization & Blowout</a></li>
+        <li><a href="sprinkler-installation.html">New Installation</a></li>
+        <li><a href="emergency.html">Emergency Service</a></li>
       </ul>
     </div>
     <div class="info-box">
       <h4>Contact</h4>
       <ul>
-        <li>📞 (208) 880-2712</li>
-        <li>✉️ beelinesprinklerrepair@gmail.com</li>
-        <li>📍 Serving all of the Treasure Valley</li>
+        <li>(208) 880-2712</li>
+        <li>beelinesprinklerrepair@gmail.com</li>
+        <li>Serving all of the Treasure Valley</li>
       </ul>
     </div>
   </div>
 </div>
 
-<div class="svc-links"><div class="svc-links-inner"><h3>Our Services</h3><div class="svc-link-grid"><a href="sprinkler-repair.html">🔧 Sprinkler Repair</a><a href="sprinkler-installation.html">🌱 New Installation</a><a href="spring-turn-on.html">🌸 Spring Turn-On</a><a href="winterization.html">❄️ Winterization & Blowout</a><a href="main-and-drain.html">🔩 Main & Drain Replacement</a><a href="backflow.html">💧 Backflow Service</a></div></div></div>
+<div class="svc-links"><div class="svc-links-inner"><h3>Our Services</h3><div class="svc-link-grid"><a href="sprinkler-repair.html">Sprinkler Repair</a><a href="sprinkler-installation.html">New Installation</a><a href="spring-turn-on.html">Spring Turn-On</a><a href="winterization.html">Winterization & Blowout</a><a href="main-and-drain.html">Main & Drain Replacement</a><a href="backflow.html">Backflow Service</a><a href="irrigation.html">Irrigation Repair/Services</a><a href="emergency.html">Emergency Service</a></div></div></div>
 
-<footer><p>© 2025 <strong>Beeline Sprinkler Repair</strong> · Licensed & Insured · 5606 W Amity Rd, Nampa, ID 83687 · <a href="tel:2088802712">(208) 880-2712</a> · <a href="index.html">Back to Main Site</a></p></footer>
-<script>var bee=document.createElement('div');bee.innerHTML='<svg width="30" height="30" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg"><ellipse cx="10" cy="13" rx="9" ry="5" fill="rgba(200,230,255,0.75)" stroke="rgba(100,160,220,0.5)" stroke-width="0.5"/><ellipse cx="26" cy="13" rx="9" ry="5" fill="rgba(200,230,255,0.75)" stroke="rgba(100,160,220,0.5)" stroke-width="0.5"/><ellipse cx="18" cy="21" rx="7" ry="9" fill="#FFD700"/><rect x="11" y="18" width="14" height="3" rx="1" fill="#1a1a00" opacity="0.85"/><rect x="11" y="23" width="14" height="3" rx="1" fill="#1a1a00" opacity="0.85"/><circle cx="18" cy="12" r="5" fill="#FFD700"/><circle cx="16" cy="11" r="1.2" fill="#1a1a00"/><circle cx="20" cy="11" r="1.2" fill="#1a1a00"/><path d="M15.5 13.5 Q18 15.5 20.5 13.5" stroke="#1a1a00" stroke-width="0.8" fill="none" stroke-linecap="round"/><line x1="16" y1="7" x2="13" y2="3" stroke="#1a1a00" stroke-width="1" stroke-linecap="round"/><circle cx="13" cy="3" r="1" fill="#FFD700" stroke="#1a1a00" stroke-width="0.5"/><line x1="20" y1="7" x2="23" y2="3" stroke="#1a1a00" stroke-width="1" stroke-linecap="round"/><circle cx="23" cy="3" r="1" fill="#FFD700" stroke="#1a1a00" stroke-width="0.5"/></svg>';bee.style.cssText='position:fixed;z-index:9999;pointer-events:none;filter:drop-shadow(0 1px 3px rgba(0,0,0,.4));will-change:transform;';document.body.appendChild(bee);var bx=window.innerWidth/2,bvx=0.8,bw=0;function animBee(){bw+=0.1;bx+=bvx+Math.sin(bw*0.7)*0.5;var by=26+Math.sin(bw)*8;var mn=window.innerWidth*0.25,mx=window.innerWidth*0.75;if(bx<mn){bx=mn;bvx=Math.abs(bvx);}if(bx>mx){bx=mx;bvx=-Math.abs(bvx);}if(Math.random()<0.01)bvx+=(Math.random()-0.5)*0.5;bvx=Math.max(-1.5,Math.min(1.5,bvx));if(Math.abs(bvx)<0.3)bvx=bvx<0?-0.3:0.3;bee.style.left=bx+'px';bee.style.top=by+'px';bee.style.transform=bvx<0?'scaleX(-1)':'scaleX(1)';requestAnimationFrame(animBee);}animBee();</script>
+<footer><p>© 2025 <strong>Beeline Sprinkler Repair</strong> · Licensed and Insured · 5606 W Amity Rd, Nampa, ID 83687 · <a href="tel:2088802712">(208) 880-2712</a> · <a href="index.html">Back to Main Site</a></p></footer>
+
+<script>
+if(window.innerWidth>680){
+  var bee=document.createElement('div');
+  bee.innerHTML='<svg width="30" height="30" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg"><ellipse cx="10" cy="13" rx="9" ry="5" fill="rgba(200,230,255,0.75)" stroke="rgba(100,160,220,0.5)" stroke-width="0.5"/><ellipse cx="26" cy="13" rx="9" ry="5" fill="rgba(200,230,255,0.75)" stroke="rgba(100,160,220,0.5)" stroke-width="0.5"/><ellipse cx="18" cy="21" rx="7" ry="9" fill="#FFD700"/><rect x="11" y="18" width="14" height="3" rx="1" fill="#1a1a00" opacity="0.85"/><rect x="11" y="23" width="14" height="3" rx="1" fill="#1a1a00" opacity="0.85"/><circle cx="18" cy="12" r="5" fill="#FFD700"/><circle cx="16" cy="11" r="1.2" fill="#1a1a00"/><circle cx="20" cy="11" r="1.2" fill="#1a1a00"/><path d="M15.5 13.5 Q18 15.5 20.5 13.5" stroke="#1a1a00" stroke-width="0.8" fill="none" stroke-linecap="round"/><line x1="16" y1="7" x2="13" y2="3" stroke="#1a1a00" stroke-width="1" stroke-linecap="round"/><circle cx="13" cy="3" r="1" fill="#FFD700" stroke="#1a1a00" stroke-width="0.5"/><line x1="20" y1="7" x2="23" y2="3" stroke="#1a1a00" stroke-width="1" stroke-linecap="round"/><circle cx="23" cy="3" r="1" fill="#FFD700" stroke="#1a1a00" stroke-width="0.5"/></svg>';
+  bee.style.cssText='position:fixed;z-index:9999;pointer-events:none;filter:drop-shadow(0 1px 3px rgba(0,0,0,.4));will-change:transform;';
+  document.body.appendChild(bee);
+  var bx=window.innerWidth/2,bvx=0.8,bw=0;
+  function animBee(){bw+=0.1;bx+=bvx+Math.sin(bw*0.7)*0.5;var by=26+Math.sin(bw)*8;var mn=window.innerWidth*0.25,mx=window.innerWidth*0.75;if(bx<mn){bx=mn;bvx=Math.abs(bvx);}if(bx>mx){bx=mx;bvx=-Math.abs(bvx);}if(Math.random()<0.01)bvx+=(Math.random()-0.5)*0.5;bvx=Math.max(-1.5,Math.min(1.5,bvx));if(Math.abs(bvx)<0.3)bvx=bvx<0?-0.3:0.3;bee.style.left=bx+'px';bee.style.top=by+'px';bee.style.transform=bvx<0?'scaleX(-1)':'scaleX(1)';requestAnimationFrame(animBee);}
+  animBee();
+}
+</script>
 </body>
 </html>

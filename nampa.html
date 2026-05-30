@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-720G5TQPP7"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-720G5TQPP7');</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sprinkler Repair in Nampa, ID | Beeline Sprinkler Repair</title>
 <meta name="description" content="Licensed and insured sprinkler repair in Nampa, Idaho. Beeline handles broken heads, leaks, valves, timers, main and drain replacement, backflow service, spring turn-ons, and blowouts. Call or text for a free quote.">
@@ -24,7 +26,7 @@
       "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "18:00"}],
       "sameAs": ["https://www.facebook.com/BeelineSprinkler/", "https://www.yelp.com/biz/beeline-sprinkler-repair-nampa-2", "https://share.google/wmRIhGxHghIGRtf7r"],
       "areaServed": {"@type": "City", "name": "Nampa"},
-      "aggregateRating": {"@type": "AggregateRating", "ratingValue": "5", "reviewCount": "130", "bestRating": "5"}
+      "aggregateRating": {"@type": "AggregateRating", "ratingValue": "5", "reviewCount": "136", "bestRating": "5", "worstRating": "2"}
     },
     {
       "@type": "Service",
@@ -45,13 +47,6 @@
       }
     },
     {
-      "@type": "Organization",
-      "name": "Beeline Sprinkler Repair",
-      "url": "https://www.beelinesprinklerrepair.com",
-      "logo": "https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Real+Logo.png",
-      "sameAs": ["https://www.facebook.com/BeelineSprinkler/", "https://www.yelp.com/biz/beeline-sprinkler-repair-nampa-2", "https://share.google/wmRIhGxHghIGRtf7r"]
-    },
-    {
       "@type": "BreadcrumbList",
       "itemListElement": [
         {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.beelinesprinklerrepair.com/"},
@@ -68,13 +63,23 @@ html{scroll-behavior:smooth}
 body{font-family:'Segoe UI',system-ui,sans-serif;color:var(--ink);line-height:1.6;background:var(--white)}
 a{color:inherit;text-decoration:none}
 img{display:block;max-width:100%}
+.mobile-sticky-cta{display:none;position:fixed;bottom:0;left:0;right:0;z-index:9998;grid-template-columns:1fr 1fr;height:62px;box-shadow:0 -2px 12px rgba(0,0,0,.25)}
+.sticky-call{background:var(--yellow);color:var(--ink);display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:800;text-decoration:none}
+.sticky-quote{background:var(--ink);color:#fff;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:800;text-decoration:none}
 nav{background:var(--ink);position:sticky;top:0;z-index:300;padding:0 32px}
 .nav-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:82px;gap:16px}
 .nav-logo img{height:100px;width:auto;object-fit:contain;animation:logoPulse 3s ease-in-out infinite;margin-top:28px}
 @keyframes logoPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
-.nav-links{display:flex;gap:4px}
-.nav-links a{font-size:15px;font-weight:600;color:rgba(255,255,255,.65);padding:8px 13px;border-radius:5px;white-space:nowrap;cursor:pointer}
-.nav-links a:hover{color:#fff;background:rgba(255,255,255,.1)}
+.nav-links{display:flex;gap:4px;align-items:center}
+.nav-links a{font-size:15px;font-weight:600;color:rgba(255,255,255,.65);padding:8px 13px;border-radius:5px;white-space:nowrap}
+.nav-links a:hover,.nav-links a.active{color:#fff;background:rgba(255,255,255,.1)}
+.nav-dropdown{position:relative}
+.nav-dropdown-toggle{font-size:15px;font-weight:600;color:rgba(255,255,255,.65);padding:8px 13px;border-radius:5px;white-space:nowrap;cursor:pointer;display:flex;align-items:center;gap:5px;background:none;border:none;line-height:1}
+.nav-dropdown-toggle:hover,.nav-dropdown-toggle.active{color:#fff;background:rgba(255,255,255,.1)}
+.nav-dropdown-menu{display:none;position:absolute;top:100%;left:0;background:var(--ink2);border:1px solid rgba(255,255,255,.1);border-radius:8px;min-width:240px;padding:8px 0;z-index:400;box-shadow:0 8px 32px rgba(0,0,0,.4)}
+.nav-dropdown-menu a{display:block;padding:9px 16px;font-size:14px;font-weight:600;color:rgba(255,255,255,.7);white-space:nowrap}
+.nav-dropdown-menu a:hover,.nav-dropdown-menu a.active{color:#fff;background:rgba(255,255,255,.08)}
+.nav-dropdown:hover .nav-dropdown-menu{display:block}
 .nav-cta{background:var(--yellow);color:var(--ink);padding:10px 22px;border-radius:var(--r);font-weight:800;font-size:15px;white-space:nowrap}
 .nav-cta:hover{background:#e6b800}
 .city-hero{position:relative;min-height:340px;display:flex;align-items:flex-end;padding:48px 32px;overflow:hidden}
@@ -100,16 +105,28 @@ nav{background:var(--ink);position:sticky;top:0;z-index:300;padding:0 32px}
 .content ul{list-style:none;display:flex;flex-direction:column;gap:8px;margin-bottom:16px}
 .content ul li{display:flex;align-items:flex-start;gap:10px;font-size:.92rem;color:var(--muted);line-height:1.6}
 .content ul li::before{content:'✓';color:var(--green);font-weight:900;flex-shrink:0;margin-top:2px}
+.content a.inline-link{color:var(--green);font-weight:700;text-decoration:underline}
 .service-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:24px 0}
 .service-card{background:#eef7ee;border:1px solid #c8e6c8;border-radius:12px;padding:18px}
 .service-card h4{font-size:.92rem;font-weight:800;color:var(--ink);margin-bottom:5px}
 .service-card p{font-size:.82rem;color:var(--muted);line-height:1.55;margin:0}
+
+/* City info box */
+.city-info-box{background:#f0f7ff;border:1.5px solid #b8d4f0;border-radius:14px;padding:24px;margin:32px 0}
+.city-info-box h4{font-size:1rem;font-weight:800;color:var(--ink);margin-bottom:4px}
+.city-info-box .cib-source{font-size:.78rem;color:var(--muted);margin-bottom:14px}
+.city-info-box .cib-source a{color:#2060a0;font-weight:700;text-decoration:underline}
+.city-info-box ul{list-style:none;display:flex;flex-direction:column;gap:9px}
+.city-info-box ul li{display:flex;align-items:flex-start;gap:10px;font-size:.88rem;color:#333;line-height:1.65}
+.city-info-box ul li::before{content:'ℹ';color:#2060a0;font-weight:900;flex-shrink:0;margin-top:1px}
+.city-info-box ul li a{color:#2060a0;font-weight:700;text-decoration:underline}
+
 .sidebar{display:flex;flex-direction:column;gap:16px;position:sticky;top:100px}
 .cta-box{background:var(--green);color:#fff;border-radius:14px;padding:24px;text-align:center}
 .cta-box h3{font-size:1.1rem;font-weight:800;margin-bottom:8px}
 .cta-box p{font-size:.85rem;color:rgba(255,255,255,.85);margin-bottom:16px;line-height:1.6}
 .cta-box a.req-btn{background:#fff;color:var(--green);padding:12px 20px;border-radius:var(--r);font-weight:800;font-size:.95rem;display:block;text-align:center;margin-bottom:10px}
-.cta-box a.call-btn{display:inline-block;margin-top:4px;background:rgba(0,0,0,.2);color:#fff;padding:10px 20px;border-radius:var(--r);font-weight:700;font-size:.88rem;display:block;text-align:center}
+.cta-box a.call-btn{background:rgba(0,0,0,.2);color:#fff;padding:10px 20px;border-radius:var(--r);font-weight:700;font-size:.88rem;display:block;text-align:center}
 .info-box{background:var(--sand);border-radius:12px;padding:18px}
 .info-box h4{font-size:.9rem;font-weight:800;margin-bottom:10px;color:var(--ink)}
 .info-box ul{list-style:none;display:flex;flex-direction:column;gap:7px}
@@ -136,23 +153,75 @@ footer{background:#080f08;color:rgba(255,255,255,.45);text-align:center;padding:
 footer strong{color:rgba(255,255,255,.8)}
 footer a{color:rgba(255,255,255,.5)}
 @media(max-width:900px){.main-content{grid-template-columns:1fr}.sidebar{position:static}.service-grid{grid-template-columns:1fr}.quote-inner{grid-template-columns:1fr}}
-@media(max-width:680px){.nav-links{display:none}.city-hero{padding:36px 20px}.main-content{padding:36px 20px}.quote-section{padding:36px 20px}}
+@media(max-width:680px){
+  .mobile-sticky-cta{display:grid}
+  body{padding-bottom:62px}
+  .nav-links{display:none}
+  .nav-cta{display:none}
+  .city-hero{padding:36px 20px}
+  .main-content{padding:36px 20px}
+  .quote-section{padding:36px 20px}
+}
 </style>
 </head>
 <body>
+
+<div class="mobile-sticky-cta">
+  <a href="tel:2088802712" class="sticky-call">Call Now</a>
+  <a href="#quote" class="sticky-quote">Get a Free Quote</a>
+</div>
 
 <nav>
   <div class="nav-inner">
     <div class="nav-logo"><a href="index.html"><img src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Real+Logo.png" alt="Beeline Sprinkler Repair Logo"></a></div>
     <div class="nav-links">
-      <a href="index.html">Services</a>
-      <a href="index.html#pricing">Plans</a>
-      <a href="index.html#about">About</a>
-      <a href="index.html#reviews">Reviews</a>
+      <a href="plans.html">Service Plans</a>
+      <a href="emergency.html">Emergency Service</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="faq.html">FAQ</a>
       <a href="index.html#contact">Contact</a>
-      <a href="index.html">📍 Locations</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle active">Locations</button>
+        <div class="nav-dropdown-menu">
+          <a href="nampa.html" class="active">Nampa</a>
+          <a href="boise.html">Boise</a>
+          <a href="meridian.html">Meridian</a>
+          <a href="kuna.html">Kuna</a>
+          <a href="eagle.html">Eagle</a>
+          <a href="caldwell.html">Caldwell</a>
+          <a href="star.html">Star</a>
+          <a href="middleton.html">Middleton</a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle">Services</button>
+        <div class="nav-dropdown-menu">
+          <a href="sprinkler-repair.html">Sprinkler Repair</a>
+          <a href="sprinkler-installation.html">New Installation</a>
+          <a href="spring-turn-on.html">Spring Turn-On</a>
+          <a href="winterization.html">Winterization & Blowout</a>
+          <a href="main-and-drain.html">Main & Drain Replacement</a>
+          <a href="backflow.html">Backflow Service</a>
+          <a href="irrigation.html">Irrigation Repair/Services</a>
+          <a href="controller-replacement.html">Controller Replacement</a>
+          <a href="valve-repair-treasure-valley.html">Valve Repair</a>
+          <a href="sprinkler-head-replacement-treasure-valley.html">Head Replacement</a>
+          <a href="plans.html">Service Plans</a>
+          <a href="emergency.html">Emergency Service</a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle">Troubleshooting</button>
+        <div class="nav-dropdown-menu">
+          <a href="troubleshooting-dead-spot.html">Dead Spot in the Lawn</a>
+          <a href="troubleshooting-valve-box-water.html">Valve Box Full of Water</a>
+          <a href="troubleshooting-wet-spot.html">Big Wet Spot in the Yard</a>
+          <a href="troubleshooting-low-pressure.html">Low Pressure on One Zone</a>
+          <a href="troubleshooting-bad-coverage.html">Bad Spray Coverage</a>
+        </div>
+      </div>
     </div>
-    <a href="tel:2088802712" class="nav-cta">📞 (208) 880-2712</a>
+    <a href="tel:2088802712" class="nav-cta">(208) 880-2712</a>
   </div>
 </nav>
 
@@ -160,57 +229,80 @@ footer a{color:rgba(255,255,255,.5)}
   <img class="city-hero-bg" src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Nampa.png" alt="Sprinkler repair in Nampa Idaho">
   <div class="city-hero-overlay"></div>
   <div class="city-hero-content">
-    <div class="hero-eyebrow">⭐ Licensed & Insured · Serving Nampa Since 2015</div>
+    <div class="hero-eyebrow">Licensed and Insured · Serving Nampa Since 2015</div>
     <h1>Sprinkler Repair in<br><em>Nampa, Idaho</em></h1>
-    <p>From broken heads and valve failures to full main & drain replacements — Beeline is Nampa's most trusted licensed and insured sprinkler company. We're local, we're fast, and we get it done right.</p>
+    <p>From broken heads and valve failures to full main and drain replacements — Beeline is Nampa's most trusted licensed and insured sprinkler company. We're local, we're fast, and we get it done right.</p>
     <div class="hero-ctas">
-      <a href="#quote" class="btn-primary">Get a Free Quote →</a>
-      <a href="tel:2088802712" class="btn-ghost">📞 (208) 880-2712</a>
+      <a href="#quote" class="btn-primary">Get a Free Quote</a>
+      <a href="tel:2088802712" class="btn-ghost">(208) 880-2712</a>
     </div>
   </div>
 </div>
 
 <div class="trust-bar">
   <div class="trust-bar-inner">
-    <div class="tb">✅ <strong>Licensed & Insured</strong></div>
-    <div class="tb">⭐ <strong>130+ Five-Star Google Reviews</strong></div>
-    <div class="tb">📍 <strong>Based in Nampa, ID</strong></div>
-    <div class="tb">🔧 <strong>Serving Nampa Since 2015</strong></div>
-    <div class="tb">📞 <strong>Same-Day Service Available</strong></div>
+    <div class="tb">Licensed and Insured</div>
+    <div class="tb"><strong>136+ Five-Star Google Reviews</strong></div>
+    <div class="tb">Based in Nampa, ID</div>
+    <div class="tb">Serving Nampa Since 2015</div>
+    <div class="tb">Same-Day Service Available</div>
   </div>
 </div>
 
 <div class="main-content">
   <div class="content">
-    <h2>Nampa's #1 Licensed & Insured Sprinkler Company</h2>
-    <p>Beeline Sprinkler Repair is based right here in Nampa at 5606 W Amity Rd and has been serving homeowners across the city since 2015. Nampa is Canyon County's largest city and one of the fastest-growing cities in the United States. With that growth comes thousands of new homes going up across Nampa every year — and Beeline has been doing new construction sprinkler installations here since 2015.</p>
+    <h2>Nampa's #1 Licensed and Insured Sprinkler Company</h2>
+    <p>Beeline Sprinkler Repair is based right here in Nampa at 5606 W Amity Rd and has been serving homeowners across the city since 2015. Nampa is Canyon County's largest city and one of the fastest-growing cities in the United States. With that growth comes thousands of new homes going up across Nampa every year, and Beeline has been doing new construction sprinkler installations here since day one.</p>
     <p>We service all of Nampa including the areas off Garrity Blvd, Midland Blvd, Happy Valley Road, and the neighborhoods near Lake Lowell. We're never far away and can often get to you same day.</p>
 
     <h3>Sprinkler Repair in Nampa</h3>
     <p>Broken heads, stuck valves, wiring faults, controller issues — we diagnose and fix the most common residential irrigation problems across Nampa fast, usually in a single visit. We carry parts on the truck so most Nampa repairs don't need a second trip.</p>
 
     <h3>New Sprinkler Installation in Nampa</h3>
-    <p>Nampa is one of the top cities in the country for new home construction. We install full irrigation systems for new builds across Nampa — from planning through final walk-through — getting systems in before sod goes down on lots off Pleasant Vale Road, Midland Blvd, and throughout North Nampa.</p>
+    <p>Nampa is one of the top cities in the country for new home construction. We install full irrigation systems for new builds across Nampa, from planning through final walk-through, getting systems in before sod goes down on lots off Pleasant Vale Road, Midland Blvd, and throughout North Nampa.</p>
 
-    <h3>Sprinkler Blowout & Winterization in Nampa</h3>
-    <p>Schedule your Nampa blowout between late September and mid-October before the first hard freeze. We use compressed air to clear every zone and confirm your system is fully protected for winter.</p>
+    <h3>Sprinkler Blowout and Winterization in Nampa</h3>
+    <p>The City of Nampa typically closes its pressurized irrigation system in the first or second week of October each year, when the irrigation districts end their season. Once the city shuts off the water, you cannot run your system again until spring. That makes your blowout window short — plan to get it done in late September or the very first days of October. We use compressed air to clear every zone and confirm your system is fully protected for winter.</p>
+    <p>See the <a href="https://www.cityofnampa.us/m/newsflash/home/detail/1366" target="_blank" rel="noopener" class="inline-link">City of Nampa irrigation season closure notice</a> for the most current shutdown date each fall.</p>
 
     <h3>Spring Turn-On in Nampa</h3>
-    <p>After a Nampa winter we activate your system, inspect every zone for freeze damage, adjust head coverage, and calibrate your timer so your lawn is protected from day one of the season.</p>
+    <p>Nampa's irrigation system generally comes back online in mid to late April, though the exact date varies year to year depending on when the irrigation districts release water into the canals. After the city brings pressure up, crews flush the lines and test pump stations before water reaches customers at full pressure. That process can take a couple of weeks, so it's smart to have your system inspected and ready to go as soon as pressure is available.</p>
+    <p>The <a href="https://nmid.org/2025-season-start-up/" target="_blank" rel="noopener" class="inline-link">Nampa Meridian Irrigation District</a> publishes updates each spring on when water will be released into the system. Booking your spring turn-on early means we can get to you right when the water comes on.</p>
 
-    <h3>Main & Drain Replacement in Nampa</h3>
-    <p>When your irrigation main line fails it affects your whole system. We handle full main and drain replacements across all of Nampa — restoring full water pressure and system performance.</p>
+    <h3>Main and Drain Replacement in Nampa</h3>
+    <p>When your irrigation main line fails it affects your whole system. We handle full main and drain replacements across all of Nampa, restoring full water pressure and system performance.</p>
 
-    <h3>Backflow Testing & Replacement in Nampa</h3>
-    <p>We test, maintain, and replace backflow prevention devices for Nampa homeowners — keeping your system code-compliant with Canyon County requirements and your water safe.</p>
+    <h3>Backflow Testing and Replacement in Nampa</h3>
+    <p>We test, maintain, and replace backflow prevention devices for Nampa homeowners, keeping your system compliant with Canyon County requirements and your water safe.</p>
+
+    <!-- Nampa work photo -->
+    <div style="margin:32px 0;border-radius:14px;overflow:hidden;box-shadow:0 6px 24px rgba(0,0,0,.1)">
+      <img src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Sprinkler+SEO+PICS/Fixing+sprinkler++diaphrams+in+meridian.jpg" alt="Beeline Sprinkler Repair technician working on a sprinkler system in Nampa Idaho" style="width:100%;height:280px;object-fit:cover;display:block">
+    </div>
+
+    <!-- City of Nampa Info Box -->
+    <div class="city-info-box">
+      <div style="display:flex;align-items:center;gap:16px;margin-bottom:14px">
+        <img src="https://www.cityofnampa.us/ImageRepository/Document?documentID=20266" alt="City of Nampa official logo" style="height:52px;width:auto;display:block;flex-shrink:0">
+        <div>
+          <h4 style="margin-bottom:2px">Good to Know: City of Nampa Irrigation Reminders</h4>
+          <p class="cib-source" style="margin-bottom:0">From the <a href="https://www.cityofnampa.us/irrigation" target="_blank" rel="noopener">City of Nampa Irrigation Division</a></p>
+        </div>
+      </div>
+      <ul>
+        <li>Check your sprinkler controller programming each season to make sure you are not over-watering. Over-watering is a violation of <a href="https://library.municode.com/id/nampa/codes/code_of_ordinances?nodeId=TIT8WASERE_CH1WARE_8-1-22WAIRWA" target="_blank" rel="noopener">Nampa City Code Section 8-1-22</a>.</li>
+        <li>Do not use your house's potable (drinking) water to irrigate your lawn. The city does not provide bill adjustments if domestic water is used for irrigation, and it will significantly increase your water and sewer charges.</li>
+        <li>When getting your sprinkler lines blown out in the fall, make sure your contractor does not operate the city curb stop valve. That valve is for city emergency use only. Beeline knows this and works around it correctly on every job.</li>
+      </ul>
+    </div>
 
     <div class="service-grid">
-      <div class="service-card"><h4>🔧 Sprinkler Repair</h4><p>Broken heads, leaks, valves, wiring, controllers — diagnosed and fixed fast.</p></div>
-      <div class="service-card"><h4>🌱 New Installation</h4><p>Custom systems for new homes and new builds across Nampa's growing subdivisions.</p></div>
-      <div class="service-card"><h4>❄️ Winterization Blowout</h4><p>Compressed air blowout before the first freeze — protecting your lines all winter.</p></div>
-      <div class="service-card"><h4>🌸 Spring Turn-On</h4><p>Full system activation, zone check, head adjustment, and timer calibration every spring.</p></div>
-      <div class="service-card"><h4>🔩 Main & Drain Replacement</h4><p>Full main line and drain replacement restoring pressure and performance.</p></div>
-      <div class="service-card"><h4>💧 Backflow Service</h4><p>Testing, maintenance, and replacement of backflow prevention devices.</p></div>
+      <div class="service-card"><h4>Sprinkler Repair</h4><p>Broken heads, leaks, valves, wiring, controllers — diagnosed and fixed fast.</p></div>
+      <div class="service-card"><h4>New Installation</h4><p>Custom systems for new homes and new builds across Nampa's growing subdivisions.</p></div>
+      <div class="service-card"><h4>Winterization Blowout</h4><p>Compressed air blowout before the city shuts off water in early October.</p></div>
+      <div class="service-card"><h4>Spring Turn-On</h4><p>Full system activation, zone check, head adjustment, and timer calibration every spring.</p></div>
+      <div class="service-card"><h4>Main and Drain Replacement</h4><p>Full main line and drain replacement restoring pressure and performance.</p></div>
+      <div class="service-card"><h4>Backflow Service</h4><p>Testing, maintenance, and replacement of backflow prevention devices.</p></div>
     </div>
 
     <h3>Nampa Areas We Serve</h3>
@@ -220,29 +312,37 @@ footer a{color:rgba(255,255,255,.5)}
   <div class="sidebar">
     <div class="cta-box">
       <h3>Free Quote in Nampa</h3>
-      <p>Licensed & insured. Fast response. Same-day service available in most cases.</p>
-      <a href="#quote" class="req-btn">📋 Request Service Online</a>
-      <a href="tel:2088802712" class="call-btn">📞 Call / Text (208) 880-2712</a>
+      <p>Licensed and insured. Fast response. Same-day service available in most cases.</p>
+      <a href="#quote" class="req-btn">Request Service Online</a>
+      <a href="tel:2088802712" class="call-btn">Call / Text (208) 880-2712</a>
     </div>
-    <div class="lic-box"><p>✅ Licensed & Insured<br>Liability Coverage on Every Job</p></div>
+    <div class="lic-box"><p>Licensed and Insured<br>Liability Coverage on Every Job</p></div>
     <div class="info-box">
       <h4>Services in Nampa</h4>
       <ul>
-        <li>🔧 Sprinkler repair</li>
-        <li>🌱 New installation</li>
-        <li>🌸 Spring turn-on</li>
-        <li>❄️ Winterization blowout</li>
-        <li>💧 Backflow testing & replacement</li>
-        <li>🔩 Main & drain replacement</li>
-        <li>📋 Monthly maintenance plans</li>
+        <li>Sprinkler repair</li>
+        <li>New installation</li>
+        <li>Spring turn-on</li>
+        <li>Winterization blowout</li>
+        <li>Backflow testing and replacement</li>
+        <li>Main and drain replacement</li>
+        <li>Monthly maintenance plans</li>
+      </ul>
+    </div>
+    <div class="info-box">
+      <h4>Nampa Season Dates</h4>
+      <ul>
+        <li>Spring water on: mid to late April</li>
+        <li>Fall shutoff: first or second week of October</li>
+        <li>Book your blowout in late September</li>
       </ul>
     </div>
     <div class="info-box">
       <h4>Contact</h4>
       <ul>
-        <li>📞 (208) 880-2712</li>
-        <li>✉️ beelinesprinklerrepair@gmail.com</li>
-        <li>📍 5606 W Amity Rd, Nampa ID</li>
+        <li>(208) 880-2712</li>
+        <li>beelinesprinklerrepair@gmail.com</li>
+        <li>5606 W Amity Rd, Nampa ID</li>
       </ul>
     </div>
   </div>
@@ -253,19 +353,19 @@ footer a{color:rgba(255,255,255,.5)}
     <div class="quote-left">
       <div class="eyebrow">Get Started</div>
       <h2>Get a Free Quote in Nampa</h2>
-      <p>Licensed & insured. We respond fast — same-day service available in most cases.</p>
+      <p>Licensed and insured. We respond fast — same-day service available in most cases.</p>
       <div class="contact-list">
-        <div>📞 <strong>(208) 880-2712</strong></div>
-        <div>✉️ beelinesprinklerrepair@gmail.com</div>
-        <div>📍 Serving all of Nampa, ID</div>
+        <div>(208) 880-2712</div>
+        <div>beelinesprinklerrepair@gmail.com</div>
+        <div>Serving all of Nampa, ID</div>
       </div>
-      <div class="lic-box"><p>✅ Licensed & Insured · Liability Coverage on Every Job</p></div>
+      <div class="lic-box"><p>Licensed and Insured · Liability Coverage on Every Job</p></div>
     </div>
     <div class="quote-form">
       <h3>Request Service in Nampa</h3>
       <p>Fill out the form below — we'll get back to you fast.</p>
       <iframe src='https://st.sendajob.com/MY/servicerequest/d2a6d4f54526a97793669b7fe3bcce9438cfec99_f.html' width='100%' height='748' scrolling='no' style='border:none;display:block;'></iframe>
-      <a href="tel:2088802712" style="display:block;background:#0f1a0f;color:#fff;text-align:center;padding:12px;border-radius:8px;font-weight:700;font-size:.9rem;margin-top:12px">📞 Or Call / Text (208) 880-2712</a>
+      <a href="tel:2088802712" style="display:block;background:#0f1a0f;color:#fff;text-align:center;padding:12px;border-radius:8px;font-weight:700;font-size:.9rem;margin-top:12px">Or Call / Text (208) 880-2712</a>
     </div>
   </div>
 </div>
@@ -287,29 +387,12 @@ footer a{color:rgba(255,255,255,.5)}
 </div>
 
 <footer>
-  <p>© 2025 <strong>Beeline Sprinkler Repair</strong> · Licensed & Insured · 5606 W Amity Rd, Nampa, ID 83687 · <a href="tel:2088802712">(208) 880-2712</a> · <a href="index.html">Back to Main Site</a></p>
+  <p>© 2025 <strong>Beeline Sprinkler Repair</strong> · Licensed and Insured · 5606 W Amity Rd, Nampa, ID 83687 · <a href="tel:2088802712">(208) 880-2712</a> · <a href="index.html">Back to Main Site</a></p>
 </footer>
 
 <script>
-var bee = document.createElement('div');
-bee.innerHTML = '<svg width="30" height="30" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg"><ellipse cx="10" cy="13" rx="9" ry="5" fill="rgba(200,230,255,0.75)" stroke="rgba(100,160,220,0.5)" stroke-width="0.5"/><ellipse cx="26" cy="13" rx="9" ry="5" fill="rgba(200,230,255,0.75)" stroke="rgba(100,160,220,0.5)" stroke-width="0.5"/><ellipse cx="18" cy="21" rx="7" ry="9" fill="#FFD700"/><rect x="11" y="18" width="14" height="3" rx="1" fill="#1a1a00" opacity="0.85"/><rect x="11" y="23" width="14" height="3" rx="1" fill="#1a1a00" opacity="0.85"/><circle cx="18" cy="12" r="5" fill="#FFD700"/><circle cx="16" cy="11" r="1.2" fill="#1a1a00"/><circle cx="20" cy="11" r="1.2" fill="#1a1a00"/><path d="M15.5 13.5 Q18 15.5 20.5 13.5" stroke="#1a1a00" stroke-width="0.8" fill="none" stroke-linecap="round"/><line x1="16" y1="7" x2="13" y2="3" stroke="#1a1a00" stroke-width="1" stroke-linecap="round"/><circle cx="13" cy="3" r="1" fill="#FFD700" stroke="#1a1a00" stroke-width="0.5"/><line x1="20" y1="7" x2="23" y2="3" stroke="#1a1a00" stroke-width="1" stroke-linecap="round"/><circle cx="23" cy="3" r="1" fill="#FFD700" stroke="#1a1a00" stroke-width="0.5"/></svg>';
-bee.style.cssText = 'position:fixed;z-index:9999;pointer-events:none;filter:drop-shadow(0 1px 3px rgba(0,0,0,.4));will-change:transform;';
-document.body.appendChild(bee);
-var bx = window.innerWidth/2, bvx = 0.8, bw = 0;
-function animBee(){
-  bw += 0.1; bx += bvx + Math.sin(bw*0.7)*0.5;
-  var by = 26 + Math.sin(bw)*8;
-  var mn = window.innerWidth*0.25, mx = window.innerWidth*0.75;
-  if(bx < mn){bx = mn; bvx = Math.abs(bvx);}
-  if(bx > mx){bx = mx; bvx = -Math.abs(bvx);}
-  if(Math.random() < 0.01) bvx += (Math.random()-0.5)*0.5;
-  bvx = Math.max(-1.5, Math.min(1.5, bvx));
-  if(Math.abs(bvx) < 0.3) bvx = bvx < 0 ? -0.3 : 0.3;
-  bee.style.left = bx+'px'; bee.style.top = by+'px';
-  bee.style.transform = bvx < 0 ? 'scaleX(-1)' : 'scaleX(1)';
-  requestAnimationFrame(animBee);
-}
-animBee();
+document.querySelectorAll('a[href="#quote"]').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();var el=document.getElementById('quote');if(!el)return;window.scrollTo({top:el.getBoundingClientRect().top+window.pageYOffset,behavior:'smooth'});});});
+if(window.innerWidth>680){var bee=document.createElement('div');bee.innerHTML='<svg width="30" height="30" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg"><ellipse cx="10" cy="13" rx="9" ry="5" fill="rgba(200,230,255,0.75)" stroke="rgba(100,160,220,0.5)" stroke-width="0.5"/><ellipse cx="26" cy="13" rx="9" ry="5" fill="rgba(200,230,255,0.75)" stroke="rgba(100,160,220,0.5)" stroke-width="0.5"/><ellipse cx="18" cy="21" rx="7" ry="9" fill="#FFD700"/><rect x="11" y="18" width="14" height="3" rx="1" fill="#1a1a00" opacity="0.85"/><rect x="11" y="23" width="14" height="3" rx="1" fill="#1a1a00" opacity="0.85"/><circle cx="18" cy="12" r="5" fill="#FFD700"/><circle cx="16" cy="11" r="1.2" fill="#1a1a00"/><circle cx="20" cy="11" r="1.2" fill="#1a1a00"/><path d="M15.5 13.5 Q18 15.5 20.5 13.5" stroke="#1a1a00" stroke-width="0.8" fill="none" stroke-linecap="round"/><line x1="16" y1="7" x2="13" y2="3" stroke="#1a1a00" stroke-width="1" stroke-linecap="round"/><circle cx="13" cy="3" r="1" fill="#FFD700" stroke="#1a1a00" stroke-width="0.5"/><line x1="20" y1="7" x2="23" y2="3" stroke="#1a1a00" stroke-width="1" stroke-linecap="round"/><circle cx="23" cy="3" r="1" fill="#FFD700" stroke="#1a1a00" stroke-width="0.5"/></svg>';bee.style.cssText='position:fixed;z-index:9999;pointer-events:none;filter:drop-shadow(0 1px 3px rgba(0,0,0,.4));will-change:transform;';document.body.appendChild(bee);var bx=window.innerWidth/2,bvx=0.8,bw=0;function animBee(){bw+=0.1;bx+=bvx+Math.sin(bw*0.7)*0.5;var by=26+Math.sin(bw)*8;var mn=window.innerWidth*0.25,mx=window.innerWidth*0.75;if(bx<mn){bx=mn;bvx=Math.abs(bvx);}if(bx>mx){bx=mx;bvx=-Math.abs(bvx);}if(Math.random()<0.01)bvx+=(Math.random()-0.5)*0.5;bvx=Math.max(-1.5,Math.min(1.5,bvx));if(Math.abs(bvx)<0.3)bvx=bvx<0?-0.3:0.3;bee.style.left=bx+'px';bee.style.top=by+'px';bee.style.transform=bvx<0?'scaleX(-1)':'scaleX(1)';requestAnimationFrame(animBee);}animBee();}
 </script>
 </body>
 </html>

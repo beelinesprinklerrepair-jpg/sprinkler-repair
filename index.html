@@ -433,7 +433,49 @@ footer a{color:rgba(255,255,255,.5)}
     </div>
   </div>
 </section>
+<style>
+@keyframes sirenPulse {
+  0%   { background-position: 0% 100%; }
+  50%  { background-position: 100% 0%; }
+  100% { background-position: 0% 100%; }
+}
+@keyframes btnGlow {
+  0%, 100% { box-shadow: 0 0 10px rgba(245,196,0,.5), 0 4px 12px rgba(0,0,0,.3); }
+  50%       { box-shadow: 0 0 22px rgba(245,196,0,.9), 0 4px 16px rgba(0,0,0,.4); }
+}
+.emergency-band {
+  background: linear-gradient(135deg, #8b0000, #a30000, #cc0000, #2a2a8e, #1a4db8, #3370e0, #ffffff, #dde8ff, #3370e0, #1a4db8, #2a2a8e, #cc0000, #a30000, #8b0000);
+  background-size: 300% 300%;
+  animation: sirenPulse 13s ease-in-out infinite;
+  padding: 26px 32px;
+  border: 14px solid #000;
+  text-align: center;
+}
+.emergency-band a {
+  display: inline-block;
+  background: #f5c400 !important;
+  color: #0f1a0f !important;
+  padding: 12px 32px;
+  border-radius: 8px;
+  font-weight: 800;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  text-decoration: none;
+  animation: btnGlow 2s ease-in-out infinite;
+}
+.emergency-band a:hover { background: #e6b800 !important; }
+.emergency-band p {
+  font-size: .84rem;
+  color: #0f1a0f;
+  font-weight: 800;
+  margin: 0;
+}
+</style>
 
+<div class="emergency-band">
+  <a href="emergency.html">Emergency Sprinkler Repair Request</a>
+  <p>For active leaks, flooding, or systems that will not shut off, request urgent irrigation repair service here.</p>
+</div>
 <style>
 @keyframes sirenPulse {
   0%   { background-position: 0% 100%; }

@@ -271,9 +271,7 @@ footer a{color:rgba(255,255,255,.5)}
   .mobile-reviews-after-contact{display:block}
   .desktop-reviews{display:none}
 }
-/* Truck scales fluidly — starts shrinking at ~1100px, bottoms out at 900px */
-.truck-img{width:clamp(90%,calc(90% + (100vw - 900px) * 0.1),155%) !important}
-@media(max-width:680px){.truck-img{width:100% !important}}
+@media(min-width:681px){.mobile-reviews-after-contact{display:none}}
 </style>
 </head>
 <body>
@@ -394,8 +392,8 @@ footer a{color:rgba(255,255,255,.5)}
   <div class="hero-mobile-fade"></div>
   <div class="hero-lines"></div>
   <div class="hero-content">
-    <div style="display:grid;grid-template-columns:45fr 55fr;gap:24px;align-items:center;width:100%;position:relative" class="hero-grid">
-      <div style="position:relative;z-index:2">
+    <div style="display:grid;grid-template-columns:1fr 420px;gap:48px;align-items:center;width:100%" class="hero-grid">
+      <div>
         <div class="hero-eyebrow">Family Owned &amp; Operated · Licensed &amp; Insured · Treasure Valley Since 2015</div>
         <h1>The Treasure Valley's #1<br><em>Sprinkler Repair & Service Company.</em></h1>
         <p class="hero-sub">Sprinkler repair, new installations, main &amp; drain, backflow, and winterization across Nampa, Meridian, Boise, Caldwell, Eagle, Kuna, Star &amp; Middleton.</p>
@@ -411,8 +409,8 @@ footer a{color:rgba(255,255,255,.5)}
           <div><span class="hero-stat-n">8</span><span class="hero-stat-l">Cities Served</span></div>
         </div>
       </div>
-      <div class="hero-img" style="position:relative;z-index:1;display:flex;align-items:center;justify-content:center;transform:translateX(14%)">
-        <img src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Beeline+Sprinkler+Truck+Treasure+Valley+Idaho.png" alt="Beeline Sprinkler Repair truck Treasure Valley Idaho" fetchpriority="high" style="width:138%;height:auto;display:block;filter:drop-shadow(0 8px 32px rgba(0,0,0,.45))">
+      <div style="border-radius:16px;overflow:hidden;height:460px;box-shadow:0 24px 64px rgba(0,0,0,.5);border:2px solid rgba(255,255,255,.12)" class="hero-img">
+        <img src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Cover+Photo+-First+Picture.jpg" alt="Beeline Sprinkler Repair Treasure Valley" fetchpriority="high" style="width:100%;height:100%;object-fit:cover;display:block">
       </div>
     </div>
   </div>

@@ -146,6 +146,12 @@ body{padding-top:82px}
 .mobile-cta-row{padding:20px 28px 0}
 .mobile-cta-row a{display:block;background:var(--yellow);color:var(--ink);text-align:center;padding:14px;border-radius:var(--r);font-weight:800;font-size:16px;border:none}
 .hero{position:relative;min-height:62vh;display:flex;align-items:center;overflow:hidden;background:linear-gradient(135deg,#082e08 0%,#1a5c1a 55%,#0d400d 100%)}
+.hero-mobile-bg{display:none;position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;z-index:0}
+.hero-mobile-fade{display:none;position:absolute;inset:0;z-index:1;background:linear-gradient(to right,rgba(8,46,8,.97) 0%,rgba(8,46,8,.75) 40%,rgba(8,46,8,.2) 100%)}
+@media(max-width:680px){
+  .hero-mobile-bg{display:block}
+  .hero-mobile-fade{display:block}
+}
 .hero-lines{position:absolute;inset:0;overflow:hidden;opacity:.05;pointer-events:none}
 .hero-lines::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:repeating-linear-gradient(75deg,transparent,transparent 40px,rgba(255,255,255,.5) 40px,rgba(255,255,255,.5) 41px);animation:drift 18s linear infinite}
 @keyframes drift{from{transform:translateX(0)}to{transform:translateX(82px)}}
@@ -226,39 +232,6 @@ body{padding-top:82px}
 .tc-badge{display:inline-block;background:rgba(245,196,0,.15);color:var(--yellow);font-size:10px;font-weight:800;padding:3px 10px;border-radius:20px;margin-bottom:8px;letter-spacing:.8px}
 .tc h3{font-size:.93rem;font-weight:800;color:#fff;margin-bottom:6px}
 .tc p{font-size:.8rem;color:rgba(255,255,255,.6);line-height:1.6}
-.areas-hero{background:var(--ink);padding:48px 32px;text-align:center;position:relative;overflow:hidden}
-.areas-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 50% 50%,rgba(45,122,45,.2) 0%,transparent 70%)}
-.areas-hero h2{font-size:clamp(1.6rem,4vw,2.6rem);font-weight:900;color:#fff;margin-bottom:10px;position:relative;z-index:1}
-.areas-hero p{color:rgba(255,255,255,.65);font-size:.93rem;max-width:480px;margin:0 auto;position:relative;z-index:1}
-.city-tabs{display:flex;flex-wrap:wrap;gap:7px;justify-content:center;padding:16px 24px;background:var(--ink2);border-bottom:1px solid rgba(255,255,255,.08);position:sticky;top:72px;z-index:100}
-.city-tab{padding:7px 15px;border-radius:20px;font-size:12.5px;font-weight:700;border:1px solid rgba(255,255,255,.2);cursor:pointer;background:transparent;color:rgba(255,255,255,.6);transition:all .15s}
-.city-tab:hover{border-color:var(--green);color:#fff}
-.city-tab.active{background:var(--green);color:#fff;border-color:var(--green)}
-.city-page{display:none}.city-page.active{display:block}
-.city-hero{height:220px;display:flex;align-items:flex-end;padding:22px 28px;position:relative;overflow:hidden}
-.city-hero-bg{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;filter:brightness(.5)}
-.city-hero-overlay{position:absolute;inset:0;z-index:1}
-.cht{position:relative;z-index:2}
-.cht h2{font-size:clamp(1.4rem,4vw,2rem);font-weight:900;color:#fff}
-.cht p{color:rgba(255,255,255,.75);font-size:.88rem}
-.city-content{max-width:980px;margin:0 auto;padding:32px 24px}
-.city-body{display:grid;grid-template-columns:1fr 300px;gap:32px;align-items:start}
-.ct h3{font-size:1.05rem;font-weight:800;margin-bottom:8px;color:var(--gd)}
-.ct p{font-size:.91rem;color:var(--muted);line-height:1.75;margin-bottom:12px}
-.ct ul{list-style:none;display:flex;flex-direction:column;gap:6px;margin-bottom:16px}
-.ct ul li{display:flex;align-items:center;gap:8px;font-size:.88rem;color:var(--muted)}
-.cs{display:flex;flex-direction:column;gap:12px}
-.cta-box{background:var(--green);color:#fff;border-radius:12px;padding:20px;text-align:center}
-.cta-box h4{font-size:1rem;font-weight:800;margin-bottom:6px}
-.cta-box p{font-size:.83rem;color:rgba(255,255,255,.85);margin-bottom:12px}
-.cta-box a.req-btn{background:#fff;color:var(--green);padding:10px 18px;border-radius:7px;font-weight:800;font-size:.9rem;display:inline-block;width:100%;text-align:center}
-.cta-box a.call-btn{display:inline-block;margin-top:8px;background:rgba(255,255,255,.15);color:#fff;padding:8px 18px;border-radius:6px;font-weight:700;font-size:.85rem;width:100%;text-align:center}
-.lic-box{background:var(--gl);border:1.5px solid var(--green);border-radius:10px;padding:14px;text-align:center}
-.lic-box p{font-size:.84rem;color:var(--gd);font-weight:700;line-height:1.6}
-.svc-box{background:var(--sand);border-radius:10px;padding:16px}
-.svc-box h4{font-size:.87rem;font-weight:800;margin-bottom:9px;color:var(--ink)}
-.svc-box ul{list-style:none;display:flex;flex-direction:column;gap:7px}
-.svc-box ul li{font-size:.84rem;color:var(--muted);display:flex;align-items:center;gap:7px}
 footer{background:#080f08;color:rgba(255,255,255,.45);text-align:center;padding:20px 32px;font-size:.8rem;border-top:1px solid rgba(255,255,255,.06)}
 footer strong{color:rgba(255,255,255,.8)}
 footer a{color:rgba(255,255,255,.5)}
@@ -370,13 +343,22 @@ footer a{color:rgba(255,255,255,.5)}
 </nav>
 
 <div class="mobile-menu" id="mobileMenu">
-  <a href="plans.html">Service Plans</a>
-  <a href="nampa.html">Nampa</a>
+  <a href="#" data-sec="pricing" class="mobile-nav-sec">Service Plans</a>
   <a href="emergency.html">Emergency Service</a>
-  <a href="#" data-sec="about" class="mobile-nav-sec">About</a>
   <a href="reviews.html">Reviews</a>
-  <a href="#" data-sec="contact" class="mobile-nav-sec">Contact</a>
   <a href="faq.html">FAQ</a>
+  <a href="#" data-sec="contact" class="mobile-nav-sec">Contact</a>
+  <div class="mobile-section-label" onclick="toggleMobSection(this)">Locations <span>▾</span></div>
+  <div class="mobile-sub" style="display:none">
+    <a href="nampa.html">Nampa</a>
+    <a href="boise.html">Boise</a>
+    <a href="meridian.html">Meridian</a>
+    <a href="kuna.html">Kuna</a>
+    <a href="eagle.html">Eagle</a>
+    <a href="caldwell.html">Caldwell</a>
+    <a href="star.html">Star</a>
+    <a href="middleton.html">Middleton</a>
+  </div>
   <div class="mobile-section-label" onclick="toggleMobSection(this)">Services <span>▾</span></div>
   <div class="mobile-sub" style="display:none">
     <a href="sprinkler-repair.html">Sprinkler Repair</a>
@@ -400,13 +382,14 @@ footer a{color:rgba(255,255,255,.5)}
     <a href="troubleshooting-low-pressure.html">Low Pressure on One Zone</a>
     <a href="troubleshooting-bad-coverage.html">Bad Spray Coverage</a>
   </div>
-  <div class="mobile-section-label">Navigate</div>
   <div class="mobile-cta-row"><a href="tel:2088802712">Call (208) 880-2712</a></div>
 </div>
 
 <div class="page active" id="page-home">
 
 <div class="hero">
+  <img class="hero-mobile-bg" src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Treasure+Valley+Sprinkler+System+Turn+On.jpg" alt="Treasure Valley sprinkler system turn on">
+  <div class="hero-mobile-fade"></div>
   <div class="hero-lines"></div>
   <div class="hero-content">
     <div style="display:grid;grid-template-columns:1fr 420px;gap:48px;align-items:center;width:100%" class="hero-grid">
@@ -494,6 +477,7 @@ footer a{color:rgba(255,255,255,.5)}
         <div class="rv-card"><div class="stars">★★★★★</div><p class="rv-text">"Used them for a full system install on our new home. They were on time, clean, and the system works perfectly."</p><div class="rv-name">Tyler R. — Meridian, ID</div></div>
         <div class="rv-card"><div class="stars">★★★★★</div><p class="rv-text">"Best sprinkler company in the Treasure Valley. Have used them three years in a row for our fall blowout."</p><div class="rv-name">Diane H. — Caldwell, ID</div></div>
         <div class="rv-card"><div class="stars">★★★★★</div><p class="rv-text">"Super responsive and got us scheduled fast. Fixed two broken heads and adjusted all our zones. Highly recommend!"</p><div class="rv-name">Kevin T. — Nampa, ID</div></div>
+        <!-- duplicate set for seamless loop -->
         <div class="rv-card"><div class="stars">★★★★★</div><p class="rv-text">"Very professional. Fit me in less than 24 hrs after calling and fixed it in one trip."</p><div class="rv-name">Gretchen P. — Nampa, ID</div></div>
         <div class="rv-card"><div class="stars">★★★★★</div><p class="rv-text">"Needed a blowout before the freeze and Beeline did an amazing job. Quick, easy, very professional!"</p><div class="rv-name">Phillip O'Neill — Treasure Valley</div></div>
         <div class="rv-card"><div class="stars">★★★★★</div><p class="rv-text">"An honest company putting local customers first. Mark tried several ideas to save me money and fixed everything same day."</p><div class="rv-name">Bill Lemas — Nampa, ID</div></div>
@@ -623,8 +607,6 @@ footer a{color:rgba(255,255,255,.5)}
 
 <footer><p>© 2025 <strong>Beeline Sprinkler Repair</strong> · Licensed &amp; Insured · 5606 W Amity Rd, Nampa, ID 83687 · <a href="tel:2088802712">(208) 880-2712</a> · Serving the Treasure Valley Since 2015</p></footer>
 </div>
-
-
 
 <script>
 var navEl=document.querySelector('nav');

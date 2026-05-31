@@ -271,7 +271,9 @@ footer a{color:rgba(255,255,255,.5)}
   .mobile-reviews-after-contact{display:block}
   .desktop-reviews{display:none}
 }
-@media(min-width:681px){.mobile-reviews-after-contact{display:none}}
+/* Truck scales fluidly — starts shrinking at ~1100px, bottoms out at 900px */
+.truck-img{width:clamp(90%,calc(90% + (100vw - 900px) * 0.1),155%) !important}
+@media(max-width:680px){.truck-img{width:100% !important}}
 </style>
 </head>
 <body>
@@ -409,8 +411,8 @@ footer a{color:rgba(255,255,255,.5)}
           <div><span class="hero-stat-n">8</span><span class="hero-stat-l">Cities Served</span></div>
         </div>
       </div>
-      <div class="hero-img" style="position:relative;z-index:1;display:flex;align-items:center;justify-content:center;transform:translateX(7%)">
-        <img src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Beeline+Sprinkler+Truck+Treasure+Valley+Idaho.png" alt="Beeline Sprinkler Repair truck Treasure Valley Idaho" fetchpriority="high" style="width:115%;height:auto;display:block;filter:drop-shadow(0 8px 32px rgba(0,0,0,.45))">
+      <div class="hero-img" style="position:relative;z-index:1;display:flex;align-items:center;justify-content:center;transform:translateX(14%)">
+        <img src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Beeline+Sprinkler+Truck+Treasure+Valley+Idaho.png" alt="Beeline Sprinkler Repair truck Treasure Valley Idaho" fetchpriority="high" style="width:138%;height:auto;display:block;filter:drop-shadow(0 8px 32px rgba(0,0,0,.45))">
       </div>
     </div>
   </div>

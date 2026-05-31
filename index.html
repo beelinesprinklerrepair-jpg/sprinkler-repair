@@ -272,6 +272,63 @@ footer a{color:rgba(255,255,255,.5)}
   .desktop-reviews{display:none}
 }
 @media(min-width:681px){.mobile-reviews-after-contact{display:none}}
+
+/* Emergency Band */
+@keyframes sirenPulse {
+  0%   { background-position: 0% 100%; }
+  50%  { background-position: 100% 0%; }
+  100% { background-position: 0% 100%; }
+}
+@keyframes btnGlow {
+  0%, 100% { box-shadow: 0 0 10px rgba(245,196,0,.5), 0 4px 12px rgba(0,0,0,.3); }
+  50%       { box-shadow: 0 0 22px rgba(245,196,0,.9), 0 4px 16px rgba(0,0,0,.4); }
+}
+.emergency-band {
+  background: linear-gradient(135deg, #8b0000, #a30000, #cc0000, #2a2a8e, #1a4db8, #3370e0, #ffffff, #dde8ff, #3370e0, #1a4db8, #2a2a8e, #cc0000, #a30000, #8b0000);
+  background-size: 300% 300%;
+  animation: sirenPulse 13s ease-in-out infinite;
+  padding: 26px 32px;
+  border: 14px solid #000;
+  text-align: center;
+  display: block !important;
+  width: 100%;
+  box-sizing: border-box;
+}
+.emergency-band a {
+  display: inline-block;
+  background: #f5c400 !important;
+  color: #0f1a0f !important;
+  padding: 12px 32px;
+  border-radius: 8px;
+  font-weight: 800;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  text-decoration: none;
+  animation: btnGlow 2s ease-in-out infinite;
+}
+.emergency-band a:hover { background: #e6b800 !important; }
+.emergency-band p {
+  font-size: .84rem;
+  color: #0f1a0f;
+  font-weight: 800;
+  margin: 0;
+}
+@media(max-width:680px) {
+  .emergency-band {
+    padding: 20px 16px;
+    border: 10px solid #000;
+  }
+  .emergency-band a {
+    font-size: 1rem;
+    padding: 12px 20px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .emergency-band p {
+    font-size: .82rem;
+  }
+}
 </style>
 </head>
 <body>
@@ -433,127 +490,11 @@ footer a{color:rgba(255,255,255,.5)}
     </div>
   </div>
 </section>
-<style>
-@keyframes sirenPulse {
-  0%   { background-position: 0% 100%; }
-  50%  { background-position: 100% 0%; }
-  100% { background-position: 0% 100%; }
-}
-@keyframes btnGlow {
-  0%, 100% { box-shadow: 0 0 10px rgba(245,196,0,.5), 0 4px 12px rgba(0,0,0,.3); }
-  50%       { box-shadow: 0 0 22px rgba(245,196,0,.9), 0 4px 16px rgba(0,0,0,.4); }
-}
-.emergency-band {
-  background: linear-gradient(135deg, #8b0000, #a30000, #cc0000, #2a2a8e, #1a4db8, #3370e0, #ffffff, #dde8ff, #3370e0, #1a4db8, #2a2a8e, #cc0000, #a30000, #8b0000);
-  background-size: 300% 300%;
-  animation: sirenPulse 13s ease-in-out infinite;
-  padding: 26px 32px;
-  border: 14px solid #000;
-  text-align: center;
-  display: block !important;
-  width: 100%;
-  box-sizing: border-box;
-}
-.emergency-band a {
-  display: inline-block;
-  background: #f5c400 !important;
-  color: #0f1a0f !important;
-  padding: 12px 32px;
-  border-radius: 8px;
-  font-weight: 800;
-  font-size: 1.1rem;
-  margin-bottom: 10px;
-  text-decoration: none;
-  animation: btnGlow 2s ease-in-out infinite;
-}
-.emergency-band a:hover { background: #e6b800 !important; }
-.emergency-band p {
-  font-size: .84rem;
-  color: #0f1a0f;
-  font-weight: 800;
-  margin: 0;
-}
-@media(max-width:680px) {
-  .emergency-band {
-    padding: 20px 16px;
-    border: 10px solid #000;
-  }
-  .emergency-band a {
-    font-size: 1rem;
-    padding: 12px 20px;
-    display: block;
-    width: 100%;
-    box-sizing: border-box;
-  }
-  .emergency-band p {
-    font-size: .82rem;
-  }
-}
-</style>
 
 <div class="emergency-band">
   <a href="emergency.html">Emergency Sprinkler Repair Request</a>
   <p>For active leaks, flooding, or systems that will not shut off, request urgent irrigation repair service here.</p>
 </div>
-@keyframes sirenPulse {
-  0%   { background-position: 0% 100%; }
-  50%  { background-position: 100% 0%; }
-  100% { background-position: 0% 100%; }
-}
-@keyframes btnGlow {
-  0%, 100% { box-shadow: 0 0 10px rgba(245,196,0,.5), 0 4px 12px rgba(0,0,0,.3); }
-  50%       { box-shadow: 0 0 22px rgba(245,196,0,.9), 0 4px 16px rgba(0,0,0,.4); }
-}
-.emergency-band {
-  background: linear-gradient(135deg, #8b0000, #a30000, #cc0000, #2a2a8e, #1a4db8, #3370e0, #ffffff, #dde8ff, #3370e0, #1a4db8, #2a2a8e, #cc0000, #a30000, #8b0000);
-  background-size: 300% 300%;
-  animation: sirenPulse 13s ease-in-out infinite;
-  padding: 26px 32px;
-  border: 14px solid #000;
-  text-align: center;
-  display: block !important;
-  width: 100%;
-}
-.emergency-band a {
-  display: inline-block;
-  background: #f5c400 !important;
-  color: #0f1a0f !important;
-  padding: 12px 32px;
-  border-radius: 8px;
-  font-weight: 800;
-  font-size: 1.1rem;
-  margin-bottom: 10px;
-  text-decoration: none;
-  animation: btnGlow 2s ease-in-out infinite;
-}
-.emergency-band a:hover { background: #e6b800 !important; }
-.emergency-band p {
-  font-size: .84rem;
-  color: #0f1a0f;
-  font-weight: 800;
-  margin: 0;
-}
-@media(max-width:680px) {
-  .emergency-band {
-    display: block !important;
-    padding: 20px 16px;
-    border: 10px solid #000;
-  }
-  .emergency-band a {
-    font-size: 1rem;
-    padding: 12px 20px;
-    display: block;
-    width: 100%;
-  }
-  .emergency-band p {
-    font-size: .82rem;
-  }
-}
-</style>
-
-
-
-
 
 <div id="about">
   <div class="story-split">
@@ -593,7 +534,6 @@ footer a{color:rgba(255,255,255,.5)}
         <div class="rv-card"><div class="stars">★★★★★</div><p class="rv-text">"Used them for a full system install on our new home. They were on time, clean, and the system works perfectly."</p><div class="rv-name">Tyler R. — Meridian, ID</div></div>
         <div class="rv-card"><div class="stars">★★★★★</div><p class="rv-text">"Best sprinkler company in the Treasure Valley. Have used them three years in a row for our fall blowout."</p><div class="rv-name">Diane H. — Caldwell, ID</div></div>
         <div class="rv-card"><div class="stars">★★★★★</div><p class="rv-text">"Super responsive and got us scheduled fast. Fixed two broken heads and adjusted all our zones. Highly recommend!"</p><div class="rv-name">Kevin T. — Nampa, ID</div></div>
-        <!-- duplicate set for seamless loop -->
         <div class="rv-card"><div class="stars">★★★★★</div><p class="rv-text">"Very professional. Fit me in less than 24 hrs after calling and fixed it in one trip."</p><div class="rv-name">Gretchen P. — Nampa, ID</div></div>
         <div class="rv-card"><div class="stars">★★★★★</div><p class="rv-text">"Needed a blowout before the freeze and Beeline did an amazing job. Quick, easy, very professional!"</p><div class="rv-name">Phillip O'Neill — Treasure Valley</div></div>
         <div class="rv-card"><div class="stars">★★★★★</div><p class="rv-text">"An honest company putting local customers first. Mark tried several ideas to save me money and fixed everything same day."</p><div class="rv-name">Bill Lemas — Nampa, ID</div></div>

@@ -1,0 +1,88 @@
+{
+  "name": "Beeline Sprinkler Repair",
+  "description": "Family owned, licensed and insured sprinkler repair and irrigation service company serving the Treasure Valley, Idaho since 2015.",
+  "url": "https://www.beelinesprinklerrepair.com",
+  "contact": {
+    "phone": "+12088802712",
+    "email": "beelinesprinklerrepair@gmail.com",
+    "address": {
+      "street": "5606 W Amity Rd",
+      "city": "Nampa",
+      "state": "ID",
+      "zip": "83687",
+      "country": "US"
+    }
+  },
+  "service_area": [
+    "Nampa, ID",
+    "Boise, ID",
+    "Meridian, ID",
+    "Caldwell, ID",
+    "Eagle, ID",
+    "Kuna, ID",
+    "Star, ID",
+    "Middleton, ID"
+  ],
+  "hours": {
+    "monday": "08:00-18:00",
+    "tuesday": "08:00-18:00",
+    "wednesday": "08:00-18:00",
+    "thursday": "08:00-18:00",
+    "friday": "08:00-18:00",
+    "saturday": "closed",
+    "sunday": "closed"
+  },
+  "actions": [
+    {
+      "name": "Request Service",
+      "description": "Submit a service request for sprinkler repair or irrigation service",
+      "url": "https://www.beelinesprinklerrepair.com/index.html#contact",
+      "type": "form"
+    },
+    {
+      "name": "Request Emergency Service",
+      "description": "Submit an emergency service request for active leaks, flooding, or systems that will not shut off",
+      "url": "https://www.beelinesprinklerrepair.com/emergency.html#quote",
+      "type": "form"
+    },
+    {
+      "name": "Call or Text",
+      "description": "Call or text Beeline Sprinkler Repair directly",
+      "url": "tel:+12088802712",
+      "type": "phone"
+    },
+    {
+      "name": "Sign Up for Service Plan",
+      "description": "Sign up for a monthly sprinkler service plan starting at $35/month",
+      "url": "https://www.beelinesprinklerrepair.com/plans.html",
+      "type": "form"
+    }
+  ],
+  "services": [
+    "Sprinkler Repair",
+    "New Sprinkler System Installation",
+    "Spring Turn-On",
+    "Winterization and Blowout",
+    "Main and Drain Replacement",
+    "Backflow Testing and Replacement",
+    "Valve Repair",
+    "Controller Replacement",
+    "Head Replacement",
+    "Emergency Sprinkler Repair",
+    "Monthly Service Plans"
+  ],
+  "pricing": {
+    "typical_repair": "$100-$300",
+    "service_plans": {
+      "small_1_5_zones": "$35/month",
+      "medium_6_10_zones": "$45/month",
+      "large_11_15_zones": "$55/month"
+    }
+  },
+  "trust": {
+    "reviews": "136+ five-star Google reviews",
+    "licensed": "Idaho Registered Contractor",
+    "insured": true,
+    "years_in_business": 10
+  }
+}

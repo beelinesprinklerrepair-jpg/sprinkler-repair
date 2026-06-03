@@ -139,6 +139,14 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Troubleshooting Tool -->
+  <url>
+    <loc>https://www.beelinesprinklerrepair.com/sprinkler-troubleshooting.html</loc>
+    <lastmod>2025-06-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
   <!-- Location Pages -->
   <url>
     <loc>https://www.beelinesprinklerrepair.com/nampa-sprinkler-repair.html</loc>

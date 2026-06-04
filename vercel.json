@@ -1,0 +1,12 @@
+{
+  "redirects": [
+    { "source": "/nampa.html", "destination": "/nampa-sprinkler-repair.html", "permanent": true },
+    { "source": "/boise.html", "destination": "/boise-sprinkler-repair.html", "permanent": true },
+    { "source": "/meridian.html", "destination": "/meridian-sprinkler-repair.html", "permanent": true },
+    { "source": "/caldwell.html", "destination": "/caldwell-sprinkler-repair.html", "permanent": true },
+    { "source": "/eagle.html", "destination": "/eagle-sprinkler-repair.html", "permanent": true },
+    { "source": "/kuna.html", "destination": "/kuna-sprinkler-repair.html", "permanent": true },
+    { "source": "/star.html", "destination": "/star-sprinkler-repair.html", "permanent": true },
+    { "source": "/middleton.html", "destination": "/middleton-sprinkler-repair.html", "permanent": true }
+  ]
+}

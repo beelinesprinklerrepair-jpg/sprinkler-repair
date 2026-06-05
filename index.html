@@ -27,6 +27,36 @@
 <meta name="twitter:description" content="Treasure Valley's top-rated sprinkler repair company. 136+ five-star reviews. Serving Nampa, Boise, Meridian & more. Licensed, insured. Free quotes.">
 <meta name="twitter:image" content="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Cover+Photo+-First+Picture.jpg">
 
+<!-- FAQ Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does sprinkler repair cost?",
+      "acceptedAnswer": {"@type": "Answer", "text": "The cost of sprinkler repair depends on the specific problem. Minor repairs and sprinkler tune ups can start around $100, while larger repairs involving underground leaks, valve replacements, manifold repairs, or extensive digging can cost $600 or more depending on labor and replacement parts. For most homeowners, the average sprinkler repair service call falls between $100 and $300."}
+    },
+    {
+      "@type": "Question",
+      "name": "Why is my sprinkler system losing pressure?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Low sprinkler pressure can be caused by broken sprinkler heads, clogged nozzles, leaking pipes, failing valves, main line leaks, roots damaging irrigation lines, well pump problems, backflow issues, or low water pressure. If your sprinklers are not spraying as far as they used to or dry spots are developing in your lawn, a professional sprinkler inspection can identify the cause and restore proper performance."}
+    },
+    {
+      "@type": "Question",
+      "name": "Why won't one of my sprinkler zones turn on?",
+      "acceptedAnswer": {"@type": "Answer", "text": "A sprinkler zone may fail to operate because of a faulty solenoid, bad valve, wiring issue, controller problem, or lack of water flow. Troubleshooting the valve and electrical components is usually the first step in identifying the problem."}
+    },
+    {
+      "@type": "Question",
+      "name": "Why is there a wet spot in my yard when the sprinkler system is off?",
+      "acceptedAnswer": {"@type": "Answer", "text": "A constantly wet area is often caused by a leaking sprinkler valve, broken underground pipe, damaged fitting, or a main line leak. These problems can waste water and increase utility bills if not repaired quickly."}
+    }
+  ]
+}
+</script>
+
 <!-- Stylesheet -->
 <link rel="stylesheet" href="styles.css">
 
@@ -453,6 +483,57 @@
     </div>
   </section>
 
+  <section id="faq" aria-label="Frequently asked questions" style="position:relative;overflow:hidden;padding:64px 32px">
+    <div style="position:absolute;inset:0;background-image:url('https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Cover+Photo+-First+Picture.jpg');background-size:cover;background-position:center;filter:brightness(.18)"></div>
+    <div style="position:relative;z-index:1;max-width:900px;margin:0 auto">
+      <div style="font-size:11px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:var(--yellow);margin-bottom:10px">Common Questions</div>
+      <h2 style="font-size:clamp(1.6rem,3.5vw,2.4rem);font-weight:900;color:#fff;margin-bottom:40px;letter-spacing:-.3px">Sprinkler Repair FAQ</h2>
+      <div style="display:flex;flex-direction:column;gap:12px">
+
+        <div class="faq-item-home">
+          <button class="faq-btn-home" aria-expanded="false">
+            How much does sprinkler repair cost?
+            <span class="faq-icon-home">▼</span>
+          </button>
+          <div class="faq-ans-home">
+            <p>The cost of sprinkler repair depends on the specific problem. Minor repairs and sprinkler tune ups can start around $100, while larger repairs involving underground leaks, valve replacements, manifold repairs, or extensive digging can cost $600 or more depending on labor and replacement parts. For most homeowners, the average sprinkler repair service call falls between $100 and $300.</p>
+          </div>
+        </div>
+
+        <div class="faq-item-home">
+          <button class="faq-btn-home" aria-expanded="false">
+            Why is my sprinkler system losing pressure?
+            <span class="faq-icon-home">▼</span>
+          </button>
+          <div class="faq-ans-home">
+            <p>Low sprinkler pressure can be caused by broken sprinkler heads, clogged nozzles, leaking pipes, failing valves, main line leaks, roots damaging irrigation lines, well pump problems, backflow issues, or low water pressure. If your sprinklers are not spraying as far as they used to or dry spots are developing in your lawn, a professional sprinkler inspection can identify the cause and restore proper performance.</p>
+          </div>
+        </div>
+
+        <div class="faq-item-home">
+          <button class="faq-btn-home" aria-expanded="false">
+            Why won't one of my sprinkler zones turn on?
+            <span class="faq-icon-home">▼</span>
+          </button>
+          <div class="faq-ans-home">
+            <p>A sprinkler zone may fail to operate because of a faulty solenoid, bad valve, wiring issue, controller problem, or lack of water flow. Troubleshooting the valve and electrical components is usually the first step in identifying the problem.</p>
+          </div>
+        </div>
+
+        <div class="faq-item-home">
+          <button class="faq-btn-home" aria-expanded="false">
+            Why is there a wet spot in my yard when the sprinkler system is off?
+            <span class="faq-icon-home">▼</span>
+          </button>
+          <div class="faq-ans-home">
+            <p>A constantly wet area is often caused by a leaking sprinkler valve, broken underground pipe, damaged fitting, or a main line leak. These problems can waste water and increase utility bills if not repaired quickly.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <section class="sec-trust" id="licensed" aria-label="Licensing and insurance">
     <div style="max-width:1200px;margin:0 auto">
       <div class="trust-header">
@@ -476,6 +557,8 @@
 </footer>
 
 <script>
+document.querySelectorAll('.faq-btn-home').forEach(function(btn){btn.addEventListener('click',function(){var item=this.closest('.faq-item-home');var wasOpen=item.classList.contains('open');document.querySelectorAll('.faq-item-home').forEach(function(i){i.classList.remove('open');i.querySelector('.faq-btn-home').setAttribute('aria-expanded','false');});if(!wasOpen){item.classList.add('open');this.setAttribute('aria-expanded','true');}});});
+
 var navEl=document.querySelector('nav');
 window.addEventListener('scroll',function(){if(window.innerWidth<=680){if(window.scrollY>80){navEl.classList.add('scrolled');}else{navEl.classList.remove('scrolled');}}},{passive:true});
 document.getElementById('navScrolledQuote').addEventListener('click',function(e){e.preventDefault();scrollToForm();});

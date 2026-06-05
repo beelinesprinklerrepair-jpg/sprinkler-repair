@@ -156,7 +156,16 @@ nav{background:var(--ink);position:fixed;top:0;left:0;right:0;z-index:300;paddin
 .tc h3{font-size:.93rem;font-weight:800;color:#fff;margin-bottom:6px}
 .tc p{font-size:.8rem;color:rgba(255,255,255,.6);line-height:1.6}
 
-/* Emergency band */
+/* Homepage FAQ band */
+.faq-item-home{border-radius:12px;overflow:hidden;background:var(--sand);border:1px solid #ddd8cc}
+.faq-btn-home{width:100%;text-align:left;background:none;border:none;padding:18px 22px;font-size:1rem;font-weight:800;color:var(--ink);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;font-family:'Segoe UI',system-ui,sans-serif}
+.faq-btn-home:hover{background:#ece9e0}
+.faq-icon-home{font-size:.9rem;color:var(--green);flex-shrink:0;transition:transform .2s}
+.faq-ans-home{display:none;padding:0 22px 18px;font-size:.93rem;color:var(--muted);line-height:1.8}
+.faq-item-home.open .faq-ans-home{display:block}
+.faq-item-home.open .faq-icon-home{transform:rotate(180deg)}
+.faq-item-home.open .faq-btn-home{background:#ece9e0}
+@media(max-width:680px){#faq{padding:40px 20px !important}}
 @keyframes sirenPulse{0%{background-position:0% 100%}50%{background-position:100% 0%}100%{background-position:0% 100%}}
 @keyframes btnGlow{0%,100%{box-shadow:0 0 10px rgba(245,196,0,.5),0 4px 12px rgba(0,0,0,.3)}50%{box-shadow:0 0 22px rgba(245,196,0,.9),0 4px 16px rgba(0,0,0,.4)}}
 .emergency-band{background:linear-gradient(135deg,#8b0000,#a30000,#cc0000,#2a2a8e,#1a4db8,#3370e0,#ffffff,#dde8ff,#3370e0,#1a4db8,#2a2a8e,#cc0000,#a30000,#8b0000);background-size:300% 300%;animation:sirenPulse 13s ease-in-out infinite;padding:26px 32px;border:14px solid #000;text-align:center;display:block !important;width:100%;box-sizing:border-box}

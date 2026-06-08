@@ -149,6 +149,20 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Commercial Pages -->
+  <url>
+    <loc>https://www.beelinesprinklerrepair.com/commercial-maintenance-plans.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.beelinesprinklerrepair.com/property-management-irrigation.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <!-- Location Pages -->
   <url>
     <loc>https://www.beelinesprinklerrepair.com/nampa-sprinkler-repair.html</loc>

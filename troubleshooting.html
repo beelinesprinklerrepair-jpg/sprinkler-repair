@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<link rel="preconnect" href="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com" crossorigin>
+<link rel="dns-prefetch" href="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com">
+<link rel="dns-prefetch" href="https://st.sendajob.com">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-720G5TQPP7"></script>
 <script>
@@ -88,12 +91,22 @@ footer strong{color:rgba(255,255,255,.8)}
 footer a{color:rgba(255,255,255,.5)}
 @media(max-width:900px){.main-content{grid-template-columns:1fr}.sidebar{position:static}}
 @media(max-width:680px){.nav-links{display:none}.page-hero{padding:40px 20px}.main-content{padding:36px 20px}.toc-bar{padding:12px 20px}}
+
+.nav-scrolled-ctas{display:none;align-items:center;gap:8px;}
+nav.scrolled .nav-scrolled-ctas{display:flex;}
+.nav-scrolled-quote{background:var(--yellow);color:var(--ink);padding:8px 16px;border-radius:6px;font-weight:700;font-size:14px;text-decoration:none;}
+.nav-scrolled-call{background:transparent;color:#fff;padding:8px 12px;font-weight:700;font-size:14px;text-decoration:none;}
+
+.mobile-sticky-cta{display:none;position:fixed;bottom:0;left:0;right:0;z-index:9998;grid-template-columns:1fr 1fr;height:62px;box-shadow:0 -2px 12px rgba(0,0,0,.25)}
+.sticky-call{background:var(--yellow);color:var(--ink);display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:800;text-decoration:none}
+.sticky-quote{background:var(--ink);color:#fff;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:800;text-decoration:none}
+@media(max-width:680px){.mobile-sticky-cta{display:grid}body{padding-bottom:62px}}
 </style>
 </head>
 <body>
 <nav>
   <div class="nav-inner">
-    <div class="nav-logo"><a href="index.html"><img src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Real+Logo.png" alt="Beeline Sprinkler Repair"></a></div>
+    <div class="nav-logo"><a href="index.html"><img src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Real+Logo.png" alt="Beeline Sprinkler Repair" fetchpriority="high" decoding="async"></a></div>
     <div class="nav-links">
       <a href="index.html#pricing">Service Plans</a>
       <a href="emergency.html">Emergency Service</a>
@@ -103,14 +116,14 @@ footer a{color:rgba(255,255,255,.5)}
       <div class="nav-dropdown">
         <button class="nav-dropdown-toggle">Locations</button>
         <div class="nav-dropdown-menu">
-          <a href="nampa.html">Nampa</a>
-          <a href="boise.html">Boise</a>
-          <a href="meridian.html">Meridian</a>
-          <a href="kuna.html">Kuna</a>
-          <a href="eagle.html">Eagle</a>
-          <a href="caldwell.html">Caldwell</a>
-          <a href="star.html">Star</a>
-          <a href="middleton.html">Middleton</a>
+          <a href="nampa-sprinkler-repair.html">Nampa</a>
+          <a href="boise-sprinkler-repair.html">Boise</a>
+          <a href="meridian-sprinkler-repair.html">Meridian</a>
+          <a href="kuna-sprinkler-repair.html">Kuna</a>
+          <a href="eagle-sprinkler-repair.html">Eagle</a>
+          <a href="caldwell-sprinkler-repair.html">Caldwell</a>
+          <a href="star-sprinkler-repair.html">Star</a>
+          <a href="middleton-sprinkler-repair.html">Middleton</a>
         </div>
       </div>
       <div class="nav-dropdown">
@@ -257,6 +270,18 @@ if(window.innerWidth>680){
   function animBee(){bw+=0.1;bx+=bvx+Math.sin(bw*0.7)*0.5;var by=26+Math.sin(bw)*8;var mn=window.innerWidth*0.25,mx=window.innerWidth*0.75;if(bx<mn){bx=mn;bvx=Math.abs(bvx);}if(bx>mx){bx=mx;bvx=-Math.abs(bvx);}if(Math.random()<0.01)bvx+=(Math.random()-0.5)*0.5;bvx=Math.max(-1.5,Math.min(1.5,bvx));if(Math.abs(bvx)<0.3)bvx=bvx<0?-0.3:0.3;bee.style.left=bx+'px';bee.style.top=by+'px';bee.style.transform=bvx<0?'scaleX(-1)':'scaleX(1)';requestAnimationFrame(animBee);}
   animBee();
 }
+
+(function(){
+  var nav = document.querySelector('nav');
+  if (!nav) return;
+  window.addEventListener('scroll', function(){
+    nav.classList.toggle('scrolled', window.scrollY > 80);
+  }, {passive: true});
+})();
 </script>
+<div class="mobile-sticky-cta">
+  <a href="tel:2088802712" class="sticky-call">📞 Call Now</a>
+  <a href="#contact" class="sticky-quote">Get a Free Quote</a>
+</div>
 </body>
 </html>

@@ -1,4 +1,22 @@
 {
+  "headers": [
+    {
+      "source": "/styles.css",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }]
+    },
+    {
+      "source": "/(.*)\\.html",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=3600, stale-while-revalidate=86400" }]
+    },
+    {
+      "source": "/(.*)\\.txt",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=86400" }]
+    },
+    {
+      "source": "/(.*)\\.json",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=3600" }]
+    }
+  ],
   "redirects": [
     { "source": "/nampa.html", "destination": "/nampa-sprinkler-repair.html", "permanent": true },
     { "source": "/boise.html", "destination": "/boise-sprinkler-repair.html", "permanent": true },
@@ -7,6 +25,14 @@
     { "source": "/eagle.html", "destination": "/eagle-sprinkler-repair.html", "permanent": true },
     { "source": "/kuna.html", "destination": "/kuna-sprinkler-repair.html", "permanent": true },
     { "source": "/star.html", "destination": "/star-sprinkler-repair.html", "permanent": true },
-    { "source": "/middleton.html", "destination": "/middleton-sprinkler-repair.html", "permanent": true }
+    { "source": "/middleton.html", "destination": "/middleton-sprinkler-repair.html", "permanent": true },
+    { "source": "/sprinkler_repair.html", "destination": "/sprinkler-repair.html", "permanent": true },
+    { "source": "/controller_replacement.html", "destination": "/controller-replacement.html", "permanent": true },
+    { "source": "/troubleshooting_tool.html", "destination": "/sprinkler-troubleshooting.html", "permanent": true },
+    { "source": "/valve_repair-treasure-valley.html", "destination": "/valve-repair-treasure-valley.html", "permanent": true },
+    { "source": "/valve_repair1.html", "destination": "/valve-repair-treasure-valley.html", "permanent": true },
+    { "source": "/commercial-installation.html", "destination": "/commercial-irrigation-installation.html", "permanent": true },
+    { "source": "/commercial-maintenance.html", "destination": "/commercial-maintenance-plans.html", "permanent": true },
+    { "source": "/property-management.html", "destination": "/property-management-irrigation.html", "permanent": true }
   ]
 }

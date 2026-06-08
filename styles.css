@@ -36,6 +36,7 @@ nav{background:var(--ink);position:fixed;top:0;left:0;right:0;z-index:300;paddin
 .nav-dropdown-menu{display:none;position:absolute;top:100%;left:0;background:var(--ink2);border:1px solid rgba(255,255,255,.1);border-radius:8px;min-width:240px;padding:8px 0;z-index:400;box-shadow:0 8px 32px rgba(0,0,0,.4)}
 .nav-dropdown-menu a{display:block;padding:9px 16px;font-size:14px;font-weight:600;color:rgba(255,255,255,.7);white-space:nowrap}
 .nav-dropdown-menu a:hover{color:#fff;background:rgba(255,255,255,.08)}
+.nav-dropdown-menu .divider{border-top:1px solid rgba(255,255,255,.1);margin:4px 0}
 .nav-dropdown:hover .nav-dropdown-menu{display:block}
 .nav-cta{background:var(--yellow);color:var(--ink);padding:10px 22px;border-radius:var(--r);font-weight:800;font-size:15px;white-space:nowrap}
 .nav-cta:hover{background:#e6b800}

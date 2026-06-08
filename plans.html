@@ -2,11 +2,16 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<link rel="preconnect" href="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com" crossorigin>
+<link rel="dns-prefetch" href="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com">
+<link rel="dns-prefetch" href="https://st.sendajob.com">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-720G5TQPP7"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-720G5TQPP7');</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Monthly Sprinkler Maintenance Plans | Beeline Sprinkler Repair</title>
-<meta name="description" content="Simple monthly sprinkler maintenance plans for Nampa, Meridian, Boise, Caldwell, Eagle, Kuna, Star and Middleton homeowners. Spring turn-on, fall blowout, monthly checkups and priority scheduling from $35/mo.">
+<title>Sprinkler Maintenance Plans — Treasure Valley | Beeline</title>
+<meta property="og:title" content="Sprinkler Maintenance Plans — Treasure Valley | Beeline">
+<meta name="description" content="Monthly sprinkler maintenance plans for Treasure Valley homeowners from $35/mo. Spring turn-on, fall blowout, monthly checkups & priority scheduling.">
+<meta property="og:description" content="Monthly sprinkler maintenance plans for Treasure Valley homeowners from $35/mo. Spring turn-on, fall blowout, monthly checkups & priority scheduling.">
 <link rel="canonical" href="https://www.beelinesprinklerrepair.com/plans.html">
 <link rel="icon" type="image/png" href="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/updated+favicon+3.0.png">
 <script type="application/ld+json">
@@ -108,6 +113,11 @@ footer a{color:rgba(255,255,255,.5)}
   .trust-bar-inner{gap:10px}
   .tb{font-size:.75rem}
 }
+
+.nav-scrolled-ctas{display:none;align-items:center;gap:8px;}
+nav.scrolled .nav-scrolled-ctas{display:flex;}
+.nav-scrolled-quote{background:var(--yellow);color:var(--ink);padding:8px 16px;border-radius:6px;font-weight:700;font-size:14px;text-decoration:none;}
+.nav-scrolled-call{background:transparent;color:#fff;padding:8px 12px;font-weight:700;font-size:14px;text-decoration:none;}
 </style>
 </head>
 <body>
@@ -117,43 +127,64 @@ footer a{color:rgba(255,255,255,.5)}
   <a href="index.html#contact" class="sticky-quote">Get a Free Quote</a>
 </div>
 
-<nav>
+<nav aria-label="Main navigation">
   <div class="nav-inner">
-    <div class="nav-logo"><a href="index.html"><img src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Real+Logo.png" alt="Beeline Sprinkler Repair"></a></div>
+    <div class="nav-logo"><img src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Real+Logo.png" alt="Beeline Sprinkler Repair — Home" fetchpriority="high" decoding="async"></div>
     <div class="nav-links">
-      <a href="plans.html" class="active">Service Plans</a>
-      <a href="emergency.html">Emergency Service</a>
       <a href="reviews.html">Reviews</a>
       <a href="faq.html">FAQ</a>
-      <a href="index.html#contact">Contact</a>
+      <a href="#" data-sec="contact">Contact</a>
+
       <div class="nav-dropdown">
-        <button class="nav-dropdown-toggle">Locations</button>
-        <div class="nav-dropdown-menu">
-          <a href="nampa.html">Nampa</a><a href="boise.html">Boise</a><a href="meridian.html">Meridian</a>
-          <a href="kuna.html">Kuna</a><a href="eagle.html">Eagle</a><a href="caldwell.html">Caldwell</a>
-          <a href="star.html">Star</a><a href="middleton.html">Middleton</a>
-        </div>
-      </div>
-      <div class="nav-dropdown">
-        <button class="nav-dropdown-toggle">Services</button>
+        <button class="nav-dropdown-toggle" id="nav-residential">Residential Services ▾</button>
         <div class="nav-dropdown-menu">
           <a href="sprinkler-repair.html">Sprinkler Repair</a>
           <a href="sprinkler-installation.html">New Installation</a>
           <a href="spring-turn-on.html">Spring Turn-On</a>
-          <a href="winterization.html">Winterization & Blowout</a>
-          <a href="main-and-drain.html">Main & Drain Replacement</a>
+          <a href="winterization.html">Winterization &amp; Blowout</a>
+          <a href="main-and-drain.html">Main &amp; Drain Replacement</a>
           <a href="backflow.html">Backflow Service</a>
           <a href="irrigation.html">Irrigation Repair/Services</a>
           <a href="controller-replacement.html">Controller Replacement</a>
           <a href="valve-repair-treasure-valley.html">Valve Repair</a>
           <a href="sprinkler-head-replacement-treasure-valley.html">Head Replacement</a>
-          <a href="plans.html" class="active">Service Plans</a>
-          <a href="emergency.html">Emergency Service</a>
+          <a href="plans.html">Service Plans</a>
+          <a href="sprinkler-troubleshooting.html">Interactive Sprinkler Guide</a>
+          <div class="divider"></div>
+          <a href="emergency.html">🚨 Emergency Service</a>
         </div>
       </div>
+
       <div class="nav-dropdown">
-        <button class="nav-dropdown-toggle">Troubleshooting</button>
+        <button class="nav-dropdown-toggle" id="nav-commercial">Commercial ▾</button>
         <div class="nav-dropdown-menu">
+          <a href="commercial-sprinkler-repair.html">Commercial Repair</a>
+          <a href="commercial-irrigation-installation.html">Commercial Installation</a>
+          <a href="commercial-maintenance-plans.html">Commercial Maintenance Plans</a>
+          <a href="property-management-irrigation.html">Property Management Services</a>
+          <div class="divider"></div>
+          <a href="emergency.html">🚨 Emergency Service</a>
+        </div>
+      </div>
+
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle" id="nav-areas">Locations ▾</button>
+        <div class="nav-dropdown-menu">
+          <a href="nampa-sprinkler-repair.html">Nampa</a>
+          <a href="boise-sprinkler-repair.html">Boise</a>
+          <a href="meridian-sprinkler-repair.html">Meridian</a>
+          <a href="kuna-sprinkler-repair.html">Kuna</a>
+          <a href="eagle-sprinkler-repair.html">Eagle</a>
+          <a href="caldwell-sprinkler-repair.html">Caldwell</a>
+          <a href="star-sprinkler-repair.html">Star</a>
+          <a href="middleton-sprinkler-repair.html">Middleton</a>
+        </div>
+      </div>
+
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle">Troubleshooting ▾</button>
+        <div class="nav-dropdown-menu">
+          <a href="sprinkler-troubleshooting.html">Interactive Sprinkler Guide</a>
           <a href="troubleshooting-dead-spot.html">Dead Spot in the Lawn</a>
           <a href="troubleshooting-valve-box-water.html">Valve Box Full of Water</a>
           <a href="troubleshooting-wet-spot.html">Big Wet Spot in the Yard</a>
@@ -162,7 +193,12 @@ footer a{color:rgba(255,255,255,.5)}
         </div>
       </div>
     </div>
-    <a href="tel:2088802712" class="nav-cta">(208) 880-2712</a>
+    <a href="tel:2088802712" class="nav-cta">📞 (208) 880-2712</a>
+    <button class="hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    <div class="nav-scrolled-ctas">
+      <a href="#contact" class="nav-scrolled-quote" id="navScrolledQuote">Get a Free Quote</a>
+      <a href="tel:2088802712" class="nav-scrolled-call">📞 Call Now</a>
+    </div>
   </div>
 </nav>
 
@@ -197,7 +233,7 @@ footer a{color:rgba(255,255,255,.5)}
           <li><span class="ck">✓</span>Fall winterization blowout</li>
           <li><span class="ck">✓</span>Priority scheduling</li>
         </ul>
-        <a href="https://st.sendajob.com/MY/servicerequest/aad0fe10c82c3b735e7cba0113d2ddc91b03e6ad.html" class="pcta">Sign Up</a>
+        <a href="#contact" class="pcta">Sign Up</a>
       </div>
       <div class="pc pop">
         <div class="pop-badge">Most Popular</div>
@@ -212,7 +248,7 @@ footer a{color:rgba(255,255,255,.5)}
           <li><span class="ck">✓</span>Fall winterization blowout</li>
           <li><span class="ck">✓</span>Priority scheduling</li>
         </ul>
-        <a href="https://st.sendajob.com/MY/servicerequest/aad0fe10c82c3b735e7cba0113d2ddc91b03e6ad.html" class="pcta">Sign Up</a>
+        <a href="#contact" class="pcta">Sign Up</a>
       </div>
       <div class="pc">
         <div class="pt">Large</div>
@@ -226,7 +262,7 @@ footer a{color:rgba(255,255,255,.5)}
           <li><span class="ck">✓</span>Fall winterization blowout</li>
           <li><span class="ck">✓</span>Priority scheduling</li>
         </ul>
-        <a href="https://st.sendajob.com/MY/servicerequest/aad0fe10c82c3b735e7cba0113d2ddc91b03e6ad.html" class="pcta">Sign Up</a>
+        <a href="#contact" class="pcta">Sign Up</a>
       </div>
     </div>
 
@@ -246,6 +282,14 @@ footer a{color:rgba(255,255,255,.5)}
     </div>
   </div>
 </div>
+
+<section id="contact" style="background:var(--ink);padding:64px 20px;">
+  <div style="max-width:640px;margin:0 auto;text-align:center;">
+    <h2 style="color:#fff;font-size:clamp(1.5rem,4vw,2rem);margin-bottom:8px;">Ready to Get Started?</h2>
+    <p style="color:rgba(255,255,255,.75);margin-bottom:32px;">Pick your plan and we'll get your system on the schedule. Questions? Call us at <a href="tel:2088802712" style="color:var(--yellow);font-weight:700;">(208) 880-2712</a>.</p>
+    <iframe src='https://st.sendajob.com/MY/servicerequest/d2a6d4f54526a97793669b7fe3bcce9438cfec99_f.html' width='100%' height='748' loading="lazy" style='border:none;display:block;' title="Service request form"></iframe>
+  </div>
+</section>
 
 <div class="svc-links">
   <div class="svc-links-inner">
@@ -270,6 +314,21 @@ footer a{color:rgba(255,255,255,.5)}
 
 <script>
 if(window.innerWidth>680){var bee=document.createElement('div');bee.innerHTML='<svg width="30" height="30" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg"><ellipse cx="10" cy="13" rx="9" ry="5" fill="rgba(200,230,255,0.75)" stroke="rgba(100,160,220,0.5)" stroke-width="0.5"/><ellipse cx="26" cy="13" rx="9" ry="5" fill="rgba(200,230,255,0.75)" stroke="rgba(100,160,220,0.5)" stroke-width="0.5"/><ellipse cx="18" cy="21" rx="7" ry="9" fill="#FFD700"/><rect x="11" y="18" width="14" height="3" rx="1" fill="#1a1a00" opacity="0.85"/><rect x="11" y="23" width="14" height="3" rx="1" fill="#1a1a00" opacity="0.85"/><circle cx="18" cy="12" r="5" fill="#FFD700"/><circle cx="16" cy="11" r="1.2" fill="#1a1a00"/><circle cx="20" cy="11" r="1.2" fill="#1a1a00"/><path d="M15.5 13.5 Q18 15.5 20.5 13.5" stroke="#1a1a00" stroke-width="0.8" fill="none" stroke-linecap="round"/><line x1="16" y1="7" x2="13" y2="3" stroke="#1a1a00" stroke-width="1" stroke-linecap="round"/><circle cx="13" cy="3" r="1" fill="#FFD700" stroke="#1a1a00" stroke-width="0.5"/><line x1="20" y1="7" x2="23" y2="3" stroke="#1a1a00" stroke-width="1" stroke-linecap="round"/><circle cx="23" cy="3" r="1" fill="#FFD700" stroke="#1a1a00" stroke-width="0.5"/></svg>';bee.style.cssText='position:fixed;z-index:9999;pointer-events:none;filter:drop-shadow(0 1px 3px rgba(0,0,0,.4));will-change:transform;';document.body.appendChild(bee);var bx=window.innerWidth/2,bvx=0.8,bw=0;function animBee(){bw+=0.1;bx+=bvx+Math.sin(bw*0.7)*0.5;var by=26+Math.sin(bw)*8;var mn=window.innerWidth*0.25,mx=window.innerWidth*0.75;if(bx<mn){bx=mn;bvx=Math.abs(bvx);}if(bx>mx){bx=mx;bvx=-Math.abs(bvx);}if(Math.random()<0.01)bvx+=(Math.random()-0.5)*0.5;bvx=Math.max(-1.5,Math.min(1.5,bvx));if(Math.abs(bvx)<0.3)bvx=bvx<0?-0.3:0.3;bee.style.left=bx+'px';bee.style.top=by+'px';bee.style.transform=bvx<0?'scaleX(-1)':'scaleX(1)';requestAnimationFrame(animBee);}animBee();}
+
+(function(){
+  var nav = document.querySelector('nav');
+  if (!nav) return;
+  window.addEventListener('scroll', function(){
+    nav.classList.toggle('scrolled', window.scrollY > 80);
+  }, {passive: true});
+})();
+
+var ham = document.getElementById('hamburger');
+if(ham) ham.addEventListener('click',function(){
+  var mm = document.getElementById('mobileMenu');
+  if(mm) mm.classList.toggle('open');
+  this.classList.toggle('open');
+});
 </script>
 </body>
 </html>

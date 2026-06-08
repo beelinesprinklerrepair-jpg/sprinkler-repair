@@ -3,7 +3,7 @@
 # Standard search engines
 User-agent: *
 Allow: /
-Sitemap: https://www.beelinesprinklerrepair.com/sitemap.xml
+Sitemap: https://www.beelinesprinklerrepair.com/sitemap.txt
 
 # Google
 User-agent: Googlebot

@@ -20,16 +20,17 @@
 nav.scrolled .nav-scrolled-ctas{display:flex;}
 .nav-scrolled-quote{background:var(--yellow);color:var(--ink);padding:8px 16px;border-radius:6px;font-weight:700;font-size:14px;text-decoration:none;}
 .nav-scrolled-call{background:transparent;color:#fff;padding:8px 12px;font-weight:700;font-size:14px;text-decoration:none;}
+@media(max-width:680px){.photo-grid-3{grid-template-columns:1fr!important}}
 </style>
 </head>
 <body>
 <nav aria-label="Main navigation">
   <div class="nav-inner">
-    <div class="nav-logo"><img src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Real+Logo.png" alt="Beeline Sprinkler Repair — Home" fetchpriority="high" decoding="async"></div>
+    <div class="nav-logo"><a href="index.html"><img src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Real+Logo.png" alt="Beeline Sprinkler Repair — Home" fetchpriority="high" decoding="async"></a></div>
     <div class="nav-links">
       <a href="reviews.html">Reviews</a>
       <a href="faq.html">FAQ</a>
-      <a href="#" data-sec="contact">Contact</a>
+      <a href="index.html#contact">Contact</a>
 
       <div class="nav-dropdown">
         <button class="nav-dropdown-toggle" id="nav-residential">Residential Services ▾</button>
@@ -151,6 +152,17 @@ nav.scrolled .nav-scrolled-ctas{display:flex;}
   </div>
 </div>
 
+<section style="background:var(--sand,#f5f2eb);padding:48px 32px;">
+  <div style="max-width:1200px;margin:0 auto;">
+    <h2 style="font-size:1.1rem;font-weight:800;color:rgba(0,0,0,.4);margin-bottom:20px;text-transform:uppercase;letter-spacing:1px;">Recent Work</h2>
+    <div class="photo-grid-3" style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;">
+      <img src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Sprinkler+SEO+PICS/New+main+and+drain+installation+in+Meridian.jpeg" alt="New main and drain installation in Meridian Idaho" loading="lazy" decoding="async" width="400" height="280" style="width:100%;height:220px;object-fit:cover;border-radius:12px;">
+      <img src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Beeline+rebuilding+a+manifold+for+a+sprinkler+system+in+caldwell.jpg" alt="Beeline rebuilding a sprinkler manifold in Caldwell Idaho" loading="lazy" decoding="async" width="400" height="280" style="width:100%;height:220px;object-fit:cover;border-radius:12px;">
+      <img src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Sprinkler+SEO+PICS/New+construction+sprinkler+installation+Meridian.png" alt="New construction sprinkler installation in Meridian Idaho" loading="lazy" decoding="async" width="400" height="280" style="width:100%;height:220px;object-fit:cover;border-radius:12px;">
+    </div>
+  </div>
+</section>
+
 <div id="quote" class="quote-section">
   <div class="quote-inner">
     <div class="quote-left">
@@ -174,7 +186,7 @@ var bee=document.createElement('div');bee.innerHTML='<svg width="30" height="30"
   var nav = document.querySelector('nav');
   if (!nav) return;
   window.addEventListener('scroll', function(){
-    nav.classList.toggle('scrolled', window.scrollY > 80);
+    if(window.innerWidth<=680){nav.classList.toggle('scrolled',window.scrollY>80);}
   }, {passive: true});
 })();
 </script>

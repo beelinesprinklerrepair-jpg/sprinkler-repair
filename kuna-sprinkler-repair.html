@@ -217,6 +217,7 @@ nav.scrolled .nav-scrolled-ctas{display:flex;}
 .nav-scrolled-call{background:transparent;color:#fff;padding:8px 12px;font-weight:700;font-size:14px;text-decoration:none;}
 @media(max-width:900px){.main-content{grid-template-columns:1fr}.sidebar{position:static}.service-grid{grid-template-columns:1fr 1fr}.reviews-grid{grid-template-columns:1fr}}
 @media(max-width:680px){.mobile-sticky-cta{display:grid}body{padding-bottom:62px}.nav-links{display:none}.nav-cta{display:none}.hamburger{display:flex}.city-hero{padding:32px 20px;min-height:280px}.main-content{padding:36px 20px;gap:28px}.service-grid{grid-template-columns:1fr}.faq-sec{padding:32px 20px}.reviews-sec{padding:32px 20px}.quote-sec{padding:36px 20px}.cities-strip{padding:28px 20px}.trust-bar{padding:10px 16px}.trust-bar-inner{gap:10px}}
+@media(max-width:680px){.photo-grid-3{grid-template-columns:1fr!important}}
 </style>
 </head>
 <body>
@@ -228,11 +229,11 @@ nav.scrolled .nav-scrolled-ctas{display:flex;}
 
 <nav aria-label="Main navigation">
   <div class="nav-inner">
-    <div class="nav-logo"><img src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Real+Logo.png" alt="Beeline Sprinkler Repair — Home" fetchpriority="high" decoding="async"></div>
+    <div class="nav-logo"><a href="index.html"><img src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Real+Logo.png" alt="Beeline Sprinkler Repair — Home" fetchpriority="high" decoding="async"></a></div>
     <div class="nav-links">
       <a href="reviews.html">Reviews</a>
       <a href="faq.html">FAQ</a>
-      <a href="#" data-sec="contact">Contact</a>
+      <a href="index.html#contact">Contact</a>
 
       <div class="nav-dropdown">
         <button class="nav-dropdown-toggle" id="nav-residential">Residential Services ▾</button>
@@ -304,7 +305,7 @@ nav.scrolled .nav-scrolled-ctas{display:flex;}
 <div class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
   <a href="reviews.html">Reviews</a>
   <a href="faq.html">FAQ</a>
-  <a href="#" data-sec="contact" class="mobile-nav-sec">Contact</a>
+  <a href="index.html#contact" class="mobile-nav-sec">Contact</a>
 
   <div class="mobile-section-label" onclick="toggleMobSection(this)">Residential Services <span>▾</span></div>
   <div class="mobile-sub" style="display:none">
@@ -488,6 +489,27 @@ nav.scrolled .nav-scrolled-ctas{display:flex;}
   </div>
 </div>
 
+<section style="background:#f5f2eb;padding:48px 32px;">
+  <div style="max-width:1200px;margin:0 auto;">
+    <h2 style="font-size:1rem;font-weight:800;color:rgba(0,0,0,.4);margin-bottom:6px;text-transform:uppercase;letter-spacing:1.5px;">Recent Work</h2>
+    <p style="font-size:1.4rem;font-weight:900;color:#1a1a2e;margin-bottom:24px;">Jobs We've Done in Kuna</p>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;" class="photo-grid-3">
+      <div style="border-radius:12px;overflow:hidden;box-shadow:0 4px 16px rgba(0,0,0,.12);">
+        <img src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Sprinkler+SEO+PICS/Replacing+an+old+manifold+and+sprinkler+box+in+Kuna+.jpg" alt="Replacing old manifold and sprinkler valve box in Kuna, Idaho" loading="lazy" decoding="async" width="400" height="280" style="width:100%;height:240px;object-fit:cover;display:block;">
+        <div style="padding:12px 14px;background:#fff;"><p style="font-size:.85rem;color:#5a6a5a;margin:0;">Replaced manifold and valve box in a Kuna backyard</p></div>
+      </div>
+      <div style="border-radius:12px;overflow:hidden;box-shadow:0 4px 16px rgba(0,0,0,.12);">
+        <img src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Sprinkler+SEO+PICS/Fixing+sprinkler++diaphrams+in+meridian.jpg" alt="Sprinkler valve diaphragm repair near Kuna, Idaho" loading="lazy" decoding="async" width="400" height="280" style="width:100%;height:240px;object-fit:cover;display:block;">
+        <div style="padding:12px 14px;background:#fff;"><p style="font-size:.85rem;color:#5a6a5a;margin:0;">Valve diaphragm repair — zone that wouldn't shut off</p></div>
+      </div>
+      <div style="border-radius:12px;overflow:hidden;box-shadow:0 4px 16px rgba(0,0,0,.12);">
+        <img src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Sprinkler+SEO+PICS/New+main+and+drain+installation+in+Meridian.jpeg" alt="New main and drain installation for Kuna area homeowner" loading="lazy" decoding="async" width="400" height="280" style="width:100%;height:240px;object-fit:cover;display:block;">
+        <div style="padding:12px 14px;background:#fff;"><p style="font-size:.85rem;color:#5a6a5a;margin:0;">New main line installation restoring full pressure in Kuna</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="reviews-sec">
   <div class="reviews-inner">
     <p style="font-size:11px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:#8a6800;margin-bottom:8px">What Customers Say</p>
@@ -587,10 +609,7 @@ if(hbg){hbg.addEventListener('click',function(){hbg.classList.toggle('open');mob
   var nav = document.querySelector('nav');
   if (!nav) return;
   window.addEventListener('scroll', function(){
-    nav.classList.toggle('scrolled', window.scrollY > 80);
+    if(window.innerWidth<=680){nav.classList.toggle('scrolled',window.scrollY>80);}
   }, {passive: true});
 })();
-if(window.innerWidth>680){var bee=document.createElement('div');bee.innerHTML='<svg width="30" height="30" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg"><ellipse cx="10" cy="13" rx="9" ry="5" fill="rgba(200,230,255,0.75)" stroke="rgba(100,160,220,0.5)" stroke-width="0.5"/><ellipse cx="26" cy="13" rx="9" ry="5" fill="rgba(200,230,255,0.75)" stroke="rgba(100,160,220,0.5)" stroke-width="0.5"/><ellipse cx="18" cy="21" rx="7" ry="9" fill="#FFD700"/><rect x="11" y="18" width="14" height="3" rx="1" fill="#1a1a00" opacity="0.85"/><rect x="11" y="23" width="14" height="3" rx="1" fill="#1a1a00" opacity="0.85"/><circle cx="18" cy="12" r="5" fill="#FFD700"/><circle cx="16" cy="11" r="1.2" fill="#1a1a00"/><circle cx="20" cy="11" r="1.2" fill="#1a1a00"/><path d="M15.5 13.5 Q18 15.5 20.5 13.5" stroke="#1a1a00" stroke-width="0.8" fill="none" stroke-linecap="round"/><line x1="16" y1="7" x2="13" y2="3" stroke="#1a1a00" stroke-width="1" stroke-linecap="round"/><circle cx="13" cy="3" r="1" fill="#FFD700" stroke="#1a1a00" stroke-width="0.5"/><line x1="20" y1="7" x2="23" y2="3" stroke="#1a1a00" stroke-width="1" stroke-linecap="round"/><circle cx="23" cy="3" r="1" fill="#FFD700" stroke="#1a1a00" stroke-width="0.5"/></svg>';bee.style.cssText='position:fixed;z-index:9999;pointer-events:none;filter:drop-shadow(0 1px 3px rgba(0,0,0,.4));will-change:transform;';document.body.appendChild(bee);var bx=window.innerWidth/2,bvx=0.8,bw=0;function animBee(){bw+=0.1;bx+=bvx+Math.sin(bw*0.7)*0.5;var by=26+Math.sin(bw)*8;var mn=window.innerWidth*0.25,mx=window.innerWidth*0.75;if(bx<mn){bx=mn;bvx=Math.abs(bvx);}if(bx>mx){bx=mx;bvx=-Math.abs(bvx);}if(Math.random()<0.01)bvx+=(Math.random()-0.5)*0.5;bvx=Math.max(-1.5,Math.min(1.5,bvx));if(Math.abs(bvx)<0.3)bvx=bvx<0?-0.3:0.3;bee.style.left=bx+'px';bee.style.top=by+'px';bee.style.transform=bvx<0?'scaleX(-1)':'scaleX(1)';requestAnimationFrame(animBee);}animBee();}
-</script>
-</body>
-</html>
+if(window.innerWidth>680){var bee=document.createElement('div');bee.innerHTML='<svg width="30" height="30" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg"><ellipse cx="10" cy="13" rx="9" ry="5" fill="rgba(200,230,255,0.75)" stroke="rgba(100,160,220,0.5)" stroke-width="0.5"/><ellipse cx="26" cy="13" rx="9" ry="5" fill="rgba(200,230,255,0.75)" stroke="rgba(100,160,220,0.5)" stroke-width="0.5"/><ellipse cx="18" cy="21" rx="7" ry="9" fill="#FFD700"/><rect x="11" y="18" width="14" height="3" rx="1" fill="#1a1a00" opacity="0.85"/><rect x="11" y="23" width="14" height="3" rx="1" fill="#1a1a00" opacity="0.85"/><circle cx="18" cy="12" r="5" fill="#FFD700"/><circle cx="16" cy="11" r="1.2" fill="#1a1a00"/><circle cx="20" cy="11" r="1.2" fill="#1a1a00"/><path d="M15.5 13.5 Q18 15.5 20.5 13.5" stroke="#1a1a00" stroke-width="0.8" fill="none" stroke-linecap="round"/><line x1="16" y1

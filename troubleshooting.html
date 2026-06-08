@@ -275,7 +275,7 @@ if(window.innerWidth>680){
   var nav = document.querySelector('nav');
   if (!nav) return;
   window.addEventListener('scroll', function(){
-    nav.classList.toggle('scrolled', window.scrollY > 80);
+    if(window.innerWidth<=680){nav.classList.toggle('scrolled',window.scrollY>80);}
   }, {passive: true});
 })();
 </script>

@@ -248,11 +248,11 @@ nav.scrolled .nav-scrolled-ctas{display:flex;}
 
 <nav aria-label="Main navigation">
   <div class="nav-inner">
-    <div class="nav-logo"><img src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Real+Logo.png" alt="Beeline Sprinkler Repair — Home" fetchpriority="high" decoding="async"></div>
+    <div class="nav-logo"><a href="index.html"><img src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Real+Logo.png" alt="Beeline Sprinkler Repair — Home" fetchpriority="high" decoding="async"></a></div>
     <div class="nav-links">
       <a href="reviews.html">Reviews</a>
       <a href="faq.html">FAQ</a>
-      <a href="#" data-sec="contact">Contact</a>
+      <a href="index.html#contact">Contact</a>
 
       <div class="nav-dropdown">
         <button class="nav-dropdown-toggle" id="nav-residential">Residential Services ▾</button>
@@ -324,7 +324,7 @@ nav.scrolled .nav-scrolled-ctas{display:flex;}
 <div class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
   <a href="reviews.html">Reviews</a>
   <a href="faq.html">FAQ</a>
-  <a href="#" data-sec="contact" class="mobile-nav-sec">Contact</a>
+  <a href="index.html#contact" class="mobile-nav-sec">Contact</a>
 
   <div class="mobile-section-label" onclick="toggleMobSection(this)">Residential Services <span>▾</span></div>
   <div class="mobile-sub" style="display:none">
@@ -639,7 +639,7 @@ if(window.innerWidth>680){
   var nav = document.querySelector('nav');
   if (!nav) return;
   window.addEventListener('scroll', function(){
-    nav.classList.toggle('scrolled', window.scrollY > 80);
+    if(window.innerWidth<=680){nav.classList.toggle('scrolled',window.scrollY>80);}
   }, {passive: true});
 })();
 </script>

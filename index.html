@@ -610,14 +610,13 @@ nav.nav-hidden{transform:translateY(-100%)}
 </footer>
 
 <script>
-document.querySelectorAll('.faq-btn-home').forEach(function(btn){btn.addEventListener('click',function(){var item=this.closest('.faq-item-home');var wasOpen=item.classList.contains('open');document.querySelectorAll('.faq-item-home').forEach(function(i){i.classList.remove('open');i.querySelector('.faq-btn-home').setAttribute('aria-expanded','false');});if(!wasOpen){item.classList.add('open');this.setAttribute('aria-expanded','true');});});
+document.querySelectorAll('.faq-btn-home').forEach(function(btn){btn.addEventListener('click',function(){var item=this.closest('.faq-item-home');var wasOpen=item.classList.contains('open');document.querySelectorAll('.faq-item-home').forEach(function(i){i.classList.remove('open');i.querySelector('.faq-btn-home').setAttribute('aria-expanded','false');});if(!wasOpen){item.classList.add('open');this.setAttribute('aria-expanded','true');}});});
 
-var navEl=document.querySelector('nav');
-window.addEventListener('scroll',function(){if(window.innerWidth<=680){if(window.scrollY>80){navEl.classList.add('scrolled');}else{navEl.classList.remove('scrolled');}},{passive:true});
+
 document.getElementById('navScrolledQuote').addEventListener('click',function(e){e.preventDefault();scrollToForm();});
 function scrollToForm(){setTimeout(function(){var el=document.getElementById('request-form');if(!el)return;var top=el.getBoundingClientRect().top+window.pageYOffset-82;window.scrollTo({top:top,behavior:'smooth'});},100);}
-document.getElementById('heroQuoteBtn').addEventListener('click',function(e){e.preventDefault();scrollToForm();});
-document.getElementById('mobileStickyQuote').addEventListener('click',function(e){e.preventDefault();scrollToForm();});
+var _hb=document.getElementById('heroQuoteBtn');if(_hb)_hb.addEventListener('click',function(e){e.preventDefault();scrollToForm();});
+var _sq=document.getElementById('mobileStickyQuote');if(_sq)_sq.addEventListener('click',function(e){e.preventDefault();scrollToForm();});
 document.getElementById('nav-residential').addEventListener('click',function(e){e.preventDefault();});
 document.getElementById('nav-commercial').addEventListener('click',function(e){e.preventDefault();});
 document.getElementById('nav-areas').addEventListener('click',function(e){e.preventDefault();});

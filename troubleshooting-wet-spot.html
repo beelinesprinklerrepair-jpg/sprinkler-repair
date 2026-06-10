@@ -130,7 +130,7 @@ nav.scrolled .nav-scrolled-ctas{display:flex}
 
 /* PAGE HERO — dark ink with radial green glow */
 .page-hero{position:relative;min-height:320px;display:flex;align-items:flex-end;padding:48px 32px;overflow:hidden;background:var(--ink)}
-.page-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 30% 60%, rgba(45,122,45,.28) 0%, transparent 65%);pointer-events:none}
+.page-hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;filter:brightness(.32);z-index:0}.page-hero::before{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.92) 0%,rgba(10,26,10,.6) 50%,rgba(15,40,15,.3) 100%);z-index:1}
 .page-hero-content{position:relative;z-index:2;max-width:1200px;margin:0 auto;width:100%}
 
 /* BREADCRUMB */

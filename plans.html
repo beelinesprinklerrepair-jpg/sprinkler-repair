@@ -202,9 +202,10 @@ nav.nav-hidden{transform:translateY(-100%)}
 .content a.inline-link{color:var(--green);font-weight:700;text-decoration:underline}
 .inline-photo{float:right;width:220px;border-radius:10px;margin:0 0 16px 24px;object-fit:cover}
 @media(max-width:680px){.inline-photo{float:none;width:100%;margin:16px 0}}
-.plan-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin:32px 0 40px}
-.plan-card{background:var(--white);border-radius:16px;border:1.5px solid #e0ddd6;padding:28px 22px;position:relative;display:flex;flex-direction:column}
-.plan-card.featured{border-color:var(--green);box-shadow:0 8px 28px rgba(45,122,45,.15)}
+.plan-cards-wrap{background:var(--gl);border-radius:16px;padding:28px 24px;margin:32px 0 40px}
+.plan-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.plan-card{background:#fff;border-radius:16px;border:1.5px solid #b8ddb8;padding:28px 22px;position:relative;display:flex;flex-direction:column;box-shadow:0 4px 18px rgba(0,0,0,.08)}
+.plan-card.featured{border-color:var(--green);box-shadow:0 8px 28px rgba(45,122,45,.2)}
 .plan-badge{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--green);color:#fff;font-size:11px;font-weight:800;padding:4px 14px;border-radius:20px;white-space:nowrap}
 .plan-tier{font-size:.7rem;font-weight:800;color:var(--green);letter-spacing:1px;text-transform:uppercase;margin-bottom:5px}
 .plan-name{font-size:1.25rem;font-weight:900;margin-bottom:4px;color:var(--ink)}
@@ -270,7 +271,8 @@ nav.nav-hidden{transform:translateY(-100%)}
 footer{background:#080f08;color:rgba(255,255,255,.45);text-align:center;padding:20px 32px;font-size:.8rem;border-top:1px solid rgba(255,255,255,.06)}
 footer strong{color:rgba(255,255,255,.8)}
 footer a{color:rgba(255,255,255,.5)}
-@media(max-width:900px){.main-content{grid-template-columns:1fr}.sidebar{position:static}.plan-cards{grid-template-columns:1fr}.service-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:900px){.main-content{grid-template-columns:1fr}.sidebar{position:static}.plan-cards{grid-template-columns:1fr}.plan-cards-wrap{padding:20px 16px}.service-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:680px){.plan-cards-wrap{padding:16px 12px}}
 @media(max-width:680px){.mobile-sticky-cta{display:grid}body{padding-bottom:62px}.nav-links{display:none}.nav-cta{display:none}.hamburger{display:flex}.city-hero{padding:32px 20px;min-height:300px}.main-content{padding:36px 20px;gap:28px}.service-grid{grid-template-columns:1fr}.faq-sec{padding:32px 20px}.quote-sec{padding:36px 20px}.cities-strip{padding:28px 20px}.trust-bar{padding:10px 16px}.trust-bar-inner{gap:10px}.cta-band{padding:36px 20px;margin:32px 0 0}}
 </style>
 </head>
@@ -447,7 +449,7 @@ footer a{color:rgba(255,255,255,.5)}
     <h2>Our Sprinkler Service Plans</h2>
     <p>Three tiers of seasonal coverage built for different situations. All include priority scheduling. Call (208) 880-2712 to go over which one fits your property.</p>
 
-    <div class="plan-cards">
+    <div class="plan-cards-wrap"><div class="plan-cards">
 
       <div class="plan-card">
         <div class="plan-tier">Basic Coverage</div>
@@ -499,7 +501,7 @@ footer a{color:rgba(255,255,255,.5)}
         <a href="tel:2088802712" class="plan-cta">Call (208) 880-2712</a>
       </div>
 
-    </div>
+    </div></div>
 
     <h2>What Each Service Visit Actually Covers</h2>
 

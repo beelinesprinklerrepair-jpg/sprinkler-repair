@@ -213,13 +213,14 @@ nav.nav-hidden{transform:translateY(-100%)}
 .content a.inline-link{color:var(--green);font-weight:700;text-decoration:underline}
 .inline-photo{float:right;width:220px;border-radius:10px;margin:0 0 16px 24px;object-fit:cover}
 @media(max-width:680px){.inline-photo{float:none;width:100%;margin:16px 0}}
-.review-cards-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:28px 0}
-.rvc{background:var(--white);border:1px solid #e0ddd6;border-radius:14px;padding:22px;position:relative;box-shadow:0 2px 12px rgba(0,0,0,.06)}
-.rvc::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--green);border-radius:14px 14px 0 0}
-.rvc-stars{color:var(--yellow);font-size:14px;letter-spacing:2px;margin-bottom:10px}
-.rvc-text{font-size:.88rem;color:#3a3a3a;line-height:1.7;margin-bottom:14px;font-style:italic}
-.rvc-author{font-size:.82rem;font-weight:800;color:var(--ink)}
-.rvc-city{font-size:.76rem;color:var(--muted);margin-top:2px}
+.review-cards-wrap{background:var(--gl);border-radius:16px;padding:28px 24px;margin:28px 0}
+.review-cards-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.rvc{background:#fff;border:1.5px solid #b8ddb8;border-radius:14px;padding:22px;position:relative;box-shadow:0 4px 18px rgba(0,0,0,.09)}
+.rvc::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:var(--green);border-radius:14px 14px 0 0}
+.rvc-stars{color:#e8a800;font-size:15px;letter-spacing:2px;margin-bottom:10px}
+.rvc-text{font-size:.88rem;color:#2a2a2a;line-height:1.75;margin-bottom:14px;font-style:italic}
+.rvc-author{font-size:.84rem;font-weight:800;color:var(--gd)}
+.rvc-city{font-size:.78rem;color:var(--muted);margin-top:3px;font-weight:600}
 .leave-review-sec{background:var(--gl);border:1.5px solid #a8d8a8;border-radius:14px;padding:32px;margin:36px 0}
 .leave-review-sec h2{font-size:1.4rem;font-weight:900;color:var(--gd);margin-bottom:10px}
 .leave-review-sec p{font-size:.93rem;color:var(--muted);line-height:1.75;margin-bottom:20px}
@@ -276,8 +277,8 @@ nav.nav-hidden{transform:translateY(-100%)}
 footer{background:#080f08;color:rgba(255,255,255,.45);text-align:center;padding:20px 32px;font-size:.8rem;border-top:1px solid rgba(255,255,255,.06)}
 footer strong{color:rgba(255,255,255,.8)}
 footer a{color:rgba(255,255,255,.5)}
-@media(max-width:900px){.main-content{grid-template-columns:1fr}.sidebar{position:static}.review-cards-grid{grid-template-columns:1fr 1fr}.service-grid{grid-template-columns:1fr 1fr}}
-@media(max-width:680px){.mobile-sticky-cta{display:grid}body{padding-bottom:62px}.nav-links{display:none}.nav-cta{display:none}.hamburger{display:flex}.city-hero{padding:32px 20px;min-height:300px}.main-content{padding:36px 20px;gap:28px}.review-cards-grid{grid-template-columns:1fr}.service-grid{grid-template-columns:1fr}.faq-sec{padding:32px 20px}.quote-sec{padding:36px 20px}.cities-strip{padding:28px 20px}.trust-bar{padding:10px 16px}.trust-bar-inner{gap:10px}.leave-review-sec{padding:24px 20px}}
+@media(max-width:900px){.main-content{grid-template-columns:1fr}.sidebar{position:static}.review-cards-grid{grid-template-columns:1fr 1fr}.review-cards-wrap{padding:20px 16px}.service-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:680px){.mobile-sticky-cta{display:grid}body{padding-bottom:62px}.nav-links{display:none}.nav-cta{display:none}.hamburger{display:flex}.city-hero{padding:32px 20px;min-height:300px}.main-content{padding:36px 20px;gap:28px}.review-cards-grid{grid-template-columns:1fr}.review-cards-wrap{padding:16px 12px}.service-grid{grid-template-columns:1fr}.faq-sec{padding:32px 20px}.quote-sec{padding:36px 20px}.cities-strip{padding:28px 20px}.trust-bar{padding:10px 16px}.trust-bar-inner{gap:10px}.leave-review-sec{padding:24px 20px}}
 </style>
 </head>
 <body>
@@ -451,7 +452,7 @@ footer a{color:rgba(255,255,255,.5)}
     <h2>What Treasure Valley Homeowners Are Saying</h2>
     <p>These are reviews from real customers across Boise, Meridian, Nampa, Eagle, Kuna, Caldwell, Star, and Middleton. We let the work speak for itself.</p>
 
-    <div class="review-cards-grid">
+    <div class="review-cards-wrap"><div class="review-cards-grid">
       <div class="rvc">
         <div class="rvc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p class="rvc-text">"Had a zone that would not shut off no matter what I tried. Beeline came out the next morning and had it diagnosed and fixed in about 45 minutes. Turned out to be a blown diaphragm. Fair price, no upsell."</p>
@@ -567,7 +568,7 @@ footer a{color:rgba(255,255,255,.5)}
         <p class="rvc-text">"Our Meridian subdivision system had a Rain Bird valve that had been sticking for two seasons. Beeline replaced the valve and diaphragm, tested it through several cycles, and it has been perfect since."</p>
         <div class="rvc-author">Amanda M.</div><div class="rvc-city">Meridian, ID</div>
       </div>
-    </div>
+    </div></div>
 
     <p style="text-align:center;margin-top:8px;margin-bottom:36px;font-size:.9rem;color:var(--muted)">Read all 136+ reviews on <a href="https://share.google/wmRIhGxHghIGRtf7r" target="_blank" rel="noopener" style="color:var(--green);font-weight:800;text-decoration:underline">Google</a> or <a href="https://www.yelp.com/biz/beeline-sprinkler-repair-nampa-2" target="_blank" rel="noopener" style="color:var(--green);font-weight:800;text-decoration:underline">Yelp</a>.</p>
 

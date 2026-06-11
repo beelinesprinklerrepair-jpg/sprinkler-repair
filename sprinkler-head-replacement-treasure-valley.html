@@ -158,13 +158,15 @@ nav.nav-hidden{transform:translateY(-100%)}
 @media(max-width:680px){.mobile-nav-fab{display:flex}}
 
 /* --- HERO --- */
-.svc-hero{position:relative;min-height:360px;display:flex;align-items:flex-end;padding:48px 32px;overflow:hidden;background:linear-gradient(135deg,#082e08 0%,#1a5c1a 55%,#0d400d 100%)}
-.svc-hero-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.88) 0%,rgba(10,50,10,.55) 55%,rgba(10,50,10,.2) 100%);z-index:1}
-.svc-hero-content{position:relative;z-index:2;max-width:1200px;margin:0 auto;width:100%}
+.page-hero{position:relative;min-height:360px;display:flex;align-items:flex-end;padding:48px 32px;overflow:hidden;background:linear-gradient(135deg,#082e08 0%,#1a5c1a 55%,#0d400d 100%)}
+.page-hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.page-hero::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(10,30,10,.82) 0%,rgba(26,77,26,.72) 100%);z-index:1}
+.page-hero-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.88) 0%,rgba(10,50,10,.55) 55%,rgba(10,50,10,.2) 100%);z-index:1}
+.page-hero-inner{position:relative;z-index:2;max-width:1200px;margin:0 auto;width:100%}
 .hero-eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(245,196,0,.15);border:1px solid rgba(245,196,0,.3);color:var(--yellow);font-size:11px;font-weight:800;padding:5px 14px;border-radius:20px;margin-bottom:16px;letter-spacing:1px;text-transform:uppercase}
-.svc-hero h1{font-size:clamp(2rem,5vw,3.4rem);font-weight:900;color:#fff;line-height:1.05;margin-bottom:14px;letter-spacing:-.5px}
-.svc-hero h1 em{color:var(--yellow);font-style:normal}
-.svc-hero p{font-size:1rem;color:rgba(255,255,255,.78);max-width:620px;margin-bottom:28px;line-height:1.65}
+.page-hero h1{font-size:clamp(2rem,5vw,3.4rem);font-weight:900;color:#fff;line-height:1.05;margin-bottom:14px;letter-spacing:-.5px}
+.page-hero h1 em{color:var(--yellow);font-style:normal}
+.page-hero p{font-size:1rem;color:rgba(255,255,255,.78);max-width:620px;margin-bottom:28px;line-height:1.65}
 .hero-ctas{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:28px}
 .btn-primary{background:var(--yellow);color:var(--ink);padding:15px 32px;border-radius:var(--r);font-weight:800;font-size:16px;display:inline-block;box-shadow:0 4px 20px rgba(245,196,0,.35)}
 .btn-primary:hover{background:#e6b800}
@@ -276,7 +278,7 @@ footer strong{color:rgba(255,255,255,.8)}
 footer a{color:rgba(255,255,255,.5)}
 
 @media(max-width:900px){.main-content{grid-template-columns:1fr}.sidebar{position:static}.service-grid{grid-template-columns:1fr 1fr}}
-@media(max-width:680px){.mobile-sticky-cta{display:grid}body{padding-bottom:62px}.nav-links{display:none}.nav-cta{display:none}.hamburger{display:flex}.svc-hero{padding:32px 20px;min-height:280px}.main-content{padding:36px 20px;gap:28px}.service-grid{grid-template-columns:1fr}.faq-sec{padding:32px 20px}.quote-sec{padding:36px 20px}.cities-strip{padding:28px 20px}.svc-links{padding:24px 20px}.trust-bar{padding:10px 16px}.trust-bar-inner{gap:10px}.cta-band{padding:36px 20px}.cta-band-btns{flex-direction:column;align-items:center}}
+@media(max-width:680px){.mobile-sticky-cta{display:grid}body{padding-bottom:62px}.nav-links{display:none}.nav-cta{display:none}.hamburger{display:flex}.page-hero{padding:32px 20px;min-height:280px}.main-content{padding:36px 20px;gap:28px}.service-grid{grid-template-columns:1fr}.faq-sec{padding:32px 20px}.quote-sec{padding:36px 20px}.cities-strip{padding:28px 20px}.svc-links{padding:24px 20px}.trust-bar{padding:10px 16px}.trust-bar-inner{gap:10px}.cta-band{padding:36px 20px}.cta-band-btns{flex-direction:column;align-items:center}}
 </style>
 </head>
 <body>
@@ -382,9 +384,10 @@ footer a{color:rgba(255,255,255,.5)}
 </div>
 
 <!-- HERO -->
-<div class="svc-hero">
-  <div class="svc-hero-overlay"></div>
-  <div class="svc-hero-content">
+<div class="page-hero">
+  <img class="page-hero-bg" src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Sprinkler+Head+Tune+up+Meridian.jpg" alt="Sprinkler head replacement in Meridian, Idaho" fetchpriority="high">
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-inner">
     <div class="hero-eyebrow">Family Owned and Operated &middot; Treasure Valley Since 2015</div>
     <h1>Sprinkler Head Replacement<br><em>Treasure Valley, Idaho</em></h1>
     <p>Beeline replaces broken, clogged, sunken, and misfiring sprinkler heads throughout the Treasure Valley — Boise, Meridian, Nampa, Eagle, Kuna, Caldwell, Star, and Middleton. Bad heads cause dead spots, overwatered areas, and wasted water. We replace heads on the spot and adjust coverage so every zone performs the way it should.</p>

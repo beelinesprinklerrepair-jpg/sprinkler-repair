@@ -167,8 +167,10 @@ nav{background:var(--ink);position:sticky;top:0;z-index:300;padding:0 32px}
 .mobile-cta-row a{display:block;background:var(--yellow);color:var(--ink);text-align:center;padding:14px;border-radius:var(--r);font-weight:800;font-size:16px}
 
 /* HERO */
-.city-hero{position:relative;min-height:360px;display:flex;align-items:flex-end;padding:48px 32px;overflow:hidden;background:linear-gradient(135deg,#061806 0%,#0d380d 45%,#1a4d1a 100%)}
-.city-hero-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.9) 0%,rgba(8,30,8,.65) 55%,rgba(8,30,8,.3) 100%)}
+.city-hero{position:relative;min-height:360px;display:flex;align-items:flex-end;padding:48px 32px;overflow:hidden}
+.city-hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;}
+.city-hero::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(10,30,10,.82) 0%,rgba(26,77,26,.72) 100%);z-index:1;}
+.city-hero-overlay{display:none}
 .city-hero-content{position:relative;z-index:2;max-width:1200px;margin:0 auto;width:100%}
 .hero-eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(245,196,0,.15);border:1px solid rgba(245,196,0,.3);color:var(--yellow);font-size:11px;font-weight:800;padding:5px 14px;border-radius:20px;margin-bottom:16px;letter-spacing:1px;text-transform:uppercase}
 .city-hero h1{font-size:clamp(1.9rem,5vw,3.4rem);font-weight:900;color:#fff;line-height:1.05;margin-bottom:14px;letter-spacing:-.5px}
@@ -392,8 +394,9 @@ footer a{color:rgba(255,255,255,.5)}
   <div class="mobile-cta-row"><a href="tel:2088802712">📞 Call (208) 880-2712</a></div>
 </div>
 
-<!-- HERO — dark gradient only, no background photo -->
+<!-- HERO -->
 <div class="city-hero">
+  <img class="city-hero-bg" src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Replacing+an+old+manifold+and+sprinkler+box+in+Kuna+.jpg" alt="Sprinkler valve and manifold repair in Kuna, Idaho" fetchpriority="high">
   <div class="city-hero-overlay"></div>
   <div class="city-hero-content">
     <div class="hero-eyebrow">Family Owned and Operated · Serving the Treasure Valley Since 2015</div>
@@ -491,7 +494,7 @@ footer a{color:rgba(255,255,255,.5)}
 
     <h3>Common Valve Problems by City</h3>
 
-    <img src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/meridian+diaphragm+replacement.jpg" alt="Sprinkler valve diaphragm replacement in Meridian, Idaho" class="inline-photo" loading="lazy">
+    <img src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Flooded+Sprinkler+Box+Repair+Meridian.jpg" alt="Flooded sprinkler valve box repair in Meridian, Idaho" class="inline-photo" loading="lazy">
 
     <p><strong>Boise:</strong> The North End and the Bench have some of the oldest residential irrigation in the valley. We regularly work on systems where the valves haven't been touched in 20 years — corroded solenoids, cracked diaphragms, and manifolds with two or three failing valves at once. One visit to a North End property often turns into a full manifold service once we open the valve box.</p>
 

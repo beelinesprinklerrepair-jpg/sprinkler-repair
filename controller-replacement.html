@@ -153,8 +153,8 @@ nav{background:var(--ink);position:sticky;top:0;z-index:300;padding:0 32px}
 .mobile-sub a{padding-left:44px}
 .mobile-cta-row{padding:20px 28px 0}
 .mobile-cta-row a{display:block;background:var(--yellow);color:var(--ink);text-align:center;padding:14px;border-radius:var(--r);font-weight:800;font-size:16px}
-/* Hero — gradient only, no photo */
 .svc-hero{position:relative;min-height:380px;display:flex;align-items:flex-end;padding:56px 32px;overflow:hidden;background:linear-gradient(135deg,#082e08 0%,#1a5c1a 55%,#0d400d 100%)}
+.page-hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;}
 .svc-hero-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.85) 0%,rgba(10,50,10,.55) 55%,rgba(10,50,10,.2) 100%);z-index:1}
 .svc-hero-content{position:relative;z-index:2;max-width:1200px;margin:0 auto;width:100%}
 .hero-eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(245,196,0,.15);border:1px solid rgba(245,196,0,.3);color:var(--yellow);font-size:11px;font-weight:800;padding:5px 14px;border-radius:20px;margin-bottom:16px;letter-spacing:1px;text-transform:uppercase}
@@ -212,6 +212,11 @@ nav{background:var(--ink);position:sticky;top:0;z-index:300;padding:0 32px}
 .included-list{list-style:none;display:flex;flex-direction:column;gap:9px;margin:16px 0}
 .included-list li{display:flex;align-items:flex-start;gap:10px;font-size:.93rem;color:var(--muted);line-height:1.6}
 .included-list li::before{content:'✓';color:var(--green);font-weight:900;flex-shrink:0;margin-top:2px}
+/* Job story */
+.job-story{background:var(--gl);border-radius:12px;padding:28px 32px;margin:36px 0;border-left:4px solid var(--green)}
+.job-story h2{font-size:clamp(1.3rem,2.5vw,1.7rem);font-weight:900;margin-bottom:16px;color:var(--ink);letter-spacing:-.3px;line-height:1.2}
+.job-story p{font-size:.95rem;color:var(--muted);line-height:1.8;margin-bottom:12px}
+.job-story p:last-child{margin-bottom:0}
 /* Mid-page CTA band */
 .cta-band{background:var(--gd);padding:44px 32px;text-align:center}
 .cta-band h2{font-size:clamp(1.4rem,3vw,2rem);font-weight:900;color:#fff;margin-bottom:10px}
@@ -380,8 +385,9 @@ footer a{color:rgba(255,255,255,.5)}
   <div class="mobile-cta-row"><a href="tel:2088802712">📞 Call (208) 880-2712</a></div>
 </div>
 
-<!-- HERO — gradient only -->
+<!-- HERO — photo + gradient overlay -->
 <div class="svc-hero">
+  <img class="page-hero-bg" src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Sprinkler+Controller+Replacment+Meridian.jpeg" alt="Sprinkler controller replacement in Meridian, Idaho" fetchpriority="high">
   <div class="svc-hero-overlay"></div>
   <div class="svc-hero-content">
     <div class="hero-eyebrow">Family Owned and Operated · Treasure Valley Since 2015</div>
@@ -473,7 +479,7 @@ footer a{color:rgba(255,255,255,.5)}
 
     <h3>Common Controller Issues by Area</h3>
 
-    <img src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/New+construction+sprinkler+installation+Meridian.png" alt="Sprinkler system installation in Meridian, Idaho" class="inline-photo" loading="lazy">
+    <img src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Sprinkler+Controller+Replacment+Meridian.jpeg" alt="New Rain Bird controller installed in Meridian, Idaho" class="inline-photo" loading="lazy">
 
     <div class="area-grid">
       <div class="area-row">
@@ -500,7 +506,7 @@ footer a{color:rgba(255,255,255,.5)}
 
     <h3>What's Included in Every Controller Replacement</h3>
 
-    <img src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Sprinkler+Head+Replacment+Nampa.jpg" alt="Sprinkler repair in Nampa, Idaho" class="inline-photo" loading="lazy">
+    <img src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Old+Broken+Sprinkler+Controler+Meridian.jpeg" alt="Old broken sprinkler controller in Meridian, Idaho" class="inline-photo" loading="lazy">
 
     <ul class="included-list">
       <li>Remove old controller and document the existing wiring connections</li>
@@ -511,6 +517,14 @@ footer a{color:rgba(255,255,255,.5)}
     </ul>
 
     <p>If your system also has valve issues, wiring faults, or zone problems, see our <a href="sprinkler-repair.html" class="inline-link">sprinkler repair page</a> and <a href="valve-repair-treasure-valley.html" class="inline-link">valve repair page</a> for those services.</p>
+
+    <div class="job-story">
+      <h2>A Recent Controller Replacement in Meridian</h2>
+      <p>Got a call from a homeowner in Meridian — she said her system had been acting up for a few weeks. Zones were firing at random times, running outside the schedule, sometimes kicking on in the middle of the night. She'd gone into the controller and reprogrammed it twice but it kept reverting or just doing its own thing. She figured it was user error at first, but after the second time it happened she knew something was actually wrong.</p>
+      <p>When I got there and pulled the cover off the controller, the first thing I noticed was the LCD display — it was barely readable. The backlight was basically dead, and half the segments were out. You couldn't tell what the screen was trying to show you without really squinting at it. I confirmed the unit was the original install from when the house was built — probably 12 to 15 years old, standard builder-grade Rain Bird. Not a bad unit when it was new, but it had clearly run its course. I tried a couple things to see if the board was salvageable, but no — it was done. Corroded terminals, failed display, erratic behavior. Not worth sinking time into.</p>
+      <p>We replaced it with a new Rain Bird smart controller — wired all the zones over from the old unit, programmed each one with run times that actually made sense for summer in Meridian. The old schedule had some zones running way too long and others not long enough. Got everything dialed in, tested every zone, confirmed they all fired clean. The whole swap took about an hour and a half.</p>
+      <p>She can now pull up the app on her phone, see exactly what's scheduled, adjust run times by zone, and get rain skip alerts so the system doesn't run when it doesn't need to. Everything's been running on time since. That's about as clean a controller job as you get — old unit failing in every way possible, new one in, problem solved.</p>
+    </div>
 
   </div>
 

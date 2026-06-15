@@ -120,6 +120,10 @@ nav{background:var(--ink);position:sticky;top:0;z-index:300;padding:0 32px}
 .mobile-sub a{padding-left:44px}
 .mobile-cta-row{padding:20px 28px 0}
 .mobile-cta-row a{display:block;background:var(--yellow);color:var(--ink);text-align:center;padding:14px;border-radius:var(--r);font-weight:800;font-size:16px}
+.trust-bar{background:var(--ink2);padding:14px 32px;border-bottom:1px solid rgba(255,255,255,.06)}
+.trust-bar-inner{max-width:1200px;margin:0 auto;display:flex;gap:32px;flex-wrap:wrap;align-items:center}
+.tb{font-size:.82rem;color:rgba(255,255,255,.65);font-weight:600;display:flex;align-items:center;gap:6px}
+.tb strong{color:#fff}
 .city-hero{position:relative;min-height:360px;display:flex;align-items:flex-end;padding:48px 32px;overflow:hidden}
 .city-hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;filter:brightness(.45)}
 .city-hero-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.92) 0%,rgba(10,30,58,.7) 55%,rgba(10,30,58,.35) 100%)}
@@ -146,10 +150,6 @@ nav{background:var(--ink);position:sticky;top:0;z-index:300;padding:0 32px}
 .rt-stars{color:var(--yellow);font-size:12px;letter-spacing:2px;margin-bottom:4px}
 .rt-text{font-size:.78rem;color:rgba(255,255,255,.75);line-height:1.5;margin-bottom:5px;font-style:italic;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .rt-name{font-size:.7rem;font-weight:800;color:rgba(255,255,255,.45)}
-.trust-bar{background:var(--ink2);padding:14px 32px;border-bottom:1px solid rgba(255,255,255,.06)}
-.trust-bar-inner{max-width:1200px;margin:0 auto;display:flex;gap:32px;flex-wrap:wrap;align-items:center}
-.tb{font-size:.82rem;color:rgba(255,255,255,.65);font-weight:600;display:flex;align-items:center;gap:6px}
-.tb strong{color:#fff}
 .main-content{max-width:1200px;margin:0 auto;padding:56px 32px;display:grid;grid-template-columns:1fr 320px;gap:48px;align-items:start}
 .content h2{font-size:clamp(1.5rem,3vw,2.2rem);font-weight:900;margin-bottom:14px;color:var(--ink);letter-spacing:-.3px;line-height:1.15}
 .content h3{font-size:1.1rem;font-weight:800;margin:32px 0 10px;color:var(--gd)}
@@ -219,7 +219,11 @@ footer{background:#080f08;color:rgba(255,255,255,.45);text-align:center;padding:
 footer strong{color:rgba(255,255,255,.8)}
 footer a{color:rgba(255,255,255,.5)}
 @media(max-width:900px){.main-content{grid-template-columns:1fr}.sidebar{position:static}.service-grid{grid-template-columns:1fr 1fr}.reviews-grid{grid-template-columns:1fr}}
-@media(max-width:680px){.mobile-sticky-cta{display:grid}body{padding-bottom:62px}.nav-links{display:none}.nav-cta{display:none}.hamburger{display:flex}.city-hero{padding:32px 20px;min-height:280px}.main-content{padding:36px 20px;gap:28px}.service-grid{grid-template-columns:1fr}.faq-sec{padding:32px 20px}.reviews-sec{padding:32px 20px}.quote-sec{padding:36px 20px}.cities-strip{padding:28px 20px}.trust-bar{padding:10px 16px}.trust-bar-inner{gap:10px}}
+@media(max-width:680px){.mobile-sticky-cta{display:grid}body{padding-bottom:62px}.nav-links{display:none}.nav-cta{display:none}.hamburger{display:flex}.trust-bar{background:var(--ink2);padding:14px 32px;border-bottom:1px solid rgba(255,255,255,.06)}
+.trust-bar-inner{max-width:1200px;margin:0 auto;display:flex;gap:32px;flex-wrap:wrap;align-items:center}
+.tb{font-size:.82rem;color:rgba(255,255,255,.65);font-weight:600;display:flex;align-items:center;gap:6px}
+.tb strong{color:#fff}
+.city-hero{padding:32px 20px;min-height:280px}.main-content{padding:36px 20px;gap:28px}.service-grid{grid-template-columns:1fr}.faq-sec{padding:32px 20px}.reviews-sec{padding:32px 20px}.quote-sec{padding:36px 20px}.cities-strip{padding:28px 20px}}
 </style>
 </head>
 <body>
@@ -355,6 +359,11 @@ footer a{color:rgba(255,255,255,.5)}
   <div class="mobile-cta-row"><a href="tel:2088802712">Call (208) 880-2712</a></div>
 </div>
 
+<div class="trust-bar">
+  <div class="trust-bar-inner">
+    <div class="tb">✅ <strong>Licensed &amp; Insured</strong></div><div class="tb">⭐ <strong>136+ Five-Star Reviews</strong></div><div class="tb">📍 <strong>Serving Boise &amp; Treasure Valley</strong></div><div class="tb">📋 <strong>Free Estimates</strong></div>
+  </div>
+</div>
 <div class="city-hero">
   <img loading="lazy" class="city-hero-bg" src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/BOISE.png" alt="Sprinkler repair in Boise Idaho">
   <div class="city-hero-overlay"></div>
@@ -395,14 +404,6 @@ footer a{color:rgba(255,255,255,.5)}
   </div>
 </div>
 
-<div class="trust-bar">
-  <div class="trust-bar-inner">
-    <div class="tb">✅ Licensed and Insured</div>
-    <div class="tb">⭐ <strong>136+ Five-Star Reviews</strong></div>
-    <div class="tb">🪪 Idaho Registered Contractor</div>
-    <div class="tb">👨‍👩‍👧 Family Owned and Operated</div>
-    <div class="tb">📍 Serving All of Boise</div>
-  </div>
 </div>
 
 <div class="main-content">
@@ -412,49 +413,45 @@ footer a{color:rgba(255,255,255,.5)}
     <p>We are a family owned and operated company. When you call us, you are talking to the people who actually show up and do the work.</p>
 
     <h3>Sprinkler Repair in Boise</h3>
-    <p>Broken heads, valve failures, wiring faults, low pressure, wet spots in the yard — our <a href="sprinkler-repair.html" class="inline-link">sprinkler repair service</a> covers all common residential irrigation problems in Boise. Most repairs are completed in a single visit. If you are not sure what is wrong, that is fine — we diagnose first and give you a straight answer before any work starts.</p>
+    <p>Broken heads, valve failures, wiring faults, low pressure, wet spots in the yard — our <a href="sprinkler-repair.html" class="inline-link">sprinkler repair service</a> covers all common residential irrigation problems in Boise. Most repairs are completed in a single visit. If you are not sure what is wrong, that is fine — we diagnose first and give you a straight answer before any work starts. Common calls include <a href="boise-sprinkler-valve-repair.html" class="inline-link">zone valve failures</a>, <a href="boise-sprinkler-leak-repair.html" class="inline-link">lateral line leaks</a>, and <a href="boise-sprinkler-head-replacement.html" class="inline-link">broken sprinkler heads</a> that need same-trip replacement.</p>
 
     <h3>The North End and Older Boise Neighborhoods</h3>
-    <p><img loading="lazy" src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Sprinkler+SEO+PICS/Boise+sprinkler+system+start+up.jpg" alt="Sprinkler system spring startup in Boise, Idaho" class="inline-photo" loading="lazy">The North End has tree-lined streets, older homes, Hyde Park, Harrison Boulevard and the blocks around Camel's Back Park. A lot of those properties have irrigation systems that are 20 to 30 years old. Heads hit by mowers, worn-out valves, PVC that has been through a lot of Idaho winters. A <a href="spring-turn-on.html" class="inline-link">spring turn-on inspection</a> catches most problems before they turn into a flooded yard in August.</p>
+    <p><img loading="lazy" src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Sprinkler+SEO+PICS/Boise+sprinkler+system+start+up.jpg" alt="Sprinkler system spring startup in Boise, Idaho" class="inline-photo" loading="lazy">The North End has tree-lined streets, older homes, Hyde Park, Harrison Boulevard and the blocks around Camel's Back Park. A lot of those properties have irrigation systems that are 20 to 30 years old. Heads hit by mowers, worn-out valves, PVC that has been through a lot of Idaho winters. A <a href="boise-sprinkler-turn-on.html" class="inline-link">spring turn-on inspection</a> catches most problems before they turn into a flooded yard in August. We also schedule <a href="boise-sprinkler-blowouts.html" class="inline-link">fall blowouts</a> for these same neighborhoods every October — older pipe is especially vulnerable to freeze damage if water is left in the lines.</p>
 
     <h3>New Construction and Southwest Boise</h3>
-    <p><img loading="lazy" src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Sprinkler+SEO+PICS/New+construction+sprinkler+installation+Meridian.png" alt="New construction sprinkler installation in the Treasure Valley" class="inline-photo" loading="lazy">Southwest Boise and the areas off Cole Road and Overland have seen a lot of new construction. Builder-installed irrigation is often done fast to hit a deadline and we regularly find coverage gaps, overloaded zones, and backflow devices that are not installed correctly. If you moved into a new Boise home in the last five years and have not had someone walk your system zone by zone, it is worth doing.</p>
+    <p><img loading="lazy" src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Sprinkler+SEO+PICS/New+construction+sprinkler+installation+Meridian.png" alt="New construction sprinkler installation in the Treasure Valley" class="inline-photo" loading="lazy">Southwest Boise and the areas off Cole Road and Overland have seen a lot of new construction. Builder-installed irrigation is often done fast to hit a deadline and we regularly find coverage gaps, overloaded zones, and <a href="boise-backflow-repair.html" class="inline-link">backflow devices that are not installed correctly</a>. If you moved into a new Boise home in the last five years and have not had someone walk your system zone by zone, it is worth doing. For properties that need a system from the ground up, we offer <a href="boise-sprinkler-installation.html" class="inline-link">new sprinkler installation in Boise</a> with a free on-site estimate.</p>
 
     <h3>Services in Boise</h3>
     <div class="service-grid">
-      <a href="sprinkler-repair.html" class="service-card">
-        <h4>Sprinkler Repair</h4>
-        <p>Heads, valves, wiring, controllers and line leaks diagnosed and fixed in Boise.</p>
-      </a>
-      <a href="sprinkler-installation.html" class="service-card">
-        <h4>New Installation</h4>
-        <p>Full system design and installation for new builds and existing Boise properties.</p>
-      </a>
-      <a href="spring-turn-on.html" class="service-card">
-        <h4>Spring Turn-On</h4>
-        <p>Full zone activation, freeze damage check, and controller calibration every spring.</p>
-      </a>
-      <a href="winterization.html" class="service-card">
-        <h4>Winterization Blowout</h4>
-        <p>Commercial grade compressed air blowout before Boise's first hard freeze.</p>
-      </a>
-      <a href="main-and-drain.html" class="service-card">
-        <h4>Main &amp; Drain Replacement</h4>
-        <p>Full main line replacement restoring pressure across your Boise irrigation system.</p>
-      </a>
-      <a href="backflow.html" class="service-card">
-        <h4>Backflow Service</h4>
-        <p>Testing, maintenance, and replacement of backflow prevention devices in Boise.</p>
-      </a>
-      <a href="controller-replacement.html" class="service-card">
-        <h4>Controller Replacement</h4>
-        <p>Old or failed controllers replaced with modern units, including WiFi-enabled models.</p>
-      </a>
-      <a href="valve-repair-treasure-valley.html" class="service-card">
-        <h4>Valve Repair</h4>
-        <p>Zone won't turn on or won't shut off? Valve diagnosis and repair in Boise.</p>
-      </a>
-    </div>
+  <a href="boise-sprinkler-valve-repair.html" class="service-card">
+    <h4>Valve Repair</h4>
+    <p>Zone won't turn on or won't shut off? We diagnose and repair electric zone valves throughout Boise — same-day service available.</p>
+  </a>
+  <a href="boise-sprinkler-leak-repair.html" class="service-card">
+    <h4>Leak Repair</h4>
+    <p>Wet spots, soggy patches, or a spiking water bill? We find and fix broken lateral and mainline leaks in Boise yards fast.</p>
+  </a>
+  <a href="boise-sprinkler-head-replacement.html" class="service-card">
+    <h4>Head Repair &amp; Replacement</h4>
+    <p>Broken caps, clogged nozzles, tilted heads, or poor coverage fixed with same-trip head replacement throughout Boise.</p>
+  </a>
+  <a href="boise-sprinkler-blowouts.html" class="service-card">
+    <h4>Winterization &amp; Blowouts</h4>
+    <p>$60 flat for the first 5 zones + $7 per zone after. Compressed air blowout before Boise's first hard freeze every fall.</p>
+  </a>
+  <a href="boise-sprinkler-turn-on.html" class="service-card">
+    <h4>Spring Turn-On</h4>
+    <p>Full zone activation, freeze damage check, and controller calibration every spring so your Boise system starts right.</p>
+  </a>
+  <a href="boise-backflow-repair.html" class="service-card">
+    <h4>Backflow Repair</h4>
+    <p>Cracked PVB, failed testing, or new backflow installation. We handle all backflow preventer work in Boise.</p>
+  </a>
+  <a href="boise-sprinkler-installation.html" class="service-card">
+    <h4>New Installation</h4>
+    <p>Full system design and installation for new Boise builds and existing properties. Free on-site estimate.</p>
+  </a>
+</div>
 
     <h3>Boise Pressure Irrigation and Canal Districts</h3>
     <p>Boise has a more complex irrigation landscape than most Treasure Valley cities. Depending on where you live, your irrigation water may come from the <a href="https://www.cityofboise.org/departments/public-works/pressure-irrigation/" target="_blank" rel="noopener" class="inline-link">City of Boise's pressure irrigation system</a>, one of several canal companies, or an HOA-managed system. The irrigation season in Boise typically runs from <strong>April 15 to October 15</strong>.</p>
@@ -485,15 +482,15 @@ footer a{color:rgba(255,255,255,.5)}
     <p>We cover all of Boise — the North End, Hyde Park, Harrison Boulevard, the Bench, East Boise, Warm Springs, Southeast Boise, Southwest Boise, West Boise, and the Cole Road and Overland corridors.</p>
 
     <h2>Common Sprinkler Problems We See in Boise</h2>
-    <p>While many irrigation issues are universal, certain sprinkler problems appear more frequently in Boise due to the age of some irrigation systems, mature landscaping, and varying water pressures across different neighborhoods. Some of the most common sprinkler repairs we perform in Boise include <a href="troubleshooting-valve-box-water.html" class="inline-link">leaking sprinkler valves</a>, broken lateral lines, <a href="troubleshooting-wet-spot.html" class="inline-link">wet spots in yards</a>, <a href="troubleshooting-low-pressure.html" class="inline-link">low pressure zones</a>, sprinkler heads that continue dripping after a cycle, damaged wiring, and systems that will not shut off completely.</p>
+    <p>While many irrigation issues are universal, certain sprinkler problems appear more frequently in Boise due to the age of some irrigation systems, mature landscaping, and varying water pressures across different neighborhoods. Some of the most common sprinkler repairs we perform in Boise include <a href="boise-sprinkler-valve-repair.html" class="inline-link">leaking sprinkler valves</a>, <a href="boise-sprinkler-leak-repair.html" class="inline-link">broken lateral lines and wet spots in yards</a>, <a href="troubleshooting-low-pressure.html" class="inline-link">low pressure zones</a>, <a href="boise-sprinkler-head-replacement.html" class="inline-link">sprinkler heads that continue dripping after a cycle</a>, damaged wiring, and systems that will not shut off completely.</p>
     <p>Many of these issues begin as small problems but can quickly lead to dead grass, wasted water, or expensive repairs if ignored. If you are experiencing one of these symptoms, visit our <a href="sprinkler-troubleshooting.html" class="inline-link">Sprinkler Troubleshooting Center</a> for additional information and repair guidance.</p>
 
     <h2>Neighborhoods We Serve in Boise</h2>
     <p><img loading="lazy" src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Sprinkler+SEO+PICS/Fixing+sprinkler++diaphrams+in+meridian.jpg" alt="Sprinkler valve repair completed on the Boise Bench" class="inline-photo" loading="lazy">Beeline provides sprinkler repair services throughout Boise including the North End, Boise Bench, Southeast Boise, Harris Ranch, Warm Springs, Collister, Pierce Park, West Boise, Hidden Springs, and surrounding communities. Whether you have an older irrigation system that needs repair or a newer system that requires adjustments and maintenance, our technicians are familiar with the common irrigation challenges found throughout Boise.</p>
 
     <h2>Why Boise Homeowners Choose Beeline</h2>
-    <p>Boise homeowners choose Beeline because we focus exclusively on sprinkler and irrigation systems. Since 2015 we have helped homeowners diagnose leaks, repair valves, replace damaged sprinkler heads, solve <a href="troubleshooting-low-pressure.html" class="inline-link">low pressure issues</a>, repair <a href="main-and-drain.html" class="inline-link">main lines</a>, and keep irrigation systems operating efficiently throughout the growing season.</p>
-    <p>Our service trucks are stocked with the most commonly needed repair parts, allowing many repairs to be completed during the initial visit. We believe in providing clear communication, honest recommendations, and repairs that solve the underlying issue rather than simply treating the symptom.</p>
+    <p>Boise homeowners choose Beeline because we focus exclusively on sprinkler and irrigation systems. Since 2015 we have helped homeowners diagnose <a href="boise-sprinkler-leak-repair.html" class="inline-link">leaks</a>, <a href="boise-sprinkler-valve-repair.html" class="inline-link">repair valves</a>, <a href="boise-sprinkler-head-replacement.html" class="inline-link">replace damaged sprinkler heads</a>, solve <a href="troubleshooting-low-pressure.html" class="inline-link">low pressure issues</a>, repair <a href="main-and-drain.html" class="inline-link">main lines</a>, and keep irrigation systems operating efficiently throughout the growing season.</p>
+    <p>Our service trucks are stocked with the most commonly needed repair parts, allowing many repairs to be completed during the initial visit. We believe in providing clear communication, honest recommendations, and repairs that solve the underlying issue rather than simply treating the symptom. Every fall we handle <a href="boise-sprinkler-blowouts.html" class="inline-link">sprinkler winterization blowouts</a> for Boise customers, and every spring we're back for <a href="boise-sprinkler-turn-on.html" class="inline-link">system startup and spring turn-on</a>. We also service and replace <a href="boise-backflow-repair.html" class="inline-link">backflow preventers</a> and handle <a href="boise-sprinkler-installation.html" class="inline-link">full system installations</a> for new and existing Boise properties.</p>
   </div>
 
   <div class="sidebar">
@@ -507,16 +504,15 @@ footer a{color:rgba(255,255,255,.5)}
     <div class="sdb-info">
       <h4>Services in Boise</h4>
       <ul>
-        <li><a href="sprinkler-repair.html">Sprinkler Repair</a></li>
-        <li><a href="sprinkler-installation.html">New Installation</a></li>
-        <li><a href="spring-turn-on.html">Spring Turn-On</a></li>
-        <li><a href="winterization.html">Winterization Blowout</a></li>
-        <li><a href="backflow.html">Backflow Service</a></li>
-        <li><a href="main-and-drain.html">Main &amp; Drain Replacement</a></li>
-        <li><a href="controller-replacement.html">Controller Replacement</a></li>
-        <li><a href="valve-repair-treasure-valley.html">Valve Repair</a></li>
-        <li><a href="emergency.html">Emergency Service</a></li>
-      </ul>
+  <li><a href="boise-sprinkler-valve-repair.html">Valve Repair</a></li>
+  <li><a href="boise-sprinkler-leak-repair.html">Leak Repair</a></li>
+  <li><a href="boise-sprinkler-head-replacement.html">Head Replacement</a></li>
+  <li><a href="boise-sprinkler-blowouts.html">Winterization &amp; Blowouts</a></li>
+  <li><a href="boise-sprinkler-turn-on.html">Spring Turn-On</a></li>
+  <li><a href="boise-backflow-repair.html">Backflow Repair</a></li>
+  <li><a href="boise-sprinkler-installation.html">New Installation</a></li>
+  <li><a href="emergency.html">Emergency Service</a></li>
+</ul>
     </div>
     <div class="sdb-info">
       <h4>Boise Irrigation Resources</h4>
@@ -651,7 +647,4 @@ document.querySelectorAll('.faq-q').forEach(function(btn){btn.addEventListener('
 function toggleMobSection(label){var sub=label.nextElementSibling;var arrow=label.querySelector('span');var isOpen=sub.style.display==='block';sub.style.display=isOpen?'none':'block';if(arrow)arrow.style.transform=isOpen?'':'rotate(180deg)';}
 var hbg=document.getElementById('hamburger');var mob=document.getElementById('mobileMenu');
 if(hbg){hbg.addEventListener('click',function(){hbg.classList.toggle('open');mob.classList.toggle('open');document.body.style.overflow=mob.classList.contains('open')?'hidden':'';});}
-if(window.innerWidth>680){var bee=document.createElement('div');bee.innerHTML='<svg width="30" height="30" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg"><ellipse cx="10" cy="13" rx="9" ry="5" fill="rgba(200,230,255,0.75)" stroke="rgba(100,160,220,0.5)" stroke-width="0.5"/><ellipse cx="26" cy="13" rx="9" ry="5" fill="rgba(200,230,255,0.75)" stroke="rgba(100,160,220,0.5)" stroke-width="0.5"/><ellipse cx="18" cy="21" rx="7" ry="9" fill="#FFD700"/><rect x="11" y="18" width="14" height="3" rx="1" fill="#1a1a00" opacity="0.85"/><rect x="11" y="23" width="14" height="3" rx="1" fill="#1a1a00" opacity="0.85"/><circle cx="18" cy="12" r="5" fill="#FFD700"/><circle cx="16" cy="11" r="1.2" fill="#1a1a00"/><circle cx="20" cy="11" r="1.2" fill="#1a1a00"/><path d="M15.5 13.5 Q18 15.5 20.5 13.5" stroke="#1a1a00" stroke-width="0.8" fill="none" stroke-linecap="round"/><line x1="16" y1="7" x2="13" y2="3" stroke="#1a1a00" stroke-width="1" stroke-linecap="round"/><circle cx="13" cy="3" r="1" fill="#FFD700" stroke="#1a1a00" stroke-width="0.5"/><line x1="20" y1="7" x2="23" y2="3" stroke="#1a1a00" stroke-width="1" stroke-linecap="round"/><circle cx="23" cy="3" r="1" fill="#FFD700" stroke="#1a1a00" stroke-width="0.5"/></svg>';bee.style.cssText='position:fixed;z-index:9999;pointer-events:none;filter:drop-shadow(0 1px 3px rgba(0,0,0,.4));will-change:transform;';document.body.appendChild(bee);var bx=window.innerWidth/2,bvx=0.8,bw=0;function animBee(){bw+=0.1;bx+=bvx+Math.sin(bw*0.7)*0.5;var by=26+Math.sin(bw)*8;var mn=window.innerWidth*0.25,mx=window.innerWidth*0.75;if(bx<mn){bx=mn;bvx=Math.abs(bvx);}if(bx>mx){bx=mx;bvx=-Math.abs(bvx);}if(Math.random()<0.01)bvx+=(Math.random()-0.5)*0.5;bvx=Math.max(-1.5,Math.min(1.5,bvx));if(Math.abs(bvx)<0.3)bvx=bvx<0?-0.3:0.3;bee.style.left=bx+'px';bee.style.top=by+'px';bee.style.transform=bvx<0?'scaleX(-1)':'scaleX(1)';requestAnimationFrame(animBee);}animBee();}
-</script>
-</body>
-</html>
+if(window.innerWidth>680){var bee=document.createElement('div');bee.innerHTML='<svg width="30" height="30" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg"><ellipse cx="10" cy="13" rx="9" ry="5" fill="rgba(200,230,255,0.75)" stroke="rgba(100,160,220,0.5)" stroke-width="0.5"/><ellipse cx="26" cy="13" rx="9" ry="5" fill="rgba(200,230,255,0.75)" stroke="rgba(100,160,220,0.5)" stroke-wi

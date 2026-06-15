@@ -28,38 +28,167 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Service",
-      "name": "Sprinkler Leak Repair in Boise, Idaho",
-      "description": "Underground sprinkler leak detection and repair in Boise, ID. Mainline breaks, lateral line cracks, wet spots in the yard — located and fixed.",
-      "provider": {
-        "@type": "LocalBusiness",
-        "name": "Beeline Sprinkler Repair",
-        "telephone": "(208) 880-2712",
-        "address": {"@type":"PostalAddress","streetAddress":"5606 W Amity Rd","addressLocality":"Nampa","addressRegion":"ID","postalCode":"83687","addressCountry":"US"},
-        "areaServed": {"@type": "City", "name": "Boise"},
-        "aggregateRating": {"@type":"AggregateRating","ratingValue":"5","reviewCount":"136","bestRating":"5"},
-        "review": [
-          {"@type":"Review","author":{"@type":"Person","name":"James T."},"reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"},"reviewBody":"Had a wet spot in my yard for two weeks before I called. Beeline found the underground pipe leak fast, fixed it clean, and the wet spot was gone within a few days.","datePublished":"2024-06-20"},
-          {"@type":"Review","author":{"@type":"Person","name":"Maria C."},"reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"},"reviewBody":"My water bill jumped $90 one month. Beeline came out, found a crack in a lateral line under my lawn, and had it fixed in one visit.","datePublished":"2024-07-15"},
-          {"@type":"Review","author":{"@type":"Person","name":"Steve P."},"reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"},"reviewBody":"Thought it was a sprinkler head issue but Beeline found a pipe leak two feet underground. Dug it up, fixed it, and patched the area. No complaints.","datePublished":"2024-08-05"}
-        ]
-      }
+      "@type": "LocalBusiness",
+      "@id": "https://www.beelinesprinklerrepair.com/#business",
+      "name": "Beeline Sprinkler Repair",
+      "telephone": "(208) 880-2712",
+      "email": "beelinesprinklerrepair@gmail.com",
+      "logo": "https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Real+Logo.png",
+      "priceRange": "$-$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "5606 W Amity Rd",
+        "addressLocality": "Nampa",
+        "addressRegion": "ID",
+        "postalCode": "83687",
+        "addressCountry": "US"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "08:00",
+          "closes": "18:00"
+        }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/BeelineSprinkler/",
+        "https://www.yelp.com/biz/beeline-sprinkler-repair-nampa-2",
+        "https://share.google/wmRIhGxHghIGRtf7r"
+      ],
+      "areaServed": {
+        "@type": "City",
+        "name": "Boise"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "reviewCount": "136",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "url": "https://www.beelinesprinklerrepair.com/boise-sprinkler-leak-repair.html",
+      "review": [
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "James T."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Had a wet spot in my yard for two weeks before I called. Beeline located the mainline break, dug it up, and had it repaired same day.",
+          "datePublished": "2024-05-20"
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Maria C."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "My water bill jumped $90 one month. Beeline came out, found a cracked lateral under my driveway edge, and fixed it. Bill went right back to normal.",
+          "datePublished": "2024-06-10"
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Steve P."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Thought it was a sprinkler head issue but Beeline found a pipe split underground. They located it fast and repaired it the same visit.",
+          "datePublished": "2024-07-15"
+        }
+      ]
     },
     {
-      "@type": "FAQPage",
-      "mainEntity": [
-        {"@type":"Question","name":"How do I know if I have an underground sprinkler leak in Boise?","acceptedAnswer":{"@type":"Answer","text":"Signs include a wet spot that does not dry out, unusually green grass in one section, soggy soil near a valve box, a higher than normal water bill, or low pressure on one or more zones. If you see any of these, call for an inspection before the problem gets worse."}},
-        {"@type":"Question","name":"How does Beeline find underground irrigation leaks in Boise?","acceptedAnswer":{"@type":"Answer","text":"We start by running each zone and looking for pressure drops, wet areas, and unusual drainage patterns. On stubborn leaks, we narrow down the location by isolating pipe sections. Most leaks are locatable without tearing up the whole yard."}},
-        {"@type":"Question","name":"How much does sprinkler leak repair cost in Boise?","acceptedAnswer":{"@type":"Answer","text":"Cost depends on where the leak is, how deep the pipe runs, and how much line needs to be replaced. Simple lateral repairs typically run less than mainline repairs that require more excavation. We quote the job before we start any work."}},
-        {"@type":"Question","name":"Can an underground sprinkler leak damage my Boise home's foundation?","acceptedAnswer":{"@type":"Answer","text":"Yes. If a mainline or lateral runs near your foundation, a sustained leak can saturate the soil and cause settling or water intrusion. If you see consistent dampness near your home's base and your irrigation is running, get it checked quickly."}}
-      ]
+      "@type": "Service",
+      "name": "Sprinkler Leak Repair in Boise, Idaho",
+      "description": "Underground sprinkler leak detection and repair in Boise, ID. Mainline breaks, lateral pipe leaks, and flooded valve box repairs.",
+      "provider": {
+        "@id": "https://www.beelinesprinklerrepair.com/#business"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Boise"
+      }
     },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        {"@type":"ListItem","position":1,"name":"Home","item":"https://www.beelinesprinklerrepair.com/"},
-        {"@type":"ListItem","position":2,"name":"Boise Sprinkler Repair","item":"https://www.beelinesprinklerrepair.com/boise-sprinkler-repair.html"},
-        {"@type":"ListItem","position":3,"name":"Sprinkler Leak Repair Boise","item":"https://www.beelinesprinklerrepair.com/boise-sprinkler-leak-repair.html"}
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.beelinesprinklerrepair.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Boise Sprinkler Repair",
+          "item": "https://www.beelinesprinklerrepair.com/boise-sprinkler-repair.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Sprinkler Leak Repair Boise",
+          "item": "https://www.beelinesprinklerrepair.com/boise-sprinkler-leak-repair.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I know if I have an underground sprinkler leak in Boise?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Signs include a wet spot that does not dry out, unusually green grass in one section, soggy soil near a valve box, a higher than normal water bill, or low pressure on one or more zones. If you see any of these, call for an inspection before the problem gets worse."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does Beeline find underground irrigation leaks in Boise?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We start by running each zone and looking for pressure drops, wet areas, and unusual drainage patterns. On stubborn leaks, we narrow down the location by isolating pipe sections. Most leaks are locatable without tearing up the whole yard."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does sprinkler leak repair cost in Boise?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cost depends on where the leak is, how deep the pipe runs, and how much line needs to be replaced. Simple lateral repairs typically run less than mainline repairs that require more excavation. We quote the job before we start any work."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can an underground sprinkler leak damage my Boise home's foundation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. If a mainline or lateral runs near your foundation, a sustained leak can saturate the soil and cause settling or water intrusion. If you see consistent dampness near your home's base and your irrigation is running, get it checked quickly."
+          }
+        }
       ]
     }
   ]

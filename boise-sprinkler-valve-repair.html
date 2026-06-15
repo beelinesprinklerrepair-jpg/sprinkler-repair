@@ -28,55 +28,131 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "LocalBusiness",
+      "@id": "https://www.beelinesprinklerrepair.com/#business",
+      "name": "Beeline Sprinkler Repair",
+      "telephone": "(208) 880-2712",
+      "email": "beelinesprinklerrepair@gmail.com",
+      "logo": "https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Real+Logo.png",
+      "priceRange": "$-$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "5606 W Amity Rd",
+        "addressLocality": "Nampa",
+        "addressRegion": "ID",
+        "postalCode": "83687",
+        "addressCountry": "US"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "08:00",
+          "closes": "18:00"
+        }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/BeelineSprinkler/",
+        "https://www.yelp.com/biz/beeline-sprinkler-repair-nampa-2",
+        "https://share.google/wmRIhGxHghIGRtf7r"
+      ],
+      "areaServed": {
+        "@type": "City",
+        "name": "Boise"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "reviewCount": "136",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "url": "https://www.beelinesprinklerrepair.com/boise-sprinkler-valve-repair.html",
+      "review": [
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Kevin S."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Had a zone stuck open all night, my yard was soaked by morning. Called Beeline and they were out to my North End home that afternoon. Fixed it fast and the price was fair.",
+          "datePublished": "2024-06-15"
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Lisa M."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Beeline diagnosed my valve problem in about 10 minutes. Stuck solenoid on my back zone, had the part on the truck and it was done in one visit.",
+          "datePublished": "2024-07-01"
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Todd H."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Zone was running constantly. Beeline found a torn diaphragm in my valve box and replaced it same day. System has been perfect since.",
+          "datePublished": "2024-08-10"
+        }
+      ]
+    },
+    {
       "@type": "Service",
       "name": "Sprinkler Valve Repair in Boise, Idaho",
       "description": "Irrigation valve repair and replacement in Boise, ID. Fixing zones stuck on or not opening, solenoid replacement, diaphragm repair, and manifold valve repair.",
       "provider": {
-        "@type": "LocalBusiness",
-        "name": "Beeline Sprinkler Repair",
-        "telephone": "(208) 880-2712",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "5606 W Amity Rd",
-          "addressLocality": "Nampa",
-          "addressRegion": "ID",
-          "postalCode": "83687",
-          "addressCountry": "US"
-        },
-        "areaServed": {
-          "@type": "City",
-          "name": "Boise"
-        },
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "5",
-          "reviewCount": "136",
-          "bestRating": "5"
-        },
-        "review": [
-          {
-            "@type": "Review",
-            "author": {"@type": "Person", "name": "Kevin S."},
-            "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
-            "reviewBody": "Had a zone stuck open all night, my yard was soaked by morning. Called Beeline and they were out to my North End home that afternoon. Fixed it fast and the price was fair.",
-            "datePublished": "2024-06-15"
-          },
-          {
-            "@type": "Review",
-            "author": {"@type": "Person", "name": "Lisa M."},
-            "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
-            "reviewBody": "Beeline diagnosed my valve problem in about 10 minutes. Stuck solenoid on my back zone, had the part on the truck and it was done in one visit.",
-            "datePublished": "2024-07-01"
-          },
-          {
-            "@type": "Review",
-            "author": {"@type": "Person", "name": "Todd H."},
-            "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
-            "reviewBody": "Zone was running constantly. Beeline found a torn diaphragm in my valve box and replaced it same day. System has been perfect since.",
-            "datePublished": "2024-08-10"
-          }
-        ]
+        "@id": "https://www.beelinesprinklerrepair.com/#business"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Boise"
       }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.beelinesprinklerrepair.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Boise Sprinkler Repair",
+          "item": "https://www.beelinesprinklerrepair.com/boise-sprinkler-repair.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Sprinkler Valve Repair Boise",
+          "item": "https://www.beelinesprinklerrepair.com/boise-sprinkler-valve-repair.html"
+        }
+      ]
     },
     {
       "@type": "FAQPage",
@@ -112,29 +188,6 @@
             "@type": "Answer",
             "text": "Yes. We handle all private-side repairs regardless of which district supplies your water — the City of Boise pressure irrigation system, Boise City Canal Company, New York Irrigation District, or any other. We work on the irrigation system on your property, not the supply-side infrastructure."
           }
-        }
-      ]
-    },
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.beelinesprinklerrepair.com/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Boise Sprinkler Repair",
-          "item": "https://www.beelinesprinklerrepair.com/boise-sprinkler-repair.html"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Sprinkler Valve Repair Boise",
-          "item": "https://www.beelinesprinklerrepair.com/boise-sprinkler-valve-repair.html"
         }
       ]
     }

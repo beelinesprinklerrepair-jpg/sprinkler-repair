@@ -23,55 +23,131 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "LocalBusiness",
+      "@id": "https://www.beelinesprinklerrepair.com/#business",
+      "name": "Beeline Sprinkler Repair",
+      "telephone": "(208) 880-2712",
+      "email": "beelinesprinklerrepair@gmail.com",
+      "logo": "https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Real+Logo.png",
+      "priceRange": "$-$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "5606 W Amity Rd",
+        "addressLocality": "Nampa",
+        "addressRegion": "ID",
+        "postalCode": "83687",
+        "addressCountry": "US"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "08:00",
+          "closes": "18:00"
+        }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/BeelineSprinkler/",
+        "https://www.yelp.com/biz/beeline-sprinkler-repair-nampa-2",
+        "https://share.google/wmRIhGxHghIGRtf7r"
+      ],
+      "areaServed": {
+        "@type": "City",
+        "name": "Boise"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "reviewCount": "136",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "url": "https://www.beelinesprinklerrepair.com/boise-sprinkler-head-replacement.html",
+      "review": [
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Kyle M."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Our lawnmower clipped three heads and they were gushing water. Beeline came out and replaced all three in under an hour. Fast and fair.",
+          "datePublished": "2024-06-01"
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Andrea S."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "We had dry spots in our Boise backyard that I could not figure out. Beeline found two clogged heads and replaced a cracked rotor. Coverage is perfect now.",
+          "datePublished": "2024-07-20"
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Paul V."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Moved into our Tresidio home in Southeast Boise and some of the heads were already misaligned. Beeline came out, adjusted and replaced what was needed.",
+          "datePublished": "2024-08-05"
+        }
+      ]
+    },
+    {
       "@type": "Service",
       "name": "Sprinkler Head Repair and Replacement in Boise, Idaho",
-      "description": "Sprinkler head repair and replacement in Boise, ID. Broken heads, worn nozzles, heads hit by mowers, tilted heads from clay soil — replaced and coverage verified.",
+      "description": "Sprinkler head repair and replacement in Boise, ID. Broken heads, clogged nozzles, misaligned rotors, and freeze-damaged heads replaced on the spot.",
       "provider": {
-        "@type": "LocalBusiness",
-        "name": "Beeline Sprinkler Repair",
-        "telephone": "(208) 880-2712",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "5606 W Amity Rd",
-          "addressLocality": "Nampa",
-          "addressRegion": "ID",
-          "postalCode": "83687",
-          "addressCountry": "US"
-        },
-        "areaServed": {
-          "@type": "City",
-          "name": "Boise"
-        },
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "5",
-          "reviewCount": "136",
-          "bestRating": "5"
-        },
-        "review": [
-          {
-            "@type": "Review",
-            "author": {"@type": "Person", "name": "Kyle M."},
-            "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
-            "reviewBody": "Our lawnmower clipped three heads and they were gushing water. Beeline came out, replaced all three, and adjusted the coverage on the whole zone while they were at it. Great job.",
-            "datePublished": "2024-06-10"
-          },
-          {
-            "@type": "Review",
-            "author": {"@type": "Person", "name": "Andrea S."},
-            "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
-            "reviewBody": "We had dry spots in our Boise backyard that I could not figure out. Turned out two heads were clogged and one had a cracked cap. Beeline fixed all of it in one visit.",
-            "datePublished": "2024-07-15"
-          },
-          {
-            "@type": "Review",
-            "author": {"@type": "Person", "name": "Paul V."},
-            "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
-            "reviewBody": "Moved into our Tresidio home in Southeast Boise and some of the heads were already misaligned. Beeline adjusted them all and replaced one that was cracked. Everything looks perfect now.",
-            "datePublished": "2024-08-20"
-          }
-        ]
+        "@id": "https://www.beelinesprinklerrepair.com/#business"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Boise"
       }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.beelinesprinklerrepair.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Boise Sprinkler Repair",
+          "item": "https://www.beelinesprinklerrepair.com/boise-sprinkler-repair.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Sprinkler Head Replacement Boise",
+          "item": "https://www.beelinesprinklerrepair.com/boise-sprinkler-head-replacement.html"
+        }
+      ]
     },
     {
       "@type": "FAQPage",
@@ -124,14 +200,6 @@
             "text": "Spray heads pop up and throw water in a fixed arc — they cover smaller areas like side yards and landscape beds and put water down fast. Rotor heads rotate back and forth and cover larger turf areas with a slower precipitation rate. MP rotators fit onto a standard spray head body but spin like a rotor, making them a popular upgrade for improving coverage efficiency."
           }
         }
-      ]
-    },
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.beelinesprinklerrepair.com/"},
-        {"@type": "ListItem", "position": 2, "name": "Boise Sprinkler Repair", "item": "https://www.beelinesprinklerrepair.com/boise-sprinkler-repair.html"},
-        {"@type": "ListItem", "position": 3, "name": "Sprinkler Head Replacement Boise", "item": "https://www.beelinesprinklerrepair.com/boise-sprinkler-head-replacement.html"}
       ]
     }
   ]

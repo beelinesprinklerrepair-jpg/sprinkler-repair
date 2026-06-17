@@ -158,6 +158,10 @@ nav.nav-hidden{transform:translateY(-100%)}
 @media(max-width:680px){.mobile-nav-fab{display:flex}}
 
 /* --- HERO --- */
+.trust-bar{background:var(--ink2);padding:14px 32px;border-bottom:1px solid rgba(255,255,255,.06)}
+.trust-bar-inner{max-width:1200px;margin:0 auto;display:flex;gap:32px;flex-wrap:wrap;align-items:center}
+.tb{font-size:.82rem;color:rgba(255,255,255,.65);font-weight:600;display:flex;align-items:center;gap:6px}
+.tb strong{color:#fff}
 .page-hero{position:relative;min-height:360px;display:flex;align-items:flex-end;padding:48px 32px;overflow:hidden;background:linear-gradient(135deg,#082e08 0%,#1a5c1a 55%,#0d400d 100%)}
 .page-hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
 .page-hero::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(10,30,10,.82) 0%,rgba(26,77,26,.72) 100%);z-index:1}
@@ -189,11 +193,6 @@ nav.nav-hidden{transform:translateY(-100%)}
 .rt-name{font-size:.7rem;font-weight:800;color:rgba(255,255,255,.45)}
 
 /* --- TRUST BAR --- */
-.trust-bar{background:var(--ink2);padding:14px 32px;border-bottom:1px solid rgba(255,255,255,.06)}
-.trust-bar-inner{max-width:1200px;margin:0 auto;display:flex;gap:32px;flex-wrap:wrap;align-items:center}
-.tb{font-size:.82rem;color:rgba(255,255,255,.65);font-weight:600;display:flex;align-items:center;gap:6px}
-.tb strong{color:#fff}
-
 /* --- MAIN LAYOUT --- */
 .main-content{max-width:1200px;margin:0 auto;padding:56px 32px;display:grid;grid-template-columns:1fr 320px;gap:48px;align-items:start}
 .content h2{font-size:clamp(1.5rem,3vw,2.2rem);font-weight:900;margin-bottom:14px;color:var(--ink);letter-spacing:-.3px;line-height:1.15}
@@ -278,7 +277,11 @@ footer strong{color:rgba(255,255,255,.8)}
 footer a{color:rgba(255,255,255,.5)}
 
 @media(max-width:900px){.main-content{grid-template-columns:1fr}.sidebar{position:static}.service-grid{grid-template-columns:1fr 1fr}}
-@media(max-width:680px){.mobile-sticky-cta{display:grid}body{padding-bottom:62px}.nav-links{display:none}.nav-cta{display:none}.hamburger{display:flex}.page-hero{padding:32px 20px;min-height:280px}.main-content{padding:36px 20px;gap:28px}.service-grid{grid-template-columns:1fr}.faq-sec{padding:32px 20px}.quote-sec{padding:36px 20px}.cities-strip{padding:28px 20px}.svc-links{padding:24px 20px}.trust-bar{padding:10px 16px}.trust-bar-inner{gap:10px}.cta-band{padding:36px 20px}.cta-band-btns{flex-direction:column;align-items:center}}
+@media(max-width:680px){.mobile-sticky-cta{display:grid}body{padding-bottom:62px}.nav-links{display:none}.nav-cta{display:none}.hamburger{display:flex}.trust-bar{background:var(--ink2);padding:14px 32px;border-bottom:1px solid rgba(255,255,255,.06)}
+.trust-bar-inner{max-width:1200px;margin:0 auto;display:flex;gap:32px;flex-wrap:wrap;align-items:center}
+.tb{font-size:.82rem;color:rgba(255,255,255,.65);font-weight:600;display:flex;align-items:center;gap:6px}
+.tb strong{color:#fff}
+.page-hero{padding:32px 20px;min-height:280px}.main-content{padding:36px 20px;gap:28px}.service-grid{grid-template-columns:1fr}.faq-sec{padding:32px 20px}.quote-sec{padding:36px 20px}.cities-strip{padding:28px 20px}.svc-links{padding:24px 20px}.cta-band{padding:36px 20px}.cta-band-btns{flex-direction:column;align-items:center}}
 </style>
 </head>
 <body>
@@ -415,6 +418,11 @@ footer a{color:rgba(255,255,255,.5)}
 </div>
 
 <!-- HERO -->
+<div class="trust-bar">
+  <div class="trust-bar-inner">
+    <div class="tb">✅ <strong>Licensed &amp; Insured</strong></div><div class="tb">⭐ <strong>136+ Five-Star Reviews</strong></div><div class="tb">💦 <strong>Head Replacement Specialists</strong></div><div class="tb">📋 <strong>Free Estimates</strong></div>
+  </div>
+</div>
 <div class="page-hero">
   <img loading="lazy" class="page-hero-bg" src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Sprinkler+Head+Tune+up+Meridian.jpg" alt="Sprinkler head replacement in Meridian, Idaho" fetchpriority="high">
   <div class="page-hero-overlay"></div>
@@ -458,14 +466,6 @@ footer a{color:rgba(255,255,255,.5)}
 </div>
 
 <!-- TRUST BAR -->
-<div class="trust-bar">
-  <div class="trust-bar-inner">
-    <div class="tb">&#10003; Licensed and Insured</div>
-    <div class="tb">&#11088; <strong>136+ Five-Star Reviews</strong></div>
-    <div class="tb">&#128394; Idaho Registered Contractor</div>
-    <div class="tb">&#128106; Family Owned and Operated</div>
-    <div class="tb">&#128205; All 8 Treasure Valley Cities</div>
-  </div>
 </div>
 
 <!-- MAIN CONTENT + SIDEBAR -->
@@ -695,7 +695,7 @@ footer a{color:rgba(255,255,255,.5)}
 </div>
 
 <footer>
-  <p>&copy; 2025 <strong>Beeline Sprinkler Repair</strong> &middot; Licensed and Insured &middot; 5606 W Amity Rd, Nampa, ID 83687 &middot; <a href="tel:2088802712">(208) 880-2712</a> &middot; <a href="index.html">Back to Main Site</a></p>
+  <p>&copy; 2025 <strong>Beeline Sprinkler Repair</strong> &middot; Licensed &amp; Insured · Idaho General Contractor Reg. #9781914 · 5606 W Amity Rd, Nampa, ID 83687 &middot; <a href="tel:2088802712">(208) 880-2712</a> &middot; <a href="index.html">Back to Main Site</a></p>
 </footer>
 
 <button class="mobile-nav-fab" id="mobileNavFab" aria-label="Open menu"><span></span><span></span><span></span></button>

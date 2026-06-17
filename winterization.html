@@ -99,6 +99,11 @@ nav{background:var(--ink);position:sticky;top:0;z-index:300;padding:0 32px}
 .mobile-sub a{padding-left:44px}
 .mobile-cta-row{padding:20px 28px 0}
 .mobile-cta-row a{display:block;background:var(--yellow);color:var(--ink);text-align:center;padding:14px;border-radius:var(--r);font-weight:800;font-size:16px}
+
+.trust-bar{background:var(--ink2);padding:14px 32px;border-bottom:1px solid rgba(255,255,255,.06)}
+.trust-bar-inner{max-width:1200px;margin:0 auto;display:flex;gap:32px;flex-wrap:wrap;align-items:center}
+.tb{font-size:.82rem;color:rgba(255,255,255,.65);font-weight:600;display:flex;align-items:center;gap:6px}
+.tb strong{color:#fff}
 .svc-hero{position:relative;min-height:380px;display:flex;align-items:flex-end;padding:56px 32px;overflow:hidden;background:#0a1a2e}
 .svc-hero-bg{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;filter:brightness(.32)}
 .svc-hero-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.93) 0%,rgba(10,26,50,.65) 55%,rgba(10,26,50,.25) 100%);z-index:1}
@@ -111,9 +116,6 @@ nav{background:var(--ink);position:sticky;top:0;z-index:300;padding:0 32px}
 .btn-primary{background:var(--yellow);color:var(--ink);padding:16px 34px;border-radius:var(--r);font-weight:800;font-size:17px;display:inline-block;box-shadow:0 4px 20px rgba(245,196,0,.4)}
 .btn-primary:hover{background:#e6b800}
 .btn-ghost{background:transparent;color:#fff;padding:14px 24px;border-radius:var(--r);font-weight:700;font-size:15px;border:1.5px solid rgba(255,255,255,.4);display:inline-block}
-.trust-bar{background:var(--ink2);padding:14px 32px;border-bottom:1px solid rgba(255,255,255,.06)}
-.trust-bar-inner{max-width:1200px;margin:0 auto;display:flex;gap:14px;flex-wrap:wrap;align-items:center}
-.tb{font-size:.84rem;color:var(--yellow);font-weight:700;display:flex;align-items:center;gap:6px;border:1px solid rgba(245,196,0,.35);border-radius:20px;padding:5px 13px}
 .urgency-band{background:#fff8e1;border-bottom:2px solid #f0d060;padding:12px 32px;text-align:center}
 .urgency-band p{font-size:.88rem;color:#6b4e00;font-weight:600;margin:0}
 .full-sec{padding:56px 32px}
@@ -208,7 +210,12 @@ footer strong{color:rgba(255,255,255,.8)}
 footer a{color:rgba(255,255,255,.5)}
 @media(max-width:1000px){.damage-grid{grid-template-columns:repeat(3,1fr)}.check-cards{grid-template-columns:1fr 1fr}}
 @media(max-width:900px){.main-content{grid-template-columns:1fr}.sidebar{position:static}.damage-callout{grid-template-columns:1fr}.timing-callout{grid-template-columns:1fr}.included-list{grid-template-columns:1fr}}
-@media(max-width:680px){.mobile-sticky-cta{display:grid}body{padding-bottom:58px}.nav-links{display:none}.nav-cta{display:none}.hamburger{display:flex}.svc-hero{padding:40px 20px;min-height:300px}.full-sec{padding:36px 20px}.main-content{padding:36px 20px;gap:28px}.mid-cta-band{padding:36px 20px}.faq-sec{padding:36px 20px}.final-quote-sec{padding:36px 20px}.svc-links{padding:28px 20px}.trust-bar{padding:10px 16px}.trust-bar-inner{gap:8px}.check-cards{grid-template-columns:1fr}.city-chips{gap:7px}.cta-row{gap:10px}.urgency-band{padding:10px 20px}}
+@media(max-width:680px){.mobile-sticky-cta{display:grid}body{padding-bottom:58px}.nav-links{display:none}.nav-cta{display:none}.hamburger{display:flex}
+.trust-bar{background:var(--ink2);padding:14px 32px;border-bottom:1px solid rgba(255,255,255,.06)}
+.trust-bar-inner{max-width:1200px;margin:0 auto;display:flex;gap:32px;flex-wrap:wrap;align-items:center}
+.tb{font-size:.82rem;color:rgba(255,255,255,.65);font-weight:600;display:flex;align-items:center;gap:6px}
+.tb strong{color:#fff}
+.svc-hero{padding:40px 20px;min-height:300px}.full-sec{padding:36px 20px}.main-content{padding:36px 20px;gap:28px}.mid-cta-band{padding:36px 20px}.faq-sec{padding:36px 20px}.final-quote-sec{padding:36px 20px}.svc-links{padding:28px 20px}.check-cards{grid-template-columns:1fr}.city-chips{gap:7px}.cta-row{gap:10px}.urgency-band{padding:10px 20px}}
 @media(max-width:480px){.damage-grid{grid-template-columns:1fr 1fr}}
 </style>
 </head>
@@ -345,6 +352,15 @@ footer a{color:rgba(255,255,255,.5)}
   <div class="mobile-cta-row"><a href="tel:2088802712">Call (208) 880-2712</a></div>
 </div>
 
+
+<div class="trust-bar">
+  <div class="trust-bar-inner">
+    <div class="tb">✅ Licensed and Insured</div>
+    <div class="tb">⭐ 136+ Five-Star Reviews</div>
+    <div class="tb">📍 Treasure Valley Since 2015</div>
+    <div class="tb">🌨️ Book September or Early October
+  </div>
+</div>
 <div class="svc-hero">
   <img class="svc-hero-bg" src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Sprinkler+SEO+PICS/Blowout+in+Caldwell.png" alt="Sprinkler blowout service in Nampa Boise Meridian and the Treasure Valley" fetchpriority="high">
   <div class="svc-hero-overlay"></div>
@@ -359,13 +375,6 @@ footer a{color:rgba(255,255,255,.5)}
   </div>
 </div>
 
-<div class="trust-bar">
-  <div class="trust-bar-inner">
-    <div class="tb">✅ Licensed and Insured</div>
-    <div class="tb">⭐ 136+ Five-Star Reviews</div>
-    <div class="tb">📍 Treasure Valley Since 2015</div>
-    <div class="tb">🌨️ Book September or Early October</div>
-  </div>
 </div>
 <div class="urgency-band">
   <p>⚠️ Once the first freeze is in the forecast, schedules fill fast. The safest time to book your sprinkler blowout is before the October rush.</p>
@@ -654,7 +663,7 @@ footer a{color:rgba(255,255,255,.5)}
 </div>
 
 <footer>
-  <p>© 2025 <strong>Beeline Sprinkler Repair</strong> · Licensed and Insured · 5606 W Amity Rd, Nampa, ID 83687 · <a href="tel:2088802712">(208) 880-2712</a> · <a href="index.html">Back to Main Site</a></p>
+  <p>© 2025 <strong>Beeline Sprinkler Repair</strong> · Licensed & Insured · Idaho General Contractor Reg. #9781914 · 5606 W Amity Rd, Nampa, ID 83687 · <a href="tel:2088802712">(208) 880-2712</a> · <a href="index.html">Back to Main Site</a></p>
 </footer>
 
 <script>

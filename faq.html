@@ -37,6 +37,10 @@ img{display:block;max-width:100%}
 
 
 
+.trust-bar{background:var(--ink2);padding:14px 32px;border-bottom:1px solid rgba(255,255,255,.06)}
+.trust-bar-inner{max-width:1200px;margin:0 auto;display:flex;gap:32px;flex-wrap:wrap;align-items:center}
+.tb{font-size:.82rem;color:rgba(255,255,255,.65);font-weight:600;display:flex;align-items:center;gap:6px}
+.tb strong{color:#fff}
 .page-hero{background:var(--ink);padding:56px 32px;position:relative;overflow:hidden}
 .page-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 50% 50%,rgba(45,122,45,.2) 0%,transparent 70%)}
 .page-hero-inner{max-width:1200px;margin:0 auto;position:relative;z-index:1}
@@ -44,10 +48,6 @@ img{display:block;max-width:100%}
 .page-hero h1{font-size:clamp(2rem,5vw,3.2rem);font-weight:900;color:#fff;margin-bottom:14px;letter-spacing:-.3px;line-height:1.1}
 .page-hero h1 em{color:var(--yellow);font-style:normal}
 .page-hero p{color:rgba(255,255,255,.65);font-size:.97rem;max-width:580px;line-height:1.7}
-.trust-bar{background:var(--ink2);padding:14px 32px;border-bottom:1px solid rgba(255,255,255,.06)}
-.trust-bar-inner{max-width:1200px;margin:0 auto;display:flex;gap:32px;flex-wrap:wrap;align-items:center}
-.tb{font-size:.82rem;color:rgba(255,255,255,.65);font-weight:600;display:flex;align-items:center;gap:6px}
-.tb strong{color:#fff}
 .main-content{max-width:1200px;margin:0 auto;padding:56px 32px;display:grid;grid-template-columns:1fr 300px;gap:48px;align-items:start}
 .faq-wrap{display:flex;flex-direction:column;gap:5px;margin-bottom:8px}
 .faq-wrap details{border:1px solid #ddd8cc;border-radius:8px;overflow:hidden;background:#fff}
@@ -81,9 +81,11 @@ footer{background:#080f08;color:rgba(255,255,255,.45);text-align:center;padding:
 footer strong{color:rgba(255,255,255,.8)}
 footer a{color:rgba(255,255,255,.5)}
 @media(max-width:900px){.main-content{grid-template-columns:1fr}.sidebar{position:static}
-@media(max-width:680px){.page-hero{padding:40px 20px}.main-content{padding:36px 20px}.trust-bar{padding:10px 16px}.trust-bar-inner{gap:10px}.tb{font-size:.75rem}
-
-@media(max-width:680px){
+@media(max-width:680px){.trust-bar{background:var(--ink2);padding:14px 32px;border-bottom:1px solid rgba(255,255,255,.06)}
+.trust-bar-inner{max-width:1200px;margin:0 auto;display:flex;gap:32px;flex-wrap:wrap;align-items:center}
+.tb{font-size:.82rem;color:rgba(255,255,255,.65);font-weight:600;display:flex;align-items:center;gap:6px}
+.tb strong{color:#fff}
+.page-hero{padding:40px 20px}.main-content{padding:36px 20px}@media(max-width:680px){
 
 }}}
 nav{background:var(--ink);position:sticky;top:0;z-index:300;padding:0 32px}
@@ -261,6 +263,11 @@ nav.nav-hidden{transform:translateY(-100%)}
   </div>
   <div class="mobile-cta-row"><a href="tel:2088802712">Call (208) 880-2712</a></div>
 </div>
+<div class="trust-bar">
+  <div class="trust-bar-inner">
+    <div class="tb">✅ <strong>Licensed &amp; Insured</strong></div><div class="tb">⭐ <strong>136+ Five-Star Reviews</strong></div><div class="tb">🌱 <strong>Serving Treasure Valley Since 2015</strong></div><div class="tb">📋 <strong>Free Estimates</strong></div>
+  </div>
+</div>
 <div class="page-hero">
   <div class="page-hero-inner">
     <div class="eyebrow">Frequently Asked Questions</div>
@@ -269,13 +276,6 @@ nav.nav-hidden{transform:translateY(-100%)}
   </div>
 </div>
 
-<div class="trust-bar">
-  <div class="trust-bar-inner">
-    <div class="tb">✅ <strong>Licensed & Insured</strong></div>
-    <div class="tb">⭐ <strong>136+ Five-Star Reviews</strong></div>
-    <div class="tb">🔧 <strong>Serving the Treasure Valley Since 2015</strong></div>
-    <div class="tb">📞 <strong>(208) 880-2712</strong></div>
-  </div>
 </div>
 
 <div class="main-content">
@@ -361,7 +361,7 @@ nav.nav-hidden{transform:translateY(-100%)}
 </div>
 
 <footer>
-  <p>© 2025 <strong>Beeline Sprinkler Repair</strong> · Licensed & Insured · 5606 W Amity Rd, Nampa, ID 83687 · <a href="tel:2088802712">(208) 880-2712</a> · <a href="index.html">Back to Main Site</a></p>
+  <p>© 2025 <strong>Beeline Sprinkler Repair</strong> · Licensed & Insured · Idaho General Contractor Reg. #9781914 · 5606 W Amity Rd, Nampa, ID 83687 · <a href="tel:2088802712">(208) 880-2712</a> · <a href="index.html">Back to Main Site</a></p>
 </footer>
 
 <script>

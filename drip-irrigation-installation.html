@@ -62,6 +62,11 @@ nav.scrolled .nav-scrolled-ctas{display:flex}
 .sticky-call{background:var(--yellow);color:var(--ink);display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:800;text-decoration:none}
 .sticky-quote{background:var(--ink);color:#fff;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:800;text-decoration:none}
 @media(max-width:680px){.nav-links{display:none}.nav-cta{display:none}.hamburger{display:flex}.mobile-sticky-cta{display:grid}body{padding-bottom:62px}}
+
+.trust-bar{background:var(--ink2);padding:14px 32px;border-bottom:1px solid rgba(255,255,255,.06)}
+.trust-bar-inner{max-width:1200px;margin:0 auto;display:flex;gap:32px;flex-wrap:wrap;align-items:center}
+.tb{font-size:.82rem;color:rgba(255,255,255,.65);font-weight:600;display:flex;align-items:center;gap:6px}
+.tb strong{color:#fff}
 .svc-hero{position:relative;min-height:380px;display:flex;align-items:flex-end;padding:56px 32px;overflow:hidden;background:#0a2e0a}
 .svc-hero-bg{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;filter:brightness(.35)}
 .svc-hero-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.92) 0%,rgba(10,50,10,.6) 55%,rgba(10,50,10,.25) 100%);z-index:1}
@@ -74,10 +79,6 @@ nav.scrolled .nav-scrolled-ctas{display:flex}
 .btn-primary{background:var(--yellow);color:var(--ink);padding:16px 34px;border-radius:var(--r);font-weight:800;font-size:17px;display:inline-block;box-shadow:0 4px 20px rgba(245,196,0,.35)}
 .btn-primary:hover{background:#e6b800}
 .btn-ghost{background:transparent;color:#fff;padding:14px 24px;border-radius:var(--r);font-weight:700;font-size:15px;border:1.5px solid rgba(255,255,255,.4);display:inline-block}
-.trust-bar{background:var(--ink2);padding:14px 32px;border-bottom:1px solid rgba(255,255,255,.06)}
-.trust-bar-inner{max-width:1200px;margin:0 auto;display:flex;gap:32px;flex-wrap:wrap;align-items:center}
-.tb{font-size:.82rem;color:rgba(255,255,255,.65);font-weight:600;display:flex;align-items:center;gap:6px}
-.tb strong{color:#fff}
 .main-content{max-width:1200px;margin:0 auto;padding:56px 32px;display:grid;grid-template-columns:1fr 320px;gap:48px;align-items:start}
 .content h2{font-size:clamp(1.5rem,3vw,2.2rem);font-weight:900;margin-bottom:12px;color:var(--ink);letter-spacing:-.3px}
 .content h3{font-size:1.15rem;font-weight:800;margin:32px 0 10px;color:var(--gd)}
@@ -142,7 +143,12 @@ footer a{color:rgba(255,255,255,.5)}
 .review-wrap-right .rw-author,.review-wrap-left .rw-author{font-size:.75rem;font-weight:800;color:rgba(255,255,255,.75)}
 .clearfix::after{content:'';display:table;clear:both}
 @media(max-width:900px){.main-content{grid-template-columns:1fr}.sidebar{position:static}.quote-inner{grid-template-columns:1fr}.city-link-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:680px){.wrap-right,.wrap-left{float:none;width:100%;height:200px;margin:12px 0}.review-wrap-right,.review-wrap-left{float:none;width:100%;margin:12px 0}.svc-hero{padding:40px 20px;min-height:320px}.main-content{padding:36px 20px}.faq-section,.city-links-section,.quote-section{padding:40px 20px}.city-link-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:680px){.wrap-right,.wrap-left{float:none;width:100%;height:200px;margin:12px 0}.review-wrap-right,.review-wrap-left{float:none;width:100%;margin:12px 0}
+.trust-bar{background:var(--ink2);padding:14px 32px;border-bottom:1px solid rgba(255,255,255,.06)}
+.trust-bar-inner{max-width:1200px;margin:0 auto;display:flex;gap:32px;flex-wrap:wrap;align-items:center}
+.tb{font-size:.82rem;color:rgba(255,255,255,.65);font-weight:600;display:flex;align-items:center;gap:6px}
+.tb strong{color:#fff}
+.svc-hero{padding:40px 20px;min-height:320px}.main-content{padding:36px 20px}.faq-section,.city-links-section,.quote-section{padding:40px 20px}.city-link-grid{grid-template-columns:1fr 1fr}}
 
 .city-pill-row{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 22px}
 .city-pill{background:var(--gl);border:1.5px solid var(--green);color:var(--gd);padding:6px 16px;border-radius:20px;font-size:.84rem;font-weight:700;text-decoration:none;transition:all .15s}
@@ -280,6 +286,16 @@ footer a{color:rgba(255,255,255,.5)}
   <div class="mobile-cta-row"><a href="tel:2088802712">Call (208) 880-2712</a></div>
 </div>
 
+
+<div class="trust-bar">
+  <div class="trust-bar-inner">
+    <div class="tb">✅ <strong>Licensed &amp; Insured</strong></div>
+    <div class="tb">⭐ <strong>136+ Five-Star Reviews</strong></div>
+    <div class="tb">💧 <strong>Water-Efficient Installation</strong></div>
+    <div class="tb">🔌 <strong>Ties Into Existing Systems</strong></div>
+    <div class="tb">📋 <strong>Free Estimates</strong>
+  </div>
+</div>
 <div class="svc-hero">
   <img class="svc-hero-bg" src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Sprinkler+SEO+PICS/Advanced+Irrigation+System+boise.jpg" alt="Drip irrigation installation Boise Idaho Beeline" fetchpriority="high" decoding="async">
   <div class="svc-hero-overlay"></div>
@@ -294,14 +310,6 @@ footer a{color:rgba(255,255,255,.5)}
   </div>
 </div>
 
-<div class="trust-bar">
-  <div class="trust-bar-inner">
-    <div class="tb">✅ <strong>Licensed &amp; Insured</strong></div>
-    <div class="tb">⭐ <strong>136+ Five-Star Reviews</strong></div>
-    <div class="tb">💧 <strong>Water-Efficient Installation</strong></div>
-    <div class="tb">🔌 <strong>Ties Into Existing Systems</strong></div>
-    <div class="tb">📋 <strong>Free Estimates</strong></div>
-  </div>
 </div>
 
 <div class="main-content">
@@ -469,7 +477,7 @@ footer a{color:rgba(255,255,255,.5)}
   </div>
 </div>
 <footer>
-  <p>© 2025 <strong>Beeline Sprinkler Repair</strong> · Licensed &amp; Insured · 5606 W Amity Rd, Nampa, ID 83687 · <a href="tel:2088802712">(208) 880-2712</a> · <a href="index.html">Back to Main Site</a></p>
+  <p>© 2025 <strong>Beeline Sprinkler Repair</strong> · Licensed &amp; Insured · Idaho General Contractor Reg. #9781914 · 5606 W Amity Rd, Nampa, ID 83687 · <a href="tel:2088802712">(208) 880-2712</a> · <a href="index.html">Back to Main Site</a></p>
 </footer>
 <script>
 document.querySelectorAll('.faq-q').forEach(function(btn){btn.addEventListener('click',function(){var item=this.closest('.faq-item');var wasOpen=item.classList.contains('open');document.querySelectorAll('.faq-item').forEach(function(i){i.classList.remove('open');});if(!wasOpen)item.classList.add('open');});});

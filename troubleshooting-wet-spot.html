@@ -80,6 +80,10 @@ nav.scrolled .nav-scrolled-ctas{display:flex}
 .mobile-nav-fab.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
 
 /* PAGE HERO — dark ink with radial green glow */
+.trust-bar{background:var(--ink2);padding:14px 32px;border-bottom:1px solid rgba(255,255,255,.06)}
+.trust-bar-inner{max-width:1200px;margin:0 auto;display:flex;gap:32px;flex-wrap:wrap;align-items:center}
+.tb{font-size:.82rem;color:rgba(255,255,255,.65);font-weight:600;display:flex;align-items:center;gap:6px}
+.tb strong{color:#fff}
 .page-hero{position:relative;min-height:320px;display:flex;align-items:flex-end;padding:48px 32px;overflow:hidden;background:var(--ink)}
 .page-hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;filter:brightness(.32);z-index:0}.page-hero::before{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.92) 0%,rgba(10,26,10,.6) 50%,rgba(15,40,15,.3) 100%);z-index:1}
 .page-hero-content{position:relative;z-index:2;max-width:1200px;margin:0 auto;width:100%}
@@ -110,12 +114,6 @@ nav.scrolled .nav-scrolled-ctas{display:flex}
 .rt-text{font-size:.8rem;color:rgba(255,255,255,.75);line-height:1.5;margin-bottom:6px;font-style:italic}
 .rt-name{font-size:.74rem;font-weight:800;color:rgba(255,255,255,.5)}
 @keyframes tickerScroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
-
-/* TRUST BAR */
-.trust-bar{background:var(--ink2);padding:14px 32px;border-bottom:1px solid rgba(255,255,255,.06)}
-.trust-bar-inner{max-width:1200px;margin:0 auto;display:flex;gap:32px;flex-wrap:wrap;align-items:center}
-.tb{font-size:.86rem;color:var(--yellow);font-weight:700;display:flex;align-items:center;gap:6px;border:1px solid rgba(245,196,0,.4);border-radius:20px;padding:5px 14px}
-.tb strong{color:#fff}
 
 /* MAIN LAYOUT */
 .main-content{max-width:1200px;margin:0 auto;padding:56px 32px;display:grid;grid-template-columns:1fr 320px;gap:48px;align-items:start}
@@ -235,7 +233,11 @@ footer a{color:rgba(255,255,255,.5)}
   .mobile-sticky-cta{display:grid}
   .mobile-nav-fab{display:flex}
   body{padding-bottom:62px}
-  .page-hero{padding:32px 20px 36px}
+  .trust-bar{background:var(--ink2);padding:14px 32px;border-bottom:1px solid rgba(255,255,255,.06)}
+.trust-bar-inner{max-width:1200px;margin:0 auto;display:flex;gap:32px;flex-wrap:wrap;align-items:center}
+.tb{font-size:.82rem;color:rgba(255,255,255,.65);font-weight:600;display:flex;align-items:center;gap:6px}
+.tb strong{color:#fff}
+.page-hero{padding:32px 20px 36px}
   .page-hero h1{font-size:clamp(1.6rem,6vw,2.2rem)}
   .hero-sub{font-size:.88rem}
   .main-content{padding:36px 20px;gap:32px}
@@ -245,10 +247,7 @@ footer a{color:rgba(255,255,255,.5)}
   .quote-sec{padding:40px 20px}
   .emergency-band{padding:20px}
   .cities-strip{padding:28px 20px}
-  .trust-bar{padding:10px 16px}
-  .trust-bar-inner{gap:10px}
-  .tb{display:none}
-}
+  }
 </style>
 </head>
 <body>
@@ -384,6 +383,11 @@ footer a{color:rgba(255,255,255,.5)}
   <div class="mobile-cta-row"><a href="tel:2088802712">Call (208) 880-2712</a></div>
 </div>
 
+<div class="trust-bar">
+  <div class="trust-bar-inner">
+    <div class="tb">✅ <strong>Licensed &amp; Insured</strong></div><div class="tb">⭐ <strong>136+ Five-Star Reviews</strong></div><div class="tb">🔧 <strong>Sprinkler Diagnostics</strong></div><div class="tb">📞 <strong>(208) 880-2712</strong></div>
+  </div>
+</div>
 <div class="page-hero">
   <img loading="lazy" class="page-hero-bg" src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Sprinkler+SEO+PICS/New+main+and+drain+installation+in+Meridian.jpeg" alt="Irrigation line installation in Meridian Idaho" loading="eager" decoding="async">
   <div class="page-hero-inner">
@@ -414,14 +418,6 @@ footer a{color:rgba(255,255,255,.5)}
   </div>
 </div>
 
-<div class="trust-bar">
-  <div class="trust-bar-inner">
-    <div class="tb">&#10003; Licensed and Insured</div>
-    <div class="tb">&#9733; <strong>136+ Five-Star Reviews</strong></div>
-    <div class="tb">Idaho Registered Contractor</div>
-    <div class="tb">Family Owned and Operated</div>
-    <div class="tb">Serving the Treasure Valley</div>
-  </div>
 </div>
 
 <div class="main-content">
@@ -589,7 +585,7 @@ footer a{color:rgba(255,255,255,.5)}
 </div>
 
 <footer>
-  <p>&#169; 2025 <strong>Beeline Sprinkler Repair</strong> &#183; Licensed and Insured &#183; 5606 W Amity Rd, Nampa, ID 83687 &#183; <a href="tel:2088802712">(208) 880-2712</a> &#183; <a href="index.html">Back to Main Site</a></p>
+  <p>&#169; 2025 <strong>Beeline Sprinkler Repair</strong> &#183; Licensed &amp; Insured · Idaho General Contractor Reg. #9781914 · 5606 W Amity Rd, Nampa, ID 83687 &#183; <a href="tel:2088802712">(208) 880-2712</a> &#183; <a href="index.html">Back to Main Site</a></p>
 </footer>
 
 <button class="mobile-nav-fab" id="mobileNavFab" aria-label="Open menu"><span></span><span></span><span></span></button>

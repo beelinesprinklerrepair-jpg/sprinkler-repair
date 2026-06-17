@@ -145,6 +145,10 @@ nav{background:var(--ink);position:sticky;top:0;z-index:300;padding:0 32px}
 .mobile-sub a{padding-left:44px}
 .mobile-cta-row{padding:20px 28px 0}
 .mobile-cta-row a{display:block;background:var(--yellow);color:var(--ink);text-align:center;padding:14px;border-radius:var(--r);font-weight:800;font-size:16px}
+.trust-bar{background:var(--ink2);padding:14px 32px;border-bottom:1px solid rgba(255,255,255,.06)}
+.trust-bar-inner{max-width:1200px;margin:0 auto;display:flex;gap:32px;flex-wrap:wrap;align-items:center}
+.tb{font-size:.82rem;color:rgba(255,255,255,.65);font-weight:600;display:flex;align-items:center;gap:6px}
+.tb strong{color:#fff}
 .city-hero{position:relative;min-height:360px;display:flex;align-items:flex-end;padding:48px 32px;overflow:hidden}
 .city-hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;filter:brightness(.45)}
 .city-hero-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.95) 0%,rgba(15,46,10,.7) 55%,rgba(26,46,10,.35) 100%)}
@@ -159,10 +163,6 @@ nav{background:var(--ink);position:sticky;top:0;z-index:300;padding:0 32px}
 .btn-ghost{background:transparent;color:#fff;padding:13px 22px;border-radius:var(--r);font-weight:700;font-size:15px;border:1.5px solid rgba(255,255,255,.4);display:inline-block}
 .trust-badges{display:flex;gap:12px;flex-wrap:wrap}
 .trust-badge{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:20px;padding:5px 14px;font-size:.78rem;font-weight:700;color:#fff}
-.trust-bar{background:var(--ink2);padding:14px 32px;border-bottom:1px solid rgba(255,255,255,.06)}
-.trust-bar-inner{max-width:1200px;margin:0 auto;display:flex;gap:32px;flex-wrap:wrap;align-items:center}
-.tb{font-size:.82rem;color:rgba(255,255,255,.65);font-weight:600;display:flex;align-items:center;gap:6px}
-.tb strong{color:#fff}
 .main-content{max-width:1200px;margin:0 auto;padding:56px 32px;display:grid;grid-template-columns:1fr 320px;gap:48px;align-items:start}
 .content h2{font-size:clamp(1.5rem,3vw,2.2rem);font-weight:900;margin-bottom:14px;color:var(--ink);letter-spacing:-.3px;line-height:1.15}
 .content h3{font-size:1.1rem;font-weight:800;margin:32px 0 10px;color:var(--gd)}
@@ -248,7 +248,11 @@ footer{background:#080f08;color:rgba(255,255,255,.45);text-align:center;padding:
 footer strong{color:rgba(255,255,255,.8)}
 footer a{color:rgba(255,255,255,.5)}
 @media(max-width:900px){.main-content{grid-template-columns:1fr}.sidebar{position:static}.service-grid{grid-template-columns:1fr 1fr}.reviews-grid{grid-template-columns:1fr}}
-@media(max-width:680px){.mobile-sticky-cta{display:grid}body{padding-bottom:62px}.nav-links{display:none}.nav-cta{display:none}.hamburger{display:flex}.city-hero{padding:32px 20px;min-height:280px}.city-hero h1{font-size:clamp(1.5rem,6vw,2rem)}.city-hero p{font-size:.88rem;margin-bottom:18px}.hero-ctas{gap:10px}.btn-primary{padding:13px 22px;font-size:15px}.btn-ghost{padding:11px 16px;font-size:13px}.main-content{padding:36px 20px;gap:32px}.service-grid{grid-template-columns:1fr}.reviews-sec{padding:36px 20px}.faq-sec{padding:32px 20px}.quote-sec{padding:40px 20px}.emergency-band{padding:20px}.cities-strip{padding:28px 20px}.trust-bar{padding:10px 16px}.trust-bar-inner{gap:10px}.tb{font-size:.75rem}}
+@media(max-width:680px){.mobile-sticky-cta{display:grid}body{padding-bottom:62px}.nav-links{display:none}.nav-cta{display:none}.hamburger{display:flex}.trust-bar{background:var(--ink2);padding:14px 32px;border-bottom:1px solid rgba(255,255,255,.06)}
+.trust-bar-inner{max-width:1200px;margin:0 auto;display:flex;gap:32px;flex-wrap:wrap;align-items:center}
+.tb{font-size:.82rem;color:rgba(255,255,255,.65);font-weight:600;display:flex;align-items:center;gap:6px}
+.tb strong{color:#fff}
+.city-hero{padding:32px 20px;min-height:280px}.city-hero h1{font-size:clamp(1.5rem,6vw,2rem)}.city-hero p{font-size:.88rem;margin-bottom:18px}.hero-ctas{gap:10px}.btn-primary{padding:13px 22px;font-size:15px}.btn-ghost{padding:11px 16px;font-size:13px}.main-content{padding:36px 20px;gap:32px}.service-grid{grid-template-columns:1fr}.reviews-sec{padding:36px 20px}.faq-sec{padding:32px 20px}.quote-sec{padding:40px 20px}.emergency-band{padding:20px}.cities-strip{padding:28px 20px}}
 </style>
 </head>
 <body>
@@ -384,6 +388,11 @@ footer a{color:rgba(255,255,255,.5)}
   <div class="mobile-cta-row"><a href="tel:2088802712">Call (208) 880-2712</a></div>
 </div>
 
+<div class="trust-bar">
+  <div class="trust-bar-inner">
+    <div class="tb">✅ <strong>Licensed &amp; Insured</strong></div><div class="tb">⭐ <strong>136+ Five-Star Reviews</strong></div><div class="tb">📍 <strong>Serving Meridian &amp; Treasure Valley</strong></div><div class="tb">📋 <strong>Free Estimates</strong></div>
+  </div>
+</div>
 <div class="city-hero">
   <img loading="lazy" class="city-hero-bg" src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Beeline+Meridian+Water+Tower+Sprinklers.png" alt="Beeline sprinkler repair truck in Meridian Idaho near the water tower">
   <div class="city-hero-overlay"></div>
@@ -422,14 +431,6 @@ footer a{color:rgba(255,255,255,.5)}
   </div>
 </div>
 
-<div class="trust-bar">
-  <div class="trust-bar-inner">
-    <div class="tb">✅ Licensed and Insured</div>
-    <div class="tb">⭐ <strong>136+ Five-Star Reviews</strong></div>
-    <div class="tb">🪪 Idaho Registered Contractor</div>
-    <div class="tb">👨‍👩‍👧 Family Owned and Operated</div>
-    <div class="tb">📍 Serving All of Meridian</div>
-  </div>
 </div>
 
 <div class="main-content">
@@ -633,7 +634,7 @@ footer a{color:rgba(255,255,255,.5)}
 </div>
 
 <footer>
-  <p>© 2025 <strong>Beeline Sprinkler Repair</strong> · Licensed and Insured · 5606 W Amity Rd, Nampa, ID 83687 · <a href="tel:2088802712">(208) 880-2712</a> · <a href="index.html">Back to Main Site</a></p>
+  <p>© 2025 <strong>Beeline Sprinkler Repair</strong> · Licensed & Insured · Idaho General Contractor Reg. #9781914 · 5606 W Amity Rd, Nampa, ID 83687 · <a href="tel:2088802712">(208) 880-2712</a> · <a href="index.html">Back to Main Site</a></p>
 </footer>
 
 <script>

@@ -29,6 +29,10 @@ html{scroll-behavior:smooth}
 body{font-family:'Segoe UI',system-ui,sans-serif;color:var(--ink);line-height:1.6;background:var(--white)}
 a{color:inherit;text-decoration:none}
 img{display:block;max-width:100%}
+.trust-bar{background:var(--ink2);padding:14px 32px;border-bottom:1px solid rgba(255,255,255,.06)}
+.trust-bar-inner{max-width:1200px;margin:0 auto;display:flex;gap:32px;flex-wrap:wrap;align-items:center}
+.tb{font-size:.82rem;color:rgba(255,255,255,.65);font-weight:600;display:flex;align-items:center;gap:6px}
+.tb strong{color:#fff}
 .page-hero{background:var(--ink);padding:56px 32px;position:relative;overflow:hidden;min-height:280px;display:flex;align-items:flex-end}
 .page-hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;filter:brightness(.32);z-index:0}.page-hero::before{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.92) 0%,rgba(10,26,10,.6) 50%,rgba(15,40,15,.3) 100%);z-index:1}
 .page-hero-inner{max-width:820px;margin:0 auto;position:relative;z-index:2;width:100%;padding-top:40px}
@@ -49,10 +53,6 @@ img{display:block;max-width:100%}
 .rt-text{font-size:.8rem;color:rgba(255,255,255,.75);line-height:1.5;margin-bottom:6px;font-style:italic}
 .rt-name{font-size:.74rem;font-weight:800;color:rgba(255,255,255,.5)}
 @keyframes tickerScroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
-.trust-bar{background:var(--ink2);padding:14px 32px;border-bottom:1px solid rgba(255,255,255,.06)}
-.trust-bar-inner{max-width:1200px;margin:0 auto;display:flex;gap:32px;flex-wrap:wrap;align-items:center}
-.tb{font-size:.86rem;color:var(--yellow);font-weight:700;display:flex;align-items:center;gap:6px;border:1px solid rgba(245,196,0,.4);border-radius:20px;padding:5px 14px}
-.tb strong{color:#fff}
 .main-content{max-width:1200px;margin:0 auto;padding:56px 32px;display:grid;grid-template-columns:1fr 320px;gap:48px;align-items:start}
 .content h2{font-size:clamp(1.5rem,3vw,2.2rem);font-weight:900;margin-bottom:14px;color:var(--ink);letter-spacing:-.3px;line-height:1.15}
 .content h3{font-size:1.1rem;font-weight:800;margin:32px 0 10px;color:var(--gd)}
@@ -172,7 +172,11 @@ nav.scrolled .nav-scrolled-ctas{display:flex}
 .mobile-nav-fab.open span:nth-child(2){opacity:0}
 .mobile-nav-fab.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
 @media(max-width:900px){.main-content{grid-template-columns:1fr}.sidebar{position:static}.service-grid{grid-template-columns:1fr 1fr}.reviews-grid{grid-template-columns:1fr}}
-@media(max-width:680px){.nav-links{display:none}.nav-cta{display:none}.hamburger{display:flex}.mobile-sticky-cta{display:grid}.mobile-nav-fab{display:flex}body{padding-bottom:62px}.page-hero{padding:40px 20px}.main-content{padding:36px 20px;gap:32px}.service-grid{grid-template-columns:1fr}.reviews-sec{padding:36px 20px}.faq-sec{padding:32px 20px}.quote-sec{padding:40px 20px}.emergency-band{padding:20px}.cities-strip{padding:28px 20px}.trust-bar{padding:10px 16px}.trust-bar-inner{gap:10px}.tb{display:none}.related{padding:28px 20px}}
+@media(max-width:680px){.nav-links{display:none}.nav-cta{display:none}.hamburger{display:flex}.mobile-sticky-cta{display:grid}.mobile-nav-fab{display:flex}body{padding-bottom:62px}.trust-bar{background:var(--ink2);padding:14px 32px;border-bottom:1px solid rgba(255,255,255,.06)}
+.trust-bar-inner{max-width:1200px;margin:0 auto;display:flex;gap:32px;flex-wrap:wrap;align-items:center}
+.tb{font-size:.82rem;color:rgba(255,255,255,.65);font-weight:600;display:flex;align-items:center;gap:6px}
+.tb strong{color:#fff}
+.page-hero{padding:40px 20px}.main-content{padding:36px 20px;gap:32px}.service-grid{grid-template-columns:1fr}.reviews-sec{padding:36px 20px}.faq-sec{padding:32px 20px}.quote-sec{padding:40px 20px}.emergency-band{padding:20px}.cities-strip{padding:28px 20px}.related{padding:28px 20px}}
 </style>
 </head>
 <body>
@@ -305,6 +309,11 @@ nav.scrolled .nav-scrolled-ctas{display:flex}
   <a href="tel:2088802712" class="sticky-call">&#128222; Call Now</a>
   <a href="#quote" class="sticky-quote">Request Service</a>
 </div>
+<div class="trust-bar">
+  <div class="trust-bar-inner">
+    <div class="tb">✅ <strong>Licensed &amp; Insured</strong></div><div class="tb">⭐ <strong>136+ Five-Star Reviews</strong></div><div class="tb">🔧 <strong>Sprinkler Diagnostics</strong></div><div class="tb">📞 <strong>(208) 880-2712</strong></div>
+  </div>
+</div>
 <div class="page-hero">
   <img loading="lazy" class="page-hero-bg" src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Sprinkler+Head+Tune+up+Meridian.jpg" alt="Sprinkler head tune-up in Meridian Idaho" loading="eager" decoding="async">
   <div class="page-hero-inner">
@@ -329,14 +338,6 @@ nav.scrolled .nav-scrolled-ctas{display:flex}
     <div class="rt-card"><div class="rt-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="rt-text">"Scheduled a spring turn-on and they caught two broken heads I didn't even know about. Saved my lawn."</p><div class="rt-name">Rachel B. - Meridian, ID</div></div>
   </div>
 </div>
-<div class="trust-bar">
-  <div class="trust-bar-inner">
-    <div class="tb">&#10003; Licensed and Insured</div>
-    <div class="tb">&#9733; <strong>136+ Five-Star Reviews</strong></div>
-    <div class="tb">Idaho Registered Contractor</div>
-    <div class="tb">Family Owned and Operated</div>
-    <div class="tb">Serving the Treasure Valley</div>
-  </div>
 </div>
 <div class="main-content">
   <div class="content">
@@ -496,7 +497,7 @@ nav.scrolled .nav-scrolled-ctas{display:flex}
   </div>
 </div>
 <footer>
-  <p>&#169; 2025 <strong>Beeline Sprinkler Repair</strong> &#183; Licensed and Insured &#183; 5606 W Amity Rd, Nampa, ID 83687 &#183; <a href="tel:2088802712">(208) 880-2712</a> &#183; <a href="index.html">Back to Main Site</a></p>
+  <p>&#169; 2025 <strong>Beeline Sprinkler Repair</strong> &#183; Licensed &amp; Insured · Idaho General Contractor Reg. #9781914 · 5606 W Amity Rd, Nampa, ID 83687 &#183; <a href="tel:2088802712">(208) 880-2712</a> &#183; <a href="index.html">Back to Main Site</a></p>
 </footer>
 <button class="mobile-nav-fab" id="mobileNavFab" aria-label="Open menu"><span></span><span></span><span></span></button>
 <script>

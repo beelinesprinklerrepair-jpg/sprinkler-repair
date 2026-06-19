@@ -511,6 +511,11 @@ footer a{color:rgba(255,255,255,.5)}
 
     <div style="clear:both"></div>
 
+    <div style="margin:20px 0 8px">
+      <a href="#quote" style="display:inline-block;background:var(--green);color:#fff;padding:12px 24px;border-radius:8px;font-weight:800;font-size:.9rem;margin:0 12px 0 0">Get a Free Quote →</a>
+      <a href="tel:2088802712" style="display:inline-block;background:var(--ink);color:#fff;padding:12px 24px;border-radius:8px;font-weight:800;font-size:.9rem">📞 (208) 880-2712</a>
+    </div>
+
     <h3>Meridian HOA and Multi-Zone Manifold Repair</h3>
 
     <img loading="lazy" decoding="async" class="wrap-right" src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Sprinkler+SEO+PICS/Beeline+rebuilding+a+manifold+for+a+sprinkler+system+in+caldwell.jpg" alt="Sprinkler valve manifold rebuild Meridian Idaho">
@@ -531,6 +536,11 @@ footer a{color:rgba(255,255,255,.5)}
     <p>CBH Homes, Hayden Homes, and Hubble Homes are among the most active builders in Meridian, and we see irrigation systems from all three regularly. Builder-installed systems are generally functional but sometimes cut corners on valve installation — solenoids that weren't fully seated, wiring connections that weren't properly secured, or valves set at incorrect pressure for the local supply. These issues often show up within the first few years of ownership.</p>
 
     <p>If your Meridian home is newer and a zone is behaving erratically — running when it shouldn't, not responding to the controller, or cycling on and off — the valve or wiring is almost always the cause. Beeline works on new construction irrigation in Meridian regularly, from the Linder Road corridor to the Ten Mile area to newer developments in south Meridian near Kuna Road. Most builder-related valve issues are minor and fixable in a single visit once the problem is identified.</p>
+
+    <div style="margin:20px 0 8px">
+      <a href="#quote" style="display:inline-block;background:var(--green);color:#fff;padding:12px 24px;border-radius:8px;font-weight:800;font-size:.9rem;margin:0 12px 0 0">Get a Free Quote →</a>
+      <a href="tel:2088802712" style="display:inline-block;background:var(--ink);color:#fff;padding:12px 24px;border-radius:8px;font-weight:800;font-size:.9rem">📞 (208) 880-2712</a>
+    </div>
 
     <h3>Valve Types We Service in Meridian</h3>
 
@@ -698,6 +708,15 @@ footer a{color:rgba(255,255,255,.5)}
   <a href="#quote" class="sticky-quote">Get a Quote</a>
 </div>
 
-
+<script>
+document.querySelectorAll('a[href="#quote"]').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();var el=document.getElementById('quote');if(!el)return;window.scrollTo({top:el.getBoundingClientRect().top+window.pageYOffset,behavior:'smooth'});});});
+document.querySelectorAll('.faq-q').forEach(function(btn){btn.addEventListener('click',function(){var item=this.closest('.faq-item');var wasOpen=item.classList.contains('open');document.querySelectorAll('.faq-item').forEach(function(i){i.classList.remove('open');});if(!wasOpen)item.classList.add('open');});});
+function toggleMobSection(label){var sub=label.nextElementSibling;var arrow=label.querySelector('span');var isOpen=sub.style.display==='block';sub.style.display=isOpen?'none':'block';if(arrow)arrow.style.transform=isOpen?'':'rotate(180deg)';}
+var hbg=document.getElementById('hamburger');var mob=document.getElementById('mobileMenu');
+if(hbg){hbg.addEventListener('click',function(){hbg.classList.toggle('open');mob.classList.toggle('open');document.body.style.overflow=mob.classList.contains('open')?'hidden':'';});}
+var fab=document.getElementById('mobileNavFab');
+if(fab){fab.addEventListener('click',function(){fab.classList.toggle('open');mob.classList.toggle('open');document.body.style.overflow=mob.classList.contains('open')?'hidden':'';});window.addEventListener('scroll',function(){if(window.scrollY>80){fab.classList.add('fab-visible');}else{fab.classList.remove('fab-visible');}});}
+var lastScrollY=0;var navEl=document.querySelector('nav');window.addEventListener('scroll',function(){var cur=window.scrollY;if(cur>lastScrollY&&cur>200){navEl.classList.add('nav-hidden');navEl.classList.remove('scrolled');}else{navEl.classList.remove('nav-hidden');if(cur>80)navEl.classList.add('scrolled');else navEl.classList.remove('scrolled');}lastScrollY=cur;});
+</script>
 </body>
 </html>

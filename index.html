@@ -73,6 +73,12 @@ nav.nav-hidden{transform:translateY(-100%)}
 .mobile-nav-fab.open span:nth-child(2){opacity:0}
 .mobile-nav-fab.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
 @media(max-width:680px){.mobile-nav-fab{display:flex}}
+
+/* Mobile performance — hide heavy sections */
+@media (max-width:680px){
+  #gallery{display:none!important}
+  #pricing{display:none!important}
+}
 </style>
 
 <!-- Schema -->
@@ -201,12 +207,21 @@ nav.nav-hidden{transform:translateY(-100%)}
       if(fab){fab.classList.remove('fab-visible');fab.classList.remove('open');}
     }
   },{passive:true});
-  // FAB click: toggle mobile menu (same as hamburger)
+  // FAB click: toggle mobile menu
   if(fab&&mob){
     fab.addEventListener('click',function(){
       fab.classList.toggle('open');
       mob.classList.toggle('open');
       if(hbg)hbg.classList.toggle('open');
+      document.body.style.overflow=mob.classList.contains('open')?'hidden':'';
+    });
+  }
+  // Hamburger button click (main mobile toggle)
+  if(hbg&&mob){
+    hbg.addEventListener('click',function(){
+      hbg.classList.toggle('open');
+      mob.classList.toggle('open');
+      if(fab)fab.classList.toggle('open');
       document.body.style.overflow=mob.classList.contains('open')?'hidden':'';
     });
   }
@@ -222,7 +237,7 @@ nav.nav-hidden{transform:translateY(-100%)}
 
 <nav aria-label="Main navigation">
   <div class="nav-inner">
-    <div class="nav-logo"><a href="index.html"><img loading="lazy" src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Real+Logo.png" alt="Beeline Sprinkler Repair — Home" fetchpriority="high" decoding="async" width="160" height="100"></a></div>
+    <div class="nav-logo"><a href="index.html"><img loading="eager" src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Real+Logo.png" alt="Beeline Sprinkler Repair — Home" fetchpriority="high" decoding="async" width="160" height="100"></a></div>
     <div class="nav-links">
       <a href="index.html#contact">Contact</a>
       <a href="reviews.html">Reviews</a>
@@ -349,7 +364,7 @@ nav.nav-hidden{transform:translateY(-100%)}
 <main id="page-home" class="page active">
 
   <header class="hero">
-    <img loading="lazy" class="hero-mobile-bg" src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Treasure+Valley+Sprinkler+System+Turn+On.jpg" alt="Treasure Valley sprinkler system turn on" width="1200" height="600" fetchpriority="high" decoding="async">
+    <img loading="eager" class="hero-mobile-bg" src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Treasure+Valley+Sprinkler+System+Turn+On.jpg" alt="Treasure Valley sprinkler system turn on" width="1200" height="600" fetchpriority="high" decoding="async">
     <div class="hero-mobile-fade"></div>
     <div class="hero-lines"></div>
     <div class="hero-content">
@@ -482,7 +497,7 @@ nav.nav-hidden{transform:translateY(-100%)}
       <div class="cf" id="request-form">
         <h3>Request Service</h3>
         <p style="font-size:.9rem;color:var(--muted);margin-bottom:16px;line-height:1.6">Fill out the form below — we'll get back to you fast.</p>
-        <iframe src='https://st.sendajob.com/MY/servicerequest/d2a6d4f54526a97793669b7fe3bcce9438cfec99_f.html' width='100%' height='683' loading="lazy" style='border:none;display:block;' title="Service request form"></iframe>
+        <iframe src='https://st.sendajob.com/MY/servicerequest/d2a6d4f54526a97793669b7fe3bcce9438cfec99_f.html' width='100%' height='683' loading="eager" style='border:none;display:block;' title="Service request form"></iframe>
         <a href="tel:2088802712" style="display:block;background:var(--ink);color:#fff;text-align:center;padding:14px 24px;border-radius:var(--r);font-weight:700;font-size:.97rem;margin-top:14px">📞 Or Call / Text (208) 880-2712</a>
         <p style="text-align:center;font-size:.78rem;color:var(--muted);margin-top:16px">Same-day service available in most cases.</p>
       </div>
@@ -663,14 +678,12 @@ document.querySelectorAll('.mobile-menu a[href]').forEach(function(a){
 document.addEventListener('DOMContentLoaded',function(){var beltEl=document.getElementById('photoBelt');if(!beltEl)return;var belt=beltEl.parentElement;var isDown=false,startX,scrollLeft;belt.addEventListener('mousedown',function(e){isDown=true;belt.style.cursor='grabbing';startX=e.pageX-belt.offsetLeft;scrollLeft=belt.scrollLeft;});belt.addEventListener('mouseleave',function(){isDown=false;belt.style.cursor='grab';});belt.addEventListener('mouseup',function(){isDown=false;belt.style.cursor='grab';});belt.addEventListener('mousemove',function(e){if(!isDown)return;e.preventDefault();var x=e.pageX-belt.offsetLeft;belt.scrollLeft=scrollLeft-(x-startX)*1.5;});belt.addEventListener('touchstart',function(e){startX=e.touches[0].pageX-belt.offsetLeft;scrollLeft=belt.scrollLeft;},{passive:true});belt.addEventListener('touchmove',function(e){var x=e.touches[0].pageX-belt.offsetLeft;belt.scrollLeft=scrollLeft-(x-startX)*1.5;},{passive:true});});
 var isMobile=window.innerWidth<=680;
 if(!isMobile){var beeSvgLarge='<svg width="30" height="30" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg"><ellipse cx="10" cy="13" rx="9" ry="5" fill="rgba(200,230,255,0.75)" stroke="rgba(100,160,220,0.5)" stroke-width="0.5"/><ellipse cx="26" cy="13" rx="9" ry="5" fill="rgba(200,230,255,0.75)" stroke="rgba(100,160,220,0.5)" stroke-width="0.5"/><ellipse cx="18" cy="21" rx="7" ry="9" fill="#FFD700"/><rect x="11" y="18" width="14" height="3" rx="1" fill="#1a1a00" opacity="0.85"/><rect x="11" y="23" width="14" height="3" rx="1" fill="#1a1a00" opacity="0.85"/><circle cx="18" cy="12" r="5" fill="#FFD700"/><circle cx="16" cy="11" r="1.2" fill="#1a1a00"/><circle cx="20" cy="11" r="1.2" fill="#1a1a00"/><path d="M15.5 13.5 Q18 15.5 20.5 13.5" stroke="#1a1a00" stroke-width="0.8" fill="none" stroke-linecap="round"/><line x1="16" y1="7" x2="13" y2="3" stroke="#1a1a00" stroke-width="1" stroke-linecap="round"/><circle cx="13" cy="3" r="1" fill="#FFD700" stroke="#1a1a00" stroke-width="0.5"/><line x1="20" y1="7" x2="23" y2="3" stroke="#1a1a00" stroke-width="1" stroke-linecap="round"/><circle cx="23" cy="3" r="1" fill="#FFD700" stroke="#1a1a00" stroke-width="0.5"/></svg>';
-var bee=document.createElement('div');bee.innerHTML=beeSvgLarge;bee.style.cssText='position:fixed;z-index:9999;pointer-events:none;filter:drop-shadow(0 1px 3px rgba(0,0,0,.4));will-change:transform;';document.body.appendChild(bee);var bx=window.innerWidth/2,bvx=0.8,bw=0;
-function animBee(){bw+=0.1;bx+=bvx+Math
-}
-animBee();
+var bee=document.createElement('div');bee.innerHTML=beeSvgLarge;bee.style.cssText='position:fixed;z-index:9999;pointer-events:none;filter:drop-shadow(0 1px 3px rgba(0,0,0,.4));will-change:transform;';document.body.appendChild(bee);// bee animation removed
 </script>
 
 <!-- BEGIN: BBB AB Seal -->
 <script type="text/javascript">
+if(window.innerWidth > 680){
 	var bbb = bbb || [];
 	bbb.push(["bbbid", "greatwestpacific"]);
 	bbb.push(["bid", "1000192092"]);
@@ -682,8 +695,7 @@ animBee();
 	    bbb.type = "text/javascript";
 	    bbb.async = true;
 	    bbb.src = scheme + "seal-alaskaoregonwesternwashington.bbb.org/badge/badge.min.js";
-	    var s = document.getElementsByTagName("script")[0];
-	    s.parentNode.insertBefore(bbb, s);
+	    document.body.appendChild(bbb);
 	})();
 </script>
 <!-- END: BBB AB Seal -->

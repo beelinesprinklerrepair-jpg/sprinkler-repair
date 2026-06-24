@@ -186,7 +186,8 @@ nav.nav-hidden{transform:translateY(-100%)}
 </script>
 <script>
 // Mobile nav auto-hide + floating hamburger FAB
-(function(){
+document.addEventListener('DOMContentLoaded',function(){
+
   var nav=document.querySelector('nav');
   var fab=document.getElementById('mobileNavFab');
   var mob=document.getElementById('mobileMenu');
@@ -225,7 +226,7 @@ nav.nav-hidden{transform:translateY(-100%)}
       document.body.style.overflow=mob.classList.contains('open')?'hidden':'';
     });
   }
-})();
+});
 </script>
 </head>
 <body>
@@ -308,6 +309,7 @@ nav.nav-hidden{transform:translateY(-100%)}
     </div>
   </div>
 </nav>
+<button class="mobile-nav-fab" id="mobileNavFab" aria-label="Open menu"><span></span><span></span><span></span></button>
 <div class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
   <a href="index.html#contact">Contact</a>
   <a href="reviews.html">Reviews</a>
@@ -631,7 +633,7 @@ nav.nav-hidden{transform:translateY(-100%)}
 document.querySelectorAll('.faq-btn-home').forEach(function(btn){btn.addEventListener('click',function(){var item=this.closest('.faq-item-home');var wasOpen=item.classList.contains('open');document.querySelectorAll('.faq-item-home').forEach(function(i){i.classList.remove('open');i.querySelector('.faq-btn-home').setAttribute('aria-expanded','false');});if(!wasOpen){item.classList.add('open');this.setAttribute('aria-expanded','true');}});});
 
 
-document.getElementById('navScrolledQuote').addEventListener('click',function(e){e.preventDefault();scrollToForm();});
+var _nsq=document.getElementById('navScrolledQuote');if(_nsq)_nsq.addEventListener('click',function(e){e.preventDefault();scrollToForm();});
 function scrollToForm(){setTimeout(function(){var el=document.getElementById('request-form');if(!el)return;var top=el.getBoundingClientRect().top+window.pageYOffset-82;window.scrollTo({top:top,behavior:'smooth'});},100);}
 var _hb=document.getElementById('heroQuoteBtn');if(_hb)_hb.addEventListener('click',function(e){e.preventDefault();scrollToForm();});
 var _sq=document.getElementById('mobileStickyQuote');if(_sq)_sq.addEventListener('click',function(e){e.preventDefault();scrollToForm();});
@@ -648,11 +650,6 @@ function toggleMobSection(label){
 }
 var hbg=document.getElementById('hamburger');
 var mob=document.getElementById('mobileMenu');
-hbg.addEventListener('click',function(){
-  hbg.classList.toggle('open');
-  mob.classList.toggle('open');
-  document.body.style.overflow=mob.classList.contains('open')?'hidden':'';
-});
 document.querySelectorAll('.mobile-nav-sec').forEach(function(a){
   a.addEventListener('click',function(e){
     e.preventDefault();
@@ -699,6 +696,7 @@ if(window.innerWidth > 680){
 	    bbb.src = scheme + "seal-alaskaoregonwesternwashington.bbb.org/badge/badge.min.js";
 	    document.body.appendChild(bbb);
 	})();
+}
 </script>
 <!-- END: BBB AB Seal -->
 </body>

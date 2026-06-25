@@ -896,6 +896,12 @@ footer a{color:rgba(255,255,255,.5)}
 <!-- QUOTE FORM -->
 <div id="quote" class="quote-section">
   <div class="quote-inner">
+    <div class="quote-form" id="booking-form">
+      <h3>Request Your Blowout</h3>
+      <p>Fill out the form and we will get back to you fast.</p>
+      <iframe src='https://st.sendajob.com/MY/servicerequest/d2a6d4f54526a97793669b7fe3bcce9438cfec99_f.html' width='100%' height='748' style='border:none;display:block;'></iframe>
+      <a href="tel:2088802712" style="display:block;background:#0f1a0f;color:#fff;text-align:center;padding:12px;border-radius:8px;font-weight:700;font-size:.9rem;margin-top:12px">📞 Or Call / Text (208) 880-2712</a>
+    </div>
     <div class="quote-left">
       <div style="font-size:11px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,.45);margin-bottom:12px">Get Started</div>
       <h2>Schedule Your Middleton Sprinkler Blowout</h2>
@@ -913,7 +919,7 @@ footer a{color:rgba(255,255,255,.5)}
       </a>
     </div>
     </div>
-    <div class="lic-box" style="text-align:center;padding:16px 14px">
+    <div class="lic-box" style="text-align:center;padding:16px 14px;margin-top:12px">
       <a href="https://www.bbb.org/us/id/nampa/profile/lawn-sprinkler-system-contractor/beeline-sprinkler-repair-1296-1000192092" target="_blank" rel="noopener" style="display:inline-block;text-decoration:none">
         <div style="background:#003e7e;color:#fff;padding:10px 18px;border-radius:8px;font-family:inherit">
           <div style="font-size:1.5rem;font-weight:900;color:#f5c400;line-height:1">BBB</div>
@@ -922,12 +928,6 @@ footer a{color:rgba(255,255,255,.5)}
         </div>
       </a>
     </div>
-
-    <div class="quote-form">
-      <h3>Request Your Blowout</h3>
-      <p>Fill out the form and we will get back to you fast.</p>
-      <iframe src='https://st.sendajob.com/MY/servicerequest/d2a6d4f54526a97793669b7fe3bcce9438cfec99_f.html' width='100%' height='748' style='border:none;display:block;'></iframe>
-      <a href="tel:2088802712" style="display:block;background:#0f1a0f;color:#fff;text-align:center;padding:12px;border-radius:8px;font-weight:700;font-size:.9rem;margin-top:12px">📞 Or Call / Text (208) 880-2712</a>
     </div>
   </div>
 </div>
@@ -959,7 +959,7 @@ footer a{color:rgba(255,255,255,.5)}
 </footer>
 
 <script>
-document.querySelectorAll('a[href="#quote"]').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();var el=document.getElementById('quote');if(!el)return;window.scrollTo({top:el.getBoundingClientRect().top+window.pageYOffset,behavior:'smooth'});});});
+document.querySelectorAll('a[href="#quote"]').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();var el=document.getElementById('booking-form');if(!el)return;window.scrollTo({top:el.getBoundingClientRect().top+window.pageYOffset-16,behavior:'smooth'});});});
 document.querySelectorAll('.faq-q').forEach(function(q){q.addEventListener('click',function(){var item=q.parentElement;item.classList.toggle('open')})});
 var ham=document.getElementById('hamburger'),mob=document.getElementById('mobileMenu');
 if(ham&&mob){ham.addEventListener('click',function(){ham.classList.toggle('open');mob.classList.toggle('open');document.body.style.overflow=mob.classList.contains('open')?'hidden':'';})}

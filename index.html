@@ -724,7 +724,7 @@ document.querySelectorAll('.faq-btn-home').forEach(function(btn){btn.addEventLis
     var data=new FormData(form);
     fetch(form.action,{method:'POST',body:data,headers:{'Accept':'application/json'}})
       .then(function(res){
-        if(res.ok){form.style.display='none';success.style.display='block';}
+        if(res.ok){window.location.href='thank-you.html';}
         else{alert('Something went wrong. Please call us at (208) 880-2712.');}
       }).catch(function(){alert('Something went wrong. Please call us at (208) 880-2712.');});
   });

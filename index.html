@@ -499,7 +499,7 @@ document.addEventListener('DOMContentLoaded',function(){
       <div class="cf" id="request-form" style="scroll-margin-top:100px">
         <h3>Request Service</h3>
         <p style="font-size:.9rem;color:var(--muted);margin-bottom:16px;line-height:1.6">Fill out the form below — we'll get back to you fast.</p>
-        <iframe src='https://st.sendajob.com/MY/servicerequest/d2a6d4f54526a97793669b7fe3bcce9438cfec99_f.html' width='100%' height='683' loading="eager" style='border:none;display:block;' title="Service request form"></iframe>
+        <iframe id="booking-iframe" src='https://st.sendajob.com/MY/servicerequest/d2a6d4f54526a97793669b7fe3bcce9438cfec99_f.html' width='100%' height='683' loading="eager" style='border:none;display:block;' title="Service request form"></iframe>
         <a href="tel:2088802712" style="display:block;background:var(--ink);color:#fff;text-align:center;padding:14px 24px;border-radius:var(--r);font-weight:700;font-size:.97rem;margin-top:14px">📞 Or Call / Text (208) 880-2712</a>
         <p style="text-align:center;font-size:.78rem;color:var(--muted);margin-top:16px">Same-day service available in most cases.</p>
       </div>
@@ -633,10 +633,19 @@ document.addEventListener('DOMContentLoaded',function(){
 document.querySelectorAll('.faq-btn-home').forEach(function(btn){btn.addEventListener('click',function(){var item=this.closest('.faq-item-home');var wasOpen=item.classList.contains('open');document.querySelectorAll('.faq-item-home').forEach(function(i){i.classList.remove('open');i.querySelector('.faq-btn-home').setAttribute('aria-expanded','false');});if(!wasOpen){item.classList.add('open');this.setAttribute('aria-expanded','true');}});});
 
 
-var _nsq=document.getElementById('navScrolledQuote');if(_nsq)_nsq.addEventListener('click',function(e){e.preventDefault();scrollToForm();});
-function scrollToForm(){setTimeout(function(){var el=document.getElementById('request-form');if(!el)return;el.scrollIntoView({behavior:'smooth',block:'start'});},100);}
-var _hb=document.getElementById('heroQuoteBtn');if(_hb)_hb.addEventListener('click',function(e){e.preventDefault();scrollToForm();});
-var _sq=document.getElementById('mobileStickyQuote');if(_sq)_sq.addEventListener('click',function(e){e.preventDefault();scrollToForm();});
+function scrollToForm(e){
+  if(e){e.preventDefault();}
+  var isMobile=window.innerWidth<=680;
+  var el=document.getElementById(isMobile?'booking-iframe':'request-form');
+  if(!el)el=document.getElementById('request-form');
+  if(!el)return;
+  var navH=isMobile?0:90;
+  var targetTop=document.body.scrollTop+el.getBoundingClientRect().top-navH;
+  document.body.scrollTo({top:targetTop,behavior:'smooth'});
+}
+var _nsq=document.getElementById('navScrolledQuote');if(_nsq)_nsq.addEventListener('click',scrollToForm);
+var _hb=document.getElementById('heroQuoteBtn');if(_hb)_hb.addEventListener('click',scrollToForm);
+var _sq=document.getElementById('mobileStickyQuote');if(_sq)_sq.addEventListener('click',scrollToForm);
 document.getElementById('nav-residential').addEventListener('click',function(e){e.preventDefault();});
 document.getElementById('nav-commercial').addEventListener('click',function(e){e.preventDefault();});
 document.getElementById('nav-areas').addEventListener('click',function(e){e.preventDefault();});

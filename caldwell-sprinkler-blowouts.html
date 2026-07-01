@@ -455,6 +455,30 @@ footer a{color:rgba(255,255,255,.5)}
 .hero-cta-phone:hover{background:rgba(255,255,255,.2)}
 .hero-cta-note{font-size:.76rem;color:rgba(255,255,255,.5);margin:0;line-height:1.5}
 @media(max-width:820px){.svc-hero-content{flex-direction:column}.hero-right-cta{width:100%;max-width:100%;box-sizing:border-box}}
+
+/* Hero quote form card */
+.hero-quote-card{width:100%;max-width:360px;background:rgba(0,0,0,.55);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.18);border-radius:16px;padding:28px 26px 24px;flex-shrink:0}
+.hqc-eyebrow{font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--yellow);margin-bottom:8px}
+.hqc-title{font-size:1.15rem;font-weight:800;color:#fff;line-height:1.3;margin-bottom:18px}
+.hqc-field{display:flex;flex-direction:column;gap:4px;margin-bottom:10px}
+.hqc-field label{font-size:.75rem;font-weight:600;color:rgba(255,255,255,.6);letter-spacing:.04em}
+.hqc-field input,.hqc-field select{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:8px;padding:9px 13px;color:#fff;font-size:.95rem;font-family:inherit;outline:none;transition:border-color .15s;width:100%;-webkit-appearance:none;appearance:none}
+.hqc-field input::placeholder{color:rgba(255,255,255,.35)}
+.hqc-field input:focus,.hqc-field select:focus{border-color:var(--yellow)}
+.hqc-field select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='rgba(255,255,255,.5)' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 13px center;padding-right:36px;cursor:pointer}
+.hqc-field select option{background:#1a3a1a;color:#fff}
+.hqc-row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.hqc-submit{display:block;width:100%;background:var(--yellow);color:var(--ink);font-weight:900;font-size:1rem;padding:14px;border:none;border-radius:10px;cursor:pointer;margin-top:16px;transition:opacity .15s}
+.hqc-submit:hover{opacity:.88}
+.hqc-phone{display:block;text-align:center;color:rgba(255,255,255,.55);font-size:.8rem;margin-top:12px}
+.hqc-phone a{color:rgba(255,255,255,.8);text-decoration:none;font-weight:600}
+.hqc-phone a:hover{color:#fff}
+.hqc-success{text-align:center;padding:20px 0}
+.hqc-success .check{font-size:2.5rem;margin-bottom:10px}
+.hqc-success p{color:#fff;font-size:1rem;font-weight:600;line-height:1.5}
+.hqc-success span{color:rgba(255,255,255,.6);font-size:.85rem}
+.hero-right-form{flex-shrink:0}
+@media(max-width:860px){.city-hero-content,.svc-hero-content{flex-direction:column!important}.hero-quote-card{max-width:100%}}
 </style>
 </head>
 <body>
@@ -618,11 +642,63 @@ footer a{color:rgba(255,255,255,.5)}
       <span class="trust-badge">No Surprises</span>
     </div>
     </div>
-    <div class="hero-right-cta">
-      <a href="#quote" class="hero-cta-main">Get on the Schedule</a>
-      <a href="tel:2088802712" class="hero-cta-phone">📞 (208) 880-2712</a>
-      <p class="hero-cta-note">$75 flat · Done in 20–40 min<br>Licensed &amp; Insured</p>
+    <div class="hero-quote-card">
+  <div class="hqc-eyebrow">Free Quote · Fast Response</div>
+  <div class="hqc-title">What can we fix for you?</div>
+  <div class="hqc-success" id="hqcSuccess" style="display:none">
+    <div class="check">✅</div>
+    <p>Got it! We'll call you shortly.</p>
+    <span>Most calls back within 1 hour</span>
+  </div>
+  <form id="hqcForm" action="https://formspree.io/f/xwvdqvlb" method="POST">
+    <div class="hqc-field">
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="name" placeholder="Calvin" required>
     </div>
+    <div class="hqc-row">
+      <div class="hqc-field">
+        <label for="fphone">Phone</label>
+        <input type="tel" id="fphone" name="phone" placeholder="(208) 555-0100">
+      </div>
+      <div class="hqc-field">
+        <label for="femail">Email</label>
+        <input type="email" id="femail" name="email" placeholder="you@email.com">
+      </div>
+    </div>
+    <div id="contactError" style="display:none;font-size:.75rem;color:#ff8a8a;margin-top:-8px;margin-bottom:10px;">Please enter a phone number or email.</div>
+    <div class="hqc-field">
+      <label for="fservice">What do you need?</label>
+      <select id="fservice" name="service">
+        <option value="" disabled selected>Choose a service…</option>
+        <option>Sprinkler Repair</option>
+        <option>Fall Blowout / Winterization</option>
+        <option>Sprinkler Installation</option>
+        <option>Spring Turn-On</option>
+        <option>Backflow Testing / Repair</option>
+        <option>Valve Repair</option>
+        <option>Sprinkler Head Replacement</option>
+        <option>Controller / Timer Replacement</option>
+        <option>Other / Not Sure</option>
+      </select>
+    </div>
+    <div class="hqc-field">
+      <select id="fcity" name="city">
+        <option value="" disabled selected>Your city…</option>
+        <option>Nampa</option>
+        <option>Meridian</option>
+        <option>Boise</option>
+        <option>Caldwell</option>
+        <option>Eagle</option>
+        <option>Kuna</option>
+        <option>Star</option>
+        <option>Middleton</option>
+        <option>Other</option>
+      </select>
+    </div>
+    <button type="submit" class="hqc-submit">Get My Free Quote →</button>
+  </form>
+  <p class="hqc-phone">Or call / text: <a href="tel:2088802712">(208) 880-2712</a></p>
+</div>
   </div></div>
 
 <!-- REVIEW TICKER -->
@@ -954,6 +1030,9 @@ footer a{color:rgba(255,255,255,.5)}
       <img style='width:auto;height:80px;' src='https://coc.codes/images/badge/44771303' alt='Beeline Sprinkler Repair — Chamber of Commerce Member' loading='lazy'>
     </a>
   </div>
+  <div style="margin-top:16px;line-height:0">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3071.872074455609!2d-116.4638494!3d43.561263200000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54ae4c1c9c115555%3A0xa601c6f00c7e4eab!2sBeeline%20Sprinkler%20Repair!5e1!3m2!1sen!2sus!4v1782923875074!5m2!1sen!2sus" width="100%" height="200" style="border:0;border-radius:8px;display:block;max-width:480px;margin:0 auto" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="Beeline Sprinkler Repair location map"></iframe>
+  </div>
 </footer>
 
 <script>
@@ -987,6 +1066,26 @@ if(window.innerWidth>680){var bee=document.createElement('div');bee.innerHTML='<
 	})();
 </script>
 <!-- END: BBB AB Seal -->
+
+<script>
+(function(){
+  var form=document.getElementById('hqcForm');
+  if(!form)return;
+  var success=document.getElementById('hqcSuccess');
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var phone=document.getElementById('fphone').value.trim();
+    var email=document.getElementById('femail').value.trim();
+    var err=document.getElementById('contactError');
+    if(!phone&&!email){err.style.display='block';return;}
+    err.style.display='none';
+    fetch(form.action,{method:'POST',body:new FormData(form),headers:{Accept:'application/json'}})
+      .then(function(r){if(r.ok){window.location.href='thank-you.html';}else{alert('Something went wrong. Please call us at (208) 880-2712.');}})
+      .catch(function(){alert('Something went wrong. Please call us at (208) 880-2712.');});
+  });
+})();
+</script>
+
 </body>
 </html>
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          

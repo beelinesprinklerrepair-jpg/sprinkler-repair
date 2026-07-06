@@ -236,9 +236,10 @@ footer a{color:rgba(255,255,255,.5)}
     <div class="eyebrow">&#127876; Winter Services — Treasure Valley, Idaho</div>
     <h1>Professional Christmas Light<br><em>Installation &amp; Takedown</em></h1>
     <p class="hero-sub">We design, install, maintain, and remove your holiday lights — all you do is enjoy them. Commercial-grade LED lights, fully insured, serving Nampa, Boise, Meridian, and the entire Treasure Valley.</p>
+    <a href="tel:2088802712" style="display:inline-block;font-size:clamp(1.6rem,4vw,2.4rem);font-weight:900;color:#fff;letter-spacing:-.5px;margin-bottom:20px;text-shadow:0 2px 12px rgba(0,0,0,.4)">&#128222; (208) 880-2712</a>
     <div class="hero-ctas">
-      <a href="tel:2088802712" class="btn-red">&#128222; Call for a Free Quote</a>
-      <a href="#what-we-do" class="btn-white">See What's Included</a>
+      <a href="tel:2088802712" class="btn-red">Call for a Free Quote</a>
+      <a href="#contact-form" class="btn-white">Request a Quote Online</a>
     </div>
   </div>
 </div>
@@ -408,6 +409,41 @@ footer a{color:rgba(255,255,255,.5)}
 </section>
 
 <!-- CTA BAND -->
+<!-- CONTACT FORM -->
+<section class="sec sec-snow" id="contact-form">
+  <div class="sec-inner" style="max-width:720px">
+    <div class="eyebrow" style="color:var(--red)">Get a Free Quote</div>
+    <h2 class="sec-title">Request Your Free <em>Lighting Design & Quote</em></h2>
+    <p class="sec-sub" style="margin-bottom:28px">Fill out the form below and we'll reach out fast. Or call us directly at <a href="tel:2088802712" style="color:var(--red);font-weight:700">(208) 880-2712</a>.</p>
+    <form action="https://formspree.io/f/xwvdqvlb" method="POST" style="display:flex;flex-direction:column;gap:14px">
+      <input type="hidden" name="_subject" value="Christmas Light Installation Quote Request">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+        <div style="display:flex;flex-direction:column;gap:5px">
+          <label style="font-size:.78rem;font-weight:700;color:#3a1010">Full Name</label>
+          <input type="text" name="name" required placeholder="John Smith" style="padding:11px 14px;border:1.5px solid #e0c8c5;border-radius:8px;font-size:.95rem;font-family:inherit;outline:none;background:#fff">
+        </div>
+        <div style="display:flex;flex-direction:column;gap:5px">
+          <label style="font-size:.78rem;font-weight:700;color:#3a1010">Phone Number</label>
+          <input type="tel" name="phone" required placeholder="(208) 555-0100" style="padding:11px 14px;border:1.5px solid #e0c8c5;border-radius:8px;font-size:.95rem;font-family:inherit;outline:none;background:#fff">
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:5px">
+        <label style="font-size:.78rem;font-weight:700;color:#3a1010">Email Address</label>
+        <input type="email" name="email" placeholder="john@example.com" style="padding:11px 14px;border:1.5px solid #e0c8c5;border-radius:8px;font-size:.95rem;font-family:inherit;outline:none;background:#fff">
+      </div>
+      <div style="display:flex;flex-direction:column;gap:5px">
+        <label style="font-size:.78rem;font-weight:700;color:#3a1010">City / Property Address</label>
+        <input type="text" name="address" placeholder="Nampa, ID or full address" style="padding:11px 14px;border:1.5px solid #e0c8c5;border-radius:8px;font-size:.95rem;font-family:inherit;outline:none;background:#fff">
+      </div>
+      <div style="display:flex;flex-direction:column;gap:5px">
+        <label style="font-size:.78rem;font-weight:700;color:#3a1010">Anything else we should know?</label>
+        <textarea name="message" rows="3" placeholder="Residential or commercial, approximate home size, style preferences, etc." style="padding:11px 14px;border:1.5px solid #e0c8c5;border-radius:8px;font-size:.95rem;font-family:inherit;outline:none;background:#fff;resize:vertical"></textarea>
+      </div>
+      <button type="submit" style="background:var(--red);color:#fff;border:none;padding:15px;border-radius:10px;font-weight:900;font-size:1rem;cursor:pointer;font-family:inherit">🎄 Request My Free Quote</button>
+    </form>
+  </div>
+</section>
+
 <section class="cta-band" id="quote">
   <h2>&#127876; Ready to Light Up Your Home?</h2>
   <p>Call for a free quote and custom design consultation. We'll walk your property, show you options, and give you a no-pressure estimate.</p>

@@ -1,88 +1,145 @@
 {
-  "name": "Beeline Sprinkler Repair",
-  "description": "Family owned, licensed and insured sprinkler repair and irrigation service company serving the Treasure Valley, Idaho since 2015.",
-  "url": "https://www.beelinesprinklerrepair.com",
+  "$schema": "https://agentsjson.org/schema/v1",
+  "name": "Idaho Welding Service",
+  "description": "Mobile and shop welding, repair, and custom metal fabrication serving Boise and the Treasure Valley, Idaho. Trailer repair, heavy equipment welding, handrails and gates, stainless and aluminum, and custom fabrication. On-site service — we come to homes, farms, shops, and job sites.",
+  "url": "https://idahoweldingservices.com/",
   "contact": {
-    "phone": "+12088802712",
-    "email": "beelinesprinklerrepair@gmail.com",
-    "address": {
-      "street": "5606 W Amity Rd",
-      "city": "Nampa",
-      "state": "ID",
-      "zip": "83687",
-      "country": "US"
+    "phone": "+1-208-409-0756",
+    "sms": "+1-208-409-0756",
+    "email": "idahoweldingservices@gmail.com"
+  },
+  "business": {
+    "type": "LocalBusiness",
+    "category": "Welding and Metal Fabrication",
+    "areaServed": [
+      "Boise, ID",
+      "Nampa, ID",
+      "Meridian, ID",
+      "Caldwell, ID",
+      "Eagle, ID",
+      "Star, ID",
+      "Kuna, ID",
+      "Middleton, ID",
+      "Emmett, ID",
+      "Garden City, ID",
+      "Mountain Home, ID"
+    ],
+    "services": [
+      "Mobile welding",
+      "Trailer repair",
+      "Heavy equipment repair",
+      "Custom metal fabrication",
+      "Stainless steel and aluminum welding",
+      "Handrails and gates"
+    ],
+    "attributes": [
+      "Licensed and insured",
+      "Mobile or shop service",
+      "After-hours calls available"
+    ]
+  },
+  "pages": [
+    {
+      "url": "https://idahoweldingservices.com/",
+      "title": "Boise Mobile Welding | Idaho Welding Service",
+      "purpose": "Homepage — services overview, service area, quote request form"
+    },
+    {
+      "url": "https://idahoweldingservices.com/boise-welding",
+      "title": "Boise Custom Welding",
+      "purpose": "Boise city page — Boise-specific welding services, neighborhoods, FAQ, quote request form"
+    },
+    {
+      "url": "https://idahoweldingservices.com/nampa-welding",
+      "title": "Nampa Custom Welding",
+      "purpose": "Nampa city page — welding services, neighborhoods, FAQ, quote request form"
+    },
+    {
+      "url": "https://idahoweldingservices.com/meridian-welding",
+      "title": "Meridian Custom Welding",
+      "purpose": "Meridian city page — welding services, neighborhoods, FAQ, quote request form"
+    },
+    {
+      "url": "https://idahoweldingservices.com/kuna-welding",
+      "title": "Kuna Custom Welding",
+      "purpose": "Kuna city page — welding services, neighborhoods, FAQ, quote request form"
+    },
+    {
+      "url": "https://idahoweldingservices.com/eagle-welding",
+      "title": "Eagle Custom Welding",
+      "purpose": "Eagle city page — welding services, neighborhoods, FAQ, quote request form"
+    },
+    {
+      "url": "https://idahoweldingservices.com/caldwell-welding",
+      "title": "Caldwell Custom Welding",
+      "purpose": "Caldwell city page — welding services, neighborhoods, FAQ, quote request form"
+    },
+    {
+      "url": "https://idahoweldingservices.com/middleton-welding",
+      "title": "Middleton Custom Welding",
+      "purpose": "Middleton city page — welding services, neighborhoods, FAQ, quote request form"
+    },
+    {
+      "url": "https://idahoweldingservices.com/star-welding",
+      "title": "Star Custom Welding",
+      "purpose": "Star city page — welding services, neighborhoods, FAQ, quote request form"
+    },
+    {
+      "url": "https://idahoweldingservices.com/trailer-repair",
+      "title": "Trailer Welding Repair",
+      "purpose": "Service page — mobile trailer weld repair: frames, tongues, hitches, axles, ramps, fenders"
+    },
+    {
+      "url": "https://idahoweldingservices.com/heavy-equipment-welding",
+      "title": "Heavy Equipment Welding",
+      "purpose": "Service page — field repair for buckets, attachments, mounts, and farm equipment"
+    },
+    {
+      "url": "https://idahoweldingservices.com/mobile-welding",
+      "title": "Mobile Welding",
+      "purpose": "Service page — on-site welding across the Treasure Valley, emergency and after-hours calls"
+    },
+    {
+      "url": "https://idahoweldingservices.com/custom-fabrication",
+      "title": "Custom Metal Fabrication",
+      "purpose": "Service page — one-off builds: brackets, mounts, frames, racks in steel, stainless, aluminum"
+    },
+    {
+      "url": "https://idahoweldingservices.com/stainless-aluminum-welding",
+      "title": "Stainless & Aluminum Welding",
+      "purpose": "Service page — TIG and MIG work on stainless and aluminum, tanks, trailers, railings"
+    },
+    {
+      "url": "https://idahoweldingservices.com/handrails-gates",
+      "title": "Hand Rail & Gate Welding",
+      "purpose": "Service page — handrails, guardrails, custom gates, fence repair, code work"
+    },
+    {
+      "url": "https://idahoweldingservices.com/commercial-welding",
+      "title": "Commercial Welding Contractor",
+      "purpose": "Service page — on-site welding for GCs and property managers, engineered specs, TI steel"
+    },
+    {
+      "url": "https://idahoweldingservices.com/structural-steel-fabrication",
+      "title": "Structural Steel Fabrication",
+      "purpose": "Service page — beams, columns, connections, and structural repairs welded to engineered plans"
     }
-  },
-  "service_area": [
-    "Nampa, ID",
-    "Boise, ID",
-    "Meridian, ID",
-    "Caldwell, ID",
-    "Eagle, ID",
-    "Kuna, ID",
-    "Star, ID",
-    "Middleton, ID"
   ],
-  "hours": {
-    "monday": "08:00-18:00",
-    "tuesday": "08:00-18:00",
-    "wednesday": "08:00-18:00",
-    "thursday": "08:00-18:00",
-    "friday": "08:00-18:00",
-    "saturday": "closed",
-    "sunday": "closed"
-  },
   "actions": [
     {
-      "name": "Request Service",
-      "description": "Submit a service request for sprinkler repair or irrigation service",
-      "url": "https://www.beelinesprinklerrepair.com/index.html#contact",
-      "type": "form"
+      "name": "request_quote",
+      "description": "Request a welding quote via the on-page form. Required: name, email, service needed.",
+      "url": "https://idahoweldingservices.com/#quote"
     },
     {
-      "name": "Request Emergency Service",
-      "description": "Submit an emergency service request for active leaks, flooding, or systems that will not shut off",
-      "url": "https://www.beelinesprinklerrepair.com/emergency.html#quote",
-      "type": "form"
+      "name": "call",
+      "description": "Call for fastest response, including after-hours equipment breakdowns.",
+      "tel": "+1-208-409-0756"
     },
     {
-      "name": "Call or Text",
-      "description": "Call or text Beeline Sprinkler Repair directly",
-      "url": "tel:+12088802712",
-      "type": "phone"
-    },
-    {
-      "name": "Sign Up for Service Plan",
-      "description": "Sign up for a monthly sprinkler service plan starting at $35/month",
-      "url": "https://www.beelinesprinklerrepair.com/plans.html",
-      "type": "form"
+      "name": "text_photos",
+      "description": "Text photos of the project plus location for a quote before work starts.",
+      "sms": "+1-208-409-0756"
     }
-  ],
-  "services": [
-    "Sprinkler Repair",
-    "New Sprinkler System Installation",
-    "Spring Turn-On",
-    "Winterization and Blowout",
-    "Main and Drain Replacement",
-    "Backflow Testing and Replacement",
-    "Valve Repair",
-    "Controller Replacement",
-    "Head Replacement",
-    "Emergency Sprinkler Repair",
-    "Monthly Service Plans"
-  ],
-  "pricing": {
-    "typical_repair": "$100-$300",
-    "service_plans": {
-      "small_1_5_zones": "$35/month",
-      "medium_6_10_zones": "$45/month",
-      "large_11_15_zones": "$55/month"
-    }
-  },
-  "trust": {
-    "reviews": "136+ five-star Google reviews",
-    "licensed": "Idaho Registered Contractor",
-    "insured": true,
-    "years_in_business": 10
-  }
+  ]
 }

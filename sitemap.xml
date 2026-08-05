@@ -4,7 +4,7 @@
   <!-- Homepage -->
   <url>
     <loc>https://www.beelinesprinklerrepair.com/</loc>
-    <lastmod>2026-06-04</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -44,7 +44,7 @@
   <!-- Interactive Troubleshooting Guide -->
   <url>
     <loc>https://www.beelinesprinklerrepair.com/sprinkler-troubleshooting.html</loc>
-    <lastmod>2026-06-10</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -52,7 +52,7 @@
   <!-- Service Pages -->
   <url>
     <loc>https://www.beelinesprinklerrepair.com/sprinkler-repair.html</loc>
-    <lastmod>2026-06-04</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
   </url>
@@ -64,7 +64,7 @@
   </url>
   <url>
     <loc>https://www.beelinesprinklerrepair.com/spring-turn-on.html</loc>
-    <lastmod>2026-06-04</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -118,7 +118,7 @@
   </url>
   <url>
     <loc>https://www.beelinesprinklerrepair.com/valve-repair-treasure-valley.html</loc>
-    <lastmod>2026-06-04</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -127,6 +127,20 @@
     <lastmod>2026-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+  </url>
+
+  <!-- Seasonal / Winter Services -->
+  <url>
+    <loc>https://www.beelinesprinklerrepair.com/christmas-light-installation.html</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.beelinesprinklerrepair.com/snow-removal.html</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
   <!-- Troubleshooting Pages -->
@@ -189,6 +203,12 @@
 
   <!-- Boise Service Pages -->
   <url>
+    <loc>https://www.beelinesprinklerrepair.com/boise-sprinkler-repair.html</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
     <loc>https://www.beelinesprinklerrepair.com/boise-sprinkler-valve-repair.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
@@ -233,6 +253,12 @@
 
   <!-- Meridian Service Pages -->
   <url>
+    <loc>https://www.beelinesprinklerrepair.com/meridian-sprinkler-repair.html</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
     <loc>https://www.beelinesprinklerrepair.com/meridian-sprinkler-valve-repair.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
@@ -245,10 +271,24 @@
     <priority>0.9</priority>
   </url>
 
-  <!-- City Blowout Pages -->
+  <!-- Nampa Service Pages -->
+  <url>
+    <loc>https://www.beelinesprinklerrepair.com/nampa-sprinkler-repair.html</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
   <url>
     <loc>https://www.beelinesprinklerrepair.com/nampa-sprinkler-blowouts.html</loc>
     <lastmod>2026-06-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Kuna Service Pages -->
+  <url>
+    <loc>https://www.beelinesprinklerrepair.com/kuna-sprinkler-repair.html</loc>
+    <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -258,9 +298,25 @@
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+
+  <!-- Eagle Service Pages -->
+  <url>
+    <loc>https://www.beelinesprinklerrepair.com/eagle-sprinkler-repair.html</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
   <url>
     <loc>https://www.beelinesprinklerrepair.com/eagle-sprinkler-blowouts.html</loc>
     <lastmod>2026-06-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Caldwell Service Pages -->
+  <url>
+    <loc>https://www.beelinesprinklerrepair.com/caldwell-sprinkler-repair.html</loc>
+    <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -270,9 +326,25 @@
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+
+  <!-- Star Service Pages -->
+  <url>
+    <loc>https://www.beelinesprinklerrepair.com/star-sprinkler-repair.html</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
   <url>
     <loc>https://www.beelinesprinklerrepair.com/star-sprinkler-blowouts.html</loc>
     <lastmod>2026-06-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Middleton Service Pages -->
+  <url>
+    <loc>https://www.beelinesprinklerrepair.com/middleton-sprinkler-repair.html</loc>
+    <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -283,53 +355,4 @@
     <priority>0.9</priority>
   </url>
 
-  <!-- City Hub Pages -->
-  <url>
-    <loc>https://www.beelinesprinklerrepair.com/nampa-sprinkler-repair.html</loc>
-    <lastmod>2026-06-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.95</priority>
-  </url>
-  <url>
-    <loc>https://www.beelinesprinklerrepair.com/meridian-sprinkler-repair.html</loc>
-    <lastmod>2026-06-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.95</priority>
-  </url>
-  <url>
-    <loc>https://www.beelinesprinklerrepair.com/boise-sprinkler-repair.html</loc>
-    <lastmod>2026-06-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.95</priority>
-  </url>
-  <url>
-    <loc>https://www.beelinesprinklerrepair.com/eagle-sprinkler-repair.html</loc>
-    <lastmod>2026-06-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.beelinesprinklerrepair.com/kuna-sprinkler-repair.html</loc>
-    <lastmod>2026-06-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.beelinesprinklerrepair.com/caldwell-sprinkler-repair.html</loc>
-    <lastmod>2026-06-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.beelinesprinklerrepair.com/star-sprinkler-repair.html</loc>
-    <lastmod>2026-06-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.beelinesprinklerrepair.com/middleton-sprinkler-repair.html</loc>
-    <lastmod>2026-06-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
 </urlset>

@@ -126,9 +126,9 @@ footer a{color:rgba(255,255,255,.5)}
 
 nav{background:var(--ink);position:sticky;top:0;z-index:300;padding:0 32px}
 
-.nav-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:82px;gap:16px}
+.nav-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:104px;gap:16px}
 
-.nav-logo img{height:100px;width:auto;object-fit:contain;margin-top:28px;animation:logoGlow 4s ease-in-out infinite;will-change:filter}
+.nav-logo img{height:108px;width:auto;object-fit:contain;margin-top:0;animation:logoGlow 4s ease-in-out infinite;will-change:filter}
 
 .nav-links{display:flex;gap:4px;align-items:center}
 
@@ -204,6 +204,7 @@ nav.nav-hidden{transform:translateY(-100%)}
 
 .mobile-nav-fab.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
 @media(prefers-reduced-motion:reduce){.nav-logo img{animation:none}}
+@media(max-width:680px){.nav-inner{height:74px}.nav-logo img{height:66px}}
 </style>
 </head>
 <body>

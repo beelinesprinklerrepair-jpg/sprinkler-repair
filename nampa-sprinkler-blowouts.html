@@ -220,8 +220,8 @@ img{display:block;max-width:100%}
 /* NAV */
 nav{background:var(--ink);position:sticky;top:0;z-index:300;padding:0 32px;transition:transform .3s ease}
 nav.nav-hidden{transform:translateY(-100%)}
-.nav-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:82px;gap:16px}
-.nav-logo img{height:100px;width:auto;object-fit:contain;margin-top:28px;animation:logoGlow 4s ease-in-out infinite;will-change:filter}
+.nav-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:104px;gap:16px}
+.nav-logo img{height:108px;width:auto;object-fit:contain;margin-top:0;animation:logoGlow 4s ease-in-out infinite;will-change:filter}
 @keyframes logoGlow{0%,100%{filter:drop-shadow(0 0 0 rgba(245,196,0,0))}50%{filter:drop-shadow(0 0 16px rgba(245,196,0,.6)) drop-shadow(0 0 30px rgba(245,196,0,.25))}}
 .nav-links{display:flex;gap:4px;align-items:center}
 .nav-links a{font-size:15px;font-weight:600;color:rgba(255,255,255,.65);padding:8px 13px;border-radius:5px;white-space:nowrap}
@@ -496,10 +496,12 @@ footer a{color:rgba(255,255,255,.5)}
 .hero-right-form{flex-shrink:0}
 @media(max-width:860px){.city-hero-content,.svc-hero-content{flex-direction:column!important}.hero-quote-card{max-width:100%}}
 
-/* hero stamp: plain line, no pill, no shouting */
-.eyebrow.hero-stamp,.hero-eyebrow.hero-stamp{display:block;background:none;border:none;border-radius:0;padding:0;text-transform:none;letter-spacing:.01em;font-weight:600;font-size:.82rem;opacity:.8;margin-bottom:18px}
-@media(max-width:680px){.eyebrow.hero-stamp,.hero-eyebrow.hero-stamp{font-size:.76rem;margin-bottom:12px}}
 @media(prefers-reduced-motion:reduce){.nav-logo img{animation:none}}
+@media(max-width:680px){.nav-inner{height:74px}.nav-logo img{height:66px}}
+
+/* hero trust line: left rule, no bubble */
+.eyebrow.hero-stamp,.hero-eyebrow.hero-stamp{display:inline-block;background:none;border:none;border-radius:0;border-left:3px solid var(--yellow,#f5c400);padding:2px 0 2px 12px;text-transform:none;letter-spacing:.01em;font-weight:600;font-size:.82rem;line-height:1.4;opacity:.9;margin-bottom:18px}
+@media(max-width:680px){.eyebrow.hero-stamp,.hero-eyebrow.hero-stamp{font-size:.74rem;padding-left:9px;border-left-width:2px;margin-bottom:12px}}
 </style>
 </head>
 <body>
@@ -665,7 +667,7 @@ footer a{color:rgba(255,255,255,.5)}
   <div class="svc-hero-overlay"></div>
   <div class="svc-hero-content">
     <div class="hero-left">
-      <div class="hero-eyebrow hero-stamp">Serving Nampa since 2015</div>
+      <div class="hero-eyebrow hero-stamp">Fall Winterization · Serving Nampa Since 2015</div>
       <h1>Sprinkler Blowouts<br>in <em>Nampa</em></h1>
       <p>$75 flat for the first 5 zones. $6 per zone after that. The City of Nampa shuts off pressure irrigation in late October, but that doesn't blow out your private lateral lines. We clear the whole system with commercial compressors before Canyon County's first hard freeze.</p>
       <div class="trust-badges">

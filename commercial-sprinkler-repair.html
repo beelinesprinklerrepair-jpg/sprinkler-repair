@@ -157,8 +157,8 @@ footer a:hover{color:rgba(255,255,255,.8)}
 
 nav{background:var(--ink);position:sticky;top:0;z-index:300;padding:0 32px}
 .nav-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:82px;gap:16px}
-.nav-logo img{height:100px;width:auto;object-fit:contain;animation:logoPulse 3s ease-in-out infinite;margin-top:28px}
-@keyframes logoPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
+.nav-logo img{height:100px;width:auto;object-fit:contain;margin-top:28px;animation:logoGlow 4s ease-in-out infinite;will-change:filter}
+@keyframes logoGlow{0%,100%{filter:drop-shadow(0 0 0 rgba(245,196,0,0))}50%{filter:drop-shadow(0 0 16px rgba(245,196,0,.6)) drop-shadow(0 0 30px rgba(245,196,0,.25))}}
 .nav-links{display:flex;gap:4px;align-items:center}
 .nav-links a{font-size:15px;font-weight:600;color:rgba(255,255,255,.65);padding:8px 13px;border-radius:5px;white-space:nowrap;text-decoration:none}
 .nav-links a:hover,.nav-links a.active{color:#fff;background:rgba(255,255,255,.1)}
@@ -225,6 +225,11 @@ nav.nav-hidden{transform:translateY(-100%)}
 .hqc-success span{color:rgba(255,255,255,.6);font-size:.85rem}
 .hero-right-form{flex-shrink:0}
 @media(max-width:860px){.page-hero-content,.page-hero-inner,.svc-hero-content,.hero-inner{flex-direction:column!important}.hero-quote-card{max-width:100%}}
+
+/* hero stamp: plain line, no pill, no shouting */
+.eyebrow.hero-stamp,.hero-eyebrow.hero-stamp{display:block;background:none;border:none;border-radius:0;padding:0;text-transform:none;letter-spacing:.01em;font-weight:600;font-size:.82rem;opacity:.8;margin-bottom:18px}
+@media(max-width:680px){.eyebrow.hero-stamp,.hero-eyebrow.hero-stamp{font-size:.76rem;margin-bottom:12px}}
+@media(prefers-reduced-motion:reduce){.nav-logo img{animation:none}}
 </style>
 </head>
 <body>
@@ -290,7 +295,6 @@ nav.nav-hidden{transform:translateY(-100%)}
           <a href="troubleshooting-wet-spot.html">Big Wet Spot in the Yard</a>
           <a href="troubleshooting-low-pressure.html">Low Pressure on One Zone</a>
           <a href="troubleshooting-bad-coverage.html">Bad Spray Coverage</a>
-    <a href="troubleshooting-backyard-flooding.html">New Construction Yard Flooding</a>
           <a href="troubleshooting-backyard-flooding.html">New Construction Yard Flooding</a>
         </div>
       </div>
@@ -373,7 +377,7 @@ nav.nav-hidden{transform:translateY(-100%)}
   <div class="page-hero-overlay"></div>
   <div class="page-hero-content" style="display:flex;gap:40px;align-items:flex-start">
   <div class="hero-left">
-    <div class="hero-eyebrow">🏢 Commercial Irrigation · Treasure Valley Since 2015</div>
+    <div class="hero-eyebrow hero-stamp">Nampa, Idaho &middot; est. 2015</div>
     <h1>Commercial Sprinkler Repair<br><em>Treasure Valley, Idaho</em></h1>
     <p>Licensed commercial irrigation repair for HOAs, apartment complexes, office parks, retail centers, and property management companies across Nampa, Boise, Meridian, Caldwell, Eagle, Kuna, Star, and Middleton.</p>
     <div class="hero-ctas">

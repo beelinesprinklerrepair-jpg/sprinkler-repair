@@ -85,8 +85,8 @@ img{display:block;max-width:100%}
 .sticky-call{background:#0f1a0f;color:#fff;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:800;text-decoration:none}
 .sticky-quote{background:#f5c400;color:#0f1a0f;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:800;text-decoration:none}
 nav{background:var(--ink);position:sticky;top:0;z-index:300;padding:0 32px}
-.nav-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:58px;gap:16px}
-.nav-logo img{height:46px;width:auto;object-fit:contain}
+.nav-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:82px;gap:16px}
+.nav-logo img{height:100px;width:auto;object-fit:contain;margin-top:28px;animation:logoGlow 4s ease-in-out infinite;will-change:filter}
 .nav-links{display:flex;gap:4px;align-items:center}
 .nav-links a{font-size:15px;font-weight:600;color:rgba(255,255,255,.65);padding:8px 13px;border-radius:5px;white-space:nowrap}
 .nav-links a:hover,.nav-links a.active{color:#fff;background:rgba(255,255,255,.1)}
@@ -318,6 +318,7 @@ footer a{color:rgba(255,255,255,.5)}
 .hero-right-form{flex-shrink:0}
 @media(max-width:860px){.city-hero-content,.svc-hero-content{flex-direction:column!important}.hero-quote-card{max-width:100%}}
 .divider{height:1px;background:rgba(255,255,255,.12);margin:6px 0}
+@media(prefers-reduced-motion:reduce){.nav-logo img{animation:none}}
 </style>
 </head>
 <body>
@@ -388,7 +389,6 @@ footer a{color:rgba(255,255,255,.5)}
           <a href="troubleshooting-wet-spot.html">Big Wet Spot in the Yard</a>
           <a href="troubleshooting-low-pressure.html">Low Pressure on One Zone</a>
           <a href="troubleshooting-bad-coverage.html">Bad Spray Coverage</a>
-    <a href="troubleshooting-backyard-flooding.html">New Construction Yard Flooding</a>
           <a href="troubleshooting-backyard-flooding.html">New Construction Yard Flooding</a>
         </div>
       </div>

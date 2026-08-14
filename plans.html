@@ -128,7 +128,7 @@ nav{background:var(--ink);position:sticky;top:0;z-index:300;padding:0 32px}
 
 .nav-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:82px;gap:16px}
 
-.nav-logo img{height:100px;width:auto;object-fit:contain;animation:logoPulse 3s ease-in-out infinite;margin-top:28px}
+.nav-logo img{height:100px;width:auto;object-fit:contain;margin-top:28px;animation:logoGlow 4s ease-in-out infinite;will-change:filter}
 
 .nav-links{display:flex;gap:4px;align-items:center}
 
@@ -203,6 +203,11 @@ nav.nav-hidden{transform:translateY(-100%)}
 .mobile-nav-fab.open span:nth-child(2){opacity:0}
 
 .mobile-nav-fab.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+/* hero stamp: plain line, no pill, no shouting */
+.eyebrow.hero-stamp,.hero-eyebrow.hero-stamp{display:block;background:none;border:none;border-radius:0;padding:0;text-transform:none;letter-spacing:.01em;font-weight:600;font-size:.82rem;opacity:.8;margin-bottom:18px}
+@media(max-width:680px){.eyebrow.hero-stamp,.hero-eyebrow.hero-stamp{font-size:.76rem;margin-bottom:12px}}
+@media(prefers-reduced-motion:reduce){.nav-logo img{animation:none}}
 </style>
 </head>
 <body>
@@ -269,7 +274,6 @@ nav.nav-hidden{transform:translateY(-100%)}
           <a href="troubleshooting-wet-spot.html">Big Wet Spot in the Yard</a>
           <a href="troubleshooting-low-pressure.html">Low Pressure on One Zone</a>
           <a href="troubleshooting-bad-coverage.html">Bad Spray Coverage</a>
-    <a href="troubleshooting-backyard-flooding.html">New Construction Yard Flooding</a>
           <a href="troubleshooting-backyard-flooding.html">New Construction Yard Flooding</a>
         </div>
       </div>
@@ -351,7 +355,7 @@ nav.nav-hidden{transform:translateY(-100%)}
 
 <!-- HERO BAND -->
 <section class="hero-band">
-  <div class="hero-eyebrow">Treasure Valley · Licensed &amp; Insured</div>
+  <div class="hero-eyebrow hero-stamp">Nampa, Idaho &middot; est. 2015</div>
   <h1>Sprinkler Service Plans<br>That <em>Actually Make Sense</em></h1>
   <p class="hero-sub">Spring startup, 3 seasonal checkups, and fall blowout, all covered. Pick your size and we handle the rest.</p>
 

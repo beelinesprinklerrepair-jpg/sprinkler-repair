@@ -74,7 +74,7 @@ nav.nav-hidden{transform:translateY(-100%)}
 .mobile-nav-fab.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
 @media(max-width:680px){.mobile-nav-fab{display:flex}}
 
-/* Mobile performance — hide heavy sections */
+/* Mobile performance hide heavy sections */
 @media (max-width:680px){
   #gallery{display:none!important}
   #pricing{display:none!important}
@@ -118,7 +118,7 @@ nav.nav-hidden{transform:translateY(-100%)}
       "logo": "https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Real+Logo.png",
       "image": "https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Cover+Photo+-First+Picture.jpg",
       "description": "Licensed and insured sprinkler repair, installation, winterization, backflow testing, and main line replacement across the Treasure Valley since 2015.",
-      "priceRange": "$35-$300",
+      "priceRange": "$100-$575",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "5606 W Amity Rd",
@@ -153,7 +153,7 @@ nav.nav-hidden{transform:translateY(-100%)}
       },
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "5",
+        "ratingValue": "4.9",
         "reviewCount": "150",
         "bestRating": "5",
         "worstRating": "1"
@@ -255,12 +255,12 @@ document.addEventListener('DOMContentLoaded',function(){
 
 <div class="mobile-sticky-cta">
   <a href="tel:2088802712" class="sticky-call">📞 Call Now</a>
-  <a href="#request-form" class="sticky-quote" id="mobileStickyQuote">Get a Free Quote</a>
+  <a href="#quote" class="sticky-quote" id="mobileStickyQuote">Get a Free Quote</a>
 </div>
 
 <nav aria-label="Main navigation">
   <div class="nav-inner">
-    <div class="nav-logo"><a href="index.html"><img loading="eager" src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Real+Logo.png" alt="Beeline Sprinkler Repair — Home" fetchpriority="high" decoding="async" width="160" height="100"></a></div>
+    <div class="nav-logo"><a href="/"><img loading="eager" src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Real+Logo.png" alt="Beeline Sprinkler Repair Home" fetchpriority="high" decoding="async" width="160" height="100"></a></div>
     <div class="nav-links">
       <a href="reviews.html">Reviews</a>
       <a href="faq.html">FAQ</a>
@@ -319,20 +319,22 @@ document.addEventListener('DOMContentLoaded',function(){
           <a href="troubleshooting-wet-spot.html">Big Wet Spot in the Yard</a>
           <a href="troubleshooting-low-pressure.html">Low Pressure on One Zone</a>
           <a href="troubleshooting-bad-coverage.html">Bad Spray Coverage</a>
+    <a href="troubleshooting-backyard-flooding.html">New Construction Yard Flooding</a>
+          <a href="troubleshooting-backyard-flooding.html">New Construction Yard Flooding</a>
         </div>
       </div>
       <div class="nav-dropdown">
-        <button class="nav-dropdown-toggle" style="color:#7eb8ff">❄️ Winter Services ▾</button>
+        <button class="nav-dropdown-toggle" style="color:#7eb8ff">Winter Services ▾</button>
         <div class="nav-dropdown-menu">
-          <a href="christmas-light-installation.html">🎄 Christmas Light Installation</a>
-          <a href="snow-removal.html">❄️ Snow Removal</a>
+          <a href="christmas-light-installation.html">Christmas Light Installation</a>
+          <a href="snow-removal.html">Snow Removal</a>
         </div>
       </div>
     </div>
     <a href="tel:2088802712" class="nav-cta">📞 (208) 880-2712</a>
     <button class="hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
     <div class="nav-scrolled-ctas">
-      <a href="#request-form" class="nav-scrolled-quote" id="navScrolledQuote">Get a Free Quote</a>
+      <a href="#quote" class="nav-scrolled-quote" id="navScrolledQuote">Get a Free Quote</a>
       <a href="tel:2088802712" class="nav-scrolled-call">📞 Call Now</a>
     </div>
   </div>
@@ -386,11 +388,12 @@ document.addEventListener('DOMContentLoaded',function(){
     <a href="troubleshooting-wet-spot.html">Big Wet Spot in the Yard</a>
     <a href="troubleshooting-low-pressure.html">Low Pressure on One Zone</a>
     <a href="troubleshooting-bad-coverage.html">Bad Spray Coverage</a>
+    <a href="troubleshooting-backyard-flooding.html">New Construction Yard Flooding</a>
   </div>
-  <div class="mobile-section-label" onclick="toggleMobSection(this)">❄️ Winter Services <span>▾</span></div>
+  <div class="mobile-section-label" onclick="toggleMobSection(this)">Winter Services <span>▾</span></div>
   <div class="mobile-sub" style="display:none">
-    <a href="christmas-light-installation.html">🎄 Christmas Light Installation</a>
-    <a href="snow-removal.html">❄️ Snow Removal</a>
+    <a href="christmas-light-installation.html">Christmas Light Installation</a>
+    <a href="snow-removal.html">Snow Removal</a>
   </div>
   <div class="mobile-cta-row"><a href="tel:2088802712">Call (208) 880-2712</a></div>
 </div>
@@ -408,11 +411,11 @@ document.addEventListener('DOMContentLoaded',function(){
           <h1>Sprinkler Repair &amp; Irrigation Service<br>Across the <em>Treasure Valley</em></h1>
           <p class="hero-sub">Sprinkler repair, new installations, main &amp; drain, backflow, and winterization across Nampa, Meridian, Boise, Caldwell, Eagle, Kuna, Star &amp; Middleton.</p>
           <div class="hero-ctas">
-            <a href="#request-form" class="btn-hero" id="heroQuoteBtn">Get a Free Quote →</a>
+            <a href="#quote" class="btn-hero" id="heroQuoteBtn">Get a Free Quote →</a>
             <a href="tel:2088802712" class="btn-ghost">📞 (208) 880-2712</a>
           </div>
         </div>
-        <div class="hero-quote-card">
+        <div class="hero-quote-card" id="quote" style="scroll-margin-top:70px">
           <div class="hqc-eyebrow">Free Quote · Fast Response</div>
           <div class="hqc-title">What can we fix for you?</div>
           <div class="hqc-success" id="hqcSuccess">
@@ -421,6 +424,7 @@ document.addEventListener('DOMContentLoaded',function(){
             <span>Most calls back within 1 hour</span>
           </div>
           <form id="hqcForm" action="https://formspree.io/f/xwvdqvlb" method="POST">
+      <input type="hidden" name="_subject" value="Homepage Quote Request">
             <div class="hqc-field">
               <label for="fname">First Name</label>
               <input type="text" id="fname" name="name" placeholder="Calvin" required>
@@ -476,47 +480,47 @@ document.addEventListener('DOMContentLoaded',function(){
   <aside class="hero-review-ticker-wrap" aria-label="Customer reviews ticker">
     <div class="hero-ticker-label">⭐ 150+ 5-Star Reviews Across the Treasure Valley</div>
     <div class="hero-review-ticker">
-      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Very professional. Fit me in less than 24 hrs after calling and fixed it in one trip."</p><div class="hrt-name">Gretchen P. — Nampa, ID</div></div>
-      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Needed a blowout before the freeze and Beeline did an amazing job. Quick, easy, very professional!"</p><div class="hrt-name">Phillip O'Neill — Treasure Valley</div></div>
-      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"An honest company putting local customers first. Mark tried several ideas to save me money and fixed everything same day."</p><div class="hrt-name">Bill Lemas — Nampa, ID</div></div>
-      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Always responded quickly, explained what they were doing, and listened to my questions. Absolutely recommend."</p><div class="hrt-name">Cathi Davis — Treasure Valley</div></div>
-      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Mark did an excellent job on a hard rooted sprinkler. Everything handled professionally and with courtesy."</p><div class="hrt-name">Nicholas Cristella — Nampa, ID</div></div>
-      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"What I appreciated most was their honesty — they showed me exactly what was wrong and fixed only what was needed."</p><div class="hrt-name">Jason M. — Meridian, ID</div></div>
-      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Beeline came out the same day and had everything fixed within an hour. Fair pricing and great communication."</p><div class="hrt-name">Sandra K. — Eagle, ID</div></div>
-      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Used them for a full system install on our new home. On time, clean, and the system works perfectly."</p><div class="hrt-name">Tyler R. — Meridian, ID</div></div>
-      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Best sprinkler company in the Treasure Valley. Have used them three years in a row for our fall blowout."</p><div class="hrt-name">Diane H. — Caldwell, ID</div></div>
-      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Super responsive and got us scheduled fast. Fixed two broken heads and adjusted all our zones."</p><div class="hrt-name">Kevin T. — Nampa, ID</div></div>
-      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Called about a wet spot in the yard and they found a broken lateral line the same afternoon. Great service."</p><div class="hrt-name">Stephanie W. — Meridian, ID</div></div>
-      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Showed up on time, explained everything clearly, and didn't try to upsell me on stuff I didn't need."</p><div class="hrt-name">Rachel B. — Eagle, ID</div></div>
-      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Had a zone that wouldn't shut off overnight. Beeline was out fast and had the valve fixed quickly."</p><div class="hrt-name">Mike D. — Boise, ID</div></div>
-      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Honest, fair pricing. They walked me through exactly what they found before doing any work."</p><div class="hrt-name">Linda K. — Kuna, ID</div></div>
-      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Spring turn-on service was thorough — caught two heads that needed replacing before the season started."</p><div class="hrt-name">Tom W. — Star, ID</div></div>
-      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Very knowledgeable and efficient. Diagnosed the problem quickly and repaired it the same visit."</p><div class="hrt-name">Angela R. — Caldwell, ID</div></div>
-      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Family run business that actually cares. Have used Beeline for three seasons now and they never disappoint."</p><div class="hrt-name">Greg S. — Middleton, ID</div></div>
-      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Got me scheduled quickly and the tech was friendly and professional. System runs great now."</p><div class="hrt-name">Carrie M. — Nampa, ID</div></div>
-      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Fixed a mainline leak in a couple hours. Clean work and they tested everything before leaving."</p><div class="hrt-name">James T. — Boise, ID</div></div>
-      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Excellent communication from start to finish. Will be using Beeline every year going forward."</p><div class="hrt-name">Sara P. — Meridian, ID</div></div>
+      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Very professional. Fit me in less than 24 hrs after calling and fixed it in one trip."</p><div class="hrt-name">Gretchen P., Nampa, ID</div></div>
+      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Needed a blowout before the freeze and Beeline did an amazing job. Quick, easy, very professional!"</p><div class="hrt-name">Phillip O'Neill, Treasure Valley</div></div>
+      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"An honest company putting local customers first. Mark tried several ideas to save me money and fixed everything same day."</p><div class="hrt-name">Bill Lemas, Nampa, ID</div></div>
+      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Always responded quickly, explained what they were doing, and listened to my questions. Absolutely recommend."</p><div class="hrt-name">Cathi Davis, Treasure Valley</div></div>
+      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Mark did an excellent job on a hard rooted sprinkler. Everything handled professionally and with courtesy."</p><div class="hrt-name">Nicholas Cristella, Nampa, ID</div></div>
+      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"What I appreciated most was their honesty. They showed me exactly what was wrong and fixed only what was needed."</p><div class="hrt-name">Jason M., Meridian, ID</div></div>
+      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Beeline came out the same day and had everything fixed within an hour. Fair pricing and great communication."</p><div class="hrt-name">Sandra K., Eagle, ID</div></div>
+      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Used them for a full system install on our new home. On time, clean, and the system works perfectly."</p><div class="hrt-name">Tyler R., Meridian, ID</div></div>
+      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Best sprinkler company in the Treasure Valley. Have used them three years in a row for our fall blowout."</p><div class="hrt-name">Diane H., Caldwell, ID</div></div>
+      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Super responsive and got us scheduled fast. Fixed two broken heads and adjusted all our zones."</p><div class="hrt-name">Kevin T., Nampa, ID</div></div>
+      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Called about a wet spot in the yard and they found a broken lateral line the same afternoon. Great service."</p><div class="hrt-name">Stephanie W., Meridian, ID</div></div>
+      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Showed up on time, explained everything clearly, and didn't try to upsell me on stuff I didn't need."</p><div class="hrt-name">Rachel B., Eagle, ID</div></div>
+      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Had a zone that wouldn't shut off overnight. Beeline was out fast and had the valve fixed quickly."</p><div class="hrt-name">Mike D., Boise, ID</div></div>
+      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Honest, fair pricing. They walked me through exactly what they found before doing any work."</p><div class="hrt-name">Linda K., Kuna, ID</div></div>
+      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Spring turn-on service was thorough, caught two heads that needed replacing before the season started."</p><div class="hrt-name">Tom W., Star, ID</div></div>
+      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Very knowledgeable and efficient. Diagnosed the problem quickly and repaired it the same visit."</p><div class="hrt-name">Angela R., Caldwell, ID</div></div>
+      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Family run business that actually cares. Have used Beeline for three seasons now and they never disappoint."</p><div class="hrt-name">Greg S., Middleton, ID</div></div>
+      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Got me scheduled quickly and the tech was friendly and professional. System runs great now."</p><div class="hrt-name">Carrie M., Nampa, ID</div></div>
+      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Fixed a mainline leak in a couple hours. Clean work and they tested everything before leaving."</p><div class="hrt-name">James T., Boise, ID</div></div>
+      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Excellent communication from start to finish. Will be using Beeline every year going forward."</p><div class="hrt-name">Sara P., Meridian, ID</div></div>
       <!-- duplicate set for seamless loop -->
-      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Very professional. Fit me in less than 24 hrs after calling and fixed it in one trip."</p><div class="hrt-name">Gretchen P. — Nampa, ID</div></div>
-      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Needed a blowout before the freeze and Beeline did an amazing job. Quick, easy, very professional!"</p><div class="hrt-name">Phillip O'Neill — Treasure Valley</div></div>
-      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"An honest company putting local customers first. Mark tried several ideas to save me money and fixed everything same day."</p><div class="hrt-name">Bill Lemas — Nampa, ID</div></div>
-      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Always responded quickly, explained what they were doing, and listened to my questions. Absolutely recommend."</p><div class="hrt-name">Cathi Davis — Treasure Valley</div></div>
-      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"What I appreciated most was their honesty — they showed me exactly what was wrong and fixed only what was needed."</p><div class="hrt-name">Jason M. — Meridian, ID</div></div>
-      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Beeline came out the same day and had everything fixed within an hour. Fair pricing and great communication."</p><div class="hrt-name">Sandra K. — Eagle, ID</div></div>
-      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Best sprinkler company in the Treasure Valley. Have used them three years in a row for our fall blowout."</p><div class="hrt-name">Diane H. — Caldwell, ID</div></div>
-      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Called about a wet spot in the yard and they found a broken lateral line the same afternoon. Great service."</p><div class="hrt-name">Stephanie W. — Meridian, ID</div></div>
-      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Had a zone that wouldn't shut off overnight. Beeline was out fast and had the valve fixed quickly."</p><div class="hrt-name">Mike D. — Boise, ID</div></div>
-      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Spring turn-on service was thorough — caught two heads that needed replacing before the season started."</p><div class="hrt-name">Tom W. — Star, ID</div></div>
-      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Family run business that actually cares. Have used Beeline for three seasons now and they never disappoint."</p><div class="hrt-name">Greg S. — Middleton, ID</div></div>
-      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Fixed a mainline leak in a couple hours. Clean work and they tested everything before leaving."</p><div class="hrt-name">James T. — Boise, ID</div></div>
-      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Excellent communication from start to finish. Will be using Beeline every year going forward."</p><div class="hrt-name">Sara P. — Meridian, ID</div></div>
-      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Honest, fair pricing. They walked me through exactly what they found before doing any work."</p><div class="hrt-name">Linda K. — Kuna, ID</div></div>
-      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Very knowledgeable and efficient. Diagnosed the problem quickly and repaired it the same visit."</p><div class="hrt-name">Angela R. — Caldwell, ID</div></div>
-      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Got me scheduled quickly and the tech was friendly and professional. System runs great now."</p><div class="hrt-name">Carrie M. — Nampa, ID</div></div>
-      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Super responsive and got us scheduled fast. Fixed two broken heads and adjusted all our zones."</p><div class="hrt-name">Kevin T. — Nampa, ID</div></div>
-      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Mark did an excellent job on a hard rooted sprinkler. Everything handled professionally and with courtesy."</p><div class="hrt-name">Nicholas Cristella — Nampa, ID</div></div>
-      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Used them for a full system install on our new home. On time, clean, and the system works perfectly."</p><div class="hrt-name">Tyler R. — Meridian, ID</div></div>
-      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Showed up on time, explained everything clearly, and didn't try to upsell me on stuff I didn't need."</p><div class="hrt-name">Rachel B. — Eagle, ID</div></div>
+      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Very professional. Fit me in less than 24 hrs after calling and fixed it in one trip."</p><div class="hrt-name">Gretchen P., Nampa, ID</div></div>
+      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Needed a blowout before the freeze and Beeline did an amazing job. Quick, easy, very professional!"</p><div class="hrt-name">Phillip O'Neill, Treasure Valley</div></div>
+      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"An honest company putting local customers first. Mark tried several ideas to save me money and fixed everything same day."</p><div class="hrt-name">Bill Lemas, Nampa, ID</div></div>
+      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Always responded quickly, explained what they were doing, and listened to my questions. Absolutely recommend."</p><div class="hrt-name">Cathi Davis, Treasure Valley</div></div>
+      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"What I appreciated most was their honesty. They showed me exactly what was wrong and fixed only what was needed."</p><div class="hrt-name">Jason M., Meridian, ID</div></div>
+      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Beeline came out the same day and had everything fixed within an hour. Fair pricing and great communication."</p><div class="hrt-name">Sandra K., Eagle, ID</div></div>
+      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Best sprinkler company in the Treasure Valley. Have used them three years in a row for our fall blowout."</p><div class="hrt-name">Diane H., Caldwell, ID</div></div>
+      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Called about a wet spot in the yard and they found a broken lateral line the same afternoon. Great service."</p><div class="hrt-name">Stephanie W., Meridian, ID</div></div>
+      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Had a zone that wouldn't shut off overnight. Beeline was out fast and had the valve fixed quickly."</p><div class="hrt-name">Mike D., Boise, ID</div></div>
+      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Spring turn-on service was thorough, caught two heads that needed replacing before the season started."</p><div class="hrt-name">Tom W., Star, ID</div></div>
+      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Family run business that actually cares. Have used Beeline for three seasons now and they never disappoint."</p><div class="hrt-name">Greg S., Middleton, ID</div></div>
+      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Fixed a mainline leak in a couple hours. Clean work and they tested everything before leaving."</p><div class="hrt-name">James T., Boise, ID</div></div>
+      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Excellent communication from start to finish. Will be using Beeline every year going forward."</p><div class="hrt-name">Sara P., Meridian, ID</div></div>
+      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Honest, fair pricing. They walked me through exactly what they found before doing any work."</p><div class="hrt-name">Linda K., Kuna, ID</div></div>
+      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Very knowledgeable and efficient. Diagnosed the problem quickly and repaired it the same visit."</p><div class="hrt-name">Angela R., Caldwell, ID</div></div>
+      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Got me scheduled quickly and the tech was friendly and professional. System runs great now."</p><div class="hrt-name">Carrie M., Nampa, ID</div></div>
+      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Super responsive and got us scheduled fast. Fixed two broken heads and adjusted all our zones."</p><div class="hrt-name">Kevin T., Nampa, ID</div></div>
+      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Mark did an excellent job on a hard rooted sprinkler. Everything handled professionally and with courtesy."</p><div class="hrt-name">Nicholas Cristella, Nampa, ID</div></div>
+      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Used them for a full system install on our new home. On time, clean, and the system works perfectly."</p><div class="hrt-name">Tyler R., Meridian, ID</div></div>
+      <div class="hrt-card"><div class="hrt-stars">★★★★★</div><p class="hrt-text">"Showed up on time, explained everything clearly, and didn't try to upsell me on stuff I didn't need."</p><div class="hrt-name">Rachel B., Eagle, ID</div></div>
     </div>
   </aside>
 
@@ -526,14 +530,14 @@ document.addEventListener('DOMContentLoaded',function(){
       <h2 class="sec-h" style="font-size:clamp(1.5rem,3vw,2.2rem)">Complete Sprinkler Services</h2>
       <p class="sec-p" style="margin-bottom:24px">From broken heads to full main drain replacements, Beeline keeps Treasure Valley sprinkler systems running right with dependable repairs and honest service.</p>
       <div class="svc-grid">
-        <a href="sprinkler-repair.html" class="svc-card"><img loading="lazy" src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Sprinkler+SEO+PICS/Fixing+sprinkler++diaphrams+in+meridian.jpg" loading="lazy" decoding="async" width="280" height="160" style="width:100%;height:160px;object-fit:cover;display:block" alt="Sprinkler repair service in Meridian Idaho"><div style="padding:14px"><h3>Sprinkler Repair</h3><p>Broken heads, leaks, valve problems, wiring faults, controller issues — diagnosed and fixed, often in a single visit.</p></div></a>
+        <a href="sprinkler-repair.html" class="svc-card"><img loading="lazy" src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Sprinkler+SEO+PICS/Fixing+sprinkler++diaphrams+in+meridian.jpg" loading="lazy" decoding="async" width="280" height="160" style="width:100%;height:160px;object-fit:cover;display:block" alt="Sprinkler repair service in Meridian Idaho"><div style="padding:14px"><h3>Sprinkler Repair</h3><p>Broken heads, leaks, valve problems, wiring faults, controller issues, diagnosed and fixed, often in a single visit.</p></div></a>
         <a href="sprinkler-installation.html" class="svc-card"><img loading="lazy" src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Sprinkler+SEO+PICS/New+construction+sprinkler+installation+Meridian.png" loading="lazy" decoding="async" width="280" height="160" style="width:100%;height:160px;object-fit:cover;display:block" alt="New sprinkler system installation Meridian Idaho"><div style="padding:14px"><h3>New Installation</h3><p>Custom systems designed for your yard's exact layout, from planning through final walk-through.</p></div></a>
         <a href="spring-turn-on.html" class="svc-card"><img loading="lazy" src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Sprinkler+SEO+PICS/Sprinkler+Head+Replacment+Nampa.jpg" loading="lazy" decoding="async" width="280" height="160" style="width:100%;height:160px;object-fit:cover;display:block" alt="Sprinkler head replacement Nampa Idaho"><div style="padding:14px"><h3>Spring Turn-On</h3><p>We activate your system, check every zone, adjust heads for full coverage, and calibrate your timer each spring.</p></div></a>
         <a href="winterization.html" class="svc-card"><img loading="lazy" src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Sprinkler+SEO+PICS/Blowout+in+Caldwell.png" loading="lazy" decoding="async" width="280" height="160" style="width:100%;height:160px;object-fit:cover;display:block" alt="Sprinkler winterization blowout Caldwell Idaho"><div style="padding:14px"><h3>Winterization / Blowout</h3><p>Compressed air blowout removes all water from your lines before the freeze, preventing costly pipe damage.</p></div></a>
         <a href="main-and-drain.html" class="svc-card"><img loading="lazy" src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Sprinkler+SEO+PICS/New+main+and+drain+installation+in+Meridian.jpeg" loading="lazy" decoding="async" width="280" height="160" style="width:100%;height:160px;object-fit:cover;display:block" alt="New main and drain installation Meridian Idaho"><div style="padding:14px"><h3>Main &amp; Drain Replacement</h3><p>Full replacement or new installation of your irrigation main line and drain, restoring full system pressure.</p></div></a>
         <a href="backflow.html" class="svc-card"><img loading="lazy" src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Sprinkler+SEO+PICS/New+Sprinkler+Backflow+installed+in+Boise.jpeg" loading="lazy" decoding="async" width="280" height="160" style="width:100%;height:160px;object-fit:cover;display:block" alt="New sprinkler backflow installed Boise Idaho"><div style="padding:14px"><h3>Backflow Maintenance &amp; Replacement</h3><p>We test, maintain, and replace backflow prevention devices to keep your system compliant and your water safe.</p></div></a>
-        <a href="valve-repair-treasure-valley.html" class="svc-card"><img loading="lazy" src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Sprinkler+SEO+PICS/Beeline+rebuilding+a+manifold+for+a+sprinkler+system+in+caldwell.jpg" loading="lazy" decoding="async" width="280" height="160" style="width:100%;height:160px;object-fit:cover;display:block" alt="Replacing old manifold and sprinkler valve box Kuna Idaho"><div style="padding:14px"><h3>Valve Repair</h3><p>Zone won't shut off, won't turn on, or valve box full of water — we diagnose and repair irrigation valves fast.</p></div></a>
-        <a href="sprinkler-head-replacement-treasure-valley.html" class="svc-card"><img loading="lazy" src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Sprinkler+SEO+PICS/Fixing+a+busted+sprinkler+head+in+Middlton.jpg" loading="lazy" decoding="async" width="280" height="160" style="width:100%;height:160px;object-fit:cover;display:block" alt="Fixing a broken sprinkler head Middleton Idaho"><div style="padding:14px"><h3>Head Replacement</h3><p>Broken rotors, clogged spray heads, or heads damaged by mowers — matched replacements installed and adjusted in one visit.</p></div></a>
+        <a href="valve-repair-treasure-valley.html" class="svc-card"><img loading="lazy" src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Sprinkler+SEO+PICS/Beeline+rebuilding+a+manifold+for+a+sprinkler+system+in+caldwell.jpg" loading="lazy" decoding="async" width="280" height="160" style="width:100%;height:160px;object-fit:cover;display:block" alt="Replacing old manifold and sprinkler valve box Kuna Idaho"><div style="padding:14px"><h3>Valve Repair</h3><p>Zone won't shut off, won't turn on, or valve box full of water. We diagnose and repair irrigation valves fast.</p></div></a>
+        <a href="sprinkler-head-replacement-treasure-valley.html" class="svc-card"><img loading="lazy" src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Sprinkler+SEO+PICS/Fixing+a+busted+sprinkler+head+in+Middlton.jpg" loading="lazy" decoding="async" width="280" height="160" style="width:100%;height:160px;object-fit:cover;display:block" alt="Fixing a broken sprinkler head Middleton Idaho"><div style="padding:14px"><h3>Head Replacement</h3><p>Broken rotors, clogged spray heads, or heads damaged by mowers, matched replacements installed and adjusted in one visit.</p></div></a>
       </div>
     </div>
   </section>
@@ -559,28 +563,29 @@ document.addEventListener('DOMContentLoaded',function(){
         <div class="eyebrow" style="color:var(--yellow);margin-bottom:10px">Our Story</div>
         <h2>Serving the Treasure Valley Since 2015</h2>
         <p>Beeline was built on one idea: treat every customer's lawn like our own. For over 10 years we've been the go-to licensed and insured sprinkler specialists for homeowners across Nampa, Meridian, Boise, Caldwell, Kuna, Eagle, Star, and Middleton.</p>
-        <p>From simple head replacements and backflow maintenance to full main &amp; drain installations — we show up on time, explain what's needed, and get it done right. We are a BBB Accredited Business with an A+ rating and proud members of the Treasure Valley Chamber of Commerce. That's why we've earned 150+ five-star Google reviews and counting.</p>
+        <p>From simple head replacements and backflow maintenance to full main &amp; drain installations. We show up on time, explain what's needed, and get it done right. We are a BBB Accredited Business with an A+ rating and proud members of the Treasure Valley Chamber of Commerce. That's why we've earned 150+ five-star Google reviews and counting.</p>
       </div>
     </div>
   </section>
 
   <div class="rev-strip">
-    <p>Happy with our work? <a href="https://g.page/r/CatOfgzwxgGmEBE/review" target="_blank">Leave us a Google review</a> — 150+ five-star reviews and counting. 🙏</p>
+    <p>Happy with our work? <a href="https://g.page/r/CatOfgzwxgGmEBE/review" target="_blank">Leave us a Google review</a>, 150+ five-star reviews and counting. 🙏</p>
   </div>
 
 
   <section class="sec" style="background:#e8dfc8;padding:28px 32px" id="pricing" aria-label="Service plan pricing">
     <div class="sec-inner">
-      <div class="eyebrow gold">Monthly Plans</div>
+      <div class="eyebrow gold">Annual Plans</div>
       <h2 class="sec-h" style="font-size:clamp(1.4rem,3vw,2rem);margin-bottom:6px">Simple, Transparent Pricing</h2>
-      <p class="sec-p" style="margin-bottom:16px;font-size:.88rem">Full-service plans — 12-month commitment, billed monthly.</p>
+      <p class="sec-p" style="margin-bottom:16px;font-size:.88rem">Full-service plans. One payment, a full year of coverage.</p>
       <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px">
         <div style="background:var(--white);border-radius:12px;border:1.5px solid #e0ddd6;padding:16px 18px;position:relative;display:flex;align-items:center;gap:16px">
           <div style="flex:1">
             <div style="font-size:.68rem;font-weight:800;color:var(--green);letter-spacing:1px;text-transform:uppercase;margin-bottom:2px">Small · 1–5 Zones</div>
-            <div style="display:flex;align-items:baseline;gap:3px;margin-bottom:10px"><span style="font-size:1.9rem;font-weight:900;color:var(--ink)">$35</span><span style="font-size:.8rem;color:var(--muted)">/mo</span></div>
+            <div style="display:flex;align-items:baseline;gap:3px;margin-bottom:10px"><span style="font-size:1.9rem;font-weight:900;color:var(--ink)">$375</span><span style="font-size:.8rem;color:var(--muted)">/yr</span></div>
+            <div style="font-size:.68rem;color:var(--green);font-weight:800;margin:-6px 0 8px">One payment. Full year of coverage.</div>
             <ul style="list-style:none;display:flex;flex-direction:column;gap:5px">
-              <li style="font-size:.8rem;color:var(--muted);display:flex;align-items:center;gap:6px"><span style="color:var(--green);font-weight:900;font-size:12px">✓</span>Monthly checkup</li>
+              <li style="font-size:.8rem;color:var(--muted);display:flex;align-items:center;gap:6px"><span style="color:var(--green);font-weight:900;font-size:12px">✓</span>3 seasonal checkups</li>
               <li style="font-size:.8rem;color:var(--muted);display:flex;align-items:center;gap:6px"><span style="color:var(--green);font-weight:900;font-size:12px">✓</span>Spring turn-on</li>
               <li style="font-size:.8rem;color:var(--muted);display:flex;align-items:center;gap:6px"><span style="color:var(--green);font-weight:900;font-size:12px">✓</span>Fall blowout</li>
               <li style="font-size:.8rem;color:var(--muted);display:flex;align-items:center;gap:6px"><span style="color:var(--green);font-weight:900;font-size:12px">✓</span>Priority scheduling</li>
@@ -592,9 +597,10 @@ document.addEventListener('DOMContentLoaded',function(){
           <div style="position:absolute;top:-11px;left:50%;transform:translateX(-50%);background:var(--green);color:#fff;font-size:10px;font-weight:800;padding:3px 12px;border-radius:20px;white-space:nowrap">Most Popular</div>
           <div style="flex:1">
             <div style="font-size:.68rem;font-weight:800;color:var(--green);letter-spacing:1px;text-transform:uppercase;margin-bottom:2px">Medium · 6–10 Zones</div>
-            <div style="display:flex;align-items:baseline;gap:3px;margin-bottom:10px"><span style="font-size:1.9rem;font-weight:900;color:var(--ink)">$45</span><span style="font-size:.8rem;color:var(--muted)">/mo</span></div>
+            <div style="display:flex;align-items:baseline;gap:3px;margin-bottom:10px"><span style="font-size:1.9rem;font-weight:900;color:var(--ink)">$475</span><span style="font-size:.8rem;color:var(--muted)">/yr</span></div>
+            <div style="font-size:.68rem;color:var(--green);font-weight:800;margin:-6px 0 8px">One payment. Full year of coverage.</div>
             <ul style="list-style:none;display:flex;flex-direction:column;gap:5px">
-              <li style="font-size:.8rem;color:var(--muted);display:flex;align-items:center;gap:6px"><span style="color:var(--green);font-weight:900;font-size:12px">✓</span>Monthly checkup</li>
+              <li style="font-size:.8rem;color:var(--muted);display:flex;align-items:center;gap:6px"><span style="color:var(--green);font-weight:900;font-size:12px">✓</span>3 seasonal checkups</li>
               <li style="font-size:.8rem;color:var(--muted);display:flex;align-items:center;gap:6px"><span style="color:var(--green);font-weight:900;font-size:12px">✓</span>Spring turn-on</li>
               <li style="font-size:.8rem;color:var(--muted);display:flex;align-items:center;gap:6px"><span style="color:var(--green);font-weight:900;font-size:12px">✓</span>Fall blowout</li>
               <li style="font-size:.8rem;color:var(--muted);display:flex;align-items:center;gap:6px"><span style="color:var(--green);font-weight:900;font-size:12px">✓</span>Priority scheduling</li>
@@ -605,9 +611,10 @@ document.addEventListener('DOMContentLoaded',function(){
         <div style="background:var(--white);border-radius:12px;border:1.5px solid #e0ddd6;padding:16px 18px;position:relative;display:flex;align-items:center;gap:16px">
           <div style="flex:1">
             <div style="font-size:.68rem;font-weight:800;color:var(--green);letter-spacing:1px;text-transform:uppercase;margin-bottom:2px">Large · 11–15 Zones</div>
-            <div style="display:flex;align-items:baseline;gap:3px;margin-bottom:10px"><span style="font-size:1.9rem;font-weight:900;color:var(--ink)">$55</span><span style="font-size:.8rem;color:var(--muted)">/mo</span></div>
+            <div style="display:flex;align-items:baseline;gap:3px;margin-bottom:10px"><span style="font-size:1.9rem;font-weight:900;color:var(--ink)">$575</span><span style="font-size:.8rem;color:var(--muted)">/yr</span></div>
+            <div style="font-size:.68rem;color:var(--green);font-weight:800;margin:-6px 0 8px">One payment. Full year of coverage.</div>
             <ul style="list-style:none;display:flex;flex-direction:column;gap:5px">
-              <li style="font-size:.8rem;color:var(--muted);display:flex;align-items:center;gap:6px"><span style="color:var(--green);font-weight:900;font-size:12px">✓</span>Monthly checkup</li>
+              <li style="font-size:.8rem;color:var(--muted);display:flex;align-items:center;gap:6px"><span style="color:var(--green);font-weight:900;font-size:12px">✓</span>3 seasonal checkups</li>
               <li style="font-size:.8rem;color:var(--muted);display:flex;align-items:center;gap:6px"><span style="color:var(--green);font-weight:900;font-size:12px">✓</span>Spring turn-on</li>
               <li style="font-size:.8rem;color:var(--muted);display:flex;align-items:center;gap:6px"><span style="color:var(--green);font-weight:900;font-size:12px">✓</span>Fall blowout</li>
               <li style="font-size:.8rem;color:var(--muted);display:flex;align-items:center;gap:6px"><span style="color:var(--green);font-weight:900;font-size:12px">✓</span>Priority scheduling</li>
@@ -672,10 +679,10 @@ document.addEventListener('DOMContentLoaded',function(){
       </div>
       <div class="trust-grid">
         <div class="tc"><div class="tc-icon">🪪</div><div class="tc-badge">LICENSED</div><h3>Idaho Registered Contractor</h3><p>We hold the proper Idaho state contractor registration to legally conduct irrigation work here in the Treasure Valley.</p></div>
-        <div class="tc"><div class="tc-icon">🛡️</div><div class="tc-badge">INSURED</div><h3>Full Liability Coverage</h3><p>Comprehensive liability insurance on every job — protecting you if anything unexpected happens.</p></div>
+        <div class="tc"><div class="tc-icon">🛡️</div><div class="tc-badge">INSURED</div><h3>Full Liability Coverage</h3><p>Comprehensive liability insurance on every job, protecting you if anything unexpected happens.</p></div>
         <div class="tc"><div class="tc-icon">🏆</div><div class="tc-badge">EXPERIENCED</div><h3>10+ Years of Expertise</h3><p>A decade working with every residential irrigation system type across the Treasure Valley.</p></div>
-        <div class="tc"><div class="tc-icon">🏅</div><div class="tc-badge">ACCREDITED</div><h3>BBB Accredited Business</h3><p>Beeline is an A+ rated BBB Accredited Business — an independent verification that we meet high standards for trust, transparency, and customer service.</p></div>
-        <div class="tc"><div class="tc-icon">📞</div><div class="tc-badge">LOCAL</div><h3>Family Owned &amp; Operated</h3><p>A real family business — not a franchise, not a call center. We're accountable to our community on every job we take.</p></div>
+        <div class="tc"><div class="tc-icon">🏅</div><div class="tc-badge">ACCREDITED</div><h3>BBB Accredited Business</h3><p>Beeline is an A+ rated BBB Accredited Business, an independent verification that we meet high standards for trust, transparency, and customer service.</p></div>
+        <div class="tc"><div class="tc-icon">📞</div><div class="tc-badge">LOCAL</div><h3>Family Owned &amp; Operated</h3><p>A real family business, not a franchise, not a call center. We're accountable to our community on every job we take.</p></div>
       </div>
     </div>
   </section>
@@ -688,7 +695,7 @@ document.addEventListener('DOMContentLoaded',function(){
 
   <div style="margin-top:12px">
     <a href='https://www.chamberofcommerce.com/business-directory/idaho/nampa/lawn-sprinkler-system-contractor/44771303-beeline-sprinkler-repair?source=memberwebsite' target='_blank' rel='noopener'>
-      <img style='width:auto;height:80px;' src='https://coc.codes/images/badge/44771303' alt='Beeline Sprinkler Repair — Chamber of Commerce Member' loading='lazy'>
+      <img style='width:auto;height:80px;' src='https://coc.codes/images/badge/44771303' alt='Beeline Sprinkler Repair Chamber of Commerce Member' loading='lazy'>
     </a>
   </div>
   <div style="margin-top:16px;line-height:0">
@@ -721,14 +728,13 @@ document.querySelectorAll('.faq-btn-home').forEach(function(btn){btn.addEventLis
   });
 })();
 function scrollToForm(e){
-  if(e){e.preventDefault();}
-  var isMobile=window.innerWidth<=680;
-  var el=document.getElementById(isMobile?'booking-iframe':'request-form');
-  if(!el)el=document.getElementById('request-form');
+  var el=document.getElementById('quote');
   if(!el)return;
-  var navH=isMobile?0:90;
-  var targetTop=document.body.scrollTop+el.getBoundingClientRect().top-navH;
-  document.body.scrollTo({top:targetTop,behavior:'smooth'});
+  if(e){e.preventDefault();}
+  var nav=document.querySelector('nav');
+  var navH=nav?nav.getBoundingClientRect().height:0;
+  var targetTop=window.pageYOffset+el.getBoundingClientRect().top-navH-12;
+  window.scrollTo({top:targetTop,behavior:'smooth'});
 }
 var _nsq=document.getElementById('navScrolledQuote');if(_nsq)_nsq.addEventListener('click',scrollToForm);
 var _hb=document.getElementById('heroQuoteBtn');if(_hb)_hb.addEventListener('click',scrollToForm);
@@ -789,4 +795,13 @@ if(window.innerWidth > 680){
 	    var bbb = document.createElement("script");
 	    bbb.type = "text/javascript";
 	    bbb.async = true;
-	    bbb.src = scheme + "seal-alaskaoregonwesternwash
+	    bbb.src = scheme + "seal-alaskaoregonwesternwashington.bbb.org/badge/badge.min.js";
+	    var s = document.getElementsByTagName("script")[0];
+	    s.parentNode.insertBefore(bbb, s);
+	})();
+}
+</script>
+<!-- END: BBB AB Seal -->
+
+</body>
+</html>

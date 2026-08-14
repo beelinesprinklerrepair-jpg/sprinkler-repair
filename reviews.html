@@ -40,7 +40,7 @@
       "sameAs": ["https://www.facebook.com/BeelineSprinkler/", "https://www.yelp.com/biz/beeline-sprinkler-repair-nampa-2", "https://share.google/wmRIhGxHghIGRtf7r"],
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "5.0",
+        "ratingValue": "4.9",
         "reviewCount": "150",
         "bestRating": "5",
         "worstRating": "1"
@@ -283,6 +283,7 @@ footer a{color:rgba(255,255,255,.5)}
 .tb{font-size:.82rem;color:rgba(255,255,255,.65);font-weight:600;display:flex;align-items:center;gap:6px}
 .tb strong{color:#fff}
 .city-hero{padding:32px 20px;min-height:300px}.main-content{padding:36px 20px;gap:28px}.review-cards-grid{grid-template-columns:1fr}.review-cards-wrap{padding:16px 12px}.service-grid{grid-template-columns:1fr}.faq-sec{padding:32px 20px}.quote-sec{padding:36px 20px}.cities-strip{padding:28px 20px}.leave-review-sec{padding:24px 20px}}
+.divider{height:1px;background:rgba(255,255,255,.12);margin:6px 0}
 </style>
 </head>
 <body>
@@ -294,9 +295,8 @@ footer a{color:rgba(255,255,255,.5)}
 
 <nav aria-label="Main navigation">
   <div class="nav-inner">
-    <div class="nav-logo"><a href="index.html"><img loading="lazy" src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Real+Logo.png" alt="Beeline Sprinkler Repair — Home" fetchpriority="high" decoding="async" width="160" height="100"></a></div>
+    <div class="nav-logo"><a href="/"><img loading="eager" src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Real+Logo.png" alt="Beeline Sprinkler Repair Home" fetchpriority="high" decoding="async" width="160" height="100"></a></div>
     <div class="nav-links">
-      <a href="index.html#contact">Contact</a>
       <a href="reviews.html">Reviews</a>
       <a href="faq.html">FAQ</a>
       <div class="nav-dropdown">
@@ -354,19 +354,27 @@ footer a{color:rgba(255,255,255,.5)}
           <a href="troubleshooting-wet-spot.html">Big Wet Spot in the Yard</a>
           <a href="troubleshooting-low-pressure.html">Low Pressure on One Zone</a>
           <a href="troubleshooting-bad-coverage.html">Bad Spray Coverage</a>
+    <a href="troubleshooting-backyard-flooding.html">New Construction Yard Flooding</a>
+          <a href="troubleshooting-backyard-flooding.html">New Construction Yard Flooding</a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle" style="color:#7eb8ff">Winter Services ▾</button>
+        <div class="nav-dropdown-menu">
+          <a href="christmas-light-installation.html">Christmas Light Installation</a>
+          <a href="snow-removal.html">Snow Removal</a>
         </div>
       </div>
     </div>
     <a href="tel:2088802712" class="nav-cta">📞 (208) 880-2712</a>
     <button class="hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
     <div class="nav-scrolled-ctas">
-      <a href="#quote" class="nav-scrolled-quote">Get a Free Quote</a>
+      <a href="/#quote" class="nav-scrolled-quote" id="navScrolledQuote">Get a Free Quote</a>
       <a href="tel:2088802712" class="nav-scrolled-call">📞 Call Now</a>
     </div>
   </div>
 </nav>
 <div class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
-  <a href="index.html#contact">Contact</a>
   <a href="reviews.html">Reviews</a>
   <a href="faq.html">FAQ</a>
   <div class="mobile-section-label" onclick="toggleMobSection(this)">Residential Services <span>▾</span></div>
@@ -414,6 +422,12 @@ footer a{color:rgba(255,255,255,.5)}
     <a href="troubleshooting-wet-spot.html">Big Wet Spot in the Yard</a>
     <a href="troubleshooting-low-pressure.html">Low Pressure on One Zone</a>
     <a href="troubleshooting-bad-coverage.html">Bad Spray Coverage</a>
+    <a href="troubleshooting-backyard-flooding.html">New Construction Yard Flooding</a>
+  </div>
+  <div class="mobile-section-label" onclick="toggleMobSection(this)">Winter Services <span>▾</span></div>
+  <div class="mobile-sub" style="display:none">
+    <a href="christmas-light-installation.html">Christmas Light Installation</a>
+    <a href="snow-removal.html">Snow Removal</a>
   </div>
   <div class="mobile-cta-row"><a href="tel:2088802712">Call (208) 880-2712</a></div>
 </div>
@@ -594,11 +608,11 @@ footer a{color:rgba(255,255,255,.5)}
       </div>
     </div></div>
 
-    <p style="text-align:center;margin-top:8px;margin-bottom:36px;font-size:.9rem;color:var(--muted)">Read all 136+ reviews on <a href="https://share.google/wmRIhGxHghIGRtf7r" target="_blank" rel="noopener" style="color:var(--green);font-weight:800;text-decoration:underline">Google</a> or <a href="https://www.yelp.com/biz/beeline-sprinkler-repair-nampa-2" target="_blank" rel="noopener" style="color:var(--green);font-weight:800;text-decoration:underline">Yelp</a>.</p>
+    <p style="text-align:center;margin-top:8px;margin-bottom:36px;font-size:.9rem;color:var(--muted)">Read all 150+ reviews on <a href="https://share.google/wmRIhGxHghIGRtf7r" target="_blank" rel="noopener" style="color:var(--green);font-weight:800;text-decoration:underline">Google</a> or <a href="https://www.yelp.com/biz/beeline-sprinkler-repair-nampa-2" target="_blank" rel="noopener" style="color:var(--green);font-weight:800;text-decoration:underline">Yelp</a>.</p>
 
     <div class="leave-review-sec" id="leave-review">
       <h2>Leave a Review for Beeline</h2>
-      <p>If Beeline worked on your sprinkler system in Boise, Meridian, Nampa, Eagle, Kuna, Caldwell, Star, or Middleton, we would appreciate hearing from you. Your review helps other Treasure Valley homeowners find reliable local irrigation service.</p>
+      <p>If Beeline worked on your sprinkler system in Boise, Meridian, Nampa, Eagle, Kuna, Caldwell, Star, or Middleton. We would appreciate hearing from you. Your review helps other Treasure Valley homeowners find reliable local irrigation service.</p>
       <div class="review-platform-btns">
         <a href="https://share.google/wmRIhGxHghIGRtf7r" target="_blank" rel="noopener" class="btn-google">
           <svg width="18" height="18" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.3 9 3.4l6.7-6.7C35.6 2.4 30.1 0 24 0 14.6 0 6.6 5.6 2.7 13.8l7.8 6.1C12.4 13 17.7 9.5 24 9.5z"/><path fill="#4285F4" d="M46.1 24.5c0-1.6-.1-3.1-.4-4.5H24v8.5h12.4c-.5 2.7-2.1 5-4.5 6.5l7 5.4C43 36.8 46.1 31.1 46.1 24.5z"/><path fill="#FBBC04" d="M10.5 28.6A14.6 14.6 0 0 1 9.5 24c0-1.6.3-3.2.8-4.7l-7.8-6.1A23.8 23.8 0 0 0 0 24c0 3.9.9 7.5 2.5 10.8l8-6.2z"/><path fill="#34A853" d="M24 48c6.1 0 11.3-2 15-5.5l-7-5.4c-2 1.4-4.6 2.2-8 2.2-6.2 0-11.5-4.2-13.4-9.8l-8 6.2C6.5 42.3 14.6 48 24 48z"/></svg>
@@ -617,18 +631,18 @@ footer a{color:rgba(255,255,255,.5)}
 
     <p>Beeline has been doing sprinkler repair in the Treasure Valley since 2015. We are not a franchise, not a national call center, and not a company that subcontracts work to whoever is available that week. You call, you talk to a real person, and the people who show up are the ones who actually do the work. That has not changed since we started.</p>
 
-    <p>One thing customers mention regularly in their reviews is how quickly we get to them. We are not scheduling you two weeks out for a broken zone. Most jobs get on the calendar within a day or two, and a lot of repairs get done in a single visit because the trucks are stocked with the parts that show up most often - Rain Bird, Hunter, Toro, Irritrol, and Orbit heads, valves, solenoids, and fittings. If we can diagnose and fix it same day, we do.</p>
+    <p>One thing customers mention regularly in their reviews is how quickly we get to them. We are not scheduling you two weeks out for a broken zone. Most jobs get on the calendar within a day or two, and a lot of repairs get done in a single visit because the trucks are stocked with the parts that show up most often - Rain Bird, Hunter, Toro, Irritrol, and Orbit heads, valves, solenoids, and fittings. If we can diagnose and fix it same day. We do.</p>
 
     <p>The Treasure Valley is not just one place - it is eight cities with different water systems, different soil, and different installation eras. Nampa has pressure irrigation from the Nampa and Meridian Irrigation District that runs all summer at canal pressure. Caldwell has older homes with systems that date back 25 or 30 years and use hardware you do not see on new builds. Meridian subdivisions off Ustick and McMillan were largely installed during the construction boom and often have coverage gaps or overloaded zones. Eagle has a mix of new construction and HOA-managed systems. Boise's North End has mature landscaping, big trees, and PVC pipe that has been through a lot of Idaho winters. We have worked on all of it.</p>
 
     <img loading="lazy" src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Beeline+rebuilding+a+manifold+for+a+sprinkler+system+in+caldwell.jpg" alt="Sprinkler system repair in Caldwell, Idaho" class="inline-photo" loading="lazy">
 
-    <p>Pricing is straightforward. We diagnose first, then tell you what it will cost before any work starts. There are no surprise charges when the job is done. If something is minor and does not need repair right now, we will tell you that too. A lot of our repeat customers in Kuna, Star, and Middleton have stuck with us for years because of that approach.</p>
+    <p>Pricing is straightforward. We diagnose first, then tell you what it will cost before any work starts. There are no surprise charges when the job is done. If something is minor and does not need repair right now. We will tell you that too. A lot of our repeat customers in Kuna, Star, and Middleton have stuck with us for years because of that approach.</p>
 
-    <p>We work on all major irrigation brands. Rain Bird and Hunter are the most common in the Treasure Valley, but Toro, Irritrol, and Orbit systems are everywhere too - especially in older Caldwell and Nampa properties. Whatever your system runs, we have the parts and the experience to fix it without telling you everything needs to be replaced.</p>
+    <p>We work on all major irrigation brands. Rain Bird and Hunter are the most common in the Treasure Valley, but Toro, Irritrol, and Orbit systems are everywhere too - especially in older Caldwell and Nampa properties. Whatever your system runs. We have the parts and the experience to fix it without telling you everything needs to be replaced.</p>
 
     <h3>Our Approach to Sprinkler Repair</h3>
-    <p>Every job starts the same way: we run all your zones, watch what happens, and diagnose before we quote. You get a clear answer on what is wrong and what it will cost to fix it. No guesswork, no open-ended estimates. For most repairs in Boise, Meridian, and the surrounding cities, that is a conversation that happens in the first 20 to 30 minutes of the visit.</p>
+    <p>Every job starts the same way: we run all your zones, watch what happens, and diagnose before we quote. You get a clear answer on what is wrong and what it will cost to fix it. No guesswork, no open-ended estimates. For most repairs in Boise, Meridian, and the surrounding cities. That is a conversation that happens in the first 20 to 30 minutes of the visit.</p>
 
     <h3>Serving All 8 Cities in the Treasure Valley</h3>
     <p>Beeline covers Boise, Meridian, Nampa, Eagle, Kuna, Caldwell, Star, and Middleton. If you are within those boundaries, we most likely serve your area. Call or text (208) 880-2712 to check or schedule.</p>
@@ -686,7 +700,7 @@ footer a{color:rgba(255,255,255,.5)}
 
     <div class="lic-box" style="text-align:center;padding-top:16px">
       <a href='https://www.chamberofcommerce.com/business-directory/idaho/nampa/lawn-sprinkler-system-contractor/44771303-beeline-sprinkler-repair?source=memberwebsite' target='_blank' rel='noopener'>
-        <img style='width:auto;height:120px;' src='https://coc.codes/images/badge/44771303' alt='Beeline Sprinkler Repair — Chamber of Commerce Member' loading='lazy'>
+        <img style='width:auto;height:120px;' src='https://coc.codes/images/badge/44771303' alt='Beeline Sprinkler Repair Chamber of Commerce Member' loading='lazy'>
       </a>
     </div>
     <div class="sdb-info">
@@ -806,11 +820,11 @@ footer a{color:rgba(255,255,255,.5)}
 </div>
 
 <footer>
-  <p>&copy; 2025 <strong>Beeline Sprinkler Repair</strong> &middot; Licensed &amp; Insured · Idaho General Contractor Reg. #9781914 · 5606 W Amity Rd, Nampa, ID 83687 &middot; <a href="tel:2088802712">(208) 880-2712</a> &middot; <a href="index.html">Back to Main Site</a></p>
+  <p>&copy; 2025 <strong>Beeline Sprinkler Repair</strong> &middot; Licensed &amp; Insured · Idaho General Contractor Reg. #9781914 · 5606 W Amity Rd, Nampa, ID 83687 &middot; <a href="tel:2088802712">(208) 880-2712</a> &middot; <a href="/">Back to Main Site</a></p>
 
   <div style="margin-top:12px">
     <a href='https://www.chamberofcommerce.com/business-directory/idaho/nampa/lawn-sprinkler-system-contractor/44771303-beeline-sprinkler-repair?source=memberwebsite' target='_blank' rel='noopener'>
-      <img style='width:auto;height:80px;' src='https://coc.codes/images/badge/44771303' alt='Beeline Sprinkler Repair — Chamber of Commerce Member' loading='lazy'>
+      <img style='width:auto;height:80px;' src='https://coc.codes/images/badge/44771303' alt='Beeline Sprinkler Repair Chamber of Commerce Member' loading='lazy'>
     </a>
   </div>
 </footer>
@@ -892,4 +906,46 @@ document.addEventListener('click',function(){
 })();
 if(window.innerWidth>680){
   var bee=document.createElement('div');
-  bee.innerHTML='<svg width="30" height="30" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg"><ellipse cx="10" cy="13" rx="9" ry="5" fill="rgba(200,230,255,0.75)" stroke="rgba(100,160,220,0.5)" stroke-width="0.5"/><ellipse cx="26" cy="13" rx="9" ry="5" 
+  bee.innerHTML='<svg width="30" height="30" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg"><ellipse cx="10" cy="13" rx="9" ry="5" fill="rgba(200,230,255,0.75)" stroke="rgba(100,160,220,0.5)" stroke-width="0.5"/><ellipse cx="26" cy="13" rx="9" ry="5" fill="rgba(200,230,255,0.75)" stroke="rgba(100,160,220,0.5)" stroke-width="0.5"/><ellipse cx="18" cy="21" rx="7" ry="9" fill="#FFD700"/><rect x="11" y="18" width="14" height="3" rx="1" fill="#1a1a00" opacity="0.85"/><rect x="11" y="23" width="14" height="3" rx="1" fill="#1a1a00" opacity="0.85"/><circle cx="18" cy="12" r="5" fill="#FFD700"/><circle cx="16" cy="11" r="1.2" fill="#1a1a00"/><circle cx="20" cy="11" r="1.2" fill="#1a1a00"/><path d="M15.5 13.5 Q18 15.5 20.5 13.5" stroke="#1a1a00" stroke-width="0.8" fill="none" stroke-linecap="round"/><line x1="16" y1="7" x2="13" y2="3" stroke="#1a1a00" stroke-width="1" stroke-linecap="round"/><circle cx="13" cy="3" r="1" fill="#FFD700" stroke="#1a1a00" stroke-width="0.5"/><line x1="20" y1="7" x2="23" y2="3" stroke="#1a1a00" stroke-width="1" stroke-linecap="round"/><circle cx="23" cy="3" r="1" fill="#FFD700" stroke="#1a1a00" stroke-width="0.5"/></svg>';bee.style.cssText='position:fixed;z-index:9999;pointer-events:none;filter:drop-shadow(0 1px 3px rgba(0,0,0,.4));will-change:transform;';document.body.appendChild(bee);var bx=window.innerWidth/2,bvx=0.8,bw=0;function animBee(){bw+=0.1;bx+=bvx+Math.sin(bw*0.7)*0.5;var by=26+Math.sin(bw)*8;var mn=window.innerWidth*0.25,mx=window.innerWidth*0.75;if(bx<mn){bx=mn;bvx=Math.abs(bvx);}if(bx>mx){bx=mx;bvx=-Math.abs(bvx);}if(Math.random()<0.01)bvx+=(Math.random()-0.5)*0.5;bvx=Math.max(-1.5,Math.min(1.5,bvx));if(Math.abs(bvx)<0.3)bvx=bvx<0?-0.3:0.3;bee.style.left=bx+'px';bee.style.top=by+'px';bee.style.transform=bvx<0?'scaleX(-1)':'scaleX(1)';requestAnimationFrame(animBee);}animBee();}
+</script>
+
+<!-- BEGIN: BBB AB Seal -->
+<script type="text/javascript">
+	var bbb = bbb || [];
+	bbb.push(["bbbid", "greatwestpacific"]);
+	bbb.push(["bid", "1000192092"]);
+	bbb.push(["chk", "64F4EA660B"]);
+	bbb.push(["pos", "bottom-right"]);
+	(function () {
+	    var scheme = (("https:" == document.location.protocol) ? "https://" : "http://");
+	    var bbb = document.createElement("script");
+	    bbb.type = "text/javascript";
+	    bbb.async = true;
+	    bbb.src = scheme + "seal-alaskaoregonwesternwashington.bbb.org/badge/badge.min.js";
+	    var s = document.getElementsByTagName("script")[0];
+	    s.parentNode.insertBefore(bbb, s);
+	})();
+</script>
+<!-- END: BBB AB Seal -->
+
+<script>
+(function(){
+  var form=document.getElementById('hqcForm');
+  if(!form)return;
+  var success=document.getElementById('hqcSuccess');
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var phone=document.getElementById('fphone').value.trim();
+    var email=document.getElementById('femail').value.trim();
+    var err=document.getElementById('contactError');
+    if(!phone&&!email){err.style.display='block';return;}
+    err.style.display='none';
+    fetch(form.action,{method:'POST',body:new FormData(form),headers:{Accept:'application/json'}})
+      .then(function(r){if(r.ok){window.location.href='thank-you.html';}else{alert('Something went wrong. Please call us at (208) 880-2712.');}})
+      .catch(function(){alert('Something went wrong. Please call us at (208) 880-2712.');});
+  });
+})();
+</script>
+
+</body>
+</html>

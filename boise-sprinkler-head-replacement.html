@@ -63,7 +63,7 @@
       },
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "5",
+        "ratingValue": "4.9",
         "reviewCount": "150",
         "bestRating": "5",
         "worstRating": "1"
@@ -94,7 +94,7 @@
             "ratingValue": "5",
             "bestRating": "5"
           },
-          "reviewBody": "I had a few brown spots showing up in my yard, so I decided to find an irrigation specialist. As luck would have it, there was an advert sign for Beeline posted at the corner of Park Lane and State St 44. Best decision I made — problem solved same visit."
+          "reviewBody": "I had a few brown spots showing up in my yard, so I decided to find an irrigation specialist. As luck would have it. There was an advert sign for Beeline posted at the corner of Park Lane and State St 44. Best decision I made, problem solved same visit."
         },
         {
           "@type": "Review",
@@ -154,7 +154,7 @@
           "name": "How do I know if my sprinkler head needs to be replaced?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "If the head is cracked, stuck in the up or down position, tilted, or not popping up at all, it needs to be replaced. If it pops up cleanly but the spray pattern is off, it may just need a nozzle swap or arc adjustment. We check each head individually and tell you exactly what it needs before we do anything."
+            "text": "If the head is cracked, stuck in the up or down position, tilted, or not popping up at all. It needs to be replaced. If it pops up cleanly but the spray pattern is off, it may just need a nozzle swap or arc adjustment. We check each head individually and tell you exactly what it needs before we do anything."
           }
         },
         {
@@ -194,7 +194,7 @@
           "name": "What is the difference between a spray head and a rotor head?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Spray heads pop up and throw water in a fixed arc — they cover smaller areas like side yards and landscape beds and put water down fast. Rotor heads rotate back and forth and cover larger turf areas with a slower precipitation rate. MP rotators fit onto a standard spray head body but spin like a rotor, making them a popular upgrade for improving coverage efficiency."
+            "text": "Spray heads pop up and throw water in a fixed arc. They cover smaller areas like side yards and landscape beds and put water down fast. Rotor heads rotate back and forth and cover larger turf areas with a slower precipitation rate. MP rotators fit onto a standard spray head body but spin like a rotor, making them a popular upgrade for improving coverage efficiency."
           }
         }
       ]
@@ -440,9 +440,8 @@ footer a{color:rgba(255,255,255,.5)}
 
 <nav aria-label="Main navigation">
   <div class="nav-inner">
-    <div class="nav-logo"><a href="index.html"><img loading="lazy" src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Real+Logo.png" alt="Beeline Sprinkler Repair — Home" fetchpriority="high" decoding="async" width="160" height="100"></a></div>
+    <div class="nav-logo"><a href="/"><img loading="eager" src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Real+Logo.png" alt="Beeline Sprinkler Repair Home" fetchpriority="high" decoding="async" width="160" height="100"></a></div>
     <div class="nav-links">
-      <a href="index.html#contact">Contact</a>
       <a href="reviews.html">Reviews</a>
       <a href="faq.html">FAQ</a>
       <div class="nav-dropdown">
@@ -500,19 +499,27 @@ footer a{color:rgba(255,255,255,.5)}
           <a href="troubleshooting-wet-spot.html">Big Wet Spot in the Yard</a>
           <a href="troubleshooting-low-pressure.html">Low Pressure on One Zone</a>
           <a href="troubleshooting-bad-coverage.html">Bad Spray Coverage</a>
+    <a href="troubleshooting-backyard-flooding.html">New Construction Yard Flooding</a>
+          <a href="troubleshooting-backyard-flooding.html">New Construction Yard Flooding</a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle" style="color:#7eb8ff">Winter Services ▾</button>
+        <div class="nav-dropdown-menu">
+          <a href="christmas-light-installation.html">Christmas Light Installation</a>
+          <a href="snow-removal.html">Snow Removal</a>
         </div>
       </div>
     </div>
     <a href="tel:2088802712" class="nav-cta">📞 (208) 880-2712</a>
     <button class="hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
     <div class="nav-scrolled-ctas">
-      <a href="#quote" class="nav-scrolled-quote">Get a Free Quote</a>
+      <a href="/#quote" class="nav-scrolled-quote" id="navScrolledQuote">Get a Free Quote</a>
       <a href="tel:2088802712" class="nav-scrolled-call">📞 Call Now</a>
     </div>
   </div>
 </nav>
 <div class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
-  <a href="index.html#contact">Contact</a>
   <a href="reviews.html">Reviews</a>
   <a href="faq.html">FAQ</a>
   <div class="mobile-section-label" onclick="toggleMobSection(this)">Residential Services <span>▾</span></div>
@@ -560,6 +567,12 @@ footer a{color:rgba(255,255,255,.5)}
     <a href="troubleshooting-wet-spot.html">Big Wet Spot in the Yard</a>
     <a href="troubleshooting-low-pressure.html">Low Pressure on One Zone</a>
     <a href="troubleshooting-bad-coverage.html">Bad Spray Coverage</a>
+    <a href="troubleshooting-backyard-flooding.html">New Construction Yard Flooding</a>
+  </div>
+  <div class="mobile-section-label" onclick="toggleMobSection(this)">Winter Services <span>▾</span></div>
+  <div class="mobile-sub" style="display:none">
+    <a href="christmas-light-installation.html">Christmas Light Installation</a>
+    <a href="snow-removal.html">Snow Removal</a>
   </div>
   <div class="mobile-cta-row"><a href="tel:2088802712">Call (208) 880-2712</a></div>
 </div>
@@ -567,7 +580,7 @@ footer a{color:rgba(255,255,255,.5)}
 <!-- BREADCRUMB -->
 <nav class="breadcrumb" aria-label="Breadcrumb">
   <div class="breadcrumb-inner">
-    <a href="index.html">Home</a>
+    <a href="/">Home</a>
     <span class="breadcrumb-sep">›</span>
     <a href="boise-sprinkler-repair.html">Boise Sprinkler Repair</a>
     <span class="breadcrumb-sep">›</span>
@@ -584,7 +597,7 @@ footer a{color:rgba(255,255,255,.5)}
   <div class="hero-left">
     <div class="hero-eyebrow">🔧 Licensed &amp; Insured · 150+ Five-Star Reviews</div>
     <h1>Sprinkler Head Repair &amp; <em>Replacement in Boise</em></h1>
-    <p>Broken heads from mowers, stuck pop-ups, clogged nozzles, tilted heads from clay soil — Beeline fixes sprinkler heads all over Boise fast. Same-visit coverage testing before we leave. Call <a href="tel:2088802712" style="color:rgba(255,255,255,.85);text-decoration:underline">(208) 880-2712</a> or get a free quote below.</p>
+    <p>Broken heads from mowers, stuck pop-ups, clogged nozzles, tilted heads from clay soil. Beeline fixes sprinkler heads all over Boise fast. Same-visit coverage testing before we leave. Call <a href="tel:2088802712" style="color:rgba(255,255,255,.85);text-decoration:underline">(208) 880-2712</a> or get a free quote below.</p>
     <div class="hero-ctas"><a href="#quote" class="btn-primary">Get a Free Quote →</a><a href="tel:2088802712" class="btn-ghost">📞 (208) 880-2712</a></div>
     <div class="hero-trust-strip">
       <span class="trust-badge">✅ Licensed &amp; Insured</span>
@@ -603,6 +616,7 @@ footer a{color:rgba(255,255,255,.5)}
     <span>Most calls back within 1 hour</span>
   </div>
   <form id="hqcForm" action="https://formspree.io/f/xwvdqvlb" method="POST">
+      <input type="hidden" name="_subject" value="Boise Head Replacement Quote">
     <div class="hqc-field">
       <label for="fname">First Name</label>
       <input type="text" id="fname" name="name" placeholder="Calvin" required>
@@ -665,7 +679,7 @@ footer a{color:rgba(255,255,255,.5)}
 
     <img loading="lazy" class="wrap-right" src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Sprinkler+SEO+PICS/Equeipment+is+ready+for+a+new+sprinkler+system+install+in+nampa+.jpg" alt="Sprinkler head replacement equipment Boise Idaho" decoding="async">
 
-    <p>Sprinkler heads take more punishment than any other component in a Boise irrigation system. Mowers clip them. Kids step on them. Foot traffic in high-use areas pushes them down over time. Freeze-thaw cycles during Boise's shoulder seasons crack plastic caps that were already brittle from years in the sun. And Boise's clay-heavy soil — which expands when wet and contracts when dry — gradually shifts heads out of position even when nobody touches them. The result: dry strips in the lawn, water hitting the sidewalk instead of the grass, or a geyser shooting straight up from a broken cap.</p>
+    <p>Sprinkler heads take more punishment than any other component in a Boise irrigation system. Mowers clip them. Kids step on them. Foot traffic in high-use areas pushes them down over time. Freeze-thaw cycles during Boise's shoulder seasons crack plastic caps that were already brittle from years in the sun. And Boise's clay-heavy soil, which expands when wet and contracts when dry, gradually shifts heads out of position even when nobody touches them. The result: dry strips in the lawn, water hitting the sidewalk instead of the grass, or a geyser shooting straight up from a broken cap.</p>
 
     <p>Beeline has been doing <strong>sprinkler head repair and replacement in Boise</strong> since 2015. We carry common Rain Bird and Hunter spray heads, rotor heads, and nozzles on the truck so most repairs get done in one visit. We replace the head, set the correct height, adjust the arc, and run the zone before we leave. You see water landing in the right spots before we pull out of your driveway.</p>
 
@@ -678,15 +692,15 @@ footer a{color:rgba(255,255,255,.5)}
 
     <p>Several factors make sprinkler head damage more common in Boise than in other parts of the country. Understanding them helps explain why heads that were fine last fall aren't working right when the system comes back on in spring.</p>
 
-    <p><strong>Mowing and foot traffic</strong> are the most direct causes. Pop-up heads that don't fully retract after a cycle — or that are sitting slightly above grade — get clipped by mower blades or pushed sideways by repeated foot traffic in high-use areas. A single pass from a riding mower can shear a cap off entirely and leave the riser gushing water every time that zone runs.</p>
+    <p><strong>Mowing and foot traffic</strong> are the most direct causes. Pop-up heads that don't fully retract after a cycle, or that are sitting slightly above grade, get clipped by mower blades or pushed sideways by repeated foot traffic in high-use areas. A single pass from a riding mower can shear a cap off entirely and leave the riser gushing water every time that zone runs.</p>
 
     <p><strong>Freeze-thaw cycles</strong> during Boise's spring and fall shoulders stress plastic head bodies and nozzle seals. Water trapped inside a head that doesn't drain fully will expand when it freezes, cracking the cap or splitting the riser. By the time you fire up the system in April, those heads are already compromised.</p>
 
-    <p><strong>Ground settling and seasonal movement</strong> — particularly in Boise's clay-heavy soils — shifts heads over time even without any physical impact. Clay soil swells when it absorbs moisture and contracts significantly as it dries. That repeated cycle gradually works head bodies out of plumb, causing them to tilt or sink below the turf surface where they can't pop up fully or cover their intended arc.</p>
+    <p><strong>Ground settling and seasonal movement</strong>, particularly in Boise's clay-heavy soils, shifts heads over time even without any physical impact. Clay soil swells when it absorbs moisture and contracts significantly as it dries. That repeated cycle gradually works head bodies out of plumb, causing them to tilt or sink below the turf surface where they can't pop up fully or cover their intended arc.</p>
 
     <div class="clay-callout">
       <h4>🌱 Boise Clay Soils and Sprinkler Head Shifting</h4>
-      <p>Boise's clay-heavy soils can cause sprinkler heads to heave or tilt over time as the ground expands and contracts with seasonal moisture changes. A tilted head doesn't just look bad — it throws off spray coverage and can create dry spots or overspray onto sidewalks and driveways. If you notice a head leaning or sitting lower than surrounding turf, it's worth having it corrected before the misalignment turns into an uneven lawn by midsummer.</p>
+      <p>Boise's clay-heavy soils can cause sprinkler heads to heave or tilt over time as the ground expands and contracts with seasonal moisture changes. A tilted head doesn't just look bad. It throws off spray coverage and can create dry spots or overspray onto sidewalks and driveways. If you notice a head leaning or sitting lower than surrounding turf, it's worth having it corrected before the misalignment turns into an uneven lawn by midsummer.</p>
     </div>
 
     <h3>Types of Sprinkler Heads in Boise Systems</h3>
@@ -695,25 +709,25 @@ footer a{color:rgba(255,255,255,.5)}
 
     <p>Boise irrigation systems use three main categories of heads, and matching the replacement to the right type is critical for proper coverage.</p>
 
-    <p><strong>Pop-up spray heads</strong> are the most common type on Boise residential systems. They sit flush with the turf and pop up a few inches when the zone runs, spraying a fixed arc at a set radius — typically 4 to 15 feet. They're used in smaller zones, tight side yards, strip areas, and landscape beds. Pop-ups put water down quickly at a high precipitation rate, which is fine for the zone if all heads are matched. They're also the heads most commonly damaged by mowers because of their low profile.</p>
+    <p><strong>Pop-up spray heads</strong> are the most common type on Boise residential systems. They sit flush with the turf and pop up a few inches when the zone runs, spraying a fixed arc at a set radius, typically 4 to 15 feet. They're used in smaller zones, tight side yards, strip areas, and landscape beds. Pop-ups put water down quickly at a high precipitation rate, which is fine for the zone if all heads are matched. They're also the heads most commonly damaged by mowers because of their low profile.</p>
 
-    <p><strong>Rotor heads</strong> cover larger turf areas by rotating back and forth while throwing water further — typically 18 to 45 feet depending on the model. Rotors apply water more slowly, which reduces runoff on slopes and compacted soil. They're standard in the larger backyard zones of newer Boise homes and in most commercial landscaping. A rotor body is more robust than a spray head, but they can still develop stuck rotors, worn bearings, or cracked caps after years of use and freeze-thaw cycling.</p>
+    <p><strong>Rotor heads</strong> cover larger turf areas by rotating back and forth while throwing water further, typically 18 to 45 feet depending on the model. Rotors apply water more slowly, which reduces runoff on slopes and compacted soil. They're standard in the larger backyard zones of newer Boise homes and in most commercial landscaping. A rotor body is more robust than a spray head, but they can still develop stuck rotors, worn bearings, or cracked caps after years of use and freeze-thaw cycling.</p>
 
     <p><strong>MP rotators</strong> (multi-stream rotating nozzles) are a hybrid solution that fits onto a standard spray head body but delivers water in slow-rotating streams rather than a fixed spray. They apply water more uniformly and at a lower precipitation rate than standard spray nozzles, which makes them a popular upgrade on Boise systems where runoff or puddling near heads has been a problem. We install MP rotators as direct swaps on existing spray head bodies when they're a good fit for the zone layout.</p>
 
     <div style="clear:both"></div>
 
-    <h3>Heads Hit by Mowers — Boise's Most Common Head Problem</h3>
+    <h3>Heads Hit by Mowers, Boise's Most Common Head Problem</h3>
 
     <div class="review-wrap-right">
       <div class="rw-stars">★★★★★</div>
       <p class="rw-text">"Our lawnmower clipped three heads and they were gushing water. Beeline came out, replaced all three, and adjusted the coverage on the whole zone while they were at it. Great job."</p>
-      <div class="rw-author">Kyle M. — North Boise</div>
+      <div class="rw-author">Kyle M.. North Boise</div>
     </div>
 
-    <p>Mower damage is the most common sprinkler head service call we run in Boise from May through September. A mower blade catches a head that's sitting a hair above grade and the cap shears off clean — now you've got an open riser throwing a column of water straight up every time that zone runs. In a pressure irrigation neighborhood, that's canal water being dumped on one spot while the rest of the zone sits dry.</p>
+    <p>Mower damage is the most common sprinkler head service call we run in Boise from May through September. A mower blade catches a head that's sitting a hair above grade and the cap shears off clean, now you've got an open riser throwing a column of water straight up every time that zone runs. In a pressure irrigation neighborhood, that's canal water being dumped on one spot while the rest of the zone sits dry.</p>
 
-    <p>When we do a <strong>broken sprinkler head repair in Boise</strong> caused by mower damage, we replace the full head assembly — not just the cap. We check the riser height, set the replacement flush with turf grade, match the arc and radius to the surrounding heads, and run the zone before we leave. If we notice several heads in the zone are sitting slightly high and at risk for the same problem, we'll point that out so you can decide whether to address them before the next mowing cycle takes them out.</p>
+    <p>When we do a <strong>broken sprinkler head repair in Boise</strong> caused by mower damage. We replace the full head assembly, not just the cap. We check the riser height, set the replacement flush with turf grade, match the arc and radius to the surrounding heads, and run the zone before we leave. If we notice several heads in the zone are sitting slightly high and at risk for the same problem, we'll point that out so you can decide whether to address them before the next mowing cycle takes them out.</p>
 
     <div style="clear:both"></div>
 
@@ -722,7 +736,7 @@ footer a{color:rgba(255,255,255,.5)}
     <div class="review-wrap-left">
       <div class="rw-stars">★★★★★</div>
       <p class="rw-text">"We had dry spots in our Boise backyard that I could not figure out. Turned out two heads were clogged and one had a cracked cap. Beeline fixed all of it in one visit."</p>
-      <div class="rw-author">Andrea S. — Boise Bench</div>
+      <div class="rw-author">Andrea S.. Boise Bench</div>
     </div>
 
     <p>Not every head problem is obvious. Some of the most frustrating coverage issues in Boise come from heads that look fine from the surface but are failing quietly. A head that won't pop up fully creates a dead strip because the nozzle is below the turf surface. A head that won't retract drips after every cycle and creates a soggy low spot next to the riser. A cracked cap loses pressure and produces a weak, incomplete spray pattern that doesn't reach its design radius.</p>
@@ -733,35 +747,35 @@ footer a{color:rgba(255,255,255,.5)}
 
     <h3>Head Coverage Adjustment for Boise Yard Layouts</h3>
 
-    <p>Correct arc and radius settings matter as much as a functional head. A head that's physically intact but set to the wrong arc will over-water a flower bed or miss a strip of turf no matter how well the zone is designed. Boise yards come in all configurations — long rectangular Bench lots, angled corners in newer southwest Boise subdivisions, and curved landscape beds in Harris Ranch that don't fit standard arc patterns — and getting coverage right requires adjusting each head to match the actual shape of the area it needs to water.</p>
+    <p>Correct arc and radius settings matter as much as a functional head. A head that's physically intact but set to the wrong arc will over-water a flower bed or miss a strip of turf no matter how well the zone is designed. Boise yards come in all configurations, long rectangular Bench lots, angled corners in newer southwest Boise subdivisions, and curved landscape beds in Harris Ranch that don't fit standard arc patterns, and getting coverage right requires adjusting each head to match the actual shape of the area it needs to water.</p>
 
-    <p>When we replace a head, we match the arc and radius to what the zone needs, not just what was in the box before. If an adjoining head is also slightly off, we'll adjust that during the same visit at no extra charge. The goal is that the zone runs and coverage is even across the entire area before we leave — not just that the broken head has been swapped for a new one pointing the same wrong direction.</p>
+    <p>When we replace a head, we match the arc and radius to what the zone needs, not just what was in the box before. If an adjoining head is also slightly off, we'll adjust that during the same visit at no extra charge. The goal is that the zone runs and coverage is even across the entire area before we leave, not just that the broken head has been swapped for a new one pointing the same wrong direction.</p>
 
-    <h3>New Boise Builds — Tresidio and Alturas Homes</h3>
+    <h3>New Boise Builds, Tresidio and Alturas Homes</h3>
 
     <img loading="lazy" class="wrap-right" src="https://beeline-pictures-723591018692-us-east-2-an.s3.us-east-2.amazonaws.com/Sprinkler+SEO+PICS/Fixing+sprinkler++diaphrams+in+meridian.jpg" alt="Sprinkler head adjustment new build Boise" decoding="async">
 
     <div class="review-wrap-left">
       <div class="rw-stars">★★★★★</div>
       <p class="rw-text">"Moved into our Tresidio home in Southeast Boise and some of the heads were already misaligned. Beeline adjusted them all and replaced one that was cracked. Everything looks perfect now."</p>
-      <div class="rw-author">Paul V. — Boise</div>
+      <div class="rw-author">Paul V.. Boise</div>
     </div>
 
     <p>Tresidio Homes and Alturas Homes are among the more active builders in Southeast and Southwest Boise. Their new construction irrigation systems are generally solid, but it's common to see head issues in the first one to three growing seasons after a home is finished. Ground compaction during construction leaves the soil unstable, and as it settles under the weight of turf and the first few seasons of watering, head bodies shift slightly out of plumb. The result is tilted heads, heads that sink below grade, or heads where the coverage arc no longer aligns with the property lines or bed edges as the landscaping matures.</p>
 
-    <p>We handle sprinkler head adjustments and replacements on new Boise builds regularly. The fix is usually straightforward — we raise or level the head body, verify the riser height, reset the arc to the correct angle, and test the zone. If a head cracked during its first winter, we replace it with a compatible model and match coverage to the surrounding heads. For new-build homeowners in Tresidio and Alturas communities in Southeast Boise, this type of visit often resolves coverage issues that weren't obvious until the lawn had been in for a full season.</p>
+    <p>We handle sprinkler head adjustments and replacements on new Boise builds regularly. The fix is usually straightforward, we raise or level the head body, verify the riser height, reset the arc to the correct angle, and test the zone. If a head cracked during its first winter. We replace it with a compatible model and match coverage to the surrounding heads. For new-build homeowners in Tresidio and Alturas communities in Southeast Boise, this type of visit often resolves coverage issues that weren't obvious until the lawn had been in for a full season.</p>
 
     <div style="clear:both"></div>
 
     <h3>Boise Pressure Irrigation Neighborhoods</h3>
 
-    <p>Boise is one of the few Idaho cities with a municipal pressure irrigation system that delivers non-potable Boise River water through a separate line for outdoor use. Subdivisions in neighborhoods like Azure, Darien, Bradford, Graystone, Steamboat, and others on the pressure irrigation grid get their water from this system during the April through October operating season — which means if you have a clogged, broken, or misaligned head in those neighborhoods, you're dumping canal water on one spot in the yard every time the system runs while other areas go dry.</p>
+    <p>Boise is one of the few Idaho cities with a municipal pressure irrigation system that delivers non-potable Boise River water through a separate line for outdoor use. Subdivisions in neighborhoods like Azure, Darien, Bradford, Graystone, Steamboat, and others on the pressure irrigation grid get their water from this system during the April through October operating season, which means if you have a clogged, broken, or misaligned head in those neighborhoods, you're dumping canal water on one spot in the yard every time the system runs while other areas go dry.</p>
 
     <p>Canal water also carries more fine sediment than treated municipal water, which is why nozzle clogging tends to happen faster on Boise pressure irrigation systems than on potable water systems. If you're in a pressure irrigation neighborhood and notice dry spots that didn't exist last season, a clogged nozzle is near the top of the list of causes to check.</p>
 
     <div class="info-band">
       <h4>DIY Sprinkler Head Replacement in Boise</h4>
-      <p>If you'd rather tackle a head replacement yourself, Silver Creek Supply at 11427 W Executive Dr, Boise, ID 83713, (208) 327-0519 carries Rain Bird, Hunter, and K-Rain heads for homeowners and contractors. The key is matching the replacement to your existing head's arc, radius, and precipitation rate so coverage stays even across the zone. If you're not sure what you have, Beeline can replace the heads and do a full coverage check in a single visit — often faster than sourcing and matching the correct parts yourself.</p>
+      <p>If you'd rather tackle a head replacement yourself, Silver Creek Supply at 11427 W Executive Dr, Boise, ID 83713, (208) 327-0519 carries Rain Bird, Hunter, and K-Rain heads for homeowners and contractors. The key is matching the replacement to your existing head's arc, radius, and precipitation rate so coverage stays even across the zone. If you're not sure what you have, Beeline can replace the heads and do a full coverage check in a single visit, often faster than sourcing and matching the correct parts yourself.</p>
     </div>
 
     <h3>When to Repair vs. Replace a Sprinkler Head</h3>
@@ -769,12 +783,12 @@ footer a{color:rgba(255,255,255,.5)}
     <p>Not every head that's misbehaving needs to be replaced. The decision depends on what's causing the problem and the age and condition of the head body.</p>
 
     <ul>
-      <li><strong>Repair or adjust</strong> — if the head pops up and retracts correctly but coverage is off, the issue is usually an arc adjustment or nozzle swap. These are minor fixes that don't require replacing the whole head assembly.</li>
-      <li><strong>Replace the head</strong> — if the cap is cracked, the wiper seal is worn and the head drips after shutdown, the riser is bent or broken, or the head won't pop up regardless of water pressure, the full assembly needs to come out. Repairing individual components inside an old head body is rarely cost-effective.</li>
-      <li><strong>Consider an upgrade</strong> — if you're replacing multiple old spray heads in a zone, it's worth evaluating whether MP rotators would improve coverage consistency and reduce runoff. We'll give you an honest assessment based on the zone layout and what you're dealing with.</li>
+      <li><strong>Repair or adjust</strong>, if the head pops up and retracts correctly but coverage is off, the issue is usually an arc adjustment or nozzle swap. These are minor fixes that don't require replacing the whole head assembly.</li>
+      <li><strong>Replace the head</strong>, if the cap is cracked, the wiper seal is worn and the head drips after shutdown, the riser is bent or broken, or the head won't pop up regardless of water pressure, the full assembly needs to come out. Repairing individual components inside an old head body is rarely cost-effective.</li>
+      <li><strong>Consider an upgrade</strong>, if you're replacing multiple old spray heads in a zone, it's worth evaluating whether MP rotators would improve coverage consistency and reduce runoff. We'll give you an honest assessment based on the zone layout and what you're dealing with.</li>
     </ul>
 
-    <p>When we assess a head, we tell you exactly which category it falls into and why — before any work begins. You get a straight quote on what's needed, not a push to replace things that still have life in them.</p>
+    <p>When we assess a head, we tell you exactly which category it falls into and why, before any work begins. You get a straight quote on what's needed, not a push to replace things that still have life in them.</p>
 
     <a href="#quote" style="display:inline-block;background:var(--green);color:#fff;padding:12px 24px;border-radius:8px;font-weight:800;font-size:.9rem;margin:12px 0">Request a Free Quote →</a>
     <a href="tel:2088802712" style="display:inline-block;background:var(--ink);color:#fff;padding:12px 24px;border-radius:8px;font-weight:800;font-size:.9rem;margin:12px 0 12px 12px">📞 (208) 880-2712</a>
@@ -831,11 +845,11 @@ footer a{color:rgba(255,255,255,.5)}
 <section class="faq-section">
   <div class="faq-inner">
     <div class="eyebrow">Common Questions</div>
-    <h2>Sprinkler Head Replacement FAQ — Boise, ID</h2>
+    <h2>Sprinkler Head Replacement FAQ, Boise, ID</h2>
 
     <div class="faq-item">
       <div class="faq-q">How do I know if my sprinkler head needs to be replaced? <span class="faq-icon">+</span></div>
-      <div class="faq-a">If the head is cracked, stuck in the up or down position, tilted, or failing to pop up at all when the zone runs, it needs to be replaced. If the head pops up and retracts cleanly but coverage is off or the spray pattern looks uneven, it may just need a nozzle swap or arc adjustment. We check each head individually and tell you exactly what it needs before we do anything — and before any cost is committed.</div>
+      <div class="faq-a">If the head is cracked, stuck in the up or down position, tilted, or failing to pop up at all when the zone runs. It needs to be replaced. If the head pops up and retracts cleanly but coverage is off or the spray pattern looks uneven, it may just need a nozzle swap or arc adjustment. We check each head individually and tell you exactly what it needs before we do anything, and before any cost is committed.</div>
     </div>
     <div class="faq-item">
       <div class="faq-q">Can I replace a sprinkler head myself in Boise? <span class="faq-icon">+</span></div>
@@ -847,15 +861,15 @@ footer a{color:rgba(255,255,255,.5)}
     </div>
     <div class="faq-item">
       <div class="faq-q">How do I fix dry spots caused by a bad sprinkler head? <span class="faq-icon">+</span></div>
-      <div class="faq-a">Run the zone and physically watch each head in the area with the dry spot. A clogged nozzle will produce a weak or uneven pattern that doesn't reach its design radius. A cracked head may not pop up fully. A tilted head will throw water at an angle — away from the intended coverage area and toward driveways or fences. Once you identify the bad head, replacing it or swapping the nozzle typically resolves the dry spot within a watering cycle or two. Beeline can diagnose the exact cause and fix it in one visit.</div>
+      <div class="faq-a">Run the zone and physically watch each head in the area with the dry spot. A clogged nozzle will produce a weak or uneven pattern that doesn't reach its design radius. A cracked head may not pop up fully. A tilted head will throw water at an angle, away from the intended coverage area and toward driveways or fences. Once you identify the bad head, replacing it or swapping the nozzle typically resolves the dry spot within a watering cycle or two. Beeline can diagnose the exact cause and fix it in one visit.</div>
     </div>
     <div class="faq-item">
       <div class="faq-q">How much does sprinkler head replacement cost in Boise? <span class="faq-icon">+</span></div>
-      <div class="faq-a">Most head replacements in Boise run $75 to $150 per head depending on the head type and how many are being replaced in the same visit. Rotor heads cost a bit more than standard spray heads. Replacing multiple heads in one visit brings the per-head cost down. We give you a clear price before any work begins — no surprises on the invoice.</div>
+      <div class="faq-a">Most head replacements in Boise run $75 to $150 per head depending on the head type and how many are being replaced in the same visit. Rotor heads cost a bit more than standard spray heads. Replacing multiple heads in one visit brings the per-head cost down. We give you a clear price before any work begins, no surprises on the invoice.</div>
     </div>
     <div class="faq-item">
       <div class="faq-q">What is the difference between a spray head and a rotor head? <span class="faq-icon">+</span></div>
-      <div class="faq-a">Spray heads pop up and throw water in a fixed arc — they cover smaller areas like side yards and landscape beds and put water down quickly. Rotor heads rotate back and forth and cover larger turf areas with a lower precipitation rate, which reduces runoff on slopes or compacted soil. MP rotators are a third option that fits onto a standard spray head body but delivers water in slow multi-stream arcs, combining the efficiency of a rotor with the compact size of a spray head body. Older Boise Bench and North End homes often have spray head systems. Newer southwest Boise homes built by Tresidio, Alturas, and similar builders typically use rotor-based systems for larger lot coverage.</div>
+      <div class="faq-a">Spray heads pop up and throw water in a fixed arc. They cover smaller areas like side yards and landscape beds and put water down quickly. Rotor heads rotate back and forth and cover larger turf areas with a lower precipitation rate, which reduces runoff on slopes or compacted soil. MP rotators are a third option that fits onto a standard spray head body but delivers water in slow multi-stream arcs, combining the efficiency of a rotor with the compact size of a spray head body. Older Boise Bench and North End homes often have spray head systems. Newer southwest Boise homes built by Tresidio, Alturas, and similar builders typically use rotor-based systems for larger lot coverage.</div>
     </div>
   </div>
 </section>
@@ -907,8 +921,8 @@ footer a{color:rgba(255,255,255,.5)}
   <div class="map-inner">
     <div class="eyebrow">Service Area</div>
     <h2>Our Boise Service Area</h2>
-    <p>Beeline serves all of Boise for sprinkler head repair and replacement. We cover the North End, Boise Bench, Harris Ranch, Southeast Boise, Southwest Boise, Hidden Springs, Warm Springs, and all surrounding neighborhoods. Whether your system is a 1980s spray-head setup in the North End, a rotor system in a newer Tresidio or Alturas community in Southeast Boise, or a pressure irrigation system in Azure, Darien, Bradford, or Graystone — we carry the parts to fix it same visit.</p>
-    <iframe title="Beeline Sprinkler Repair — Boise Service Area" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96242.75555437673!2d-116.36451!3d43.6150186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54aef172ef683a53%3A0x1e07b4643cc9e56d!2sBoise%2C%20ID!5e0!3m2!1sen!2sus!4v1718000000000!5m2!1sen!2sus" width="100%" height="340" style="border:0;border-radius:12px;display:block" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <p>Beeline serves all of Boise for sprinkler head repair and replacement. We cover the North End, Boise Bench, Harris Ranch, Southeast Boise, Southwest Boise, Hidden Springs, Warm Springs, and all surrounding neighborhoods. Whether your system is a 1980s spray-head setup in the North End, a rotor system in a newer Tresidio or Alturas community in Southeast Boise, or a pressure irrigation system in Azure, Darien, Bradford, or Graystone. We carry the parts to fix it same visit.</p>
+    <iframe title="Beeline Sprinkler Repair Boise Service Area" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96242.75555437673!2d-116.36451!3d43.6150186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54aef172ef683a53%3A0x1e07b4643cc9e56d!2sBoise%2C%20ID!5e0!3m2!1sen!2sus!4v1718000000000!5m2!1sen!2sus" width="100%" height="340" style="border:0;border-radius:12px;display:block" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
 </section>
 
@@ -918,7 +932,7 @@ footer a{color:rgba(255,255,255,.5)}
     <div class="quote-left">
       <div class="eyebrow">Get Started</div>
       <h2>Get a Free Sprinkler Head Replacement Quote in Boise</h2>
-      <p>Licensed, insured, and family owned since 2015. We respond fast and carry common Rain Bird and Hunter heads on the truck. Fill out the form and we'll get back to you quickly — or call or text us directly.</p>
+      <p>Licensed, insured, and family owned since 2015. We respond fast and carry common Rain Bird and Hunter heads on the truck. Fill out the form and we'll get back to you quickly, or call or text us directly.</p>
       <div class="contact-list">
         <div>📞 <strong>(208) 880-2712</strong></div>
         <div>✉️ beelinesprinklerrepair@gmail.com</div>
@@ -928,7 +942,7 @@ footer a{color:rgba(255,255,255,.5)}
 
     <div class="lic-box" style="text-align:center;padding-top:16px">
       <a href='https://www.chamberofcommerce.com/business-directory/idaho/nampa/lawn-sprinkler-system-contractor/44771303-beeline-sprinkler-repair?source=memberwebsite' target='_blank' rel='noopener'>
-        <img style='width:auto;height:120px;' src='https://coc.codes/images/badge/44771303' alt='Beeline Sprinkler Repair — Chamber of Commerce Member' loading='lazy'>
+        <img style='width:auto;height:120px;' src='https://coc.codes/images/badge/44771303' alt='Beeline Sprinkler Repair Chamber of Commerce Member' loading='lazy'>
       </a>
     </div>
     </div>
@@ -954,7 +968,7 @@ footer a{color:rgba(255,255,255,.5)}
 <footer><p>© 2025 <strong>Beeline Sprinkler Repair</strong> · Licensed &amp; Insured · Idaho General Contractor Reg. #9781914 · 5606 W Amity Rd, Nampa, ID 83687 · <a href="tel:2088802712">(208) 880-2712</a></p>
   <div style="margin-top:12px">
     <a href='https://www.chamberofcommerce.com/business-directory/idaho/nampa/lawn-sprinkler-system-contractor/44771303-beeline-sprinkler-repair?source=memberwebsite' target='_blank' rel='noopener'>
-      <img style='width:auto;height:80px;' src='https://coc.codes/images/badge/44771303' alt='Beeline Sprinkler Repair — Chamber of Commerce Member' loading='lazy'>
+      <img style='width:auto;height:80px;' src='https://coc.codes/images/badge/44771303' alt='Beeline Sprinkler Repair Chamber of Commerce Member' loading='lazy'>
     </a>
   </div>
   <div style="margin-top:16px;line-height:0">
